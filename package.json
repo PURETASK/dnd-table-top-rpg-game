@@ -10,7 +10,8 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --import tsx --test test/**/*.test.ts",
-    "check-lore": "tsx scripts/check-lore.ts"
+    "check-lore": "tsx scripts/check-lore.ts",
+    "demo": "tsx scripts/demo-turn.ts"
   },
   "keywords": [
     "rpg",

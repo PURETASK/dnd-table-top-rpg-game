@@ -25,6 +25,7 @@ runtime-validated TypeScript foundation.
 | `src/engine/store.ts` | Chunk 3 §35/§37 | `StateStore` interface + `InMemoryStateStore` (a Postgres store over the migration can implement the same interface) |
 | `src/engine/mutations.ts` | Chunk 3 §3/§30 | Turns loose `mechanical_consequences` buckets into clamped, audited field changes |
 | `src/engine/context.ts` | Chunk 3 §31 | `buildPromptContext` — selects the scene-relevant slice of state for VERDAX (not the whole world) |
+| `src/engine/loader.ts` | Chunk 2 → Chunk 3 | `seedDomainFromBible` / `bootstrapCampaign` — turn static bibles into runnable seed state |
 | `src/formulas.ts` | Chunk 4 §15, §20 | Alliance / betrayal / rumor-likelihood scoring helpers |
 | `src/constants.ts` | Chunk 3 §35 | MVP vs. secondary tracking sets, lore file list |
 | `domain-lore/` | Chunk 2 §36 | Static-lore JSON seeds (one per domain) + `_template.json` |
@@ -51,7 +52,13 @@ npm run typecheck   # tsc, no emit
 npm test            # node:test — validation, formulas, template conformance
 npm run build       # emit dist/
 npm run check-lore  # validate every domain-lore/*.json against DomainBible
+npm run demo        # run a full turn offline (load → seed → context → apply)
 ```
+
+`npm run demo` exercises the whole loop with no DB and no LLM: it loads the
+Verdance bible, seeds campaign state, builds the prompt-context slice, applies a
+hand-written `VerdaxTurnResponse`, and prints the consequence panel + audited
+state changes.
 
 ### Applying a turn (validation boundary + locked update order)
 
@@ -117,11 +124,12 @@ All five domains plus the Void layer are now drafted and validated.
 
 ## Not yet built (intentional next steps)
 
-- A **Postgres-backed `StateStore`** over `db/migrations/0001_init.sql` (the
-  in-memory store already implements the interface the engine consumes).
 - The **model call itself** (the LLM that turns a `VerdaxPromptContext` into a
   `VerdaxTurnResponse`) — the only remaining piece between context and apply.
-- A **campaign loader** turning the `/domain-lore` bibles into seed state.
+- A **Postgres-backed `StateStore`** over `db/migrations/0001_init.sql` (the
+  in-memory store already implements the interface the engine consumes).
 
-The pure turn loop is otherwise complete: **`buildPromptContext` → (model) →
-`applyVerdaxTurn`**, all validated and testable without a DB or LLM.
+The pure turn loop is complete and runnable offline today (`npm run demo`):
+**load bible → `seedDomainFromBible` / `bootstrapCampaign` → `buildPromptContext`
+→ (model) → `applyVerdaxTurn`** — everything but the model call is built, validated,
+and tested without a DB or LLM.
