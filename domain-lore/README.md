@@ -13,7 +13,7 @@ immutable, kept separate from mutable campaign state (Chunk 2 §36, Chunk 3 §2)
 | `radiance.json` | ✅ drafted (validates against `DomainBible`) |
 | `verdance.json` | ✅ drafted — MVP vertical-slice target |
 | `tempest.json` | ✅ drafted (validates against `DomainBible`) |
-| `sanctuary.json` | _todo_ |
+| `sanctuary.json` | ✅ drafted (validates against `DomainBible`) |
 | `abyss.json` | _todo_ |
 | `void-layer.json` | _todo_ |
 

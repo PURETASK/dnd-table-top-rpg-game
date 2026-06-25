@@ -79,7 +79,8 @@ if (!result.ok) {
   first domain), validated against `DomainBible` via `npm run check-lore`.
 - ✅ `domain-lore/verdance.json` — full Verdance bible (the MVP vertical-slice target).
 - ✅ `domain-lore/tempest.json` — full Tempest bible.
-- ⬜ Sanctuary, Abyss, Void layer.
+- ✅ `domain-lore/sanctuary.json` — full Sanctuary bible.
+- ⬜ Abyss, Void layer.
 
 ## Not yet built (intentional next steps)
 
