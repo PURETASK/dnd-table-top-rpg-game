@@ -1,0 +1,742 @@
+{
+  "schema_version": "1.0",
+  "domain": "Verdance",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "Verdance",
+    "short_description": "A restoration civilization grown from a living root-and-memory network, built on healing sap, seasonal cycles, communal groves, and the conviction that wounds must be cleansed rather than commanded.",
+    "civilization_type": "Decentralized council of grove-communities bound by a living root network and elder consensus.",
+    "core_belief": "Life moves in cycles; a wound healed restores the whole, but a wound used becomes the wound.",
+    "true_virtue": ["Restoration", "Patience", "Communion", "Stewardship"],
+    "primary_corruption_risk": ["Weaponizing corruption", "Stagnation disguised as patience", "Sacrificing the few groves to save the many"],
+    "domain_stone_or_source": "The Heartroot Loom — an ancient living network of root-and-memory anchored to the Verdance Stone fragment.",
+    "magic_style": "Sap weaving and root communion; growth, healing, and tree-memory drawn from the living network.",
+    "main_magic_cost": "A life-tithe paid back into the cycle, and memory given to the tree-network.",
+    "political_center": "The Circle of Elders convened at the Heartroot grove.",
+    "military_identity": "Patient defenders: entangle, endure, and outlast rather than conquer.",
+    "economic_base": "Healing sap, grove-grown medicine, seed commons, and timber stewardship.",
+    "biggest_internal_conflict": "Whether survival ever justifies wielding corrupted sap as a weapon (Hollow Pact) versus cleansing it slowly at great cost (Rootwarden Conservators).",
+    "biggest_external_threat": "Abyss soul-harvest in the border villages, draining the root network of names and memory.",
+    "keeper_exploit": "The Keeper makes Verdance defend itself by becoming the rot it fears, so its resistance damages its own soul-flow from within.",
+    "void_lie": "If rot saved them, why call it corruption?"
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "Verdance is bound by the Heartroot Loom, a living root-and-memory network tied to a fragment of the fractured pure Nexus Stone.",
+      "Healing sap is Verdance's sacred resource and chief export; corrupted sap is its sacred wound.",
+      "The Circle of Elders governs by consensus; no single ruler commands Verdance.",
+      "Rootwell sites are places where the network's memory pools; corrupted rootwells whisper stolen names.",
+      "Rootwarden Conservators guard the cycle; the Hollow Pact weaponizes corruption; the Sap Commons distribute healing.",
+      "Communion Grovekeepers read tree-memory and arbitrate sacred judgments through the network."
+    ],
+    "cannot_contradict": [
+      "Verdance magic must always involve the cycle, consent, restoration, or living memory — never sterile command.",
+      "Verdance corruption must distort restoration into rot-mastery and patience into stagnation, never become generic darkness.",
+      "Verdance internal politics must respect the Rootwarden / Hollow Pact / Sap Commons / Communion fracture.",
+      "Corrupted sap can grant real power, but using it always deepens the soul-flow wound it came from."
+    ]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "Restoration and cycle — the return of damaged life to wholeness through patient renewal.",
+    "nexus_stone_aspect": "The Stone's capacity to hold and re-weave memory, letting identity persist through death, decay, and regrowth.",
+    "soul_flow_shaped": "Verdance lets the dead and their names rejoin the network as living memory, feeding the next season's growth.",
+    "natural_magic": "Sap weaving and root communion: healing, growth, and memory drawn from the living network.",
+    "when_extreme": "Restoration calcifies into stagnation, or inverts into mastery of rot — the wound used instead of healed.",
+    "keeper_exploits_extremity": "The Keeper tempts Verdance to command corruption to survive, turning its restorative network into a conduit for the rot."
+  },
+
+  "domain_stone": {
+    "domain": "Verdance",
+    "source_name": "The Heartroot Loom",
+    "source_type": "Living Network",
+    "origin": "Grown over millennia from the first grove planted upon a fragment of the fractured pure Nexus Stone, now a continent-spanning weave of root and memory.",
+    "metaphysical_principle": ["Cyclical restoration", "Living memory", "Consent of the grove", "Names returned to the weave"],
+    "current_stability": 64,
+    "corruption_level": 33,
+    "public_knowledge": "The Loom remembers every grove and carries messages root to root; it heals what is patiently tended.",
+    "hidden_truth": "Abyss soul-harvest and corrupted rootwells are tearing names out of the weave faster than the cycle can re-grow them; whole memory-strands are going silent.",
+    "factions_claiming_authority": ["Circle of Elders", "Rootwarden Conservators", "Communion Grovekeepers"],
+    "rituals_dependent_on_source": ["Root Communion", "Seed Commons blessing", "Naming-into-the-weave", "Cleansing of a wounded rootwell"],
+    "magic_systems_dependent_on_source": ["Sap Weaving", "Root Communion"],
+    "failure_symptoms": ["Roots whisper stolen names at night", "Healing sap curdles to corrupted sap", "Groves forget their own dead", "Children dream other people's memories"],
+    "healing_methods": ["Patient cleansing of rootwells", "Recovering and returning erased names", "Communion judgment to re-weave broken strands", "Quarantine of corrupted groves"],
+    "keeper_attack_vector": "Spread corrupted rootwells so Verdance must either let villages die or wield the rot, both of which feed the wound.",
+    "void_attack_vector": "Offer the corrupted sap's power now in exchange for a strand of memory torn from the weave later."
+  },
+
+  "soul_flow": {
+    "domain": "Verdance",
+    "healthy_soul_flow_description": "The dead and their names rejoin the Heartroot Loom as living memory, nourishing the next cycle of growth.",
+    "damaged_soul_flow_description": "Names are torn from the weave and trapped in corrupted rootwells, where the rot speaks through stolen identities.",
+    "natural_soul_processes": ["Naming-into-the-weave at death", "Memory shared root to root", "Grief composted into new growth"],
+    "forbidden_soul_processes": ["Harvesting names from the weave", "Commanding corrupted sap to bind the living", "Forcing a grove's memory open without consent"],
+    "common_soul_wounds": ["Corrupted rootwells whispering stolen names", "Memory-strands gone silent", "Children carrying borrowed dreams"],
+    "healing_methods": ["Returning erased names to the weave", "Patient cleansing communion", "Composting grief through ritual"],
+    "factions_that_protect_soul_flow": ["Rootwarden Conservators", "Communion Grovekeepers"],
+    "factions_that_disrupt_soul_flow": ["Hollow Pact", "Abyss Ash Ledger agents on the border"],
+    "keeper_disruption_strategy": "Multiply corrupted rootwells until the weave forgets more than it remembers.",
+    "void_disruption_strategy": "Whisper that the rot is just another season, so the grieving stop cleansing and start commanding it."
+  },
+
+  "true_virtues": [
+    {
+      "name": "Restoration",
+      "healthy_definition": "The patient return of damaged life and memory to wholeness, rather than its replacement or removal.",
+      "cultural_expression": "Communities mend rather than discard; even a corrupted grove is a patient to be healed.",
+      "heroic_expression": "A defender cleanses a wound at personal cost rather than burning or commanding it.",
+      "political_expression": "Elders are judged by what they restore, not what they conquer.",
+      "magical_expression": "Sap weaving heals and regrows; its power scales with the caster's tithe to the cycle.",
+      "economic_expression": "Healing sap is a commons to be shared, not a monopoly to be hoarded.",
+      "military_expression": "Victory is denying the enemy the ground without poisoning it.",
+      "common_saying": "Tend the wound, do not wear it."
+    },
+    {
+      "name": "Communion",
+      "healthy_definition": "The conviction that no grove is alone; memory, judgment, and grief are shared through the living weave.",
+      "cultural_expression": "Decisions are reached by consensus carried root to root.",
+      "heroic_expression": "A hero submits a hard choice to communion rather than acting alone.",
+      "political_expression": "Authority flows from the network's consensus, not personal command.",
+      "magical_expression": "Root communion lets distant groves share memory, warning, and counsel.",
+      "economic_expression": "Surpluses are pooled in seed and sap commons.",
+      "military_expression": "Warnings travel the roots faster than any courier.",
+      "common_saying": "One root feels what the whole forest fears."
+    },
+    {
+      "name": "Stewardship",
+      "healthy_definition": "Responsibility for the cycle across generations — taking only what regrows and leaving the weave whole.",
+      "cultural_expression": "Each grove keeps a ledger of what it owes the next season.",
+      "heroic_expression": "A steward sacrifices a short-term win to protect a long-term cycle.",
+      "political_expression": "Leaders who exhaust a grove for gain are shamed and replaced.",
+      "magical_expression": "Sap is drawn at a rate the grove can replenish.",
+      "economic_expression": "Timber and sap quotas are set by the grove's regrowth, not by demand.",
+      "military_expression": "Scorched-earth tactics are taboo; the land must survive the war.",
+      "common_saying": "Borrow from the grove; you cannot inherit from it twice."
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "Restoration",
+      "corrupted_name": "Rot-Mastery",
+      "corrupted_definition": "The belief that corruption can be commanded and aimed rather than cleansed, turning the wound into a weapon.",
+      "how_it_begins": "A desperate grove survives an attack by weaponizing corrupted sap and is praised for it.",
+      "how_it_spreads": "Survivor stories, Hollow Pact recruitment among the frightened, and the simple fact that it works.",
+      "who_benefits": ["Hollow Pact", "Abyss researchers studying the residue", "Void whisperers"],
+      "who_suffers": ["Cleansing healers", "Future seasons of the poisoned grove", "Children who inherit the soil"],
+      "faction_most_vulnerable": ["Hollow Pact", "Frightened border villages"],
+      "npc_archetypes_most_vulnerable": ["Grieving defender", "Cornered grove-keeper", "Ambitious survivalist"],
+      "keeper_benefit": "Verdance's own resistance becomes a conduit that spreads the rot it fears.",
+      "void_lie": "If rot saved them, why call it corruption?",
+      "visible_symptoms": ["Corrupted-sap traps left active after battle", "Soil corruption rising near 'victories'", "Healers losing standing to rot-wielders"],
+      "late_stage_consequence": "Whole grove-communities become dependent on the corruption keeping them alive."
+    },
+    {
+      "true_virtue": "Communion",
+      "corrupted_name": "The Silencing Consensus",
+      "corrupted_definition": "Using the network's consensus to bury inconvenient truths and silence dissenting groves.",
+      "how_it_begins": "Elders suppress a frightening communion-finding to avoid panic.",
+      "how_it_spreads": "Comfort in conformity, fear of being cut from the weave, and the convenience of one agreed story.",
+      "who_benefits": ["Stagnant elders", "Anyone hiding a corrupted rootwell"],
+      "who_suffers": ["Whistleblower groves", "Villages whose warnings are silenced"],
+      "faction_most_vulnerable": ["Circle of Elders", "Rootwarden Conservators"],
+      "npc_archetypes_most_vulnerable": ["Conflict-averse elder", "Loyal communion-reader"],
+      "keeper_benefit": "Lets corrupted rootwells grow unspoken until they are unstoppable.",
+      "void_lie": "A united forest cannot afford a frightened branch.",
+      "visible_symptoms": ["Communion findings that never reach the Commons", "Groves cut from the weave for dissent", "Warnings arriving too late"],
+      "late_stage_consequence": "Verdance learns of catastrophes only when they have already spread."
+    },
+    {
+      "true_virtue": "Stewardship",
+      "corrupted_name": "Frozen Patience",
+      "corrupted_definition": "Stagnation disguised as patience — refusing necessary action until the cycle decays.",
+      "how_it_begins": "An elder counsels waiting for the cycle to heal a wound that is actually accelerating.",
+      "how_it_spreads": "Cultural reverence for patience and fear of fire-like Radiance haste.",
+      "who_benefits": ["The corruption itself", "Rivals exploiting Verdance's slowness"],
+      "who_suffers": ["Villages waiting for help that never comes", "Healers overruled by 'patience'"],
+      "faction_most_vulnerable": ["Rootwarden Conservators", "Circle of Elders"],
+      "npc_archetypes_most_vulnerable": ["Tradition-bound elder", "Risk-averse steward"],
+      "keeper_benefit": "Buys the rot the one thing it needs most: time.",
+      "void_lie": "Haste is how Radiance burns. Wait, and the cycle will provide.",
+      "visible_symptoms": ["Endless deliberation as a wound spreads", "Aid arriving a season too late", "Reformers branded as reckless"],
+      "late_stage_consequence": "A healable wound becomes a permanent scar in the weave."
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "Verdance",
+    "primary_virtue_targeted": "Restoration",
+    "secondary_virtues_targeted": ["Communion", "Stewardship"],
+    "corruption_strategy": "Force a choice between letting villages die and wielding the rot, so either way the weave is damaged and Verdance distrusts itself.",
+    "preferred_crisis_conditions": ["Abyss soul-harvest on the border", "A grove cornered with no clean option", "A famine of healing sap"],
+    "preferred_faction_targets": ["Hollow Pact", "Frightened border villages"],
+    "preferred_npc_targets": ["Grieving defenders", "Cornered grove-keepers", "Elders afraid of panic"],
+    "soul_flow_damage_type": ["Name-harvest from the weave", "Memory-strands silenced", "Corrupted rootwells"],
+    "domain_stone_damage_type": "Strands torn from the Heartroot Loom faster than the cycle can regrow them.",
+    "common_lie": "The rot is just another season; learn to ride it.",
+    "long_term_goal": "Turn the living restorative network into a conduit for corruption, cracking the prison from inside Verdance's own roots."
+  },
+
+  "void_temptation_pattern": {
+    "domain": "Verdance",
+    "temptation_phrase": "If rot saved them, why call it corruption?",
+    "immediate_benefit": "Corrupted sap grants potent, instant growth or lethal entangling traps without the slow tithe to the cycle.",
+    "hidden_cost": "Each use deepens the rootwell wound it came from and binds a strand of the user's memory to the rot.",
+    "identity_damage": "The user begins to think in the rot's logic, mistaking mastery of the wound for healing it.",
+    "soul_flow_damage": "Names near the use point are loosened from the weave and pooled in the corrupted rootwell.",
+    "reality_damage": "Soil and season warp locally; plants grow wrong and out of time.",
+    "faction_most_likely_to_accept": ["Hollow Pact", "Desperate border villages"],
+    "npc_archetypes_most_likely_to_accept": ["Cornered defender", "Grieving healer who lost everyone", "Ambitious rot-researcher"],
+    "visible_stage_1_symptoms": ["Unnaturally fast growth", "Sap with a faint dark sheen"],
+    "visible_stage_2_symptoms": ["Soil corruption spreading", "The user hears the rootwell at night", "Plants blooming out of season"],
+    "visible_stage_3_symptoms": ["A corrupted rootwell speaks the user's own name", "Whole groves dependent on the rot", "Children dreaming the rot's stolen memories"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "Verdance",
+      "system_name": "Sap Weaving",
+      "source": "Living sap drawn from the Heartroot Loom and tithed back into the cycle.",
+      "practitioners": ["Sap weavers", "Grove healers", "Rootwarden Conservators"],
+      "institutions": ["The Sap Commons", "Grove infirmaries", "Conservator chapters"],
+      "training_access": "common",
+      "battlefield_use": ["Entangling growth", "Healing the wounded", "Barrier brambles"],
+      "economic_use": ["Healing sap production", "Grown medicine", "Living architecture"],
+      "political_use": ["Controlling sap distribution", "Healing as diplomacy"],
+      "spiritual_use": ["Composting grief into growth", "Blessing seed commons"],
+      "civilian_use": ["Farming", "Mending", "Everyday healing"],
+      "cost_types": ["life_force", "resource_consumption", "corruption"],
+      "abuse_modes": ["Drawing sap faster than a grove regrows", "Weaponizing corrupted sap", "Hoarding the commons"],
+      "scarcity_level": 38,
+      "public_trust": 74,
+      "faction_control": { "Sap Commons": 70, "Rootwarden Conservators": 60, "Hollow Pact": 30 },
+      "keeper_corruption_vector": "Reframe corrupted sap as a faster, stronger weave.",
+      "void_enhancement_vector": "Offer corrupted-sap potency without the tithe, deferring the cost into the weave."
+    },
+    {
+      "domain": "Verdance",
+      "system_name": "Root Communion",
+      "source": "The Heartroot Loom's memory-strands, read and spoken through rootwells.",
+      "practitioners": ["Communion Grovekeepers", "Elders", "Naming-keepers"],
+      "institutions": ["Communion groves", "Rootwell sanctums"],
+      "training_access": "restricted",
+      "battlefield_use": ["Root-borne early warning", "Coordinating distant defenses"],
+      "economic_use": ["Network-wide trade and quota coordination"],
+      "political_use": ["Consensus-building", "Sacred communion judgments"],
+      "spiritual_use": ["Naming-into-the-weave", "Recovering erased names", "Cleansing wounded rootwells"],
+      "civilian_use": ["Messages between distant kin", "Seasonal omens"],
+      "cost_types": ["memory", "oath_burden", "domain_stone_strain"],
+      "abuse_modes": ["Silencing dissenting groves", "Reading a grove's memory without consent", "Harvesting names"],
+      "scarcity_level": 55,
+      "public_trust": 66,
+      "faction_control": { "Communion Grovekeepers": 85, "Circle of Elders": 55, "Hollow Pact": 15 },
+      "keeper_corruption_vector": "Turn consensus into the Silencing Consensus.",
+      "void_enhancement_vector": "Offer access to harvested names as borrowed power."
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "Life-Tithe",
+      "cost_type": "life_force",
+      "description": "Sap weaving draws on the weaver's own vitality, repaid into the cycle over the season.",
+      "minor_effect": "Tiredness and a day's wilting of vigor.",
+      "moderate_effect": "Seasonal frailty; the weaver must rest within the grove to recover.",
+      "severe_effect": "Permanent vitality loss, accepted as a gift to the cycle.",
+      "recovery_method": "Rest within a healthy grove and communal renewal.",
+      "permanent_risk": "Death, or a hollowness that tempts the weaver toward corrupted shortcuts.",
+      "factions_that_accept_this_cost": ["Rootwarden Conservators", "Sap Commons"],
+      "factions_that_reject_this_cost": ["Hollow Pact (prefer corruption's cost-free potency)"]
+    },
+    {
+      "cost_name": "Memory Given",
+      "cost_type": "memory",
+      "description": "Deep root communion requires the speaker to give a memory into the weave.",
+      "minor_effect": "A faded recollection, willingly surrendered.",
+      "moderate_effect": "Gaps in personal memory that the weave now holds.",
+      "severe_effect": "Loss of self-defining memories; identity destabilizes.",
+      "recovery_method": "Retrieving the memory from the weave through patient communion.",
+      "permanent_risk": "Memory fracture the Keeper can exploit, or a name lost to a corrupted well.",
+      "factions_that_accept_this_cost": ["Communion Grovekeepers"],
+      "factions_that_reject_this_cost": ["Pragmatic traders", "Hollow Pact"]
+    },
+    {
+      "cost_name": "Rot Debt",
+      "cost_type": "corruption",
+      "description": "Corrupted sap grants potency without the life-tithe, but binds the user to the wound it came from.",
+      "minor_effect": "A faint dark sheen on the user's weave; unease.",
+      "moderate_effect": "Soil corruption near the user; the rootwell begins to know them.",
+      "severe_effect": "The user's name loosens from the weave; the corruption thinks through them.",
+      "recovery_method": "Cleansing communion, returning to the cycle, and rarely full reversal.",
+      "permanent_risk": "Identity dissolution into the rot; a corrupted rootwell that speaks the user's name.",
+      "factions_that_accept_this_cost": ["Hollow Pact"],
+      "factions_that_reject_this_cost": ["Rootwarden Conservators", "Communion Grovekeepers", "Sap Commons"]
+    }
+  ],
+
+  "government": {
+    "domain": "Verdance",
+    "government_type": "Decentralized consensus-confederation of grove-communities bound by the living network.",
+    "ruling_body": "The Circle of Elders, convened at the Heartroot grove.",
+    "religious_authority": "Communion Grovekeepers, who read tree-memory and render sacred judgments.",
+    "military_authority": "The Bramble Thornguard, raised seasonally from the groves.",
+    "economic_authority": "The Sap Commons, which sets sap and seed quotas.",
+    "magical_authority": "Rootwarden Conservators, who certify cleansing and police corrupted-sap use.",
+    "local_authorities": ["Grove-keepers", "Naming-keepers", "Refuge wardens"],
+    "succession_or_selection_method": "Elders are chosen by their grove and confirmed in communion; influence follows restored trust, not heredity.",
+    "legitimacy_source": "Consensus carried through the weave and a record of what one has restored.",
+    "known_cracks_in_legitimacy": ["Consensus too slow for fast-moving rot", "Border groves feeling abandoned by the center", "Silenced warnings eroding trust in the elders"],
+    "emergency_powers": ["Quarantine of a corrupted grove", "Temporary Thornguard levy", "Communion lockdown of a wounded rootwell"],
+    "corruption_vulnerabilities": ["The Silencing Consensus", "Frozen Patience", "Hollow Pact infiltration of desperate groves"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "Verdance",
+      "class_name": "Communion Grovekeepers",
+      "description": "Readers of tree-memory and keepers of the weave's sacred judgments.",
+      "privileges": ["Sacred authority", "Access to deep communion", "Arbiter status"],
+      "burdens": ["Memory-cost of deep communion", "Blamed when warnings come too late", "Bound to neutrality"],
+      "magic_access": "Full root communion.",
+      "military_obligation": "Counsel and warning, not arms.",
+      "economic_role": "Coordinate the commons through the weave.",
+      "political_voice": "High, as sacred arbiters.",
+      "common_grievances": ["Pressured to join the Silencing Consensus", "Losing memory in service"],
+      "faction_affinities": ["Communion Grovekeepers", "Rootwarden Conservators"],
+      "upward_mobility_paths": ["Demonstrated wise judgment", "Recovering lost names"],
+      "downward_mobility_risks": ["Memory fracture", "Complicity in silencing"]
+    },
+    {
+      "domain": "Verdance",
+      "class_name": "Sap-folk (commoners)",
+      "description": "Healers, farmers, sap-tappers, and grove laborers — the body of Verdance.",
+      "privileges": ["Share in the sap and seed commons", "Voice in their grove's consensus"],
+      "burdens": ["First to suffer when groves are quarantined or harvested", "Pressured toward corrupted shortcuts when cornered"],
+      "magic_access": "Common sap weaving.",
+      "military_obligation": "Seasonal Thornguard levy.",
+      "economic_role": "Sap, medicine, and food production.",
+      "political_voice": "Through grove consensus.",
+      "common_grievances": ["Border groves feel abandoned", "Warnings silenced by distant elders"],
+      "faction_affinities": ["Sap Commons", "Hollow Pact (when desperate)"],
+      "upward_mobility_paths": ["Becoming a grove-keeper or naming-keeper", "Restoring a wounded grove"],
+      "downward_mobility_risks": ["Grove quarantine", "Falling into rot debt"]
+    },
+    {
+      "domain": "Verdance",
+      "class_name": "Rootwarden Conservators",
+      "description": "Guardians of the cycle who cleanse corruption and police rot-wielding.",
+      "privileges": ["Authority to quarantine and cleanse", "Respect as protectors of soul-flow"],
+      "burdens": ["Hated by those they overrule", "Crushed between patience and urgency"],
+      "magic_access": "Sap weaving and cleansing rites.",
+      "military_obligation": "Lead containment of corrupted sites.",
+      "economic_role": "Certify which groves are safe to harvest.",
+      "political_voice": "High in matters of corruption.",
+      "common_grievances": ["Split between cleansing and the Hollow Pact's results", "Accused of Frozen Patience"],
+      "faction_affinities": ["Rootwarden Conservators", "Communion Grovekeepers"],
+      "upward_mobility_paths": ["Successful cleansing of a major rootwell"],
+      "downward_mobility_risks": ["Being seen to rely on corruption when afraid"]
+    }
+  ],
+
+  "economy": {
+    "domain": "Verdance",
+    "primary_resources": ["Healing sap", "Grown medicine", "Seed commons stock"],
+    "secondary_resources": ["Timber (stewarded)", "Living-grown architecture", "Grove fibers and dyes"],
+    "sacred_resources": ["Heartroot sap", "Named seeds carrying memory"],
+    "scarce_resources": ["Uncorrupted sap near the border", "Sunstone tools (imported from Radiance)", "Sky-freight capacity"],
+    "export_goods": ["Healing sap", "Grown medicine", "Seeds"],
+    "import_needs": ["Radiance Sunstone tools and arms", "Tempest sky-freight", "Sanctuary manufactured goods"],
+    "trade_routes": ["The Sap Road to Sanctuary markets", "Grove-to-grove root caravans", "Border sap-markets near Radiance"],
+    "economic_institutions": ["The Sap Commons", "Seed Commons", "Grove quota councils"],
+    "black_market_goods": ["Corrupted sap", "Stolen named seeds", "Unsanctioned potency weaves"],
+    "wartime_economy_behavior": "Redirects sap to the wounded and may embargo exports to pressure reckless neighbors, accepting its own scarcity.",
+    "famine_or_shortage_risks": ["Corrupted rootwells poisoning sap supply", "Over-harvest to meet Radiance demand", "Border groves cut off by Abyss raids"],
+    "exploitative_practices": ["Over-tapping border groves for export", "Hollow Pact selling rot-potency to the desperate"],
+    "keeper_attack_vector": "Engineer a healing-sap famine so Verdance over-harvests or turns to corrupted sap to meet demand."
+  },
+
+  "military_doctrine": {
+    "domain": "Verdance",
+    "doctrine_name": "The Patient Bramble",
+    "strategic_identity": "Entangle, endure, and outlast; deny ground without poisoning it.",
+    "preferred_battlefield": ["Dense groves", "Root-laced terrain", "Defensive refuges"],
+    "primary_units": ["Thornguard levies", "Sap-weaver medics", "Bramble-warders"],
+    "elite_units": ["Conservator cleansers", "Grovewalkers (root-borne scouts)"],
+    "support_units": ["Communion warning-readers", "Seed-bearers", "Refuge wardens"],
+    "magical_assets": ["Entangling growth", "Healing sap", "Root-borne early warning"],
+    "defensive_strategy": "Layered living barriers, ambush from the brush, and tireless attrition.",
+    "offensive_strategy": "Rare and reluctant; reclaim and cleanse rather than conquer.",
+    "logistics_strategy": "The root network carries warning and counsel faster than any foe; supply is grown locally.",
+    "intelligence_strategy": "Root communion gives unmatched early warning but is blind where the weave is silenced or corrupted.",
+    "taboo_tactics": ["Scorched earth", "Weaponizing corrupted sap", "Poisoning a grove to deny it"],
+    "desperate_tactics": ["Corrupted-sap traps (Hollow Pact)", "Flooding a valley to drown a threat", "Quarantine by burning a strand of the weave"],
+    "common_weaknesses": ["Slow to act offensively", "Blind where the weave is corrupted", "Vulnerable to fire and to patience-as-paralysis"],
+    "keeper_exploit": "Corner a grove so its only fast option is the rot.",
+    "void_escalation": "Offer corrupted-sap traps that win the skirmish and lose the soil."
+  },
+
+  "warfront_behavior": {
+    "domain": "Verdance",
+    "typical_warfront_goals": ["Cleanse and reclaim corrupted ground", "Protect border groves from soul-harvest", "Preserve the soil for future seasons"],
+    "preferred_escalation_methods": ["Tightening living barriers", "Root-borne mobilization", "Cutting off an enemy's supply through overgrowth"],
+    "preferred_deescalation_methods": ["Ceasefires that allow cleansing", "Sap-for-peace healing offers"],
+    "negotiation_style": "Slow, consensus-bound, and mistrustful of haste; values demonstrated restoration.",
+    "ceasefire_conditions": ["Corruption containable", "Soil not poisoned", "Harvested names recoverable"],
+    "betrayal_conditions": ["A partner spreads corruption", "A grove is poisoned to win", "Harvested names are sold to Abyss"],
+    "alliance_conditions": ["Shared threat to the weave", "A partner who cleanses rather than burns", "Reliable defense of border groves"],
+    "occupation_style": "Reclaim-and-heal; risks Frozen Patience leaving wounds half-treated.",
+    "resistance_style": "Endless entangling attrition; the forest itself fights and does not tire."
+  },
+
+  "major_locations": [
+    {
+      "name": "The Heartroot Grove",
+      "domain": "Verdance",
+      "location_type": "Sacred capital grove and seat of consensus",
+      "description": "The oldest grove, where the Heartroot Loom's strands converge into a living cathedral of root and memory.",
+      "political_function": "Seat of the Circle of Elders and communion judgments.",
+      "economic_function": "Hub of the seed and sap commons.",
+      "magical_function": "Strongest node of the living network; source of deep communion.",
+      "military_function": "Symbolic heart; lightly defended, heavily warded by the weave.",
+      "spiritual_function": "Site of naming-into-the-weave and the recovery of lost names.",
+      "civilian_function": "Pilgrimage grove and gathering place for the consensus.",
+      "controlling_factions": ["Circle of Elders", "Communion Grovekeepers"],
+      "contested_by": ["Hollow Pact sympathizers (ideologically)", "Frozen-Patience traditionalists vs reformers"],
+      "key_npcs": ["Elder Maera", "Auralis (chief Communion Grovekeeper)"],
+      "resources_present": ["Heartroot sap", "Named seeds"],
+      "magic_systems_present": ["Sap Weaving", "Root Communion"],
+      "known_secrets": ["A silenced communion-finding about an accelerating border wound"],
+      "location_state": {
+        "stability": 70,
+        "danger": 28,
+        "corruption": 20,
+        "morale": 62,
+        "resources": 68,
+        "secrecy": 60,
+        "military_pressure": 30,
+        "spiritual_health": 71
+      },
+      "keeper_attack_vector": "Let the Silencing Consensus bury the border warning until the rot reaches the Heartroot.",
+      "void_symptoms": ["A faint wrong note in deep communion", "Named seeds occasionally sprouting strangers' memories"],
+      "quest_hooks": ["Uncover the silenced finding", "Recover a name the weave has lost"]
+    },
+    {
+      "name": "Thornveil Refuge",
+      "domain": "Verdance",
+      "location_type": "Border refuge grove sheltering refugees from the Abyss frontier",
+      "description": "A bramble-walled sanctuary crowded with refugees, shadowed by a corrupted rootwell waking beneath it.",
+      "political_function": "Forward warden-post and refugee shelter.",
+      "economic_function": "Strained sap and food distribution point.",
+      "magical_function": "Site of an awakening corrupted rootwell (the Rootwell Awakening clock).",
+      "military_function": "Front line against Abyss raids and Hollow Pact incursion.",
+      "spiritual_function": "Where the weave's wound is most audible; names whispered at night.",
+      "civilian_function": "Home to refugees, healers, and the grieving.",
+      "controlling_factions": ["Rootwarden Conservators", "Refuge wardens"],
+      "contested_by": ["Hollow Pact", "Abyss raiders"],
+      "key_npcs": ["Thalen Mossguard (warden)", "Nymara Hollowbloom (Hollow Pact)", "Rook (a frightened informant)"],
+      "resources_present": ["Dwindling clean sap", "Refugee labor"],
+      "magic_systems_present": ["Sap Weaving", "Corrupted-sap weaving (illicit)"],
+      "known_secrets": ["The rootwell whispers stolen names", "Some wardens quietly tolerate Hollow Pact traps"],
+      "location_state": {
+        "stability": 42,
+        "danger": 64,
+        "corruption": 48,
+        "morale": 40,
+        "resources": 30,
+        "secrecy": 50,
+        "military_pressure": 68,
+        "spiritual_health": 35
+      },
+      "keeper_attack_vector": "Corner the refuge so its defenders embrace corrupted-sap traps to survive.",
+      "void_symptoms": ["The rootwell speaks at night", "Healing sap curdling", "Children dreaming borrowed memories"],
+      "quest_hooks": ["Cleanse or seal the waking rootwell", "Decide whether to expose the wardens tolerating Hollow Pact traps", "Recover the erased name buried beneath the root archive"]
+    }
+  ],
+
+  "culture": {
+    "domain": "Verdance",
+    "daily_life_summary": "Life follows the season and the sap-tide; work is communal, grief is composted into growth, and the weave is always listening.",
+    "family_customs": "Families plant a named seed for each newborn, linking them to the grove's memory.",
+    "love_and_marriage_customs": "Couples graft a shared sapling; its health is read as an omen of the bond.",
+    "education_system": "Children learn the weave's songs and the cycle's lore from naming-keepers before letters.",
+    "work_and_apprenticeship": "Apprentices learn from a grove-keeper through the seasons; knowledge is shared, not owned.",
+    "food_and_market_life": "Sap-teas, grove fruit, and grown breads; markets trade in seeds, medicine, and memory-tokens.",
+    "festivals": ["The First Sap", "Naming Day", "The Composting (grief-into-growth festival)"],
+    "funeral_or_death_customs": "The dead are named into the weave and their seed planted, so their memory feeds the next season.",
+    "public_honors": ["The Restorer's Leaf", "A name kept bright in the weave", "Stewardship of a sacred grove"],
+    "taboos": ["Wearing the wound instead of healing it", "Harvesting a name", "Poisoning a grove to win"],
+    "common_sayings": ["Tend the wound, do not wear it.", "One root feels what the whole forest fears.", "Grief is just growth that has not happened yet."],
+    "children_common_beliefs": ["The roots remember your name", "A planted seed carries who you were", "The rootwell only whispers to those who listen too long"],
+    "class_differences": ["Grovekeepers revered for memory borne; sap-folk bear the harvest's risk", "Border groves feel forgotten by the inner forest"]
+  },
+
+  "religion": {
+    "domain": "Verdance",
+    "central_belief": "Life is a cycle; what is patiently restored rejoins the weave, and what is harvested or commanded is torn from it.",
+    "sacred_symbols": ["The Heartroot Loom", "The named seed", "The unbroken green spiral"],
+    "major_rituals": ["Naming-into-the-weave", "Cleansing of a wounded rootwell", "The Composting", "Communion judgment"],
+    "common_prayers_or_oaths": ["Let me be a healthy root.", "I return your name to the green.", "Tend, do not command."],
+    "priestly_roles": ["Communion Grovekeeper", "Naming-keeper", "Cleansing Conservator"],
+    "heresies": ["The Rot Communion (corruption as a truer cycle)", "The Frozen Grove (patience as the only virtue)"],
+    "sacred_taboos": ["Harvesting names", "Wielding corrupted sap as a weapon", "Silencing the weave's warnings"],
+    "relationship_to_death": "Death is a return to the weave; a name kept bright is a death made whole.",
+    "relationship_to_sacrifice": "Sacrifice is the life-tithe to the cycle, not the spectacle of self-destruction.",
+    "relationship_to_memory": "Memory is the weave itself; to lose a name is the deepest death.",
+    "relationship_to_truth": "Truth must travel the roots; silencing it is a sacred wound.",
+    "keeper_corruption_strategy": "Promote the Rot Communion and the Frozen Grove as deeper faith.",
+    "void_false_revelation_style": "A green and gentle vision that the rot is simply the cycle the elders fear."
+  },
+
+  "faction_index": {
+    "domain": "Verdance",
+    "factions": [
+      { "name": "Circle of Elders", "short_doctrine": "Consensus stewardship of the cycle through the living weave.", "class_base": "Grove elders and naming-keepers", "power_base": "Network consensus and tradition.", "main_rival": "Hollow Pact", "keeper_vulnerability": "Frozen Patience and the Silencing Consensus.", "player_use": "Lawful patron for patient, consensus-built paths." },
+      { "name": "Rootwarden Conservators", "short_doctrine": "Cleanse corruption; never command it.", "class_base": "Cleansers and grove-keepers", "power_base": "Authority over quarantine and cleansing.", "main_rival": "Hollow Pact", "keeper_vulnerability": "Split between cleansing ideals and Hollow Pact results.", "player_use": "Allies for soul-flow healing and anti-corruption work." },
+      { "name": "Communion Grovekeepers", "short_doctrine": "Guard the weave's memory and render sacred judgment.", "class_base": "Tree-memory readers", "power_base": "Sacred arbitration and the network's truth.", "main_rival": "Anyone harvesting names", "keeper_vulnerability": "Pressured into silencing inconvenient findings.", "player_use": "Arbiters, lore-source, and recoverers of lost names (Auralis)." },
+      { "name": "Sap Commons", "short_doctrine": "Healing sap is a shared commons, not a monopoly.", "class_base": "Healers, sap-tappers, traders", "power_base": "Economic control of sap and medicine.", "main_rival": "Hoarders and over-harvesters", "keeper_vulnerability": "Sap famine pushing them toward corrupted supply.", "player_use": "Source of healing, trade, and reform-minded allies." },
+      { "name": "Bramble Thornguard", "short_doctrine": "Endure and entangle; defend the groves without poisoning them.", "class_base": "Seasonal levies and bramble-warders", "power_base": "Defensive military force.", "main_rival": "Abyss raiders", "keeper_vulnerability": "Cornered into corrupted-sap traps.", "player_use": "Defensive allies and frontier muscle." },
+      { "name": "Hollow Pact", "short_doctrine": "Survival justifies wielding the wound; the rot is a weapon, not a sin.", "class_base": "Desperate border survivors and rot-researchers", "power_base": "Corrupted-sap potency and zealot conviction.", "main_rival": "Rootwarden Conservators", "keeper_vulnerability": "Already a conduit for the rot it claims to master.", "player_use": "Dangerous edge faction; recruiter of the desperate; tragic ally or antagonist (Nymara Hollowbloom)." }
+    ]
+  },
+
+  "npc_role_index": [
+    { "domain": "Verdance", "role_name": "Ruler or supreme authority", "purpose_in_world": "Embody patient consensus stewardship.", "purpose_in_gameplay": "Lawful patron and moral counterweight to haste.", "likely_factions": ["Circle of Elders"], "likely_conflicts": ["Patience vs urgency", "Silenced warnings"], "relationship_options": ["Mentor", "Debtor (Elder Maera)", "Conflicted ally"], "death_impact": "Consensus fractures; border groves drift toward the Hollow Pact." },
+    { "domain": "Verdance", "role_name": "Spiritual authority", "purpose_in_world": "Read and protect the weave's memory.", "purpose_in_gameplay": "Lore-source, arbiter, and name-recoverer.", "likely_factions": ["Communion Grovekeepers"], "likely_conflicts": ["Pressure to silence findings"], "relationship_options": ["Guide (Auralis)", "Judge", "Ally"], "death_impact": "The weave's truth dims; corrupted rootwells spread unspoken." },
+    { "domain": "Verdance", "role_name": "Military commander", "purpose_in_world": "Hold the border without poisoning the soil.", "purpose_in_gameplay": "Frontier patron facing impossible choices.", "likely_factions": ["Bramble Thornguard", "Rootwarden Conservators"], "likely_conflicts": ["Whether to tolerate Hollow Pact traps"], "relationship_options": ["Ally (Thalen Mossguard)", "Reluctant compromiser"], "death_impact": "Thornveil's defense collapses; refugees scatter." },
+    { "domain": "Verdance", "role_name": "Magic expert", "purpose_in_world": "Master cleansing and the limits of sap weaving.", "purpose_in_gameplay": "Teacher and corruption-danger explainer.", "likely_factions": ["Rootwarden Conservators"], "likely_conflicts": ["Cleansing vs rot-mastery"], "relationship_options": ["Tutor", "Skeptic"], "death_impact": "Cleansing knowledge is lost; rot-mastery spreads." },
+    { "domain": "Verdance", "role_name": "Healer", "purpose_in_world": "Tend the wounded against scarce clean sap.", "purpose_in_gameplay": "Emotional core and consent-of-the-cycle voice (Elder Maera archetype).", "likely_factions": ["Sap Commons", "Rootwarden Conservators"], "likely_conflicts": ["Saving life vs violating clean soul passage"], "relationship_options": ["Romance", "Grateful-but-afraid (Maera)", "Conscience"], "death_impact": "A grove loses its heart; grief curdles toward the Hollow Pact." },
+    { "domain": "Verdance", "role_name": "Rival or edge-faction character", "purpose_in_world": "Argue that survival justifies the wound.", "purpose_in_gameplay": "Tempter, recruiter, and tragic mirror.", "likely_factions": ["Hollow Pact"], "likely_conflicts": ["Against Conservators and the player"], "relationship_options": ["Tragic foe", "Tempter", "Possible defector (Nymara Hollowbloom)"], "death_impact": "May become a martyr that swells Hollow Pact ranks." },
+    { "domain": "Verdance", "role_name": "Young stakes character", "purpose_in_world": "Inherit a wounded or healed weave.", "purpose_in_gameplay": "Emotional stakes; rot-debt risk.", "likely_factions": ["Sap-folk"], "likely_conflicts": ["Tempted by corrupted shortcuts to save kin"], "relationship_options": ["Ward", "Protege"], "death_impact": "A name torn from the weave; a wound that quests to heal." },
+    { "domain": "Verdance", "role_name": "Intelligence figure", "purpose_in_world": "Carry warnings (and fears) through the refuge.", "purpose_in_gameplay": "Frightened informant and rumor-source.", "likely_factions": ["Refuge wardens"], "likely_conflicts": ["Debt and fear pushing toward betrayal"], "relationship_options": ["Informant (Rook)", "Potential betrayer"], "death_impact": "A warning goes unheard; a rumor mutates unchecked." }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "Verdance",
+      "target_domain": "Radiance",
+      "public_relationship": "tense",
+      "hidden_relationship": "Mutual dependency soured by fear of Radiance fire.",
+      "primary_conflict": "Radiance burns corruption Verdance would rather cleanse, sometimes without grove consent.",
+      "primary_dependency": "Verdance needs Radiance to hold the Abyss line; Radiance needs Verdance healing sap.",
+      "resource_leverage": "Verdance can embargo healing sap; Radiance can withhold frontier protection.",
+      "magic_tension": "Cycle versus fire; restoration versus purification.",
+      "military_tension": "Radiance haste clashes with Verdance patience at shared fronts.",
+      "historical_wound": "A grove burned without consent during a corruption scare.",
+      "possible_alliance_condition": "A shared Abyss soul-harvest threat on the border.",
+      "possible_break_condition": "Another non-consensual grove burning.",
+      "keeper_exploit": "Turn a containment burn into medical scarcity and mistrust.",
+      "void_exploit": "Whisper to each that the other's method is desecration."
+    },
+    {
+      "source_domain": "Verdance",
+      "target_domain": "Sanctuary",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Warm but strained by refugee burdens.",
+      "primary_conflict": "Refugee flows overwhelm border groves while Sanctuary debates intake.",
+      "primary_dependency": "Sanctuary markets buy Verdance medicine; Verdance relies on Sanctuary manufactured goods.",
+      "resource_leverage": "Verdance medicine for Sanctuary refugee care; Sanctuary trade access for Verdance.",
+      "magic_tension": "Verdance soul-flow caution versus Sanctuary's civic-protection focus.",
+      "military_tension": "Coordinating refugee corridors under Abyss pressure.",
+      "historical_wound": "A refugee column abandoned at a closed border in a past crisis.",
+      "possible_alliance_condition": "Joint humanitarian and soul-flow restoration effort.",
+      "possible_break_condition": "Sanctuary gate closures stranding refugees in corrupted border zones.",
+      "keeper_exploit": "Use refugee panic to spread rumors and overload both domains.",
+      "void_exploit": "Offer the desperate a corrupted-sap shortcut to 'protect' their families."
+    },
+    {
+      "source_domain": "Verdance",
+      "target_domain": "Tempest",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Easy partners who rarely compete.",
+      "primary_conflict": "Minor — pricing of sky-freight for sap exports.",
+      "primary_dependency": "Verdance needs Tempest sky-lift; Tempest values Verdance medicine and seeds.",
+      "resource_leverage": "Tempest can prioritize or delay sap shipments; Verdance can favor other carriers.",
+      "magic_tension": "Little; chosen-bond and living-cycle philosophies coexist.",
+      "military_tension": "Low; occasional coordination against shared Abyss raids.",
+      "historical_wound": "A storm-lost sap convoy blamed unfairly on corsairs.",
+      "possible_alliance_condition": "Abyss threatening both supply lines.",
+      "possible_break_condition": "Tempest corsairs smuggling corrupted sap for profit.",
+      "keeper_exploit": "Seed distrust through a smuggling frame-up.",
+      "void_exploit": "Tempt corsairs to traffic corrupted sap."
+    },
+    {
+      "source_domain": "Verdance",
+      "target_domain": "Abyss",
+      "public_relationship": "war",
+      "hidden_relationship": "Existential enmity; Abyss feeds directly on Verdance's weave.",
+      "primary_conflict": "Abyss soul-harvest tearing names from the border groves.",
+      "primary_dependency": "None overt; Abyss parasitizes the Heartroot Loom's memory.",
+      "resource_leverage": "Abyss studies corrupted-sap residue to engineer counter-corruption.",
+      "magic_tension": "Living memory versus name-harvest and soul-binding.",
+      "military_tension": "Active raids on Thornveil and the border groves.",
+      "historical_wound": "Whole villages whose names were harvested and silenced.",
+      "possible_alliance_condition": "None; only desperate, temporary ceasefires.",
+      "possible_break_condition": "Ceasefires shatter the moment names are harvested.",
+      "keeper_exploit": "Corner groves into wielding the rot, doing Abyss's work for it.",
+      "void_exploit": "Promise that mastering the rot can out-harvest the harvesters."
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "Verdance",
+      "title": "The Thornveil Question",
+      "factions_involved": ["Rootwarden Conservators", "Hollow Pact", "Circle of Elders", "Bramble Thornguard"],
+      "issue": "Whether Thornveil Refuge may use corrupted-sap traps to survive the Abyss siege.",
+      "public_argument": "Nymara: 'Cleansing is a luxury the dying cannot afford.' Thalen and the Conservators: 'A grove that wears the wound becomes it.'",
+      "hidden_argument": "Some wardens already tolerate the traps quietly; elders fear panic if the truth spreads through the weave.",
+      "resources_at_stake": ["Clean sap supply", "The waking rootwell", "Refugee lives", "Soil for future seasons"],
+      "magic_systems_at_stake": ["Sap Weaving", "Root Communion"],
+      "npc_flashpoints": ["Nymara Hollowbloom", "Thalen Mossguard", "Elder Maera"],
+      "possible_player_sides": ["Back the Conservators' patient cleansing", "Allow Hollow Pact traps to save the refuge now", "Broker emergency-only, supervised, post-battle dismantling"],
+      "compromise_possible": true,
+      "keeper_best_outcome": "The traps stay, the soil rots, and the Hollow Pact's doctrine spreads.",
+      "void_best_outcome": "Corrupted-sap mastery becomes normalized along the border.",
+      "peaceful_resolution": "Supervised emergency use with mandatory cleansing and dismantling after the siege.",
+      "violent_resolution": "Conservators and Hollow Pact come to blows inside the besieged refuge.",
+      "third_order_effect": "Hollow Pact recruitment rises; Sap Commons reformers lose public trust.",
+      "fifth_order_effect": "The Keeper gains as Verdance's resistance damages its own soul-flow from within."
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "Verdance",
+    "common_spread_channels": ["Root messages", "Healer circles", "Market seeds", "Children's songs", "Leaf omens", "Refugee hearths"],
+    "trusted_sources": ["Communion Grovekeepers", "Respected healers", "The weave itself"],
+    "distrusted_sources": ["Hollow Pact preachers", "Outsiders", "Anyone who left a grove to die"],
+    "rumor_emotional_styles": ["Grief", "Hope", "Fear", "Awe"],
+    "rumor_suppression_methods": ["The Silencing Consensus", "Communion correction", "Quarantine secrecy"],
+    "rumor_weaponization_methods": ["Hollow Pact survivor stories", "Branding cleansers as cowards who let villages die", "Leaf-omen propaganda"],
+    "rumor_mutation_patterns": ["'Used corrupted sap to save them' becomes 'serves the rot'", "A healer's mercy becomes 'touched a child's soul' then 'stole a child's soul'", "A quarantine becomes 'the elders abandoned us'"],
+    "factions_best_at_rumor_warfare": ["Hollow Pact", "Communion Grovekeepers (defensively)"]
+  },
+
+  "relationship_logic": {
+    "domain": "Verdance",
+    "trust_is_built_by": ["Cleansing a wound at personal cost", "Returning a lost name to the weave", "Honoring consent of the grove"],
+    "trust_is_broken_by": ["Wielding corrupted sap", "Harvesting or silencing names", "Poisoning soil to win"],
+    "enemies_become_tolerable_when": ["They defend the weave against soul-harvest", "They cleanse rather than command corruption"],
+    "allies_become_suspect_when": ["They turn to corrupted shortcuts when afraid", "They silence the weave's warnings", "They over-harvest a grove"],
+    "romance_conflicts": ["A Hollow Pact lover who wields the rot the player opposes", "A Radiance lover whose fire frightens the grove"],
+    "betrayal_triggers": ["A grove poisoned to win", "Names sold to Abyss", "A silenced warning that gets people killed"],
+    "forgiveness_conditions": ["Submitting to communion judgment", "Bearing the life-tithe to cleanse what one harmed", "Returning a harvested name"],
+    "permanent_enemy_conditions": ["Running or feeding a soul-harvest", "Spreading corrupted rootwells for power", "Repeatedly silencing the weave"],
+    "if_then_because_examples": [
+      { "if": "The player weaponizes corrupted sap after promising cleansing", "then": "Rootwarden trust falls and Hollow Pact interest rises", "because": "Verdance distinguishes restoration from becoming the wound." },
+      { "if": "A former enemy cleanses a corrupted rootwell at real cost", "then": "Verdance may downgrade them from enemy to uneasy partner", "because": "Tending the weave proves intent more deeply than past allegiance." },
+      { "if": "The player returns a name the weave had lost", "then": "Communion Grovekeepers' trust rises sharply", "because": "A recovered name is the deepest restoration Verdance knows." },
+      { "if": "An elder silences a true communion warning", "then": "Border groves' trust in the Circle collapses once it surfaces", "because": "Silencing the weave is a sacred wound to communion." },
+      { "if": "The player saves a refuge using corrupted sap instead of cleansing", "then": "Verdance respects the result but suspects the method", "because": "To them, commanding the wound looks like surrendering the cycle to it." },
+      { "if": "A healer uses forbidden soul-magic to save a child", "then": "Verdance feels gratitude and fear together (trust and suspicion both rise)", "because": "Life preserved but clean soul-passage violated is a genuine moral knot, not a simple win." },
+      { "if": "A grove poisons its own soil to deny it to Abyss", "then": "Conservators and elders condemn it even in victory", "because": "Stewardship forbids destroying the cycle to win a season." },
+      { "if": "The player exposes wardens quietly tolerating Hollow Pact traps", "then": "Conservator respect rises but refuge morale drops", "because": "Truth must travel the roots, even when it frightens the desperate." },
+      { "if": "Abyss begins harvesting souls from Verdance border villages", "then": "Rootwardens tolerate Hollow Pact ambushes for one mission", "because": "Abyss ownership of Verdance souls is a greater violation than temporary cooperation with extremists." },
+      { "if": "The player submits a hard choice to communion judgment", "then": "Verdance factions grant more latitude on the outcome", "because": "Communion shares the weight of the decision and the blame." },
+      { "if": "A Radiance ally cleanses rather than burns a corrupted grove", "then": "Verdance suspicion of Radiance fire eases into conditional trust", "because": "Honoring the cycle over haste is the trust Verdance most wants to see." }
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "Verdance",
+    "starting_bonuses": ["Minor sap weaving", "A named seed linking you to a home grove", "Standing in the Sap Commons"],
+    "starting_burdens": ["A home grove under Abyss pressure", "Expectation to choose cleansing over haste", "Watched by Conservators for any rot-debt"],
+    "default_domain_resonance": { "Radiance": 40, "Verdance": 65, "Tempest": 50, "Sanctuary": 55, "Abyss": 10 },
+    "starting_faction_assumptions": ["Presumed loyal to the Circle of Elders", "Courted by Sap Commons reformers", "Tempted by the Hollow Pact if your grove is dying"],
+    "common_npc_reactions": ["Trust if you cleanse and honor consent", "Suspicion if you command the wound", "Hope projected onto you by border groves"],
+    "starting_rumors": ["'Grew from a grove the Abyss has its eyes on'", "'Carries a named seed that hums strangely'"],
+    "starting_magic_access": ["Sap Weaving (minor)", "Shallow root communion"],
+    "restricted_magic_access": ["Corrupted-sap weaving (forbidden)", "Name-harvest (forbidden)"],
+    "unique_origin_questions": ["Whose name does your seed carry?", "Have you ever touched corrupted sap to survive?", "Do you trust the elders' patience?"],
+    "possible_dark_secret_options": ["You once used a corrupted-sap trap and hid it", "Your grove silenced a warning to protect you", "You carry a name the weave is searching for"]
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "The player uses corrupted-sap traps to stop an Abyss patrol attacking Thornveil Refuge.",
+      "domain_interpretation": "Verdance sees the refuge defended by weaponizing the wound instead of cleansing it.",
+      "faction_interpretation": "Nymara Hollowbloom praises the player; Thalen Mossguard demands an explanation; refugees argue over survival versus corruption.",
+      "immediate_result": "The patrol is defeated and the refuge survives.",
+      "first_order": "Hollow Pact respect +12; Rootwarden suspicion +10; soil corruption +4.",
+      "second_order": "Refugees split; Conservators open an inquiry; the rootwell stirs.",
+      "third_order": "Hollow Pact recruitment increases; Sap Commons reformers lose some public trust; a rumor spreads that Rootwardens secretly rely on corruption when afraid.",
+      "fourth_order": "Rootwarden authority weakens; Hollow Pact cells gain shelter in desperate villages; Abyss studies the trap residue to engineer counter-corruption.",
+      "fifth_order": "The Keeper benefits because Verdance's resistance begins damaging its own soul-flow from within.",
+      "keeper_gain": "A conduit for the rot opens inside Verdance's defenses.",
+      "void_gain": "The Void whispers, 'If rot saved them, why call it corruption?'",
+      "player_intervention_options": ["Cleanse the trap residue", "Publicly name the tactic emergency-only", "Force Hollow Pact to dismantle the traps after the battle", "Seek Auralis's communion judgment", "Create a safer Sap Commons alternative"]
+    },
+    {
+      "root_event": "The player uses forbidden soulbinding to save Elder Maera's dying son.",
+      "domain_interpretation": "Verdance is torn: life preserved, but clean soul-passage through the weave violated.",
+      "faction_interpretation": "Communion Grovekeepers are alarmed; the Sap Commons are grateful; Hollow Pact sees a kindred willingness to break taboo.",
+      "immediate_result": "The child survives, with a soul-scar.",
+      "first_order": "Maera trust +8, fear +12, debt +20, suspicion +6; soul-flow integrity -2.",
+      "second_order": "Maera hides the child; word of the method reaches the Conservators.",
+      "third_order": "A rumor mutates from 'touched the child's soul' toward 'stole a child's soul.'",
+      "fourth_order": "Conservators demand a cleansing review; a corrupted rootwell tugs at the scarred child.",
+      "fifth_order": "If unhealed, the scar becomes a new soul-flow wound the Keeper can exploit.",
+      "keeper_gain": "A soul-scar that loosens a strand of the weave.",
+      "player_intervention_options": ["Seek a clean soul-healing method", "Submit to communion judgment", "Protect the child from the rootwell's pull", "Counter the mutating rumor with the truth", "Help Maera face the Conservators honestly"]
+    },
+    {
+      "root_event": "The player uncovers and exposes a communion-finding the elders silenced about an accelerating border wound.",
+      "domain_interpretation": "Verdance is forced to choose between trust in the elders and the duty of the weave to carry truth.",
+      "faction_interpretation": "Communion Grovekeepers are vindicated; complicit elders are shamed; border groves feel betrayed.",
+      "immediate_result": "The finding spreads through the roots.",
+      "first_order": "Circle of Elders legitimacy -10; border-grove trust in the player +12.",
+      "second_order": "A complicit elder resigns or retaliates; the Conservators mobilize toward the wound.",
+      "third_order": "Resources finally flow to the border, but a season late; reformers gain ground.",
+      "fourth_order": "The wound is contained at higher cost than early action would have required.",
+      "fifth_order": "The Keeper's Frozen-Patience and Silencing exploits are blunted, denying it a quiet victory.",
+      "keeper_gain": "Reduced — unless the elders' fracture spirals into wider distrust.",
+      "player_intervention_options": ["Offer the elders a face-saving path to act", "Protect the original whistleblower grove", "Lead the delayed cleansing yourself", "Mediate between reformers and traditionalists"]
+    },
+    {
+      "root_event": "Abyss begins openly harvesting souls from three Verdance border villages.",
+      "domain_interpretation": "Verdance treats name-harvest as the ultimate violation of the weave, overriding normal caution.",
+      "faction_interpretation": "Rootwardens and Hollow Pact find common cause; the Circle debates breaking its own taboos; the Sap Commons fear the front.",
+      "immediate_result": "Names begin going silent in the weave.",
+      "first_order": "Verdance soul-flow integrity -6; Rootwarden–Hollow Pact toleration forms for one mission.",
+      "second_order": "Conservators ambush the harvesters using Hollow Pact tactics they would normally forbid.",
+      "third_order": "The uneasy partnership wins ground but normalizes corrupted-sap use; recruitment rises.",
+      "fourth_order": "Some harvested names are recovered; others are lost; Abyss adapts its engines.",
+      "fifth_order": "Whether the Keeper gains depends on whether the toleration is ended and the rot cleansed afterward.",
+      "keeper_gain": "Conditional: large if the Hollow Pact alliance becomes permanent, small if it is dissolved and cleansed.",
+      "player_intervention_options": ["Recover harvested names from the engines", "Set a hard limit and breaking point on the Hollow Pact toleration", "Lead the post-battle cleansing", "Bring Auralis to re-weave the silenced strands", "Expose Abyss debt-contracts coercing the survivors"]
+    },
+    {
+      "root_event": "Facing a sap famine, the Circle of Elders counsels patience while a healable rootwell wound spreads beneath Thornveil.",
+      "domain_interpretation": "Verdance's reverence for patience collides with the reality of an accelerating wound.",
+      "faction_interpretation": "Traditionalist elders urge waiting; reformers and Conservators demand action; the Hollow Pact offers corrupted sap as a 'solution.'",
+      "immediate_result": "Aid is delayed as deliberation continues.",
+      "first_order": "Rootwell Awakening clock +1; refugee morale -5; reformers' frustration rises.",
+      "second_order": "Healers are overruled by 'patience'; some refugees accept Hollow Pact help in secret.",
+      "third_order": "The rootwell wakes further, whispering stolen names; a rumor spreads that the elders abandoned the border.",
+      "fourth_order": "The wound that could have been cleansed in a day now requires a costly containment.",
+      "fifth_order": "The Keeper gains as Frozen Patience hands the rot exactly what it needed: time.",
+      "keeper_gain": "Time for the corrupted rootwell to become unstoppable.",
+      "player_intervention_options": ["Force an emergency vote in communion", "Cleanse the rootwell before it fully wakes", "Rally reformers and Conservators to act without consensus", "Discredit the Hollow Pact's 'solution' before it takes root", "Find an emergency clean-sap source to relieve the famine"]
+    }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["Can a name fully harvested by Abyss ever be returned to the weave, or only mourned?", "Is a corrupted rootwell a wound to heal or a new, hostile node of the network?"],
+    "political": ["Can consensus governance survive threats that move faster than the weave can deliberate?", "How much emergency power can the Circle take before it stops being Verdance?"],
+    "magic": ["Is there any safe, bounded use of corrupted sap, or is all rot-mastery a slope?", "What exactly is given when a name is 'returned' to the weave?"],
+    "faction": ["Is the Hollow Pact redeemable, or has the rot already mastered it?", "How deep does the Silencing Consensus run in the Circle?"],
+    "npc": ["Can Nymara Hollowbloom be turned from rot-mastery back to cleansing?", "Does Elder Maera's debt make her an ally or a liability under pressure?"],
+    "war_economy": ["How long can the Sap Commons feed both refugees and exports before collapse?", "What happens to Verdance if the border groves fall and their names are harvested?"],
+    "implementation": ["Should rot-debt be a corruption stat, a Void temptation event, or a soul-flow wound — or all three linked?", "How are 'named seeds' modeled — as relics, as memory records, or as NPC links?"]
+  },
+
+  "locked_decisions": [
+    "Verdance magic must always involve the cycle, consent, restoration, or living memory.",
+    "Verdance corruption must distort restoration into rot-mastery and patience into stagnation, never become generic darkness.",
+    "Verdance internal politics must respect the Rootwarden / Hollow Pact / Sap Commons / Communion fracture.",
+    "Harvesting or silencing names in the weave is the violation Verdance cannot forgive.",
+    "Corrupted sap can grant real power, but every use deepens the soul-flow wound it came from.",
+    "Restoration is the cleansing of a wound; wearing or commanding the wound is its corruption."
+  ]
+}

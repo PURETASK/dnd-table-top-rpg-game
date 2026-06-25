@@ -77,7 +77,8 @@ if (!result.ok) {
 
 - ✅ `domain-lore/radiance.json` — full Radiance bible (Chunk 4 §44's recommended
   first domain), validated against `DomainBible` via `npm run check-lore`.
-- ⬜ Verdance (MVP vertical-slice target), Tempest, Sanctuary, Abyss, Void layer.
+- ✅ `domain-lore/verdance.json` — full Verdance bible (the MVP vertical-slice target).
+- ⬜ Tempest, Sanctuary, Abyss, Void layer.
 
 ## Not yet built (intentional next steps)
 
