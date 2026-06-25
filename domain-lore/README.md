@@ -14,7 +14,7 @@ immutable, kept separate from mutable campaign state (Chunk 2 §36, Chunk 3 §2)
 | `verdance.json` | ✅ drafted — MVP vertical-slice target |
 | `tempest.json` | ✅ drafted (validates against `DomainBible`) |
 | `sanctuary.json` | ✅ drafted (validates against `DomainBible`) |
-| `abyss.json` | _todo_ |
+| `abyss.json` | ✅ drafted — the coherently-evil domain |
 | `void-layer.json` | _todo_ |
 
 ## Authoring a bible

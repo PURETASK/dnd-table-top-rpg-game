@@ -80,7 +80,8 @@ if (!result.ok) {
 - ✅ `domain-lore/verdance.json` — full Verdance bible (the MVP vertical-slice target).
 - ✅ `domain-lore/tempest.json` — full Tempest bible.
 - ✅ `domain-lore/sanctuary.json` — full Sanctuary bible.
-- ⬜ Abyss, Void layer.
+- ✅ `domain-lore/abyss.json` — full Abyss bible (the coherently-evil domain).
+- ⬜ Void layer.
 
 ## Not yet built (intentional next steps)
 
