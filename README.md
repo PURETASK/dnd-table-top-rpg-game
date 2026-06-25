@@ -73,8 +73,14 @@ if (!result.ok) {
 3. **First domain bible** — Radiance, then a Verdance vertical slice
    (Chunk 4 §44 recommends Radiance first; the MVP targets Verdance).
 
+## Domain bibles
+
+- ✅ `domain-lore/radiance.json` — full Radiance bible (Chunk 4 §44's recommended
+  first domain), validated against `DomainBible` via `npm run check-lore`.
+- ⬜ Verdance (MVP vertical-slice target), Tempest, Sanctuary, Abyss, Void layer.
+
 ## Not yet built (intentional next steps)
 
-- Domain bible content (`domain-lore/radiance.json`, …) — schema is ready, prose is not.
+- Remaining domain bible content — schema is ready, prose is not.
 - The VERDAX turn engine and the state-apply pipeline that walks `STATE_UPDATE_ORDER`.
 - A DB client / repository layer over the migration.

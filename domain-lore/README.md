@@ -10,7 +10,7 @@ immutable, kept separate from mutable campaign state (Chunk 2 §36, Chunk 3 §2)
 | File | Status |
 |------|--------|
 | `_template.json` | authoring skeleton (not validated) |
-| `radiance.json` | _todo — recommended first per Chunk 4 §44_ |
+| `radiance.json` | ✅ drafted (validates against `DomainBible`) |
 | `verdance.json` | _todo — MVP vertical slice target_ |
 | `tempest.json` | _todo_ |
 | `sanctuary.json` | _todo_ |
