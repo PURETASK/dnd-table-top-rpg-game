@@ -31,6 +31,16 @@ and **MVP Implementation** — produced in small, locked, versioned chunks.
 - [`abyss.md`](02-domains/abyss.md) — Death-as-administration empire (coherently evil, Keeper-aligned).
 - [`void-layer.md`](02-domains/void-layer.md) — Cross-domain corruption layer (enhancement, parasite, liar).
 
+### `03-factions/` — Faction bibles (FACTION-WEAVER)
+- `verdance/` — Heartmoot, Rootwardens, Sap Commons, Hollow Pact, Seed Guild, Greenwake Communion (the MVP's contain-vs-heal-vs-weaponize-vs-stabilize fork).
+
+### `04-npcs/` — NPC dossiers (LIVING-CASTWRIGHT)
+- `verdance/` — the 10-person Thornveil cast for *The Sap Beneath the Ash* (Maera, Auralis, Thalen, Othren, Sylune, Brom, Venn, Ilyra, Rook, Nymara).
+
+### `05-systems/` — Implementation (Layer 3)
+- [`database-schema.md`](05-systems/database-schema.md) — Prisma schema for the minimum MVP tracking set.
+- [`verdax-turn-engine.md`](05-systems/verdax-turn-engine.md) — the `POST /api/verdax/turn` loop, system prompt, validation, and locked write order.
+
 ## Build order (recommended)
 
 1. **Lock the foundation** (Chunks 1–4). ✅ done
