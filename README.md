@@ -21,6 +21,9 @@ runtime-validated TypeScript foundation.
 | `src/schemas/causality.ts` | **Chunk 4** | Turn-time cause/effect analysis — action categories, witness/faction/NPC interpretation, soul-flow / Keeper / Void checks |
 | `src/schemas/verdax.ts` | Chunk 3 §30–§32 | `VerdaxTurnResponse`, `VerdaxPromptContext`, locked `STATE_UPDATE_ORDER` |
 | `src/validate.ts` | Chunk 3 §37 / Chunk 4 §38 | The validation boundary — never mutate state from unvalidated model output |
+| `src/engine/turn.ts` | Chunk 3 §30–§32 | The turn engine — validates a VERDAX response, then applies it in the locked `STATE_UPDATE_ORDER` |
+| `src/engine/store.ts` | Chunk 3 §35/§37 | `StateStore` interface + `InMemoryStateStore` (a Postgres store over the migration can implement the same interface) |
+| `src/engine/mutations.ts` | Chunk 3 §3/§30 | Turns loose `mechanical_consequences` buckets into clamped, audited field changes |
 | `src/formulas.ts` | Chunk 4 §15, §20 | Alliance / betrayal / rumor-likelihood scoring helpers |
 | `src/constants.ts` | Chunk 3 §35 | MVP vs. secondary tracking sets, lore file list |
 | `domain-lore/` | Chunk 2 §36 | Static-lore JSON seeds (one per domain) + `_template.json` |
@@ -49,19 +52,31 @@ npm run build       # emit dist/
 npm run check-lore  # validate every domain-lore/*.json against DomainBible
 ```
 
-### The validation boundary (the core rule)
+### Applying a turn (validation boundary + locked update order)
 
 ```ts
-import { validateVerdaxResponse, STATE_UPDATE_ORDER } from "realm-of-nexus";
+import { InMemoryStateStore, applyVerdaxTurn } from "realm-of-nexus";
 
-const result = validateVerdaxResponse(rawModelJson); // step 1 of STATE_UPDATE_ORDER
+const store = new InMemoryStateStore(); // or a Postgres-backed StateStore
+// ...seed campaign state...
+
+const result = applyVerdaxTurn(
+  store,
+  { campaign_id: "camp1", character_id: "pc1", turn_number: 1, player_input: "cleanse the rootwell" },
+  rawModelJson // unknown — validated first (Chunk 3 §37)
+);
+
 if (!result.ok) {
-  // reject / repair — never apply unvalidated output to the DB (Chunk 3 §37)
-  console.error(result.issues);
+  console.error(result.issues); // malformed output never mutates state
 } else {
-  applyConsequences(result.data); // follow STATE_UPDATE_ORDER (Chunk 3 §32)
+  // result.steps_executed === STATE_UPDATE_ORDER (Chunk 3 §32)
+  // result.applied_changes is a full audit; result.warnings flags bad references
+  console.log(result.player_facing_panel, result.warnings);
 }
 ```
+
+The engine clamps 0–100 deltas automatically; use `{ deltaRaw }` for hp/gold/xp
+and `{ set }` to assign a value (see `src/engine/mutations.ts`).
 
 ## Build order (from the bible)
 
@@ -89,6 +104,9 @@ All five domains plus the Void layer are now drafted and validated.
 
 ## Not yet built (intentional next steps)
 
-- Remaining domain bible content — schema is ready, prose is not.
-- The VERDAX turn engine and the state-apply pipeline that walks `STATE_UPDATE_ORDER`.
-- A DB client / repository layer over the migration.
+- A **Postgres-backed `StateStore`** over `db/migrations/0001_init.sql` (the
+  in-memory store already implements the interface the engine consumes).
+- The **VERDAX prompt builder** — assembling `VerdaxPromptContext` (Chunk 3 §31)
+  from store state to send the model the relevant slice, not the whole world.
+- The **model call itself** (the LLM that produces the `VerdaxTurnResponse`).
+- Loading the `/domain-lore` bibles into campaign generation / seed state.
