@@ -21,12 +21,27 @@
 | 2E | Abyss Domain Bible | DOMAIN-ARCHIVIST | CANON-WARDEN | 🟡 Draft v1.0 |
 | 2F | Void Corruption Layer | DOMAIN-ARCHIVIST | CANON-WARDEN | 🟡 Draft v1.0 |
 
-## Next sprints (not yet started)
+## Sprint 2 — Verdance MVP (depth-first) — 🟡 in progress
 
-- **Sprint 2 — Factions:** faction bible for every domain (start with Verdance for MVP).
-- **Sprint 3 — NPC Cast:** formalize the 50 major NPCs into active-agent dossiers.
-- **Sprint 4 — Simulation Systems:** relationship engine, rumor engine, consequence chain engine.
-- **Sprint 5 — Implementation:** Prisma schema, VERDAX system prompt, World Genesis prompt, turn response schema, UI specs, coding-agent build prompt.
+Driving toward a playable *The Sap Beneath the Ash* vertical slice.
+
+| Item | Owner | Status |
+|---|---|---|
+| Verdance faction bibles ×6 (Heartmoot, Rootwardens, Sap Commons, Hollow Pact, Seed Guild, Greenwake Communion) | FACTION-WEAVER | ✅ Draft v1.0 (`docs/03-factions/verdance/`) |
+| Thornveil NPC dossiers ×10 (Maera, Auralis, Thalen, Othren, Sylune, Brom, Venn, Ilyra, Rook, Nymara) | LIVING-CASTWRIGHT | ✅ Draft v1.0 (`docs/04-npcs/verdance/`) |
+| MVP database schema (Prisma) | SCHEMA-FORGE | ✅ Draft v1.0 (`docs/05-systems/database-schema.md`) |
+| VERDAX turn engine (`POST /api/verdax/turn`) | TURN-ENGINEER | ✅ Draft v1.0 (`docs/05-systems/verdax-turn-engine.md`) |
+| Verdance seed data (JSON) from the bibles | SCHEMA-FORGE | ⬜ next |
+| VERDAX system prompt (assembled) + Zod response schemas | TURN-ENGINEER | ⬜ next |
+| World Genesis prompt (region/scene generator) | TURN-ENGINEER | ⬜ next |
+| UI specs (character creation, dashboard, chat, consequence panel, War Room) | INTERFACE-SEER | ⬜ next |
+| Code scaffolding (Next.js app + Prisma + turn route) | SCHEMA-FORGE | ⬜ next |
+
+## Later sprints (not yet started)
+
+- **Sprint 3 — Other-domain factions & wider NPC cast:** faction bibles for Radiance/Tempest/Sanctuary/Abyss; formalize the remaining major NPCs.
+- **Sprint 4 — Simulation Systems:** standalone relationship engine, rumor engine, consequence chain engine, magic & cost engine, war/economy engine docs.
+- **Sprint 5 — Build:** scaffold the app, implement the turn route, wire seed data, ship the vertical slice.
 
 ## MVP vertical slice — *The Sap Beneath the Ash* (Verdance)
 
