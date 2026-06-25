@@ -7,7 +7,7 @@
  */
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { validateDomainBible } from "../src/validate.js";
+import { validateDomainBible, validateVoidLayer } from "../src/validate.js";
 
 const LORE_DIR = join(process.cwd(), "domain-lore");
 
@@ -32,7 +32,11 @@ if (files.length === 0) {
 for (const file of files) {
   checked++;
   const raw = JSON.parse(readFileSync(join(LORE_DIR, file), "utf8"));
-  const result = validateDomainBible(raw);
+  // The Void is a parasite/layer, not a civilization; it has its own schema.
+  const result =
+    file === "void-layer.json"
+      ? validateVoidLayer(raw)
+      : validateDomainBible(raw);
   if (result.ok) {
     console.log(`✓ ${file}`);
   } else {

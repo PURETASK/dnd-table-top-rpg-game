@@ -15,7 +15,7 @@ immutable, kept separate from mutable campaign state (Chunk 2 §36, Chunk 3 §2)
 | `tempest.json` | ✅ drafted (validates against `DomainBible`) |
 | `sanctuary.json` | ✅ drafted (validates against `DomainBible`) |
 | `abyss.json` | ✅ drafted — the coherently-evil domain |
-| `void-layer.json` | _todo_ |
+| `void-layer.json` | ✅ drafted — validates against `VoidLayer` (not `DomainBible`) |
 
 ## Authoring a bible
 
@@ -27,6 +27,13 @@ immutable, kept separate from mutable campaign state (Chunk 2 §36, Chunk 3 §2)
 3. Validate: `npm run check-lore`.
 
 Files beginning with `_` are skipped by the validator.
+
+## The Void layer
+
+`void-layer.json` is **not** a domain civilization — per canon the Void is
+"enhancement, parasite, and liar" (Chunk 3 §2), with no government, economy, or
+military. It therefore validates against its own `VoidLayer` schema
+(`src/schemas/void-layer.ts`), and `check-lore` routes it there automatically.
 
 ## How these are used (Chunk 2 §36)
 

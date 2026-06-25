@@ -12,6 +12,7 @@
 import { z } from "zod";
 import { VerdaxTurnResponse } from "./schemas/verdax.js";
 import { DomainBible } from "./schemas/domain-bible.js";
+import { VoidLayer } from "./schemas/void-layer.js";
 
 export type ValidationResult<T> =
   | { ok: true; data: T }
@@ -38,6 +39,11 @@ export function validateVerdaxResponse(
 /** Validate a domain-lore seed document loaded from JSON. */
 export function validateDomainBible(raw: unknown): ValidationResult<DomainBible> {
   return toResult(DomainBible.safeParse(raw));
+}
+
+/** Validate the Void layer seed document (not a domain civilization). */
+export function validateVoidLayer(raw: unknown): ValidationResult<VoidLayer> {
+  return toResult(VoidLayer.safeParse(raw));
 }
 
 /** Throwing variant of {@link validateVerdaxResponse} for pipeline use. */

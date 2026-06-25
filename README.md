@@ -16,6 +16,7 @@ runtime-validated TypeScript foundation.
 |------|--------------|---------|
 | `src/schemas/primitives.ts` | Chunk 3 §3–§4, Chunk 2 §6 | Shared scales (0–100 bands, deltas), `VisibilityLevel`, `RelationshipStatus`, domains |
 | `src/schemas/domain-bible.ts` | **Chunk 2** | Static-lore template — the 24 schemas + composite `DomainBible` |
+| `src/schemas/void-layer.ts` | Chunk 3 §2, Chunk 2 §11 | `VoidLayer` — the Void is a parasite/liar, not a civilization, so it gets its own schema |
 | `src/schemas/glossary.ts` | **Chunk 3** | Mutable campaign state — Campaign, Character, NPC, Faction, Rumor, Consequence chains, … |
 | `src/schemas/causality.ts` | **Chunk 4** | Turn-time cause/effect analysis — action categories, witness/faction/NPC interpretation, soul-flow / Keeper / Void checks |
 | `src/schemas/verdax.ts` | Chunk 3 §30–§32 | `VerdaxTurnResponse`, `VerdaxPromptContext`, locked `STATE_UPDATE_ORDER` |
@@ -81,7 +82,10 @@ if (!result.ok) {
 - ✅ `domain-lore/tempest.json` — full Tempest bible.
 - ✅ `domain-lore/sanctuary.json` — full Sanctuary bible.
 - ✅ `domain-lore/abyss.json` — full Abyss bible (the coherently-evil domain).
-- ⬜ Void layer.
+- ✅ `domain-lore/void-layer.json` — the Void layer, on its own `VoidLayer` schema
+  (it is a parasite/liar, not a civilization, so it does not use `DomainBible`).
+
+All five domains plus the Void layer are now drafted and validated.
 
 ## Not yet built (intentional next steps)
 

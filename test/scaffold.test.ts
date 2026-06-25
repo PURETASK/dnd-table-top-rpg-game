@@ -6,6 +6,7 @@ import { join } from "node:path";
 import {
   validateVerdaxResponse,
   validateDomainBible,
+  validateVoidLayer,
   allianceBand,
   betrayalRisk,
   scaleBand,
@@ -103,6 +104,17 @@ test("the domain-lore template conforms to DomainBible (Chunk 2)", () => {
   const res = validateDomainBible(raw);
   if (!res.ok) console.error(res.issues);
   assert.equal(res.ok, true);
+});
+
+test("the Void layer seed conforms to VoidLayer (not DomainBible)", () => {
+  const raw = JSON.parse(
+    readFileSync(join(process.cwd(), "domain-lore", "void-layer.json"), "utf8")
+  );
+  const res = validateVoidLayer(raw);
+  if (!res.ok) console.error(res.issues);
+  assert.equal(res.ok, true);
+  // It must NOT validate as a domain civilization.
+  assert.equal(validateDomainBible(raw).ok, false);
 });
 
 test("locked invariants are present", () => {

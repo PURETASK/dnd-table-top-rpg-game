@@ -10,6 +10,7 @@
  */
 export * from "./primitives.js";
 export * from "./domain-bible.js";
+export * from "./void-layer.js";
 export * from "./glossary.js";
 export * from "./causality.js";
 export * from "./verdax.js";
