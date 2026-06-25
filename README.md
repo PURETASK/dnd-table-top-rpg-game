@@ -26,6 +26,7 @@ runtime-validated TypeScript foundation.
 | `src/engine/mutations.ts` | Chunk 3 §3/§30 | Turns loose `mechanical_consequences` buckets into clamped, audited field changes |
 | `src/engine/context.ts` | Chunk 3 §31 | `buildPromptContext` — selects the scene-relevant slice of state for VERDAX (not the whole world) |
 | `src/engine/loader.ts` | Chunk 2 → Chunk 3 | `seedDomainFromBible` / `bootstrapCampaign` — turn static bibles into runnable seed state |
+| `src/agent/` | Chunk 4 §42 | `VerdaxClient` interface (+ `FakeVerdaxClient`), prompt builders, and `runTurn` (context → model → validate/repair → apply) |
 | `src/formulas.ts` | Chunk 4 §15, §20 | Alliance / betrayal / rumor-likelihood scoring helpers |
 | `src/constants.ts` | Chunk 3 §35 | MVP vs. secondary tracking sets, lore file list |
 | `domain-lore/` | Chunk 2 §36 | Static-lore JSON seeds (one per domain) + `_template.json` |
@@ -124,12 +125,13 @@ All five domains plus the Void layer are now drafted and validated.
 
 ## Not yet built (intentional next steps)
 
-- The **model call itself** (the LLM that turns a `VerdaxPromptContext` into a
-  `VerdaxTurnResponse`) — the only remaining piece between context and apply.
+- A **real `VerdaxClient`** — an Anthropic-backed adapter (the orchestrator,
+  prompt, validate/repair loop, and the interface are all built and tested with
+  `FakeVerdaxClient`; only the network adapter is missing).
 - A **Postgres-backed `StateStore`** over `db/migrations/0001_init.sql` (the
   in-memory store already implements the interface the engine consumes).
 
-The pure turn loop is complete and runnable offline today (`npm run demo`):
+The turn loop is complete and runnable offline today (`npm run demo`):
 **load bible → `seedDomainFromBible` / `bootstrapCampaign` → `buildPromptContext`
-→ (model) → `applyVerdaxTurn`** — everything but the model call is built, validated,
-and tested without a DB or LLM.
+→ `runTurn` (validate/repair) → `applyVerdaxTurn`** — everything but the live
+model adapter is built, validated, and tested without a DB or LLM.
