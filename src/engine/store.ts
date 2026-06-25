@@ -16,6 +16,7 @@ export type EntityKind =
   | "campaign_metaphysics"
   | "character"
   | "domain_tracking"
+  | "domain_virtue_state"
   | "faction"
   | "npc"
   | "npc_memory"

@@ -24,6 +24,7 @@ runtime-validated TypeScript foundation.
 | `src/engine/turn.ts` | Chunk 3 §30–§32 | The turn engine — validates a VERDAX response, then applies it in the locked `STATE_UPDATE_ORDER` |
 | `src/engine/store.ts` | Chunk 3 §35/§37 | `StateStore` interface + `InMemoryStateStore` (a Postgres store over the migration can implement the same interface) |
 | `src/engine/mutations.ts` | Chunk 3 §3/§30 | Turns loose `mechanical_consequences` buckets into clamped, audited field changes |
+| `src/engine/context.ts` | Chunk 3 §31 | `buildPromptContext` — selects the scene-relevant slice of state for VERDAX (not the whole world) |
 | `src/formulas.ts` | Chunk 4 §15, §20 | Alliance / betrayal / rumor-likelihood scoring helpers |
 | `src/constants.ts` | Chunk 3 §35 | MVP vs. secondary tracking sets, lore file list |
 | `domain-lore/` | Chunk 2 §36 | Static-lore JSON seeds (one per domain) + `_template.json` |
@@ -78,6 +79,18 @@ if (!result.ok) {
 The engine clamps 0–100 deltas automatically; use `{ deltaRaw }` for hp/gold/xp
 and `{ set }` to assign a value (see `src/engine/mutations.ts`).
 
+### The turn loop (input side)
+
+```ts
+import { buildPromptContext } from "realm-of-nexus";
+
+const ctx = buildPromptContext(store, { campaign_id: "camp1", character_id: "pc1" });
+// ctx.context is a VerdaxPromptContext with only the scene-relevant slice
+// (current location, NPCs present, factions/rumors/quests/clocks tied to it,
+//  relevant domain + magic state, last 8 turn summaries) — Chunk 3 §31.
+// Send ctx.context to the model → get a VerdaxTurnResponse → applyVerdaxTurn(...).
+```
+
 ## Build order (from the bible)
 
 1. **MVP tables** (`db/migrations/0001_init.sql`, Chunk 3 §35) — Campaign,
@@ -106,7 +119,9 @@ All five domains plus the Void layer are now drafted and validated.
 
 - A **Postgres-backed `StateStore`** over `db/migrations/0001_init.sql` (the
   in-memory store already implements the interface the engine consumes).
-- The **VERDAX prompt builder** — assembling `VerdaxPromptContext` (Chunk 3 §31)
-  from store state to send the model the relevant slice, not the whole world.
-- The **model call itself** (the LLM that produces the `VerdaxTurnResponse`).
-- Loading the `/domain-lore` bibles into campaign generation / seed state.
+- The **model call itself** (the LLM that turns a `VerdaxPromptContext` into a
+  `VerdaxTurnResponse`) — the only remaining piece between context and apply.
+- A **campaign loader** turning the `/domain-lore` bibles into seed state.
+
+The pure turn loop is otherwise complete: **`buildPromptContext` → (model) →
+`applyVerdaxTurn`**, all validated and testable without a DB or LLM.
