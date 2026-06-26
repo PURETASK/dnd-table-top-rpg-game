@@ -131,7 +131,7 @@ test("applyVerdaxTurn applies clamped deltas across entity kinds", () => {
 
   // World event and turn log persisted.
   assert.ok(store.has("world_event", "ev1"));
-  assert.ok(store.has("turn_log", "camp1:turn:2"));
+  assert.ok(store.has("turn_log", "camp1:pc1:turn:2"));
   if (res.ok) assert.deepEqual(res.world_event_ids, ["ev1"]);
 });
 
@@ -149,6 +149,25 @@ test("applyVerdaxTurn warns (not throws) on a delta to a missing entity", () => 
   }
 });
 
+test("applyVerdaxTurn applies valid sibling ops and warns per malformed op", () => {
+  const store = seededStore();
+  const res = applyVerdaxTurn(
+    store,
+    { campaign_id: "camp1", character_id: "pc1", turn_number: 5, player_input: "..." },
+    baseResponse({
+      mechanical_consequences: {
+        character: { soul_integrity: { delta: -4 }, bogus: { invalid_op: 5 } },
+      },
+    })
+  );
+  assert.equal(res.ok, true);
+  if (!res.ok) return;
+  // The good op applied; the malformed one was skipped (not state-corrupting).
+  assert.equal(store.get("character", "pc1")!.soul_integrity, 46);
+  assert.equal(res.warnings.length, 1);
+  assert.match(res.warnings[0]!, /field "bogus" has a malformed change op/);
+});
+
 test("applyVerdaxTurn rejects invalid model output before any mutation", () => {
   const store = seededStore();
   const before = store.get("character", "pc1")!.soul_integrity;
@@ -159,5 +178,5 @@ test("applyVerdaxTurn rejects invalid model output before any mutation", () => {
   );
   assert.equal(res.ok, false);
   assert.equal(store.get("character", "pc1")!.soul_integrity, before); // untouched
-  assert.equal(store.has("turn_log", "camp1:turn:4"), false);
+  assert.equal(store.has("turn_log", "camp1:pc1:turn:4"), false);
 });

@@ -19,7 +19,7 @@ import type { VerdaxTurnResponse } from "../schemas/verdax.js";
 import type { EntityKind, StateStore } from "./store.js";
 import {
   applyFieldChanges,
-  isFieldChangeMap,
+  isChangeRecord,
   type AppliedChange,
 } from "./mutations.js";
 
@@ -73,12 +73,13 @@ export function applyVerdaxTurn(
   const res: VerdaxTurnResponse = validation.data;
 
   const turnLogId =
-    input.turn_log_id ?? `${input.campaign_id}:turn:${input.turn_number}`;
+    input.turn_log_id ??
+    `${input.campaign_id}:${input.character_id}:turn:${input.turn_number}`;
   const worldEventIds = res.new_world_events.map((e) => e.id);
   const chainIds = res.new_or_updated_consequence_chains.map((c) => c.id);
   const rumorIds = res.new_or_updated_rumors.map((r) => r.id);
 
-  /** Apply a flat field-change map to one record; skip+warn if absent. */
+  /** Apply a flat field-change map to one record; skip+warn if absent/malformed. */
   const applyFlat = (
     step: StateUpdateStep,
     kind: EntityKind,
@@ -86,8 +87,8 @@ export function applyVerdaxTurn(
     bucket: unknown
   ): void => {
     if (bucket == null) return;
-    if (!isFieldChangeMap(bucket)) {
-      warnings.push(`${step}: ${kind} "${id}" change map is malformed; skipped.`);
+    if (!isChangeRecord(bucket)) {
+      warnings.push(`${step}: ${kind} "${id}" change map is not an object; skipped.`);
       return;
     }
     const record = store.get(kind, id);
@@ -95,7 +96,12 @@ export function applyVerdaxTurn(
       warnings.push(`${step}: ${kind} "${id}" not found in store; skipped.`);
       return;
     }
-    const changes = applyFieldChanges(record, bucket);
+    // Each op is validated individually: valid ops apply, malformed ones are
+    // reported per-field rather than discarding the whole entity's changes.
+    const { applied: changes, malformed } = applyFieldChanges(record, bucket);
+    for (const path of malformed) {
+      warnings.push(`${step}: ${kind} "${id}" field "${path}" has a malformed change op; skipped.`);
+    }
     store.put(kind, id, record);
     if (changes.length) applied.push({ step, kind, id, changes });
   };

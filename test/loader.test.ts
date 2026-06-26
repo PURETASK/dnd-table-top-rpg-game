@@ -52,6 +52,15 @@ test("seedDomainFromBible produces schema-valid mutable state", () => {
   // The domain-stone numbers flowed through.
   const dt = store.get("domain_tracking", "Verdance")!;
   assert.equal(dt.domain_stone_stability, bible.domain_stone.current_stability);
+
+  // Location and magic ids are domain-prefixed (no cross-domain slug collisions).
+  assert.ok(seed.location_ids.every((id) => id.startsWith("verdance_")));
+  assert.ok(seed.magic_system_ids.every((id) => id.startsWith("verdance_")));
+
+  // Descriptive contest strings resolve to a real faction id (substring match):
+  // The Heartroot Grove is contested_by "Hollow Pact sympathizers (ideologically)".
+  const heartroot = store.get("location", seed.location_ids[0]!) as { contested_by_faction_ids: string[] };
+  assert.ok(heartroot.contested_by_faction_ids.includes("verdance_hollow_pact"));
 });
 
 test("bootstrapCampaign produces schema-valid campaign/character", () => {
@@ -72,8 +81,8 @@ test("end-to-end offline loop: load → seed → bootstrap → context → apply
   const store = new InMemoryStateStore();
   const bible = loadBible("verdance.json");
   const seed = seedDomainFromBible(store, "camp1", bible);
-  const region = slug(bible.major_locations[0]!.name);
-  assert.ok(seed.location_ids.includes(region));
+  const region = seed.location_ids[0]!;
+  assert.equal(region, slug("Verdance") + "_" + slug(bible.major_locations[0]!.name));
 
   bootstrapCampaign(store, {
     campaign_id: "camp1",
@@ -138,5 +147,5 @@ test("end-to-end offline loop: load → seed → bootstrap → context → apply
   assert.equal(applied.warnings.length, 0);
   assert.equal(store.get("domain_tracking", "Verdance")!.civilian_morale, before + 4);
   assert.equal(store.get("character", "pc1")!.soul_integrity, 76); // 80 - 4
-  assert.ok(store.has("turn_log", "camp1:turn:1"));
+  assert.ok(store.has("turn_log", "camp1:pc1:turn:1"));
 });

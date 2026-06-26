@@ -14,7 +14,6 @@ import {
   bootstrapCampaign,
   buildPromptContext,
   applyVerdaxTurn,
-  slug,
   type VerdaxTurnResponse,
 } from "../src/index.js";
 
@@ -28,7 +27,7 @@ if (!bible.ok) {
 }
 
 const seed = seedDomainFromBible(store, "camp1", bible.data);
-const region = slug(bible.data.major_locations[0]!.name);
+const region = seed.location_ids[0]!;
 bootstrapCampaign(store, {
   campaign_id: "camp1",
   title: "The Thornveil Wound",

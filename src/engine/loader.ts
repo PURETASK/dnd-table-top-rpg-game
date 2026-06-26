@@ -30,7 +30,14 @@ export function slug(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
 }
 
-function factionId(domain: string, name: string): string {
+/** Domain-prefixed ids so names that collide across domains stay distinct. */
+export function factionId(domain: string, name: string): string {
+  return `${slug(domain)}_${slug(name)}`;
+}
+export function locationId(domain: string, name: string): string {
+  return `${slug(domain)}_${slug(name)}`;
+}
+export function magicSystemId(domain: string, name: string): string {
   return `${slug(domain)}_${slug(name)}`;
 }
 
@@ -59,6 +66,19 @@ export function seedDomainFromBible(
   for (const f of bible.faction_index.factions) {
     nameToFactionId.set(f.name, factionId(domain, f.name));
   }
+  // Locations often name controllers/contesters with descriptive strings
+  // ("Hollow Pact sympathizers (ideologically)"), so resolve by exact match
+  // first, then by a known faction name appearing within the string. Genuine
+  // non-factions ("Frozen-Patience traditionalists vs reformers") stay unresolved.
+  const resolveFaction = (s: string): string | undefined => {
+    const exact = nameToFactionId.get(s);
+    if (exact) return exact;
+    const lower = s.toLowerCase();
+    for (const [name, fid] of nameToFactionId) {
+      if (lower.includes(name.toLowerCase())) return fid;
+    }
+    return undefined;
+  };
 
   // ── DomainTrackingState ────────────────────────────────────────────────
   const domainState: DomainTrackingState = {
@@ -161,14 +181,14 @@ export function seedDomainFromBible(
   // ── Locations ──────────────────────────────────────────────────────────
   const locationIds: string[] = [];
   for (const loc of bible.major_locations) {
-    const lid = slug(loc.name);
+    const lid = locationId(domain, loc.name);
     locationIds.push(lid);
     const controllerId = loc.controlling_factions
-      .map((n) => nameToFactionId.get(n))
+      .map(resolveFaction)
       .find((x): x is string => Boolean(x));
-    const contested = loc.contested_by
-      .map((n) => nameToFactionId.get(n))
-      .filter((x): x is string => Boolean(x));
+    const contested = [
+      ...new Set(loc.contested_by.map(resolveFaction).filter((x): x is string => Boolean(x))),
+    ];
     const location: LocationState = {
       id: lid,
       campaign_id: campaignId,
@@ -203,7 +223,7 @@ export function seedDomainFromBible(
   // ── Magic systems (campaign instances) ─────────────────────────────────
   const magicSystemIds: string[] = [];
   for (const m of bible.magic_systems) {
-    const mid = slug(m.system_name);
+    const mid = magicSystemId(domain, m.system_name);
     magicSystemIds.push(mid);
     const magic: MagicSystemState = {
       ...m,

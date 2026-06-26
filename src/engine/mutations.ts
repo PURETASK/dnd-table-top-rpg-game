@@ -75,25 +75,48 @@ export function resolveOp(current: unknown, op: ChangeOp): unknown {
   return op.set;
 }
 
+export interface ApplyResult {
+  /** Audit of fields that actually changed. */
+  applied: AppliedChange[];
+  /** Field paths whose op failed validation and were skipped (not applied). */
+  malformed: string[];
+}
+
 /**
- * Apply a field-change map to a target record in place.
- * Returns the audit of what actually changed.
+ * Apply a map of field → change op to a target record in place.
+ *
+ * Each op is validated individually (`ChangeOp`): valid ops are applied, and a
+ * malformed op (e.g. `{ invalid_op: 5 }`) is skipped and reported in `malformed`
+ * — it does NOT discard the sibling ops or the whole turn. This keeps a single
+ * bad delta from corrupting state or throwing away an otherwise-valid response,
+ * while still surfacing the problem to the caller as a warning.
  */
 export function applyFieldChanges(
   target: Record<string, unknown>,
-  changes: FieldChangeMap
-): AppliedChange[] {
+  changes: Record<string, unknown>
+): ApplyResult {
   const applied: AppliedChange[] = [];
-  for (const [path, op] of Object.entries(changes)) {
+  const malformed: string[] = [];
+  for (const [path, rawOp] of Object.entries(changes)) {
+    const parsed = ChangeOp.safeParse(rawOp);
+    if (!parsed.success) {
+      malformed.push(path);
+      continue;
+    }
     const from = getPath(target, path);
-    const to = resolveOp(from, op);
+    const to = resolveOp(from, parsed.data);
     setPath(target, path, to);
     applied.push({ path, from, to });
   }
-  return applied;
+  return { applied, malformed };
 }
 
-/** True when a bucket is an id-keyed map of field-change maps (vs. a flat map). */
+/** True when a value is a record (object) usable as a field-change map. */
+export function isChangeRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+/** True when a bucket is a well-formed map of field → change op. */
 export function isFieldChangeMap(value: unknown): value is FieldChangeMap {
   return FieldChangeMap.safeParse(value).success;
 }

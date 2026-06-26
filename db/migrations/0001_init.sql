@@ -163,7 +163,9 @@ create table turn_log (
   turn_number  integer not null,
   data         jsonb not null,
   created_at   timestamptz not null default now(),
-  unique (campaign_id, turn_number)
+  -- Scoped by character so dm_guided / hybrid campaigns (multiple characters)
+  -- can each have their own turn N. Solo campaigns are unaffected.
+  unique (campaign_id, character_id, turn_number)
 );
 create index turn_log_campaign_idx on turn_log(campaign_id);
 

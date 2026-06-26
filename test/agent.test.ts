@@ -8,7 +8,6 @@ import {
   validateDomainBible,
   seedDomainFromBible,
   bootstrapCampaign,
-  slug,
   FakeVerdaxClient,
   runTurn,
   buildVerdaxSystemPrompt,
@@ -21,7 +20,7 @@ function setupStore() {
   const bible = validateDomainBible(raw);
   if (!bible.ok) throw new Error("verdance bible invalid");
   const seed = seedDomainFromBible(store, "camp1", bible.data);
-  const region = slug(bible.data.major_locations[0]!.name);
+  const region = seed.location_ids[0]!;
   bootstrapCampaign(store, {
     campaign_id: "camp1",
     title: "T",
@@ -81,7 +80,7 @@ test("runTurn: happy path applies a valid response in one attempt", async () => 
   if (!res.ok) return;
   assert.equal(res.attempts, 1);
   assert.equal(store.get("character", "pc1")!.soul_integrity, 76);
-  assert.ok(store.has("turn_log", "camp1:turn:1"));
+  assert.ok(store.has("turn_log", "camp1:pc1:turn:1"));
 });
 
 test("runTurn: repairs malformed output then applies", async () => {
@@ -115,7 +114,7 @@ test("runTurn: gives up after repairs and never mutates state", async () => {
   assert.equal(res.stage, "generation");
   assert.equal(res.attempts, 2);
   assert.equal(store.get("character", "pc1")!.soul_integrity, before);
-  assert.equal(store.has("turn_log", "camp1:turn:1"), false);
+  assert.equal(store.has("turn_log", "camp1:pc1:turn:1"), false);
 });
 
 test("runTurn: reports a context error when state is missing", async () => {
