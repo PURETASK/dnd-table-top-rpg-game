@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0",
+  "domain": "Radiance",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "TODO",
+    "short_description": "TODO",
+    "civilization_type": "TODO",
+    "core_belief": "TODO",
+    "true_virtue": ["TODO"],
+    "primary_corruption_risk": ["TODO"],
+    "domain_stone_or_source": "TODO",
+    "magic_style": "TODO",
+    "main_magic_cost": "TODO",
+    "political_center": "TODO",
+    "military_identity": "TODO",
+    "economic_base": "TODO",
+    "biggest_internal_conflict": "TODO",
+    "biggest_external_threat": "TODO",
+    "keeper_exploit": "TODO",
+    "void_lie": "TODO"
+  },
+
+  "hard_canon": {
+    "canon_facts": ["TODO"],
+    "cannot_contradict": ["TODO"]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "TODO",
+    "nexus_stone_aspect": "TODO",
+    "soul_flow_shaped": "TODO",
+    "natural_magic": "TODO",
+    "when_extreme": "TODO",
+    "keeper_exploits_extremity": "TODO"
+  },
+
+  "domain_stone": {
+    "domain": "TODO",
+    "source_name": "TODO",
+    "source_type": "Domain Stone",
+    "origin": "TODO",
+    "metaphysical_principle": ["TODO"],
+    "current_stability": 70,
+    "corruption_level": 10,
+    "public_knowledge": "TODO",
+    "hidden_truth": "TODO",
+    "factions_claiming_authority": ["TODO"],
+    "rituals_dependent_on_source": ["TODO"],
+    "magic_systems_dependent_on_source": ["TODO"],
+    "failure_symptoms": ["TODO"],
+    "healing_methods": ["TODO"],
+    "keeper_attack_vector": "TODO",
+    "void_attack_vector": "TODO"
+  },
+
+  "soul_flow": {
+    "domain": "TODO",
+    "healthy_soul_flow_description": "TODO",
+    "damaged_soul_flow_description": "TODO",
+    "natural_soul_processes": ["TODO"],
+    "forbidden_soul_processes": ["TODO"],
+    "common_soul_wounds": ["TODO"],
+    "healing_methods": ["TODO"],
+    "factions_that_protect_soul_flow": ["TODO"],
+    "factions_that_disrupt_soul_flow": ["TODO"],
+    "keeper_disruption_strategy": "TODO",
+    "void_disruption_strategy": "TODO"
+  },
+
+  "true_virtues": [
+    {
+      "name": "TODO",
+      "healthy_definition": "TODO",
+      "cultural_expression": "TODO",
+      "heroic_expression": "TODO",
+      "political_expression": "TODO",
+      "magical_expression": "TODO",
+      "economic_expression": "TODO",
+      "military_expression": "TODO",
+      "common_saying": "TODO"
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "TODO",
+      "corrupted_name": "TODO",
+      "corrupted_definition": "TODO",
+      "how_it_begins": "TODO",
+      "how_it_spreads": "TODO",
+      "who_benefits": ["TODO"],
+      "who_suffers": ["TODO"],
+      "faction_most_vulnerable": ["TODO"],
+      "npc_archetypes_most_vulnerable": ["TODO"],
+      "keeper_benefit": "TODO",
+      "void_lie": "TODO",
+      "visible_symptoms": ["TODO"],
+      "late_stage_consequence": "TODO"
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "TODO",
+    "primary_virtue_targeted": "TODO",
+    "secondary_virtues_targeted": ["TODO"],
+    "corruption_strategy": "TODO",
+    "preferred_crisis_conditions": ["TODO"],
+    "preferred_faction_targets": ["TODO"],
+    "preferred_npc_targets": ["TODO"],
+    "soul_flow_damage_type": ["TODO"],
+    "domain_stone_damage_type": "TODO",
+    "common_lie": "TODO",
+    "long_term_goal": "TODO"
+  },
+
+  "void_temptation_pattern": {
+    "domain": "TODO",
+    "temptation_phrase": "TODO",
+    "immediate_benefit": "TODO",
+    "hidden_cost": "TODO",
+    "identity_damage": "TODO",
+    "soul_flow_damage": "TODO",
+    "reality_damage": "TODO",
+    "faction_most_likely_to_accept": ["TODO"],
+    "npc_archetypes_most_likely_to_accept": ["TODO"],
+    "visible_stage_1_symptoms": ["TODO"],
+    "visible_stage_2_symptoms": ["TODO"],
+    "visible_stage_3_symptoms": ["TODO"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "TODO",
+      "system_name": "TODO",
+      "source": "TODO",
+      "practitioners": ["TODO"],
+      "institutions": ["TODO"],
+      "training_access": "regulated",
+      "battlefield_use": ["TODO"],
+      "economic_use": ["TODO"],
+      "political_use": ["TODO"],
+      "spiritual_use": ["TODO"],
+      "civilian_use": ["TODO"],
+      "cost_types": ["TODO"],
+      "abuse_modes": ["TODO"],
+      "scarcity_level": 50,
+      "public_trust": 50,
+      "faction_control": { "TODO": 50 },
+      "keeper_corruption_vector": "TODO",
+      "void_enhancement_vector": "TODO"
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "TODO",
+      "cost_type": "life_force",
+      "description": "TODO",
+      "minor_effect": "TODO",
+      "moderate_effect": "TODO",
+      "severe_effect": "TODO",
+      "recovery_method": "TODO",
+      "permanent_risk": "TODO",
+      "factions_that_accept_this_cost": ["TODO"],
+      "factions_that_reject_this_cost": ["TODO"]
+    }
+  ],
+
+  "government": {
+    "domain": "TODO",
+    "government_type": "TODO",
+    "ruling_body": "TODO",
+    "religious_authority": "TODO",
+    "military_authority": "TODO",
+    "economic_authority": "TODO",
+    "magical_authority": "TODO",
+    "local_authorities": ["TODO"],
+    "succession_or_selection_method": "TODO",
+    "legitimacy_source": "TODO",
+    "known_cracks_in_legitimacy": ["TODO"],
+    "emergency_powers": ["TODO"],
+    "corruption_vulnerabilities": ["TODO"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "TODO",
+      "class_name": "TODO",
+      "description": "TODO",
+      "privileges": ["TODO"],
+      "burdens": ["TODO"],
+      "magic_access": "TODO",
+      "military_obligation": "TODO",
+      "economic_role": "TODO",
+      "political_voice": "TODO",
+      "common_grievances": ["TODO"],
+      "faction_affinities": ["TODO"],
+      "upward_mobility_paths": ["TODO"],
+      "downward_mobility_risks": ["TODO"]
+    }
+  ],
+
+  "economy": {
+    "domain": "TODO",
+    "primary_resources": ["TODO"],
+    "secondary_resources": ["TODO"],
+    "sacred_resources": ["TODO"],
+    "scarce_resources": ["TODO"],
+    "export_goods": ["TODO"],
+    "import_needs": ["TODO"],
+    "trade_routes": ["TODO"],
+    "economic_institutions": ["TODO"],
+    "black_market_goods": ["TODO"],
+    "wartime_economy_behavior": "TODO",
+    "famine_or_shortage_risks": ["TODO"],
+    "exploitative_practices": ["TODO"],
+    "keeper_attack_vector": "TODO"
+  },
+
+  "military_doctrine": {
+    "domain": "TODO",
+    "doctrine_name": "TODO",
+    "strategic_identity": "TODO",
+    "preferred_battlefield": ["TODO"],
+    "primary_units": ["TODO"],
+    "elite_units": ["TODO"],
+    "support_units": ["TODO"],
+    "magical_assets": ["TODO"],
+    "defensive_strategy": "TODO",
+    "offensive_strategy": "TODO",
+    "logistics_strategy": "TODO",
+    "intelligence_strategy": "TODO",
+    "taboo_tactics": ["TODO"],
+    "desperate_tactics": ["TODO"],
+    "common_weaknesses": ["TODO"],
+    "keeper_exploit": "TODO",
+    "void_escalation": "TODO"
+  },
+
+  "warfront_behavior": {
+    "domain": "TODO",
+    "typical_warfront_goals": ["TODO"],
+    "preferred_escalation_methods": ["TODO"],
+    "preferred_deescalation_methods": ["TODO"],
+    "negotiation_style": "TODO",
+    "ceasefire_conditions": ["TODO"],
+    "betrayal_conditions": ["TODO"],
+    "alliance_conditions": ["TODO"],
+    "occupation_style": "TODO",
+    "resistance_style": "TODO"
+  },
+
+  "major_locations": [
+    {
+      "name": "TODO",
+      "domain": "TODO",
+      "location_type": "TODO",
+      "description": "TODO",
+      "political_function": "TODO",
+      "economic_function": "TODO",
+      "magical_function": "TODO",
+      "military_function": "TODO",
+      "spiritual_function": "TODO",
+      "civilian_function": "TODO",
+      "controlling_factions": ["TODO"],
+      "contested_by": ["TODO"],
+      "key_npcs": ["TODO"],
+      "resources_present": ["TODO"],
+      "magic_systems_present": ["TODO"],
+      "known_secrets": ["TODO"],
+      "location_state": {
+        "stability": 60,
+        "danger": 40,
+        "corruption": 20,
+        "morale": 55,
+        "resources": 50,
+        "secrecy": 50,
+        "military_pressure": 40,
+        "spiritual_health": 60
+      },
+      "keeper_attack_vector": "TODO",
+      "void_symptoms": ["TODO"],
+      "quest_hooks": ["TODO"]
+    }
+  ],
+
+  "culture": {
+    "domain": "TODO",
+    "daily_life_summary": "TODO",
+    "family_customs": "TODO",
+    "love_and_marriage_customs": "TODO",
+    "education_system": "TODO",
+    "work_and_apprenticeship": "TODO",
+    "food_and_market_life": "TODO",
+    "festivals": ["TODO"],
+    "funeral_or_death_customs": "TODO",
+    "public_honors": ["TODO"],
+    "taboos": ["TODO"],
+    "common_sayings": ["TODO"],
+    "children_common_beliefs": ["TODO"],
+    "class_differences": ["TODO"]
+  },
+
+  "religion": {
+    "domain": "TODO",
+    "central_belief": "TODO",
+    "sacred_symbols": ["TODO"],
+    "major_rituals": ["TODO"],
+    "common_prayers_or_oaths": ["TODO"],
+    "priestly_roles": ["TODO"],
+    "heresies": ["TODO"],
+    "sacred_taboos": ["TODO"],
+    "relationship_to_death": "TODO",
+    "relationship_to_sacrifice": "TODO",
+    "relationship_to_memory": "TODO",
+    "relationship_to_truth": "TODO",
+    "keeper_corruption_strategy": "TODO",
+    "void_false_revelation_style": "TODO"
+  },
+
+  "faction_index": {
+    "domain": "TODO",
+    "factions": [
+      { "name": "Central authority faction", "short_doctrine": "TODO", "class_base": "TODO", "power_base": "TODO", "main_rival": "TODO", "keeper_vulnerability": "TODO", "player_use": "TODO" },
+      { "name": "Spiritual/magical authority faction", "short_doctrine": "TODO", "class_base": "TODO", "power_base": "TODO", "main_rival": "TODO", "keeper_vulnerability": "TODO", "player_use": "TODO" },
+      { "name": "Military/security faction", "short_doctrine": "TODO", "class_base": "TODO", "power_base": "TODO", "main_rival": "TODO", "keeper_vulnerability": "TODO", "player_use": "TODO" },
+      { "name": "Economic/resource faction", "short_doctrine": "TODO", "class_base": "TODO", "power_base": "TODO", "main_rival": "TODO", "keeper_vulnerability": "TODO", "player_use": "TODO" },
+      { "name": "Fringe/edge faction", "short_doctrine": "TODO", "class_base": "TODO", "power_base": "TODO", "main_rival": "TODO", "keeper_vulnerability": "TODO", "player_use": "TODO" }
+    ]
+  },
+
+  "npc_role_index": [
+    {
+      "domain": "TODO",
+      "role_name": "Ruler or supreme authority",
+      "purpose_in_world": "TODO",
+      "purpose_in_gameplay": "TODO",
+      "likely_factions": ["TODO"],
+      "likely_conflicts": ["TODO"],
+      "relationship_options": ["TODO"],
+      "death_impact": "TODO"
+    }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "TODO",
+      "target_domain": "TODO",
+      "public_relationship": "tense",
+      "hidden_relationship": "TODO",
+      "primary_conflict": "TODO",
+      "primary_dependency": "TODO",
+      "resource_leverage": "TODO",
+      "magic_tension": "TODO",
+      "military_tension": "TODO",
+      "historical_wound": "TODO",
+      "possible_alliance_condition": "TODO",
+      "possible_break_condition": "TODO",
+      "keeper_exploit": "TODO",
+      "void_exploit": "TODO"
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "TODO",
+      "title": "TODO",
+      "factions_involved": ["TODO"],
+      "issue": "TODO",
+      "public_argument": "TODO",
+      "hidden_argument": "TODO",
+      "resources_at_stake": ["TODO"],
+      "magic_systems_at_stake": ["TODO"],
+      "npc_flashpoints": ["TODO"],
+      "possible_player_sides": ["TODO"],
+      "compromise_possible": true,
+      "keeper_best_outcome": "TODO",
+      "void_best_outcome": "TODO",
+      "peaceful_resolution": "TODO",
+      "violent_resolution": "TODO",
+      "third_order_effect": "TODO",
+      "fifth_order_effect": "TODO"
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "TODO",
+    "common_spread_channels": ["TODO"],
+    "trusted_sources": ["TODO"],
+    "distrusted_sources": ["TODO"],
+    "rumor_emotional_styles": ["TODO"],
+    "rumor_suppression_methods": ["TODO"],
+    "rumor_weaponization_methods": ["TODO"],
+    "rumor_mutation_patterns": ["TODO"],
+    "factions_best_at_rumor_warfare": ["TODO"]
+  },
+
+  "relationship_logic": {
+    "domain": "TODO",
+    "trust_is_built_by": ["TODO"],
+    "trust_is_broken_by": ["TODO"],
+    "enemies_become_tolerable_when": ["TODO"],
+    "allies_become_suspect_when": ["TODO"],
+    "romance_conflicts": ["TODO"],
+    "betrayal_triggers": ["TODO"],
+    "forgiveness_conditions": ["TODO"],
+    "permanent_enemy_conditions": ["TODO"],
+    "if_then_because_examples": [
+      { "if": "TODO 1", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 2", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 3", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 4", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 5", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 6", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 7", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 8", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 9", "then": "TODO", "because": "TODO" },
+      { "if": "TODO 10", "then": "TODO", "because": "TODO" }
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "TODO",
+    "starting_bonuses": ["TODO"],
+    "starting_burdens": ["TODO"],
+    "default_domain_resonance": { "Radiance": 0, "Verdance": 0, "Tempest": 0, "Sanctuary": 0, "Abyss": 0 },
+    "starting_faction_assumptions": ["TODO"],
+    "common_npc_reactions": ["TODO"],
+    "starting_rumors": ["TODO"],
+    "starting_magic_access": ["TODO"],
+    "restricted_magic_access": ["TODO"],
+    "unique_origin_questions": ["TODO"],
+    "possible_dark_secret_options": ["TODO"]
+  },
+
+  "cause_effect_examples": [
+    { "root_event": "TODO 1", "domain_interpretation": "TODO", "faction_interpretation": "TODO", "immediate_result": "TODO", "first_order": "TODO", "second_order": "TODO", "third_order": "TODO", "fourth_order": "TODO", "fifth_order": "TODO", "keeper_gain": "TODO", "void_gain": "TODO", "player_intervention_options": ["TODO"] },
+    { "root_event": "TODO 2", "domain_interpretation": "TODO", "faction_interpretation": "TODO", "immediate_result": "TODO", "first_order": "TODO", "second_order": "TODO", "third_order": "TODO", "fourth_order": "TODO", "fifth_order": "TODO", "keeper_gain": "TODO", "player_intervention_options": ["TODO"] },
+    { "root_event": "TODO 3", "domain_interpretation": "TODO", "faction_interpretation": "TODO", "immediate_result": "TODO", "first_order": "TODO", "second_order": "TODO", "third_order": "TODO", "fourth_order": "TODO", "fifth_order": "TODO", "keeper_gain": "TODO", "player_intervention_options": ["TODO"] },
+    { "root_event": "TODO 4", "domain_interpretation": "TODO", "faction_interpretation": "TODO", "immediate_result": "TODO", "first_order": "TODO", "second_order": "TODO", "third_order": "TODO", "fourth_order": "TODO", "fifth_order": "TODO", "keeper_gain": "TODO", "player_intervention_options": ["TODO"] },
+    { "root_event": "TODO 5", "domain_interpretation": "TODO", "faction_interpretation": "TODO", "immediate_result": "TODO", "first_order": "TODO", "second_order": "TODO", "third_order": "TODO", "fourth_order": "TODO", "fifth_order": "TODO", "keeper_gain": "TODO", "player_intervention_options": ["TODO"] }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["TODO"],
+    "political": ["TODO"],
+    "magic": ["TODO"],
+    "faction": ["TODO"],
+    "npc": ["TODO"],
+    "war_economy": ["TODO"],
+    "implementation": ["TODO"]
+  },
+
+  "locked_decisions": ["TODO"]
+}

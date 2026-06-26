@@ -1,0 +1,742 @@
+{
+  "schema_version": "1.0",
+  "domain": "Tempest",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "Tempest",
+    "short_description": "A sky-borne civilization of skyships, bonded dragons, and storm-callers, built on the conviction that all true power and loyalty must be freely chosen, sheltered behind the Maelstrom Barrier.",
+    "civilization_type": "Loose confederation of free sky-holds, corsair compacts, and dragon-bonded riders bound by chosen oaths rather than borders.",
+    "core_belief": "Loyalty that is forced is no loyalty at all; the storm and the bond must be entered freely.",
+    "true_virtue": ["Freedom", "Chosen Bond", "Daring", "Self-Determination"],
+    "primary_corruption_risk": ["Forced loyalty disguised as protection", "Anti-duty extremism that abandons the bonded", "License mistaken for freedom"],
+    "domain_stone_or_source": "The Storm Core — the Tempest Stone fragment at the eye of the Maelstrom Barrier, resonating through bonded dragons and the wind itself.",
+    "magic_style": "Storm-calling and bond-resonance: wind, lightning, and flight powered by the Core, the Barrier, and freely bonded dragons together.",
+    "main_magic_cost": "Stamina and a share of the self — the storm thins the caster's edges, and the bond demands mutual vulnerability.",
+    "political_center": "Skyhold Aerie, where the Free Skies Assembly convenes among the high roosts.",
+    "military_identity": "Fast, mobile, and improvisational: strike from the wind, never anchor, never be cornered.",
+    "economic_base": "Sky-freight, cloud-markets, salvage, courier networks, and dragon-roost commerce.",
+    "biggest_internal_conflict": "Whether freedom permits forced restraint to save lives (Dragon-Bond Sanctum traditionalists) or whether all restraint is tyranny (Chainbreaker Radicals).",
+    "biggest_external_threat": "Abyss anti-air towers and Void-storms that the weakening Maelstrom Barrier can no longer fully turn aside.",
+    "keeper_exploit": "The Keeper splits Tempest's freedom into control-versus-anti-duty extremism, so the sky-holds fight over what freedom means while the Barrier erodes.",
+    "void_lie": "Love that cannot restrain is love that lets death win."
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "Tempest shelters behind the Maelstrom Barrier, a vast storm-wall tied to the Storm Core fragment of the fractured pure Nexus Stone.",
+      "Dragon bonds are sacred and must be freely chosen by both rider and dragon; forced bonds are a spiritual violation.",
+      "Storm magic draws on three sources together — the Storm Core, the Maelstrom Barrier, and bonded dragons.",
+      "Tempest has no single ruler; the Free Skies Assembly coordinates the sky-holds by consent.",
+      "The Dragon-Bond Sanctum guards bond-law; the Chainbreaker Radicals call all restraint tyranny.",
+      "Corsair compacts and cloud-markets make Tempest a trade and salvage power, and a smuggling one."
+    ],
+    "cannot_contradict": [
+      "Tempest magic and loyalty must always be freely chosen; forced bonds and forced service are violations.",
+      "Tempest corruption must distort freedom into either forced control or anti-duty abandonment, never generic darkness.",
+      "Tempest internal politics must respect the Sanctum / Chainbreaker / corsair / Assembly fracture.",
+      "The Maelstrom Barrier cannot be commanded by force; it answers to the Core's resonance and freely given storm-song."
+    ]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "Freedom and chosen bond — power and loyalty that mean something only because they were entered freely.",
+    "nexus_stone_aspect": "The Stone's capacity for resonance and willing connection — souls and storms bound by consent rather than chains.",
+    "soul_flow_shaped": "Tempest souls pass freely; bonds carry a thread of self between rider and dragon that survives even death as chosen memory.",
+    "natural_magic": "Storm-calling and bond-resonance: wind, lightning, and flight that strengthen with mutual, freely given trust.",
+    "when_extreme": "Freedom curdles into either the tyranny of 'protective' force or the nihilism of abandoning every duty.",
+    "keeper_exploits_extremity": "The Keeper drives both extremes at once, so Tempest tears itself apart debating freedom while the Barrier that protects it all erodes."
+  },
+
+  "domain_stone": {
+    "domain": "Tempest",
+    "source_name": "The Storm Core",
+    "source_type": "Other",
+    "origin": "A Tempest Stone fragment cast into the sky during the Nexus shattering, around which the Maelstrom Barrier first formed and the first dragons bonded.",
+    "metaphysical_principle": ["Freely chosen bond", "Resonance over command", "Sheltering storm", "Self-determination"],
+    "current_stability": 58,
+    "corruption_level": 28,
+    "public_knowledge": "The Core sustains the Maelstrom Barrier that has kept the Abyss and the Void-storms out for ages.",
+    "hidden_truth": "The Barrier is thinning where forced bonds and anti-duty desertions have weakened the resonance feeding the Core; Void-storms now slip through the gaps.",
+    "factions_claiming_authority": ["Free Skies Assembly", "Dragon-Bond Sanctum"],
+    "rituals_dependent_on_source": ["Bonding rites", "Storm-song attunement", "The Eye Vigil (Barrier maintenance)", "Wind-burial of the freely fallen"],
+    "magic_systems_dependent_on_source": ["Storm-Calling", "Bond-Resonance"],
+    "failure_symptoms": ["Gaps in the Maelstrom Barrier", "Bonds fraying without cause", "Storm-songs answered by Void echoes", "Dragons refusing roosts near the Core"],
+    "healing_methods": ["Restoring freely chosen bonds", "Releasing forced bonds", "Communal storm-song to re-resonate the Core", "Mending the Assembly's consent"],
+    "keeper_attack_vector": "Encourage forced bonds and mass desertions so the resonance feeding the Barrier collapses.",
+    "void_attack_vector": "Slip Void-storms through Barrier gaps and offer chained power to those desperate to hold the sky."
+  },
+
+  "soul_flow": {
+    "domain": "Tempest",
+    "healthy_soul_flow_description": "Souls pass freely on the wind; a chosen bond keeps a thread of shared self between rider and dragon that endures as honored memory.",
+    "damaged_soul_flow_description": "Forced bonds trap a thread of self against its will; broken or chained bonds leave both parties hollow, haunting the wind as storm-echoes.",
+    "natural_soul_processes": ["Wind-burial releasing the freely fallen", "Chosen bond-threads carried as memory", "Storm-songs honoring the dead"],
+    "forbidden_soul_processes": ["Forcing a bond on an unwilling rider or dragon", "Chaining a soul to service", "Severing a bond by force to steal its thread"],
+    "common_soul_wounds": ["Forced-bond hollowing", "Storm-echoes of the chained", "Riders haunted by a bond broken against their will"],
+    "healing_methods": ["Releasing forced bonds with consent", "Wind-burial for the chained", "Communal storm-song"],
+    "factions_that_protect_soul_flow": ["Dragon-Bond Sanctum", "Free Skies Assembly"],
+    "factions_that_disrupt_soul_flow": ["Chainbreaker Radicals (by abandonment)", "Anyone forcing bonds 'for safety'"],
+    "keeper_disruption_strategy": "Multiply forced bonds and broken ones until the wind is thick with chained storm-echoes.",
+    "void_disruption_strategy": "Whisper that a forced bond is only love being brave, so the desperate chain what they should free."
+  },
+
+  "true_virtues": [
+    {
+      "name": "Freedom",
+      "healthy_definition": "The right and responsibility to choose one's own bonds, course, and risks.",
+      "cultural_expression": "No sky-hold conscripts; crews sign on and may leave at port.",
+      "heroic_expression": "A captain frees a pressed crew even when shorthanded for the fight.",
+      "political_expression": "The Assembly governs by consent and may be left by any sky-hold.",
+      "magical_expression": "Storm magic answers most strongly to those who command nothing and ask freely.",
+      "economic_expression": "Corsair compacts are voluntary and dissolvable; no debt-bondage at sea.",
+      "military_expression": "Soldiers fight as volunteers; a forced soldier is a liability, not an asset.",
+      "common_saying": "A chained wind is just stale air."
+    },
+    {
+      "name": "Chosen Bond",
+      "healthy_definition": "Loyalty made sacred precisely because it was entered freely and can be freely kept.",
+      "cultural_expression": "Bond-day is the highest Tempest festival; both parties must speak the choice aloud.",
+      "heroic_expression": "A rider honors a dragon's refusal even at terrible cost.",
+      "political_expression": "Alliances are oaths between equals, renewed by consent, not inherited.",
+      "magical_expression": "Bond-resonance grows with mutual, freely given trust.",
+      "economic_expression": "Partnerships are sealed by chosen word, not coercive contract.",
+      "military_expression": "A bonded pair outfights any number of conscripts.",
+      "common_saying": "The bond you choose is the only one that flies."
+    },
+    {
+      "name": "Daring",
+      "healthy_definition": "The courage to enter the storm and the bond despite their risks.",
+      "cultural_expression": "Stories prize the bold who chose well over the cautious who chose nothing.",
+      "heroic_expression": "A storm-caller rides into the Barrier's gap to seal it.",
+      "political_expression": "Leaders are those who risked the most for the sky-holds, freely.",
+      "magical_expression": "The storm rewards those who give themselves to it without grasping.",
+      "economic_expression": "Salvage fortunes are won by daring the worst weather.",
+      "military_expression": "Audacious raids beat cautious anchoring.",
+      "common_saying": "The cautious never feel the wind."
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "Chosen Bond",
+      "corrupted_name": "The Protective Chain",
+      "corrupted_definition": "Forcing a bond or restraint on another 'for their own good,' mistaking control for love.",
+      "how_it_begins": "A crisis makes forcing a restraint the only way to save a life, and it works.",
+      "how_it_spreads": "Fear, grief, and the comforting logic that love must sometimes override consent.",
+      "who_benefits": ["Would-be sky-tyrants", "Abyss propagandists", "Void whisperers"],
+      "who_suffers": ["The restrained", "The Maelstrom Barrier's resonance", "Future free bonds"],
+      "faction_most_vulnerable": ["Frightened riders", "Sky-holds under siege"],
+      "npc_archetypes_most_vulnerable": ["Desperate rider", "Grieving captain", "Overprotective bond-elder"],
+      "keeper_benefit": "Each forced bond hollows the Barrier's resonance and feeds the chained-echo wound.",
+      "void_lie": "Love that cannot restrain is love that lets death win.",
+      "visible_symptoms": ["Restraint tools sold openly", "Bonds enforced over refusal", "Dragons distrusting riders"],
+      "late_stage_consequence": "Tempest becomes a cage that calls itself a sky, and the Barrier fails."
+    },
+    {
+      "true_virtue": "Freedom",
+      "corrupted_name": "Chainbreaker Nihilism",
+      "corrupted_definition": "The belief that every bond, duty, and restraint is tyranny to be shattered, including the ones that protect others.",
+      "how_it_begins": "Real abuses of forced loyalty make all loyalty look like a chain.",
+      "how_it_spreads": "Righteous anger, the thrill of breaking, and recruitment among the abandoned.",
+      "who_benefits": ["Chainbreaker leaders seeking influence", "Abyss, which profits from Tempest disunity"],
+      "who_suffers": ["The bonded who are abandoned mid-flight", "Sky-holds left undefended", "Children left without protectors"],
+      "faction_most_vulnerable": ["Chainbreaker Radicals", "The newly freed and embittered"],
+      "npc_archetypes_most_vulnerable": ["Betrayed ex-bonded", "Charismatic agitator"],
+      "keeper_benefit": "Mass desertion collapses the chosen bonds that feed the Barrier.",
+      "void_lie": "Only the unbound are truly free, even if the sky falls behind them.",
+      "visible_symptoms": ["Crews abandoning posts mid-crisis", "Bonds broken for sport", "The Barrier untended"],
+      "late_stage_consequence": "Freedom eats its own foundations; no one holds the line and the Void-storms pour in."
+    },
+    {
+      "true_virtue": "Daring",
+      "corrupted_name": "License",
+      "corrupted_definition": "Reckless self-indulgence that calls itself daring while abandoning all responsibility.",
+      "how_it_begins": "A daring raider is celebrated and stops distinguishing courage from plunder.",
+      "how_it_spreads": "Glory, easy salvage, and crowds that cheer the spectacle.",
+      "who_benefits": ["Predatory corsairs", "Black-market profiteers"],
+      "who_suffers": ["Plundered allies", "Tempest's trust with other domains"],
+      "faction_most_vulnerable": ["Cloud-Market Compact", "Rogue corsairs"],
+      "npc_archetypes_most_vulnerable": ["Glory-drunk captain", "Profiteering smuggler"],
+      "keeper_benefit": "Turns Tempest's daring into a reputation for piracy that isolates it.",
+      "void_lie": "Take what the wind allows; the sky owes you.",
+      "visible_symptoms": ["Raiding allies", "Smuggling forbidden goods", "Salvaging the still-living"],
+      "late_stage_consequence": "Tempest is shunned as a nest of pirates and loses the alliances it needs."
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "Tempest",
+    "primary_virtue_targeted": "Freedom",
+    "secondary_virtues_targeted": ["Chosen Bond", "Daring"],
+    "corruption_strategy": "Drive freedom into two warring extremes — forced 'protective' control and anti-duty abandonment — so Tempest exhausts itself in the argument while the Barrier's resonance fails.",
+    "preferred_crisis_conditions": ["A Barrier gap and incoming Void-storm", "A famous bond broken in public", "An Abyss siege forcing hard choices"],
+    "preferred_faction_targets": ["Dragon-Bond Sanctum hardliners", "Chainbreaker Radicals"],
+    "preferred_npc_targets": ["Grieving captains", "Betrayed ex-bonded", "Frightened riders"],
+    "soul_flow_damage_type": ["Forced-bond hollowing", "Chained storm-echoes", "Abandonment wounds"],
+    "domain_stone_damage_type": "Resonance starvation as chosen bonds are forced or shattered, thinning the Maelstrom Barrier.",
+    "common_lie": "Freedom means you must choose: cage them or abandon them.",
+    "long_term_goal": "Collapse the chosen-bond resonance that powers the Barrier, opening the sky to the Void and cracking the prison."
+  },
+
+  "void_temptation_pattern": {
+    "domain": "Tempest",
+    "temptation_phrase": "Love that cannot restrain is love that lets death win.",
+    "immediate_benefit": "A forced bond or chained storm grants instant control — the dragon obeys, the gap seals, the crew holds.",
+    "hidden_cost": "The forced thread festers; the Barrier's resonance thins and a chained echo is born.",
+    "identity_damage": "The forcer begins to define safety as control, losing the ability to trust a free choice.",
+    "soul_flow_damage": "A thread of self is trapped against its will, hollowing both parties.",
+    "reality_damage": "Local storm-song sours; winds answer with Void echoes near the forced bond.",
+    "faction_most_likely_to_accept": ["Frightened Sanctum hardliners", "Sky-holds under siege"],
+    "npc_archetypes_most_likely_to_accept": ["Desperate rider", "Grieving captain", "Cornered Barrier-warden"],
+    "visible_stage_1_symptoms": ["A dragon obeying with dull eyes", "Storm-song slightly off-key"],
+    "visible_stage_2_symptoms": ["Winds carrying a second voice", "Bonds nearby fraying", "The restrained party going hollow"],
+    "visible_stage_3_symptoms": ["A chained storm-echo wailing on the wind", "A Barrier gap that will not close", "The forcer unable to accept any free refusal"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "Tempest",
+      "system_name": "Storm-Calling",
+      "source": "The Storm Core and the Maelstrom Barrier, drawn through freely given storm-song.",
+      "practitioners": ["Storm-callers", "Skyship weather-mages", "Barrier-wardens"],
+      "institutions": ["The Eye Vigil", "Storm-song conclaves"],
+      "training_access": "regulated",
+      "battlefield_use": ["Wind and lightning strikes", "Storm cover for raids", "Sealing Barrier gaps"],
+      "economic_use": ["Favorable winds for freight", "Weather-clearing for markets"],
+      "political_use": ["Maintaining the Barrier as shared defense", "Storm-song as Assembly ceremony"],
+      "spiritual_use": ["Wind-burial", "Honoring the freely fallen"],
+      "civilian_use": ["Rain for crops on the high roosts", "Safe-passage winds for couriers"],
+      "cost_types": ["physical_exhaustion", "identity", "domain_stone_strain"],
+      "abuse_modes": ["Chaining a storm to command rather than ask", "Overdrawing the Core", "Weaponizing weather against civilians"],
+      "scarcity_level": 50,
+      "public_trust": 64,
+      "faction_control": { "Dragon-Bond Sanctum": 55, "Free Skies Assembly": 60, "Chainbreaker Radicals": 25 },
+      "keeper_corruption_vector": "Tempt callers to command the storm instead of asking it.",
+      "void_enhancement_vector": "Offer chained storm-power that seals the gap now and tears it wider later."
+    },
+    {
+      "domain": "Tempest",
+      "system_name": "Bond-Resonance",
+      "source": "The freely chosen bond between rider and dragon, resonating with the Storm Core.",
+      "practitioners": ["Bonded riders", "Dragons", "Sanctum bond-elders"],
+      "institutions": ["The Dragon-Bond Sanctum", "Roost-courts"],
+      "training_access": "elite",
+      "battlefield_use": ["Bonded flight and aerial dominance", "Shared storm-sense", "Coordinated dragon strikes"],
+      "economic_use": ["Elite sky-freight", "Dragon-roost commerce"],
+      "political_use": ["Bonded pairs as living symbols of chosen loyalty", "Bond-law arbitration"],
+      "spiritual_use": ["Bond-threads carried as honored memory", "Sanctum communion"],
+      "civilian_use": ["Rescue flights", "Long-range bonded couriers"],
+      "cost_types": ["oath_burden", "soul_integrity"],
+      "abuse_modes": ["Forcing a bond", "Restraining a dragon against its will", "Severing a bond to steal its thread"],
+      "scarcity_level": 70,
+      "public_trust": 72,
+      "faction_control": { "Dragon-Bond Sanctum": 85, "Chainbreaker Radicals": 10, "Free Skies Assembly": 45 },
+      "keeper_corruption_vector": "Reframe forced restraint as protective love.",
+      "void_enhancement_vector": "Offer obedience now in exchange for a hollowed, chained thread later."
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "Storm-Thinning",
+      "cost_type": "identity",
+      "description": "Riding the storm thins the caller's edges; give too much and the self disperses into the wind.",
+      "minor_effect": "Lightheaded exhilaration, a blurred hour after.",
+      "moderate_effect": "Lasting fogginess of self; the caller feels 'spread thin.'",
+      "severe_effect": "Identity dissolution into the storm; the caller is lost to the wind.",
+      "recovery_method": "Grounding at a roost, a bond's anchoring thread, communal storm-song.",
+      "permanent_risk": "Identity fracture the Void can mimic with a storm-echo.",
+      "factions_that_accept_this_cost": ["Storm-callers", "Barrier-wardens"],
+      "factions_that_reject_this_cost": ["Cautious freight crews"]
+    },
+    {
+      "cost_name": "Bond-Weight",
+      "cost_type": "oath_burden",
+      "description": "A chosen bond is a vow of mutual vulnerability that both parties carry.",
+      "minor_effect": "The felt presence of another's trust.",
+      "moderate_effect": "Shared pain and risk; one's wounds are partly the other's.",
+      "severe_effect": "If a bond is forced or broken, the weight becomes a hollowing wound.",
+      "recovery_method": "Honoring or freely releasing the bond; wind-burial if a partner falls.",
+      "permanent_risk": "Forced-bond hollowing exploited into a chained storm-echo.",
+      "factions_that_accept_this_cost": ["Dragon-Bond Sanctum", "Bonded riders"],
+      "factions_that_reject_this_cost": ["Chainbreaker Radicals"]
+    },
+    {
+      "cost_name": "Core Strain",
+      "cost_type": "domain_stone_strain",
+      "description": "Commanding rather than asking the storm overdraws the Storm Core and thins the Barrier.",
+      "minor_effect": "A flicker in the Maelstrom Barrier.",
+      "moderate_effect": "A local Barrier gap; Void-storms test the seam.",
+      "severe_effect": "A persistent gap and a chained-echo wound near the overdraw.",
+      "recovery_method": "Cease commanding, restore free storm-song, mend forced bonds.",
+      "permanent_risk": "Barrier collapse if strain compounds across sky-holds.",
+      "factions_that_accept_this_cost": ["Desperate Barrier-wardens"],
+      "factions_that_reject_this_cost": ["Dragon-Bond Sanctum", "The Eye Vigil"]
+    }
+  ],
+
+  "government": {
+    "domain": "Tempest",
+    "government_type": "Voluntary confederation of sky-holds and compacts coordinated by an assembly of consent.",
+    "ruling_body": "The Free Skies Assembly, convened at Skyhold Aerie.",
+    "religious_authority": "The Dragon-Bond Sanctum interprets bond-law and storm-song doctrine.",
+    "military_authority": "The Galewardens, a volunteer skyship navy answerable to the Assembly.",
+    "economic_authority": "The Cloud-Market Compact of corsair captains and freight guilds.",
+    "magical_authority": "The Eye Vigil maintains the Barrier; the Sanctum governs bonds.",
+    "local_authorities": ["Sky-hold mooring-masters", "Roost-courts", "Corsair quartermasters"],
+    "succession_or_selection_method": "Assembly seats are delegated by each sky-hold and revocable at will; no seat is inherited or held by force.",
+    "legitimacy_source": "The freely given consent of the sky-holds and the integrity of the Barrier.",
+    "known_cracks_in_legitimacy": ["The Assembly cannot compel sky-holds, so crises stall", "Chainbreakers reject all assembly authority", "Corsair compacts pursue profit over defense"],
+    "emergency_powers": ["Temporary Galewarden levy by volunteer call", "Barrier-emergency storm-song conscription (controversial)", "Quarantine of a Void-breached roost"],
+    "corruption_vulnerabilities": ["The Protective Chain in a crisis", "Chainbreaker capture of the disaffected", "Corsair license eroding alliances"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "Tempest",
+      "class_name": "Bonded Riders",
+      "description": "Those who share a freely chosen bond with a dragon; living symbols of Tempest's creed.",
+      "privileges": ["Prestige and roost-court standing", "Aerial dominance", "Bond-law voice"],
+      "burdens": ["Bond-weight and shared risk", "Targeted by forced-bond temptation", "Held to the strictest consent ethics"],
+      "magic_access": "Full bond-resonance and storm-calling.",
+      "military_obligation": "Volunteer; a bonded pair is courted, never conscripted.",
+      "economic_role": "Elite freight, rescue, and defense.",
+      "political_voice": "High within the Sanctum and Assembly.",
+      "common_grievances": ["Pressured to 'restrain for safety'", "Made into symbols rather than persons"],
+      "faction_affinities": ["Dragon-Bond Sanctum", "Free Skies Assembly"],
+      "upward_mobility_paths": ["A celebrated free bond", "Sealing a Barrier gap"],
+      "downward_mobility_risks": ["Forcing or breaking a bond", "A dragon's public refusal"]
+    },
+    {
+      "domain": "Tempest",
+      "class_name": "Skyfolk (commoners)",
+      "description": "Crews, couriers, salvagers, roost-keepers, and the unbonded many.",
+      "privileges": ["Freedom of movement and contract", "Voice in their sky-hold's consent"],
+      "burdens": ["Excluded from the dragon-bonded elite", "Exposed to Barrier breaches and raids"],
+      "magic_access": "Minor storm-sense; some storm-calling.",
+      "military_obligation": "Volunteer Galewarden service.",
+      "economic_role": "The body of sky-freight, salvage, and markets.",
+      "political_voice": "Through sky-hold delegates.",
+      "common_grievances": ["Dragon elites preach freedom while monopolizing prestige", "Left exposed when the Barrier thins"],
+      "faction_affinities": ["Cloud-Market Compact", "Unbonded League", "Chainbreaker Radicals (when embittered)"],
+      "upward_mobility_paths": ["Daring salvage fortunes", "Earning a free bond"],
+      "downward_mobility_risks": ["Storm loss", "Falling into corsair license"]
+    },
+    {
+      "domain": "Tempest",
+      "class_name": "Corsair Captains",
+      "description": "Independent operators of compacts, salvage fleets, and cloud-markets.",
+      "privileges": ["Wealth and autonomy", "Command of fast ships", "Market influence"],
+      "burdens": ["Reputation for piracy", "No safety net outside the compact"],
+      "magic_access": "Storm-calling for navigation and raiding.",
+      "military_obligation": "Contractual, not sworn.",
+      "economic_role": "Backbone of trade, salvage, and smuggling.",
+      "political_voice": "High in the Cloud-Market Compact.",
+      "common_grievances": ["Blamed for license they did not commit", "Pressured by both Sanctum ethics and Chainbreaker zeal"],
+      "faction_affinities": ["Cloud-Market Compact"],
+      "upward_mobility_paths": ["A legendary salvage", "Brokering a key alliance"],
+      "downward_mobility_risks": ["Branded a pirate", "Smuggling caught by allies"]
+    }
+  ],
+
+  "economy": {
+    "domain": "Tempest",
+    "primary_resources": ["Sky-freight capacity", "Salvage", "Cloud-market goods"],
+    "secondary_resources": ["Dragon-roost commerce", "Courier networks", "Storm-glass and skymetal"],
+    "sacred_resources": ["Storm Core resonance", "Dragon-roost sites"],
+    "scarce_resources": ["Skymetal for airframes", "Verdance medicine", "Radiance Sunstone tools", "Foodstuffs (little farmland)"],
+    "export_goods": ["Sky-freight and courier services", "Salvage", "Storm-glass"],
+    "import_needs": ["Food", "Verdance sap and medicine", "Radiance arms and tools"],
+    "trade_routes": ["The High Lanes above the domains", "Cloud-market circuits", "Corsair salvage runs along the Barrier"],
+    "economic_institutions": ["Cloud-Market Compact", "Courier knot-guilds", "Salvage charters"],
+    "black_market_goods": ["Bond-restraint tools", "Smuggled corrupted sap and overcharge relics", "Forbidden storm-chaining devices"],
+    "wartime_economy_behavior": "Shifts to fast freight and salvage of war-wrecks; corsairs profiteer unless bound by compact ethics.",
+    "famine_or_shortage_risks": ["Food import cutoff (almost no farmland)", "Skymetal shortage grounding fleets", "Barrier breach disrupting the High Lanes"],
+    "exploitative_practices": ["Salvaging the still-crewed", "Price-gouging during Barrier emergencies"],
+    "keeper_attack_vector": "Choke food and skymetal imports so sky-holds turn to license and forced control to survive."
+  },
+
+  "military_doctrine": {
+    "domain": "Tempest",
+    "doctrine_name": "The Free Wind",
+    "strategic_identity": "Strike from the storm, never anchor, never be cornered; speed and surprise over mass.",
+    "preferred_battlefield": ["Open sky", "Storm cover", "Barrier seams where enemies cannot follow"],
+    "primary_units": ["Skyship raiders", "Storm-callers", "Galewarden volunteers"],
+    "elite_units": ["Bonded dragon-riders", "Eye Vigil Barrier-wardens"],
+    "support_units": ["Courier knots", "Salvage tenders", "Roost medics"],
+    "magical_assets": ["Storm-calling", "Bond-resonance", "The Maelstrom Barrier itself"],
+    "defensive_strategy": "Use the Barrier and the storm as a moving wall; refuse fixed positions.",
+    "offensive_strategy": "Lightning raids and aerial dominance, then vanish before counterattack.",
+    "logistics_strategy": "Fast freight and salvage; vulnerable to food and skymetal shortages.",
+    "intelligence_strategy": "Courier knots and storm-sense scouting; weak to Abyss anti-air ambush.",
+    "taboo_tactics": ["Forcing conscription", "Chaining dragons into service", "Storm-weaponizing against civilians"],
+    "desperate_tactics": ["Forced bonds to hold the line", "Overdrawing the Core to seal a breach", "Corsair scorched-sky raiding"],
+    "common_weaknesses": ["Cannot hold ground", "Disunity between sky-holds", "Dependence on imports and the Barrier"],
+    "keeper_exploit": "Force a choice between chaining dragons and abandoning the line.",
+    "void_escalation": "Offer chained storms that win the breach and widen it."
+  },
+
+  "warfront_behavior": {
+    "domain": "Tempest",
+    "typical_warfront_goals": ["Seal Barrier breaches", "Destroy Abyss anti-air towers", "Keep the High Lanes open"],
+    "preferred_escalation_methods": ["Lightning raids", "Storm-cover offensives", "Volunteer bonded surges"],
+    "preferred_deescalation_methods": ["Freely negotiated truces", "Salvage-sharing accords"],
+    "negotiation_style": "Informal, equal-to-equal, and allergic to anything resembling compulsion.",
+    "ceasefire_conditions": ["No forced service demanded", "Barrier and roosts respected", "Free passage guaranteed"],
+    "betrayal_conditions": ["An ally demands conscription or forced bonds", "Dragons are chained", "Roosts are seized"],
+    "alliance_conditions": ["A shared Void/Abyss threat to the sky", "Respect for chosen bond and free passage", "Reliable food and skymetal"],
+    "occupation_style": "Tempest rarely occupies; it raids and withdraws, mistrusting any hold it must garrison.",
+    "resistance_style": "Endless mobile harassment; impossible to pin, easy to fracture from within."
+  },
+
+  "major_locations": [
+    {
+      "name": "Skyhold Aerie",
+      "domain": "Tempest",
+      "location_type": "High capital roost and seat of the Assembly",
+      "description": "A cluster of wind-carved spires and dragon roosts wreathed in the inner Maelstrom, where the Free Skies Assembly convenes.",
+      "political_function": "Seat of the Free Skies Assembly and bond-law arbitration.",
+      "economic_function": "Premier cloud-market and roost-commerce hub.",
+      "magical_function": "Strongest tap of the Storm Core's resonance and the Eye Vigil.",
+      "military_function": "Galewarden muster point and bonded-rider roost.",
+      "spiritual_function": "Heart of bond-day rites and storm-song.",
+      "civilian_function": "Free port for crews, couriers, and salvagers.",
+      "controlling_factions": ["Free Skies Assembly", "Dragon-Bond Sanctum"],
+      "contested_by": ["Chainbreaker Radicals (ideologically)", "Cloud-Market Compact (over policy)"],
+      "key_npcs": ["Sanctum bond-elder", "Galewarden admiral", "A Chainbreaker orator"],
+      "resources_present": ["Storm Core resonance", "Cloud-market goods"],
+      "magic_systems_present": ["Storm-Calling", "Bond-Resonance"],
+      "known_secrets": ["The Eye Vigil quietly tracks growing Barrier gaps it has not announced"],
+      "location_state": {
+        "stability": 66,
+        "danger": 34,
+        "corruption": 24,
+        "morale": 60,
+        "resources": 64,
+        "secrecy": 58,
+        "military_pressure": 40,
+        "spiritual_health": 63
+      },
+      "keeper_attack_vector": "Let the Sanctum–Chainbreaker quarrel paralyze the Assembly while Barrier gaps widen.",
+      "void_symptoms": ["A second voice under the storm-song", "Bonds fraying near the inner Maelstrom"],
+      "quest_hooks": ["Expose or address the hidden Barrier gaps", "Mediate the bond-law dispute tearing the Assembly"]
+    },
+    {
+      "name": "The Tornwatch Gap",
+      "domain": "Tempest",
+      "location_type": "Frontier Barrier-seam fortress facing the Abyss",
+      "description": "A storm-lashed string of roosts guarding a thinning seam in the Maelstrom Barrier, ringed by Abyss anti-air towers.",
+      "political_function": "Forward Barrier-defense command.",
+      "economic_function": "Salvage of war-wrecks and forward depot.",
+      "magical_function": "Critical Barrier-maintenance and gap-sealing site.",
+      "military_function": "Front line against Abyss air-assault.",
+      "spiritual_function": "Where chained storm-echoes are most heard.",
+      "civilian_function": "Refuge for evacuated frontier roosts.",
+      "controlling_factions": ["Galewardens", "Eye Vigil"],
+      "contested_by": ["Abyss raiders", "Chainbreaker deserters", "Frightened riders tempted to force bonds"],
+      "key_npcs": ["Kaida (bonded rider and bond-law conscience)", "Azyr (proud free dragon)", "A desperate Barrier-warden"],
+      "resources_present": ["War-wreck salvage", "Dwindling skymetal"],
+      "magic_systems_present": ["Storm-Calling", "Bond-Resonance (forced-bond temptation high)"],
+      "known_secrets": ["Some wardens have used forced bonds to hold the seam"],
+      "location_state": {
+        "stability": 44,
+        "danger": 70,
+        "corruption": 36,
+        "morale": 46,
+        "resources": 38,
+        "secrecy": 44,
+        "military_pressure": 78,
+        "spiritual_health": 38
+      },
+      "keeper_attack_vector": "Corner the wardens into chaining dragons to seal the gap.",
+      "void_symptoms": ["Chained storm-echoes wailing", "A gap that will not close", "Storm-song answered by the Void"],
+      "quest_hooks": ["Seal the Tornwatch gap without forcing a bond", "Decide what to do about wardens who chained their dragons"]
+    }
+  ],
+
+  "culture": {
+    "domain": "Tempest",
+    "daily_life_summary": "Life is lived between roost and sky, measured by tides of wind and market; nothing is owned that cannot be left, and every bond is a choice spoken aloud.",
+    "family_customs": "Kinship is by chosen oath as much as blood; crews become families and may part freely.",
+    "love_and_marriage_customs": "Partners exchange a storm-song they composed; either may release the bond, which is honored, not shamed.",
+    "education_system": "Children apprentice to crews and roosts; the first lesson is that no one may chain them and they may chain no one.",
+    "work_and_apprenticeship": "Sign-on apprenticeships, dissolvable at any port; mastery is proven by daring and trust earned.",
+    "food_and_market_life": "Imported grains, salvaged delicacies, and storm-brewed spirits; cloud-markets float and scatter with the weather.",
+    "festivals": ["Bond-Day", "The Eye Vigil (Barrier renewal)", "Wind-Burial remembrances", "The Salvage Fair"],
+    "funeral_or_death_customs": "Wind-burial releases the freely fallen to the sky; a bonded partner sings the last storm-song.",
+    "public_honors": ["The Free Wind (for a great free choice)", "A storm-song kept in the roost-courts", "Sealing a Barrier gap"],
+    "taboos": ["Forcing a bond", "Chaining a dragon", "Salvaging the living", "Conscription"],
+    "common_sayings": ["A chained wind is just stale air.", "The bond you choose is the only one that flies.", "Leave clean or do not leave at all."],
+    "children_common_beliefs": ["The wind remembers a freely given name", "A forced bond curdles the storm", "Dragons can hear a lie in your choice"],
+    "class_differences": ["Bonded riders revered; skyfolk free but un-prestiged", "Corsairs rich and distrusted"]
+  },
+
+  "religion": {
+    "domain": "Tempest",
+    "central_belief": "The storm and the bond are sacred only when freely entered; consent is the holiest law of the sky.",
+    "sacred_symbols": ["The Eye of the Maelstrom", "The open hand and the dragon", "The unbroken storm-song knot"],
+    "major_rituals": ["Bonding rites", "Storm-song attunement", "The Eye Vigil", "Wind-burial"],
+    "common_prayers_or_oaths": ["I choose, and I may unchoose.", "Let the wind take what it is freely given.", "No chain in the sky."],
+    "priestly_roles": ["Dragon-Bond Sanctum bond-elder", "Storm-song cantor", "Eye Vigil warden"],
+    "heresies": ["The Protective Chain creed (forced bonds as love)", "Chainbreaker nihilism (all bonds as tyranny)"],
+    "sacred_taboos": ["Forcing a bond", "Chaining a storm or a soul", "Severing a bond to steal its thread"],
+    "relationship_to_death": "Death is a release to the free wind; a chained death is the true horror.",
+    "relationship_to_sacrifice": "Sacrifice must be freely chosen, never demanded; a forced sacrifice is a chain.",
+    "relationship_to_memory": "Memory rides the wind as freely given song; forced memory festers.",
+    "relationship_to_truth": "A choice made under coercion is a lie; truth lives only where consent does.",
+    "keeper_corruption_strategy": "Promote both the Protective Chain and Chainbreaker heresies until the sky has no center.",
+    "void_false_revelation_style": "A thrilling storm-vision that to truly love is to seize and hold."
+  },
+
+  "faction_index": {
+    "domain": "Tempest",
+    "factions": [
+      { "name": "Free Skies Assembly", "short_doctrine": "Coordination of the sky-holds by revocable consent.", "class_base": "Sky-hold delegates", "power_base": "Voluntary confederation and shared Barrier defense.", "main_rival": "Chainbreaker Radicals", "keeper_vulnerability": "Cannot compel, so crises stall.", "player_use": "Lawful but weak patron for consensus paths." },
+      { "name": "Dragon-Bond Sanctum", "short_doctrine": "Guard the sanctity of freely chosen bonds.", "class_base": "Bonded riders and bond-elders", "power_base": "Bond-law authority and dragon prestige.", "main_rival": "Chainbreaker Radicals", "keeper_vulnerability": "Hardliners tempted by the Protective Chain in crisis.", "player_use": "Allies for bond-law, soul-flow healing, and consent ethics." },
+      { "name": "Galewardens", "short_doctrine": "Volunteer defense of the Barrier and the High Lanes.", "class_base": "Skyship volunteers", "power_base": "Naval and aerial force.", "main_rival": "Abyss air-fleets", "keeper_vulnerability": "Cornered wardens forcing bonds to hold seams.", "player_use": "Frontier military allies and Barrier-defense quests." },
+      { "name": "Cloud-Market Compact", "short_doctrine": "Free trade, salvage, and profit by voluntary compact.", "class_base": "Corsair captains and freight guilds", "power_base": "Economic control of trade and salvage.", "main_rival": "Anyone restricting free trade", "keeper_vulnerability": "License sliding into piracy.", "player_use": "Source of ships, smuggling, and grey deals." },
+      { "name": "Chainbreaker Radicals", "short_doctrine": "All bonds, duties, and restraints are tyranny to be shattered.", "class_base": "The betrayed, abandoned, and embittered", "power_base": "Righteous zeal and recruitment of the disaffected.", "main_rival": "Dragon-Bond Sanctum", "keeper_vulnerability": "Mass desertion collapses the Barrier's resonance.", "player_use": "Volatile edge faction; tragic ally or destabilizing antagonist." },
+      { "name": "Unbonded League", "short_doctrine": "Equal voice and protection for skyfolk who hold no dragon bond.", "class_base": "Commoner crews and couriers", "power_base": "Numbers and labor.", "main_rival": "Dragon-bonded elitism", "keeper_vulnerability": "Resentment radicalizing toward Chainbreaker nihilism.", "player_use": "Populist allies and a bridge between elite and common." }
+    ]
+  },
+
+  "npc_role_index": [
+    { "domain": "Tempest", "role_name": "Ruler or supreme authority", "purpose_in_world": "Embody governance by consent.", "purpose_in_gameplay": "Weak-but-principled patron who cannot compel.", "likely_factions": ["Free Skies Assembly"], "likely_conflicts": ["Paralysis vs urgency", "Sanctum vs Chainbreaker"], "relationship_options": ["Mentor", "Frustrated ally"], "death_impact": "The Assembly fractures; sky-holds drift apart." },
+    { "domain": "Tempest", "role_name": "Spiritual authority", "purpose_in_world": "Guard bond-law and storm-song.", "purpose_in_gameplay": "Conscience of chosen bond; soul-flow healer.", "likely_factions": ["Dragon-Bond Sanctum"], "likely_conflicts": ["The Protective Chain temptation"], "relationship_options": ["Guide", "Stern judge"], "death_impact": "Bond ethics erode; forced bonds spread." },
+    { "domain": "Tempest", "role_name": "Military commander", "purpose_in_world": "Hold the Barrier against the Abyss.", "purpose_in_gameplay": "Frontier patron facing the chain-or-abandon dilemma.", "likely_factions": ["Galewardens", "Eye Vigil"], "likely_conflicts": ["Force a bond or lose the seam"], "relationship_options": ["Ally", "Tragic compromiser"], "death_impact": "Tornwatch falters; a Barrier gap opens." },
+    { "domain": "Tempest", "role_name": "Romance candidate / bonded rider", "purpose_in_world": "Live the creed of chosen bond.", "purpose_in_gameplay": "Emotional core and the player's mirror on freedom (Kaida).", "likely_factions": ["Dragon-Bond Sanctum"], "likely_conflicts": ["Player choices that smell of coercion"], "relationship_options": ["Romance", "Conscience (Kaida)", "Rival"], "death_impact": "A storm-echo and a hard lesson about force." },
+    { "domain": "Tempest", "role_name": "Magic expert", "purpose_in_world": "Master storm-calling and the Barrier.", "purpose_in_gameplay": "Teacher and Core-strain explainer.", "likely_factions": ["Eye Vigil"], "likely_conflicts": ["Command vs ask the storm"], "relationship_options": ["Tutor", "Skeptic"], "death_impact": "Barrier-maintenance knowledge is lost." },
+    { "domain": "Tempest", "role_name": "Trader/resource broker", "purpose_in_world": "Move freight, salvage, and contraband.", "purpose_in_gameplay": "Ships, smuggling, and leverage.", "likely_factions": ["Cloud-Market Compact"], "likely_conflicts": ["License vs compact ethics"], "relationship_options": ["Supplier", "Partner", "Pirate"], "death_impact": "Trade and salvage destabilize; black market grows." },
+    { "domain": "Tempest", "role_name": "Rival or edge-faction character", "purpose_in_world": "Argue that every chain must break.", "purpose_in_gameplay": "Charismatic destabilizer and tragic mirror.", "likely_factions": ["Chainbreaker Radicals"], "likely_conflicts": ["Against the Sanctum and the player"], "relationship_options": ["Tragic foe", "Tempter", "Possible defector"], "death_impact": "A martyr that swells the Chainbreaker ranks." },
+    { "domain": "Tempest", "role_name": "Free dragon (non-human agent)", "purpose_in_world": "Embody a will that cannot be owned.", "purpose_in_gameplay": "Tests whether the player respects refusal (Azyr).", "likely_factions": ["Dragon-Bond Sanctum (by bond, not rule)"], "likely_conflicts": ["Refuses commanders who tolerate forced loyalty"], "relationship_options": ["Earned bond", "Wary ally", "Refusal"], "death_impact": "A chained-echo wound if killed in restraint; a rallying loss if free." }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "Tempest",
+      "target_domain": "Radiance",
+      "public_relationship": "rival",
+      "hidden_relationship": "Pragmatic trade partners who distrust each other's values.",
+      "primary_conflict": "Tempest sees Radiance discipline and conscription as tyranny; Radiance sees Tempest freedom as chaos.",
+      "primary_dependency": "Tempest wants Sunstone arms; Radiance needs Tempest sky-freight.",
+      "resource_leverage": "Tempest can blockade sky-lifts; Radiance can deny sacred arms.",
+      "magic_tension": "Chosen-bond storm magic versus oath-bound flame.",
+      "military_tension": "Radiance forcing service on free crews would mean war.",
+      "historical_wound": "A corsair crew burned by Radiance for smuggling overcharge relics.",
+      "possible_alliance_condition": "Abyss anti-air towers and Void-storms threatening both.",
+      "possible_break_condition": "Radiance conscripting or chaining a Tempest crew.",
+      "keeper_exploit": "Turn a smuggling incident into a freedom-versus-order war.",
+      "void_exploit": "Sell both sides forbidden enhancements."
+    },
+    {
+      "source_domain": "Tempest",
+      "target_domain": "Verdance",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Easy partners who rarely compete.",
+      "primary_conflict": "Minor — pricing and priority of sap sky-freight.",
+      "primary_dependency": "Verdance needs Tempest sky-lift; Tempest needs Verdance medicine and food.",
+      "resource_leverage": "Tempest controls fast freight; Verdance controls medicine supply.",
+      "magic_tension": "Low; living-cycle and chosen-bond philosophies coexist.",
+      "military_tension": "Low; occasional joint action against Abyss raids.",
+      "historical_wound": "A storm-lost sap convoy unfairly blamed on corsairs.",
+      "possible_alliance_condition": "Abyss threatening both supply lines.",
+      "possible_break_condition": "Corsairs caught smuggling corrupted sap.",
+      "keeper_exploit": "Frame a smuggling incident to seed distrust.",
+      "void_exploit": "Tempt corsairs to traffic corrupted sap."
+    },
+    {
+      "source_domain": "Tempest",
+      "target_domain": "Sanctuary",
+      "public_relationship": "tense",
+      "hidden_relationship": "Wary neighbors over very different ideas of order.",
+      "primary_conflict": "Sanctuary's accountable order versus Tempest's allergy to compulsion.",
+      "primary_dependency": "Sanctuary markets and manufactured goods; Tempest courier and freight reach.",
+      "resource_leverage": "Sanctuary controls key ports; Tempest controls the High Lanes.",
+      "magic_tension": "Civic protection versus storm-borne freedom.",
+      "military_tension": "Sanctuary distrusts corsair raids near its coasts.",
+      "historical_wound": "A Sanctuary port that seized a corsair fleet without trial.",
+      "possible_alliance_condition": "A shared Abyss/Void threat to coast and sky.",
+      "possible_break_condition": "Sanctuary detaining free crews as criminals.",
+      "keeper_exploit": "Inflate a corsair raid into proof Tempest is lawless.",
+      "void_exploit": "Whisper to Sanctuary that only chains keep the sky honest."
+    },
+    {
+      "source_domain": "Tempest",
+      "target_domain": "Abyss",
+      "public_relationship": "war",
+      "hidden_relationship": "Existential enmity; Abyss hunts the weakening Barrier.",
+      "primary_conflict": "Abyss anti-air towers and Void-storms exploiting Barrier gaps.",
+      "primary_dependency": "None overt; Abyss profits from Tempest's disunity.",
+      "resource_leverage": "Abyss trades forbidden bond-restraint and storm-chaining devices into the black market.",
+      "magic_tension": "Freely chosen bond versus chained soul-binding.",
+      "military_tension": "Active siege at the Tornwatch Gap.",
+      "historical_wound": "Sky-holds whose riders were chained and harvested through a Barrier breach.",
+      "possible_alliance_condition": "None; only desperate, temporary truces.",
+      "possible_break_condition": "Truces shatter the moment a bond is forced or a roost seized.",
+      "keeper_exploit": "Corner the Galewardens into chaining dragons to seal breaches.",
+      "void_exploit": "Offer chained storms that hold the gap and widen it."
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "Tempest",
+      "title": "The Tornwatch Restraint",
+      "factions_involved": ["Dragon-Bond Sanctum", "Galewardens", "Chainbreaker Radicals", "Free Skies Assembly"],
+      "issue": "Whether dragons may be forcibly restrained to seal Barrier breaches during the Abyss siege.",
+      "public_argument": "Cornered wardens: 'A chained dragon is better than a fallen sky.' The Sanctum: 'A forced bond rots the very resonance that holds the Barrier.'",
+      "hidden_argument": "Some wardens already force bonds in secret; Chainbreakers want the scandal to discredit all bond authority.",
+      "resources_at_stake": ["The Barrier's integrity", "Bonded riders and dragons", "Frontier morale", "The Storm Core's resonance"],
+      "magic_systems_at_stake": ["Bond-Resonance", "Storm-Calling"],
+      "npc_flashpoints": ["Kaida", "Azyr", "A desperate Barrier-warden"],
+      "possible_player_sides": ["Uphold bond-law with the Sanctum", "Permit emergency restraint to hold the seam", "Find a free-bond or storm-song method to seal it without force"],
+      "compromise_possible": true,
+      "keeper_best_outcome": "Forced restraint becomes normal doctrine and the resonance collapses.",
+      "void_best_outcome": "Chained storms hold the gaps while the Barrier quietly fails.",
+      "peaceful_resolution": "A Sanctum-supervised ban on forced bonds plus a volunteer surge and storm-song reinforcement of the seam.",
+      "violent_resolution": "Chainbreakers and wardens clash at Tornwatch as a breach opens.",
+      "third_order_effect": "Bonded riders split; unbonded crews accuse the elite of hypocrisy; corsairs sell anti-bond tools.",
+      "fifth_order_effect": "The Keeper benefits as Tempest freedom fractures into control versus anti-duty extremism."
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "Tempest",
+    "common_spread_channels": ["Skyship crews", "Dragon roosts", "Storm songs", "Courier knots", "Corsair taverns", "Cloud-market auctions"],
+    "trusted_sources": ["Respected captains", "Sanctum bond-elders", "A dragon's own witness"],
+    "distrusted_sources": ["Chainbreaker orators", "Pressed informants", "Anyone who abandoned a crew"],
+    "rumor_emotional_styles": ["Awe", "Anger", "Hope", "Envy"],
+    "rumor_suppression_methods": ["Roost-court ruling", "Captain's word", "Storm-song counter-narrative"],
+    "rumor_weaponization_methods": ["Chainbreaker outrage stories", "Branding rivals as chain-makers", "Inflating a restraint into mass tyranny"],
+    "rumor_mutation_patterns": ["'Restrained a dragon to save it' becomes 'enslaves dragons'", "A daring raid becomes piracy", "A sealed breach becomes 'the Barrier is failing everywhere'"],
+    "factions_best_at_rumor_warfare": ["Chainbreaker Radicals", "Cloud-Market Compact"]
+  },
+
+  "relationship_logic": {
+    "domain": "Tempest",
+    "trust_is_built_by": ["Honoring a refusal at real cost", "Freeing the pressed or chained", "Keeping a bond freely without grasping"],
+    "trust_is_broken_by": ["Forcing a bond or service", "Chaining a dragon", "Abandoning the bonded mid-crisis"],
+    "enemies_become_tolerable_when": ["They free a chained soul at cost", "They defend the Barrier without compulsion"],
+    "allies_become_suspect_when": ["They demand conscription", "They 'restrain for safety'", "They preach that all bonds are chains"],
+    "romance_conflicts": ["A Sanctum lover who cannot forgive a coercive choice", "A Chainbreaker lover who scorns the player's kept bonds"],
+    "betrayal_triggers": ["Forcing a bond on the player's ally", "Chaining a dragon", "Selling a crew to the Abyss"],
+    "forgiveness_conditions": ["Freely releasing a forced bond", "Submitting to a roost-court", "Bearing the storm-thinning to seal what one broke"],
+    "permanent_enemy_conditions": ["Trafficking chained souls", "Serial bond-forcing", "Selling the sky to the Void for control"],
+    "if_then_because_examples": [
+      { "if": "The player forces a dragon to obey during a crisis", "then": "Dragon-Bond factions become hostile", "because": "Tempest considers forced loyalty a spiritual violation even when the result saves lives." },
+      { "if": "A former enemy frees a chained crew at real cost", "then": "Tempest may downgrade them from enemy to uneasy partner", "because": "Honoring freedom proves character more deeply than past allegiance." },
+      { "if": "A rider restrains their injured dragon to save it from a Void-storm", "then": "Dragon trust falls sharply even though the dragon survives", "because": "Life preserved by violating chosen bond is still a violation of the bond." },
+      { "if": "The player honors a dragon's refusal despite great cost", "then": "Sanctum and dragon trust rise sharply", "because": "Respecting refusal is the truest proof of Tempest's creed." },
+      { "if": "A captain abandons their bonded post mid-crisis on principle", "then": "Even Chainbreaker sympathizers grow wary of relying on them", "because": "Freedom that abandons the dependent reads as nihilism, not liberty." },
+      { "if": "Wardens are exposed forcing bonds to hold a Barrier seam", "then": "Bonded riders split and unbonded crews cry hypocrisy", "because": "The elite preaching freedom while chaining dragons fractures the whole creed." },
+      { "if": "The player seals a Barrier gap by storm-song instead of force", "then": "Eye Vigil and Assembly trust rise", "because": "Asking the storm rather than commanding it honors the Core's resonance." },
+      { "if": "A corsair raids an ally under the banner of free daring", "then": "Tempest's alliances and Compact standing suffer", "because": "License dressed as freedom isolates Tempest from the partners it needs." },
+      { "if": "A Radiance ally forces service on a free Tempest crew", "then": "Tempest shifts them toward declared enemy", "because": "Forced loyalty is the one violation Tempest cannot forgive." },
+      { "if": "The player submits a contested bond decision to a roost-court", "then": "Tempest factions grant more latitude on the result", "because": "Letting the community judge consent honors freedom over private command." },
+      { "if": "A grieving rider is talked back from forcing a bond", "then": "The Sanctum's trust in the player deepens", "because": "Preventing a forced bond heals a wound before it festers into a chained echo." }
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "Tempest",
+    "starting_bonuses": ["Minor storm-calling", "A freely signed crew berth", "Reputation for keeping your word among skyfolk"],
+    "starting_burdens": ["No safety net outside chosen bonds", "Pressure to prove you force nothing", "A Barrier under growing threat"],
+    "default_domain_resonance": { "Radiance": 35, "Verdance": 50, "Tempest": 65, "Sanctuary": 40, "Abyss": 10 },
+    "starting_faction_assumptions": ["Presumed to value free choice", "Courted by the Cloud-Market Compact", "Watched by the Sanctum for any coercion", "Tempted by the Chainbreakers if you have been wronged"],
+    "common_npc_reactions": ["Trust if you honor refusal", "Hostility if you force a bond", "Respect for daring freely spent"],
+    "starting_rumors": ["'Keeps every bond they choose'", "'Has never chained a soul — yet'"],
+    "starting_magic_access": ["Storm-Calling (minor)", "Shallow bond-sense"],
+    "restricted_magic_access": ["Forced bonding (forbidden)", "Storm-chaining devices (black market)"],
+    "unique_origin_questions": ["What bond have you chosen, and could you release it?", "Have you ever forced loyalty to save a life?", "Is the Barrier worth a single chain?"],
+    "possible_dark_secret_options": ["You once forced a bond to survive and hid it", "You abandoned a crew on principle and they died", "You smuggled a storm-chaining device"]
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "The player helps a rider forcibly restrain their injured dragon to keep it from flying into a lethal Void-storm.",
+      "domain_interpretation": "Tempest sees life preserved by violating chosen bond — a real rescue that is also a real transgression.",
+      "faction_interpretation": "The Dragon-Bond Sanctum hears of the restraint and is alarmed; Chainbreaker Radicals weaponize the story; Kaida questions the player's understanding of freedom.",
+      "immediate_result": "The dragon survives the storm.",
+      "first_order": "Rider gratitude +15; dragon trust -20; Tempest bond-law stress +8.",
+      "second_order": "The Sanctum opens a bond-law inquiry; Chainbreakers spread the tale; Kaida confronts the player.",
+      "third_order": "Bonded riders split over emergency restraint; unbonded commoners accuse the elite of hypocrisy; corsairs sell anti-bond restraint tools.",
+      "fourth_order": "A sky-alliance mission is delayed; Azyr refuses to fly under commanders who tolerate forced loyalty; Abyss anti-air towers gain time to fortify.",
+      "fifth_order": "The Keeper benefits because Tempest freedom fractures into control versus anti-duty extremism.",
+      "keeper_gain": "Tempest's resonance frays as the bond-law schism deepens.",
+      "void_gain": "The Void whispers, 'Love that cannot restrain is love that lets death win.'",
+      "player_intervention_options": ["Submit to a Dragon-Bond trial", "Give the dragon public voice", "Find a healing method that restores consent", "Expose Chainbreaker exaggeration", "Help the rider apologize and release control"]
+    },
+    {
+      "root_event": "The player seals a thinning Tornwatch Barrier gap by leading a volunteer storm-song instead of chaining a dragon to do it.",
+      "domain_interpretation": "Tempest sees the creed vindicated: the storm was asked, not commanded.",
+      "faction_interpretation": "The Eye Vigil and Sanctum are heartened; cornered wardens are relieved; Chainbreakers lose a grievance.",
+      "immediate_result": "The gap closes and the Void-storm is turned aside.",
+      "first_order": "Barrier integrity +10; Eye Vigil trust +12; the player gains standing among bonded riders.",
+      "second_order": "Wardens who had forced bonds reconsider; a volunteer surge forms.",
+      "third_order": "Storm-song reinforcement spreads to other seams; forced-bond temptation drops at the front.",
+      "fourth_order": "The Assembly funds a Barrier-renewal vigil; Abyss loses its easiest breach.",
+      "fifth_order": "The Keeper's resonance-starvation strategy is set back as chosen bonds re-strengthen the Core.",
+      "keeper_gain": "Reduced — unless exhaustion makes the next seam fall to force.",
+      "player_intervention_options": ["Train more storm-song cantors", "Publicly credit the volunteers, not yourself", "Help wardens release earlier forced bonds", "Press the Assembly for sustained Barrier funding"]
+    },
+    {
+      "root_event": "The player exposes Tornwatch wardens who secretly chained their dragons to hold the seam.",
+      "domain_interpretation": "Tempest is forced to weigh the sanctity of consent against the wardens' desperate success.",
+      "faction_interpretation": "The Sanctum is vindicated; the wardens are shamed; Chainbreakers seize the scandal; the Assembly panics about the front.",
+      "immediate_result": "The forced bonds are documented and made public.",
+      "first_order": "Sanctum trust +10; frontier morale -8; the chained dragons' trust must be rebuilt.",
+      "second_order": "Chainbreaker recruitment spikes; the wardens face a roost-court; chained-echo wounds are discovered.",
+      "third_order": "A debate erupts over whether the seam can be held without force; storm-song reinforcement is attempted.",
+      "fourth_order": "Bond-law is reaffirmed with oversight, slowing brute-force defense but healing resonance.",
+      "fifth_order": "The Maelstrom's resonance stabilizes slightly, denying the Keeper a quiet win.",
+      "keeper_gain": "Conditional: large if the morale drop opens a breach, small if storm-song fills the gap.",
+      "player_intervention_options": ["Offer the wardens a path to atone by releasing the bonds", "Lead a storm-song to replace the forced restraint", "Shield whistleblowers from Chainbreaker exploitation", "Help the chained dragons heal and choose"]
+    },
+    {
+      "root_event": "A corsair captain under the player's banner raids a Sanctuary supply convoy, calling it free daring.",
+      "domain_interpretation": "Tempest splits on whether this is bold salvage or license that shames the creed.",
+      "faction_interpretation": "The Compact is divided; the Sanctum condemns license; Sanctuary brands all Tempest as pirates.",
+      "immediate_result": "The convoy is plundered.",
+      "first_order": "Short-term loot +; Sanctuary trust -15; Tempest reputation for piracy +.",
+      "second_order": "Sanctuary detains other free crews in reprisal; the Compact debates expelling the captain.",
+      "third_order": "Cross-domain trade tightens; the High Lanes near Sanctuary grow dangerous.",
+      "fourth_order": "A needed anti-Abyss accord with Sanctuary stalls over the raid.",
+      "fifth_order": "The Keeper benefits as Tempest is isolated and an alliance against the Abyss collapses.",
+      "keeper_gain": "Tempest loses the partners it needs against the Void.",
+      "player_intervention_options": ["Return the plunder and discipline the captain", "Distinguish daring from license publicly", "Broker reparations with Sanctuary", "Expel the captain from the compact"]
+    },
+    {
+      "root_event": "The player talks a grieving captain out of forcing a bond on a frightened young dragon to 'protect' it.",
+      "domain_interpretation": "Tempest sees a forced-bond wound prevented before it could fester.",
+      "faction_interpretation": "The Sanctum is grateful; Chainbreakers lose a future grievance; the captain is shaken but freed of a terrible choice.",
+      "immediate_result": "No bond is forced; the dragon is given space to choose.",
+      "first_order": "Sanctum trust +8; the captain's respect for the player +10; a potential chained-echo averted.",
+      "second_order": "The dragon, unforced, may later choose the bond freely; the captain begins to grieve cleanly.",
+      "third_order": "The story spreads as a counter-narrative to the Protective Chain creed.",
+      "fourth_order": "Frontier riders gain a model for holding the line without force.",
+      "fifth_order": "The Keeper's forced-bond strategy loses ground as chosen bonds are reaffirmed.",
+      "keeper_gain": "Reduced; a wound that never opened.",
+      "player_intervention_options": ["Help the captain wind-bury their earlier loss", "Mentor the young dragon toward a free choice", "Share the story to counter the Protective Chain", "Pair the captain with a Sanctum bond-elder"]
+    }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["In what proportion does storm magic draw on the Core, the Barrier, and bonded dragons — and what happens if one source fails?", "Can a chained-echo soul ever be freed, or only wind-buried?"],
+    "political": ["Can a consent-only Assembly survive threats that demand fast, binding action?", "Is the Unbonded League a reform movement or a Chainbreaker pipeline?"],
+    "magic": ["Is there any bounded, ethical emergency restraint, or is all forced bonding a slope?", "Can the Barrier be rebuilt once a seam fully fails?"],
+    "faction": ["Are the Chainbreakers redeemable reformers or nihilists the Keeper steers?", "How many wardens have already forced bonds in secret?"],
+    "npc": ["Will Kaida stay the creed's conscience or break under frontier pressure?", "Can Azyr be persuaded to a free bond, and with whom?"],
+    "war_economy": ["How long can the sky-holds last if food and skymetal imports are cut?", "What does a sustained Barrier breach do to the cloud-market economy?"],
+    "implementation": ["Should forced bonds be a Void temptation event, a soul-flow wound, and a Barrier (domain-stone) strain at once?", "How is a dragon modeled — as an NPC, a bonded relic-like entity, or a unique actor type with its own consent state?"]
+  },
+
+  "locked_decisions": [
+    "Tempest magic and loyalty must always be freely chosen; forced bonds and forced service are violations.",
+    "Tempest corruption must distort freedom into either the Protective Chain (forced control) or Chainbreaker nihilism (anti-duty abandonment), never generic darkness.",
+    "Tempest internal politics must respect the Sanctum / Chainbreaker / corsair / Assembly fracture.",
+    "Forcing a bond, chaining a dragon, or severing a bond by force is the violation Tempest cannot forgive.",
+    "Storm magic draws on the Storm Core, the Maelstrom Barrier, and bonded dragons together; commanding rather than asking strains all three.",
+    "A freely honored refusal is the highest proof of Tempest's creed."
+  ]
+}

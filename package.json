@@ -1,0 +1,32 @@
+{
+  "name": "realm-of-nexus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Realm of Nexus / VERDAX — schema & validation scaffold for the AI-driven tabletop RPG world-state engine.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test test/**/*.test.ts",
+    "check-lore": "tsx scripts/check-lore.ts",
+    "demo": "tsx scripts/demo-turn.ts"
+  },
+  "keywords": [
+    "rpg",
+    "verdax",
+    "realm-of-nexus",
+    "ai-dungeon-master",
+    "zod"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

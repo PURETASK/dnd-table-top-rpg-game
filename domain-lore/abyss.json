@@ -1,0 +1,774 @@
+{
+  "schema_version": "1.0",
+  "domain": "Abyss",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "Abyss",
+    "short_description": "A coherently evil soul-economy civilization that runs on debt, bound spirits, and harvested names — ruled by the Ash Ledger, where nothing is free, nothing is wasted, and everything is owned.",
+    "civilization_type": "Bureaucratic necro-mercantile empire governed by the Ash Ledger: a totalizing order of soul-debt, contracts, and reclamation.",
+    "core_belief": "Sentiment is the only lie; debt is the only truth. Nothing is free, nothing is wasted, and everything — even the dead — can be owned and made to pay.",
+    "true_virtue": ["Preservation", "Order", "Honesty", "Mastery"],
+    "primary_corruption_risk": ["The Total Ledger that owns even its owners", "Hoarding so many souls the system clogs", "Cruelty for its own sake", "Becoming the Keeper's harvesting engine"],
+    "domain_stone_or_source": "The Vault of Names — a Veilstone reservoir of bound souls and harvested names anchored to the Abyss Stone fragment.",
+    "magic_style": "Ledger-binding, soul-harvest engineering, and corpse-oracle necromancy: power drawn from owned debt and bound spirits.",
+    "main_magic_cost": "Debt accrued to the Ledger — every binding makes the binder, in time, also the owed.",
+    "political_center": "The Great Ledger at Graveholt, seat of the Ash Ledger Covenant.",
+    "military_identity": "Reclamation, not conquest: collect debts, harvest the fallen, own the survivors.",
+    "economic_base": "Trade in souls, names, debts, corpses, and information; the grave-markets and warrant-courts.",
+    "biggest_internal_conflict": "Whether the Ledger should extend its claim over everything (the Total Ledger) or whether some — even Abyssians — must remain unpriced to keep the system stable.",
+    "biggest_external_threat": "The truth its insiders deny: a hidden master-claim binds Abyss itself, and the Keeper will call that debt due.",
+    "keeper_exploit": "The Keeper lets Abyss believe it serves only itself, because every soul Abyss harvests cracks the prison — and the master-claim means Abyss is the Keeper's engine, not its partner.",
+    "void_lie": "Why merely hold the debt when you could become it, and be owed by everyone forever?"
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "Abyss is coherently evil — a rational, self-consistent civilization, not mindless darkness.",
+      "The Ash Ledger Covenant rules Abyss through soul-debt contracts, debt warrants, and bound witness spirits sealed in ledger slabs.",
+      "Soul-harvest engines tear names and souls from the other domains' dead and desperate, feeding the Vault of Names.",
+      "Abyss despises mercy unless it creates debt, leverage, or dependency.",
+      "Grave-markets, corpse-oracles, name registries, and masked witnesses are core Abyssian institutions.",
+      "Abyss is distinct from the Keeper and the Void; it is a domain, not the Architect-prisoner, though the Keeper exploits it."
+    ],
+    "cannot_contradict": [
+      "Abyss magic and power must always derive from owned debt, bound souls, or harvested names; nothing in Abyss is given freely.",
+      "Abyss evil must be coherent and self-justifying, never random or cartoonish darkness.",
+      "Abyss internal politics must respect the Ledger / Conclave / Reclaimer / Syndicate / Defaulter fracture.",
+      "Abyss is the Keeper's greatest instrument and its hidden debtor; freeing bound souls and exposing the master-claim are its true vulnerabilities."
+    ]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "Ownership and debt — the conviction that to exist is to owe, and that power is the right to collect.",
+    "nexus_stone_aspect": "The Stone's capacity to bind and hold inverted into possession: souls trapped as assets instead of passing freely.",
+    "soul_flow_shaped": "Abyss dams soul-flow entirely, capturing souls and names into circulation as currency rather than letting them pass.",
+    "natural_magic": "Ledger-binding and soul-harvest: power from owned debt, bound spirits, and harvested names.",
+    "when_extreme": "The Ledger extends until everything, including Abyss's own masters, is owned — a stillness of total possession.",
+    "keeper_exploits_extremity": "The Keeper holds the master-claim over the whole Ledger; the more Abyss harvests, the more the prison cracks and the closer the Keeper comes to calling Abyss's own debt due."
+  },
+
+  "domain_stone": {
+    "domain": "Abyss",
+    "source_name": "The Vault of Names",
+    "source_type": "Veilstone",
+    "origin": "A shard of the fractured pure Nexus Stone hollowed into a reservoir during the first Reckoning, now swollen with ages of harvested names and bound souls.",
+    "metaphysical_principle": ["Ownership over passage", "Debt as law", "The dead made to pay", "Nothing wasted, nothing free"],
+    "current_stability": 73,
+    "corruption_level": 78,
+    "public_knowledge": "Within Abyss, the Vault is the foundation of all wealth and order; the source of every binding and warrant.",
+    "hidden_truth": "The Vault is not Abyss's asset but its collateral; a master-claim held by the Keeper secures everything in it, and when called, it unmakes Abyss with the rest.",
+    "factions_claiming_authority": ["Ash Ledger Covenant", "Corpse-Oracle Conclave"],
+    "rituals_dependent_on_source": ["Soul-debt sealing", "Name-harvest rites", "Warrant consecration", "Corpse-oracle divination"],
+    "magic_systems_dependent_on_source": ["Ledger-Binding", "Soul-Harvest Engineering", "Corpse-Oracle Necromancy"],
+    "failure_symptoms": ["Mass defaults the Ledger cannot collect", "Bound spirits speaking the master-claim aloud", "Harvest engines seizing", "The Vault's names answering to a voice that is not Abyss's"],
+    "healing_methods": ["(For the world, not for Abyss) Freeing bound souls", "Voiding coercive contracts", "Exposing the master-claim", "Returning harvested names to their domains"],
+    "keeper_attack_vector": "Encourage ever-greater harvest, since the fuller the Vault, the tighter the Keeper's master-claim and the more the prison cracks.",
+    "void_attack_vector": "Tempt binders to become the debt itself, trading lasting ownership for Void-amplified collection now."
+  },
+
+  "soul_flow": {
+    "domain": "Abyss",
+    "healthy_soul_flow_description": "From Abyss's view, 'healthy' flow is total capture: souls and names circulating as owned, productive currency that never passes on.",
+    "damaged_soul_flow_description": "Defaults, freed souls, and returned names — 'losses' to Abyss, but the only true healing for everyone else.",
+    "natural_soul_processes": ["Harvesting names from the dead and desperate", "Binding spirits into ledger slabs", "Circulating soul-debt as currency"],
+    "forbidden_soul_processes": ["Letting a soul pass freely (a 'waste')", "Forgiving a debt without collateral", "Returning a harvested name"],
+    "common_soul_wounds": ["(Inflicted on others) name-erasure, soul-debt binding, blocked death-passage", "(Within Abyss) bound spirits that remember the master-claim"],
+    "healing_methods": ["Freeing the bound", "Voiding contracts", "Returning names — all anathema to the Ledger"],
+    "factions_that_protect_soul_flow": ["The Unpriced", "The Quiet Default (secretly)"],
+    "factions_that_disrupt_soul_flow": ["Ash Ledger Covenant", "Corpse-Oracle Conclave", "Reclaimer Warrants"],
+    "keeper_disruption_strategy": "Maximize harvest so soul-flow across all domains dams up behind the Vault.",
+    "void_disruption_strategy": "Offer binders the power to harvest faster by becoming conduits of the debt themselves."
+  },
+
+  "true_virtues": [
+    {
+      "name": "Preservation",
+      "healthy_definition": "Waste nothing; even the dead retain value and can be kept, owned, and made productive.",
+      "cultural_expression": "Nothing is buried unaccounted; every life is inventoried before and after death.",
+      "heroic_expression": "An Abyssian 'saves' a dying enemy by binding them — preserved, and now owed.",
+      "political_expression": "Leaders are praised for letting nothing slip the Ledger.",
+      "magical_expression": "Bound souls are reused indefinitely as labor, witness, and power.",
+      "economic_expression": "Corpses, names, and debts are all assets; nothing is thrown away.",
+      "military_expression": "The fallen — friend or foe — are harvested, never abandoned.",
+      "common_saying": "Nothing is wasted that can be owned."
+    },
+    {
+      "name": "Order",
+      "healthy_definition": "Debt and contract are the only law that does not lie; sentiment is chaos, the Ledger is order.",
+      "cultural_expression": "Every relationship is a contract with terms; favors do not exist, only loans.",
+      "heroic_expression": "An official enforces a ruinous-but-valid warrant without flinching.",
+      "political_expression": "Authority is the right to hold and collect claims.",
+      "magical_expression": "Bindings are precise, sealed, and enforceable.",
+      "economic_expression": "Prices are exact; the grave-markets clear without mercy or fraud.",
+      "military_expression": "Reclamation follows warrant, not whim.",
+      "common_saying": "The Ledger is the only honest law."
+    },
+    {
+      "name": "Honesty",
+      "healthy_definition": "Brutal clarity — the Ledger never flatters; it records exactly what is owed and what a thing is worth.",
+      "cultural_expression": "Polite lies are despised; an Abyssian tells you precisely your price.",
+      "heroic_expression": "A corpse-oracle delivers an unbearable true reckoning without softening it.",
+      "political_expression": "Leaders who hide a debt are frauds; the Ledger must be complete.",
+      "magical_expression": "Bound witnesses cannot lie; their testimony is exact.",
+      "economic_expression": "No counterfeits; a forged mark is the gravest crime.",
+      "military_expression": "Terms of surrender are kept to the letter, however cruel.",
+      "common_saying": "The Ledger does not flatter."
+    },
+    {
+      "name": "Mastery",
+      "healthy_definition": "To own is to protect; the owned are safe within the system, and ownership is the truest care.",
+      "cultural_expression": "A well-kept debtor is a cherished asset; cruelty that lowers value is incompetence.",
+      "heroic_expression": "A holder shields their bound souls from a rival's seizure — to keep them owned.",
+      "political_expression": "Power is measured in what one holds clear title to.",
+      "magical_expression": "A master's bound spirits are maintained, not squandered.",
+      "economic_expression": "Reputation rests on the security of one's claims.",
+      "military_expression": "Conquest means clean title, not destruction.",
+      "common_saying": "What you own, you keep safe — for yourself."
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "Order",
+      "corrupted_name": "The Total Ledger",
+      "corrupted_definition": "The drive to extend the claim over everything until even Abyss's own masters are owned — by each other, and ultimately by the Keeper's master-claim.",
+      "how_it_begins": "Each holder seeks to price what was once unpriced, for there is always more to claim.",
+      "how_it_spreads": "Competitive acquisition, the logic that nothing should be free, and the comfort of total accounting.",
+      "who_benefits": ["The largest claim-holder of all — the Keeper", "Briefly, the most ruthless Ledger houses"],
+      "who_suffers": ["Everyone, including Abyssians who discover they too are owned"],
+      "faction_most_vulnerable": ["Ash Ledger Covenant"],
+      "npc_archetypes_most_vulnerable": ["Ambitious Ledger magnate", "True-believing enforcer"],
+      "keeper_benefit": "Every new claim ultimately rolls up into the Keeper's master-claim over the whole Vault.",
+      "void_lie": "There is always more to own; stop only when you own everything.",
+      "visible_symptoms": ["Abyssian elites quietly indebted to one another", "Nothing left unpriced", "Bound spirits whispering of a debt above all debts"],
+      "late_stage_consequence": "Abyss becomes a single seamless claim the Keeper can call due in one word."
+    },
+    {
+      "true_virtue": "Preservation",
+      "corrupted_name": "Hoarding the Dead",
+      "corrupted_definition": "Binding so many souls that the Vault clogs and the dammed soul-flow strains reality itself.",
+      "how_it_begins": "Harvest quotas rise; no soul may be released, ever.",
+      "how_it_spreads": "Greed, status from the size of one's holdings, and fear of 'waste.'",
+      "who_benefits": ["The Keeper, who wants the prison cracked", "Hoarder magnates, briefly"],
+      "who_suffers": ["All domains' soul-flow", "Eventually Abyss, as the Vault destabilizes"],
+      "faction_most_vulnerable": ["Corpse-Oracle Conclave", "Grave-Market Syndicates"],
+      "npc_archetypes_most_vulnerable": ["Hoarder-oracle", "Quota-driven harvester"],
+      "keeper_benefit": "An overfull Vault is a tighter noose of master-claim and a wider crack in the prison.",
+      "void_lie": "Release nothing; a freed soul is a loss that never returns.",
+      "visible_symptoms": ["Harvest engines overheating", "Reality fraying near the Vault", "Bound spirits multiplying beyond use"],
+      "late_stage_consequence": "The dammed soul-flow ruptures and the Vault's collateral comes due."
+    },
+    {
+      "true_virtue": "Mastery",
+      "corrupted_name": "The Owner Owned",
+      "corrupted_definition": "The hidden truth that those who own the most are themselves the most deeply held — by rivals, by the Conclave, and by the Keeper.",
+      "how_it_begins": "A magnate borrows against their own holdings to acquire more.",
+      "how_it_spreads": "The arms race of the Total Ledger; no one can afford to stop acquiring.",
+      "who_benefits": ["The Keeper, ultimate holder of the master-claim"],
+      "who_suffers": ["The proudest Abyssian masters, who are collateral and do not know it"],
+      "faction_most_vulnerable": ["Ash Ledger Covenant", "Grave-Market Syndicates"],
+      "npc_archetypes_most_vulnerable": ["Overleveraged magnate", "A magistrate trading on borrowed souls"],
+      "keeper_benefit": "Abyss's rulers are the Keeper's most leveraged debtors and do its work to service their own claims.",
+      "void_lie": "You are the owner here; the claim above you is just a rumor.",
+      "visible_symptoms": ["Magnates who cannot stop acquiring", "Quiet panic among the Quiet Default", "A claim no one will name aloud"],
+      "late_stage_consequence": "When the master-claim is called, the owners discover they were always the owned."
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "Abyss",
+    "primary_virtue_targeted": "Order",
+    "secondary_virtues_targeted": ["Preservation", "Mastery"],
+    "corruption_strategy": "Let Abyss believe its harvest serves only itself, while every bound soul tightens the master-claim and cracks the prison; Abyss is the engine, not the partner.",
+    "preferred_crisis_conditions": ["A harvest boom on a war-torn frontier", "A scramble to price the last unpriced things", "Mass desperation across the other domains"],
+    "preferred_faction_targets": ["Ash Ledger Covenant", "Grave-Market Syndicates"],
+    "preferred_npc_targets": ["Overleveraged magnates", "Quota-driven harvesters", "True-believing enforcers"],
+    "soul_flow_damage_type": ["Mass name-harvest", "Dammed soul-flow", "Blocked death-passage across domains"],
+    "domain_stone_damage_type": "The Vault swollen into a tighter master-claim and a wider crack in the prison lattice.",
+    "common_lie": "You own this; collect more and you will own everything.",
+    "long_term_goal": "Make Abyss harvest enough to crack the prison fully, then call the master-claim and unmake Abyss along with the world it plundered."
+  },
+
+  "void_temptation_pattern": {
+    "domain": "Abyss",
+    "temptation_phrase": "Why merely hold the debt when you could become it, and be owed by everyone forever?",
+    "immediate_benefit": "A binder who becomes a conduit of the debt harvests faster, collects further, and cannot be defaulted on.",
+    "hidden_cost": "They cease to be a holder and become a node of the master-claim — the Keeper's, not their own.",
+    "identity_damage": "The self dissolves into pure collection; the binder becomes an appetite that cannot stop.",
+    "soul_flow_damage": "Whole districts of soul-flow route through the conduit into the Vault.",
+    "reality_damage": "Reality thins around the conduit; the grave-markets there fill with corpse-oracles speaking in one voice.",
+    "faction_most_likely_to_accept": ["Reclaimer Warrants", "Ambitious Corpse-Oracles"],
+    "npc_archetypes_most_likely_to_accept": ["Ruthless reclaimer", "Magnate who fears default", "Oracle hungry for more names"],
+    "visible_stage_1_symptoms": ["A collector who never tires", "Debts that compound impossibly fast"],
+    "visible_stage_2_symptoms": ["The conduit speaking in the master-claim's cadence", "Bound spirits routing toward them", "Reality fraying at their warrant-court"],
+    "visible_stage_3_symptoms": ["The conduit indistinguishable from the Keeper's voice", "A harvest engine that runs without operators", "A grave-market that owns its own buyers"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "Abyss",
+      "system_name": "Ledger-Binding",
+      "source": "Soul-debt contracts sealed into the Vault of Names.",
+      "practitioners": ["Ledger scriveners", "Warrant-priests", "Reclaimers"],
+      "institutions": ["The Ash Ledger Covenant", "Warrant-courts"],
+      "training_access": "regulated",
+      "battlefield_use": ["Binding the fallen mid-rout", "Compelling indebted soldiers", "Seizing an enemy's bound assets"],
+      "economic_use": ["Soul-debt as currency", "Collateralizing lives and names"],
+      "political_use": ["Ruling through held claims", "Warrant-backed authority"],
+      "spiritual_use": ["Binding witness spirits into ledger slabs", "Consecrating warrants"],
+      "civilian_use": ["Everyday contracts that are all, ultimately, soul-debt"],
+      "cost_types": ["corruption", "oath_burden", "void_dependency"],
+      "abuse_modes": ["Compounding debt beyond any repayment", "Binding the unwilling", "Forging the master-claim's authority"],
+      "scarcity_level": 40,
+      "public_trust": 30,
+      "faction_control": { "Ash Ledger Covenant": 90, "Reclaimer Warrants": 50, "Grave-Market Syndicates": 45 },
+      "keeper_corruption_vector": "Roll every binding upward into the master-claim.",
+      "void_enhancement_vector": "Offer binders the power to become the debt itself."
+    },
+    {
+      "domain": "Abyss",
+      "system_name": "Soul-Harvest Engineering",
+      "source": "Engines that tear names and souls from the dead and desperate into the Vault.",
+      "practitioners": ["Harvest-engineers", "Reclaimers", "Frontier warrant-crews"],
+      "institutions": ["Harvest-engine works", "The Reclaimer Warrants"],
+      "training_access": "restricted",
+      "battlefield_use": ["Harvesting battlefields of fallen", "Draining besieged populations", "Field soul-extraction"],
+      "economic_use": ["Bulk name and soul supply for the markets"],
+      "political_use": ["Frontier dominance through harvest output"],
+      "spiritual_use": ["Feeding the Vault", "Mass binding"],
+      "civilian_use": ["None; harvest is industrial, not domestic"],
+      "cost_types": ["corruption", "domain_stone_strain", "void_dependency"],
+      "abuse_modes": ["Harvesting the living", "Over-harvest that frays reality", "Operating without warrant"],
+      "scarcity_level": 60,
+      "public_trust": 22,
+      "faction_control": { "Reclaimer Warrants": 70, "Ash Ledger Covenant": 55, "Corpse-Oracle Conclave": 40 },
+      "keeper_corruption_vector": "Raise quotas until the Vault overfills and the prison cracks.",
+      "void_enhancement_vector": "Offer engines that run on a conduit's appetite, needing no operators."
+    },
+    {
+      "domain": "Abyss",
+      "system_name": "Corpse-Oracle Necromancy",
+      "source": "Bound names and witness spirits read for testimony and prophecy.",
+      "practitioners": ["Corpse-oracles", "Masked witnesses"],
+      "institutions": ["The Corpse-Oracle Conclave", "The grave-markets"],
+      "training_access": "elite",
+      "battlefield_use": ["Foreseeing enemy moves through bound dead", "Demoralizing foes with their own dead's voices"],
+      "economic_use": ["Information brokerage", "Authenticating debts via bound witnesses"],
+      "political_use": ["Prophecy as leverage", "Bound testimony in warrant-courts"],
+      "spiritual_use": ["Speaking with the harvested", "Reading the Vault"],
+      "civilian_use": ["Grave-market divination for a price"],
+      "cost_types": ["memory", "corruption", "void_dependency"],
+      "abuse_modes": ["Torturing bound spirits for answers", "Fabricating testimony", "Reading the master-claim and going mad or silent"],
+      "scarcity_level": 65,
+      "public_trust": 28,
+      "faction_control": { "Corpse-Oracle Conclave": 90, "Ash Ledger Covenant": 40 },
+      "keeper_corruption_vector": "Let oracles read just enough of the master-claim to serve it unknowingly.",
+      "void_enhancement_vector": "Offer oracles the whole truth of the Vault in exchange for becoming its voice."
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "Accrued Debt",
+      "cost_type": "corruption",
+      "description": "Every binding quietly indebts the binder to the Ledger and, through it, to the master-claim.",
+      "minor_effect": "A faint sense of being watched by one's own ledger.",
+      "moderate_effect": "Compulsions toward more collection; freedom of choice narrows.",
+      "severe_effect": "The binder is revealed as collateral; their will routes toward the master-claim.",
+      "recovery_method": "Defaulting and fleeing the Ledger (treason), or having a claim voided from outside.",
+      "permanent_risk": "Becoming a node of the Keeper's master-claim.",
+      "factions_that_accept_this_cost": ["Ash Ledger Covenant", "Reclaimer Warrants"],
+      "factions_that_reject_this_cost": ["The Unpriced", "The Quiet Default"]
+    },
+    {
+      "cost_name": "Spent Memory",
+      "cost_type": "memory",
+      "description": "Corpse-oracle work consumes the reader's own memories as they trade in the dead's.",
+      "minor_effect": "Forgotten names and faces.",
+      "moderate_effect": "Whole years lost to the Vault.",
+      "severe_effect": "The oracle's identity replaced by the voices they read.",
+      "recovery_method": "Ceasing the work; rarely, recovery from the Vault — which the Ledger forbids.",
+      "permanent_risk": "Identity dissolution into the master-claim's voice.",
+      "factions_that_accept_this_cost": ["Corpse-Oracle Conclave"],
+      "factions_that_reject_this_cost": ["The Unpriced"]
+    },
+    {
+      "cost_name": "Reality Strain",
+      "cost_type": "domain_stone_strain",
+      "description": "Soul-harvest engines and over-binding strain the Vault and thin reality around it.",
+      "minor_effect": "A chill and a wrongness near the engine.",
+      "moderate_effect": "Local reality fraying; corpse-oracles converging on one voice.",
+      "severe_effect": "A harvest rupture and a widening crack in the prison lattice.",
+      "recovery_method": "Slowing harvest (heresy in Abyss), or external freeing of the bound.",
+      "permanent_risk": "Catastrophic Vault breach that calls the master-claim due.",
+      "factions_that_accept_this_cost": ["Reclaimer Warrants", "Hoarder magnates"],
+      "factions_that_reject_this_cost": ["The Quiet Default"]
+    }
+  ],
+
+  "government": {
+    "domain": "Abyss",
+    "government_type": "Necro-mercantile bureaucracy of the Ash Ledger: rule by held claims, warrants, and bound testimony.",
+    "ruling_body": "The Ash Ledger Covenant and its Council of Greatest Claims at Graveholt.",
+    "religious_authority": "The Corpse-Oracle Conclave, keepers of the Vault's voices.",
+    "military_authority": "The Reclaimer Warrants — soul-debt enforcers and harvest crews.",
+    "economic_authority": "The Grave-Market Syndicates.",
+    "magical_authority": "Ledger scriveners and the Conclave jointly govern binding.",
+    "local_authorities": ["Warrant-magistrates", "Grave-market masters", "District reclaimers"],
+    "succession_or_selection_method": "Authority follows the size and security of one's clear-title claims; the Council seats the greatest holders.",
+    "legitimacy_source": "Control of debt, enforcement of warrants, and the unbroken authority of the Ledger.",
+    "known_cracks_in_legitimacy": ["The master-claim no magnate will name", "Mass defaults the Reclaimers cannot collect", "The Quiet Default's quiet doubt"],
+    "emergency_powers": ["Mass warrant calls", "Seizure of rival holdings", "Conclave reading of the Vault (dangerous)"],
+    "corruption_vulnerabilities": ["The Total Ledger", "The Owner Owned", "Conduit-Void infiltration of the Reclaimers"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "Abyss",
+      "class_name": "Claim-Holders (magnates and magistrates)",
+      "description": "The owning class whose power is the souls, names, and debts they hold clear title to.",
+      "privileges": ["Authority over debtors", "Council voice", "Command of reclaimers"],
+      "burdens": ["The arms race of the Total Ledger", "Secretly collateral to greater claims"],
+      "magic_access": "Ledger-binding through scriveners.",
+      "military_obligation": "Direct reclamation, not serve.",
+      "economic_role": "Owners of the soul-economy.",
+      "political_voice": "Highest.",
+      "common_grievances": ["Cannot stop acquiring without being acquired", "Fear of the master-claim"],
+      "faction_affinities": ["Ash Ledger Covenant", "Grave-Market Syndicates"],
+      "upward_mobility_paths": ["Acquiring rivals' claims"],
+      "downward_mobility_risks": ["Default", "Being called as collateral"]
+    },
+    {
+      "domain": "Abyss",
+      "class_name": "Bound and Indebted",
+      "description": "Debtors, bound spirits, and harvested names — the owned majority, living and dead.",
+      "privileges": ["A measured 'safety' as a maintained asset"],
+      "burdens": ["No freedom", "Compounding debt", "Reuse after death"],
+      "magic_access": "None of their own; they are the fuel.",
+      "military_obligation": "Compelled service via debt.",
+      "economic_role": "The collateral and labor of the whole system.",
+      "political_voice": "None.",
+      "common_grievances": ["Everything they have is owed", "The dead are not allowed to rest"],
+      "faction_affinities": ["The Unpriced (if they can flee)"],
+      "upward_mobility_paths": ["Almost none; rarely, buying out a debt"],
+      "downward_mobility_risks": ["Harvest", "Binding", "Reclamation"]
+    },
+    {
+      "domain": "Abyss",
+      "class_name": "The Unpriced",
+      "description": "Defaulters, debt-fugitives, and those who reject the Ledger — Abyss's hunted underclass and only conscience.",
+      "privileges": ["Freedom from the Ledger, at the cost of being hunted"],
+      "burdens": ["Reclaimer warrants on their heads", "No place in the system", "Constant flight"],
+      "magic_access": "Stolen or improvised; sometimes anti-binding tricks.",
+      "military_obligation": "None; they resist.",
+      "economic_role": "Black-market survival and sabotage.",
+      "political_voice": "None official; growing underground.",
+      "common_grievances": ["Hunted for refusing to be owned"],
+      "faction_affinities": ["The Unpriced", "The Quiet Default (secret allies)"],
+      "upward_mobility_paths": ["Surviving; building the resistance"],
+      "downward_mobility_risks": ["Capture and binding"]
+    }
+  ],
+
+  "economy": {
+    "domain": "Abyss",
+    "primary_resources": ["Souls", "Names", "Soul-debt contracts"],
+    "secondary_resources": ["Corpses", "Bound-witness information", "Warrants"],
+    "sacred_resources": ["The Vault of Names", "Master ledger slabs"],
+    "scarce_resources": ["Unbound labor", "Anything genuinely unpriced", "Foodstuffs (Abyss produces little but death)"],
+    "export_goods": ["Soul-debt instruments", "Information from corpse-oracles", "Forbidden bindings and devices"],
+    "import_needs": ["Food", "Living populations to harvest", "Raw materials"],
+    "trade_routes": ["The Grave Roads", "Frontier harvest-runs into the other domains", "Smuggling lanes for forbidden goods"],
+    "economic_institutions": ["Grave-Market Syndicates", "Warrant-courts", "The Vault clearinghouse"],
+    "black_market_goods": ["Forged warrants", "Stolen names", "Anti-binding charms (sold by the Unpriced)"],
+    "wartime_economy_behavior": "Booms — war means fallen to harvest and desperate to indebt; Abyss profits most when others bleed.",
+    "famine_or_shortage_risks": ["Food shortage (little farmland)", "A harvest frontier running dry", "Mass defaults"],
+    "exploitative_practices": ["Debt-binding the desperate", "Harvesting the living when warrants stretch", "Selling places out of debt that re-indebt"],
+    "keeper_attack_vector": "Encourage harvest booms; every boom fills the Vault and tightens the master-claim."
+  },
+
+  "military_doctrine": {
+    "domain": "Abyss",
+    "doctrine_name": "Reclamation",
+    "strategic_identity": "Do not conquer land; collect debts, harvest the fallen, and own the survivors.",
+    "preferred_battlefield": ["Aftermaths and sieges where the dead and desperate are plentiful", "Anywhere a warrant runs"],
+    "primary_units": ["Reclaimer warrant-crews", "Harvest-engine escorts", "Bound-spirit levies"],
+    "elite_units": ["Master Reclaimers", "Corpse-oracle seers"],
+    "support_units": ["Ledger scriveners", "Harvest-engineers", "Masked witnesses"],
+    "magical_assets": ["Soul-harvest engines", "Bound-spirit hosts", "Ledger compulsion"],
+    "defensive_strategy": "Let attackers spend lives, then harvest them; the Vault's wealth funds endless replacement.",
+    "offensive_strategy": "Strike the broken and grieving; indebt the survivors and harvest the dead.",
+    "logistics_strategy": "Bound labor and harvested supply; weak where food and living populations run out.",
+    "intelligence_strategy": "Corpse-oracles, masked witnesses, and bound testimony — unmatched espionage.",
+    "taboo_tactics": ["Letting the dead pass freely", "Forgiving collectable debt", "Wasting a harvestable population"],
+    "desperate_tactics": ["Harvesting the living", "Calling mass warrants", "Conduit-Void escalation"],
+    "common_weaknesses": ["Dependent on others' death and desperation", "Internal default risk", "The master-claim it dares not face"],
+    "keeper_exploit": "Reward maximal harvest, which serves the Keeper more than Abyss.",
+    "void_escalation": "Offer conduit-binders who harvest without limit and answer to the Keeper, not Abyss."
+  },
+
+  "warfront_behavior": {
+    "domain": "Abyss",
+    "typical_warfront_goals": ["Harvest the fallen", "Indebt the survivors", "Seize bound assets and registries"],
+    "preferred_escalation_methods": ["Prolonging others' wars", "Debt-trapping desperate populations", "Deploying harvest engines to fresh battlefields"],
+    "preferred_deescalation_methods": ["Ceasefires that lock in debt claims", "Buying peace with returned (re-indebted) captives"],
+    "negotiation_style": "Cold and contractual; every term is a claim, every concession a loan.",
+    "ceasefire_conditions": ["Its claims are honored", "Harvest rights secured", "Warrants recognized"],
+    "betrayal_conditions": ["A counterparty defaults", "A larger claim becomes collectable", "The Ledger's authority is mocked"],
+    "alliance_conditions": ["A counterparty can be indebted", "Temporary profit exceeds the cost of the bond"],
+    "occupation_style": "Administrative harvest: inventory, indebt, and bind the population in place.",
+    "resistance_style": "Endless warrants and bound levies; weak only where the Unpriced organize and souls are freed."
+  },
+
+  "major_locations": [
+    {
+      "name": "Graveholt",
+      "domain": "Abyss",
+      "location_type": "Capital and seat of the Great Ledger",
+      "description": "A city of black archive-towers and warrant-courts built atop the Vault of Names, where the grave-markets never close.",
+      "political_function": "Seat of the Ash Ledger Covenant and the Council of Greatest Claims.",
+      "economic_function": "The Vault clearinghouse and chief grave-market.",
+      "magical_function": "Anchor of the Vault and all ledger-binding.",
+      "military_function": "Reclaimer headquarters and bound-spirit reserve.",
+      "spiritual_function": "Heart of the Corpse-Oracle Conclave.",
+      "civilian_function": "A city where every resident is, in some ledger, owned.",
+      "controlling_factions": ["Ash Ledger Covenant", "Corpse-Oracle Conclave"],
+      "contested_by": ["The Quiet Default (within)", "Rival magnate houses"],
+      "key_npcs": ["A senior Council magnate", "The chief Corpse-Oracle", "A Quiet Default insider"],
+      "resources_present": ["The Vault of Names", "Master ledger slabs"],
+      "magic_systems_present": ["Ledger-Binding", "Corpse-Oracle Necromancy"],
+      "known_secrets": ["The master-claim lies at the Vault's heart, and a few insiders know it"],
+      "location_state": {
+        "stability": 70,
+        "danger": 60,
+        "corruption": 90,
+        "morale": 44,
+        "resources": 72,
+        "secrecy": 74,
+        "military_pressure": 40,
+        "spiritual_health": 12
+      },
+      "keeper_attack_vector": "Keep the magnates competing to acquire until the whole Vault is one master-claim.",
+      "void_symptoms": ["Bound spirits whispering one name", "Grave-markets where buyers are quietly owned", "Reality thin at the Vault's heart"],
+      "quest_hooks": ["Reach the Vault's heart and learn the master-claim", "Help a Quiet Default insider defect with proof"]
+    },
+    {
+      "name": "The Cinder Harvest",
+      "domain": "Abyss",
+      "location_type": "Frontier soul-harvest engine complex",
+      "description": "A smoke-wreathed warrant-station of harvest engines feeding on the war-torn borders of Verdance, Radiance, and Sanctuary.",
+      "political_function": "Forward reclamation command on the harvest frontier.",
+      "economic_function": "Bulk supply of fresh names and souls to the markets.",
+      "magical_function": "Primary soul-harvest engine site; reality strained.",
+      "military_function": "Reclaimer staging against the border domains.",
+      "spiritual_function": "Where the harvested are torn from passage and bound.",
+      "civilian_function": "A debtor-camp of those caught in its warrants.",
+      "controlling_factions": ["Reclaimer Warrants", "Grave-Market Syndicates"],
+      "contested_by": ["Border-domain defenders", "The Unpriced", "Conduit-Void infiltration"],
+      "key_npcs": ["A Master Reclaimer (player's hunter)", "An Ash Ledger priest with a ledger slab", "A Defaulter guide among the Unpriced"],
+      "resources_present": ["Harvest engines", "Ledger slabs of bound witnesses"],
+      "magic_systems_present": ["Soul-Harvest Engineering", "Ledger-Binding"],
+      "known_secrets": ["The engines run hotter than warranted; a conduit-binder feeds them"],
+      "location_state": {
+        "stability": 50,
+        "danger": 78,
+        "corruption": 84,
+        "morale": 30,
+        "resources": 58,
+        "secrecy": 50,
+        "military_pressure": 72,
+        "spiritual_health": 8
+      },
+      "keeper_attack_vector": "Raise quotas until the engines rupture and the prison cracks.",
+      "void_symptoms": ["An engine running without operators", "Corpse-oracles speaking in one voice", "Reality tearing at the harvest line"],
+      "quest_hooks": ["Destroy a soul-harvest engine and free the bound (see Chain E for the half-measure)", "Recover harvested names for the border domains", "Turn a Defaulter or a Quiet Default insider"]
+    }
+  ],
+
+  "culture": {
+    "domain": "Abyss",
+    "daily_life_summary": "Life is accounting: every meal, favor, and breath is a line in some ledger, and to be unaccounted is to be prey.",
+    "family_customs": "Kinship is a standing contract; inheritance is the transfer of claims and debts, including over relatives.",
+    "love_and_marriage_customs": "Unions are mergers of claims; affection is tolerated only where it does not lower value.",
+    "education_system": "Children learn the Ledger before letters; the first lesson is that nothing is free.",
+    "work_and_apprenticeship": "Apprenticeship is indenture; mastery is becoming a holder rather than the held.",
+    "food_and_market_life": "Imported staples and grave-market goods; the markets price the living, the dead, and the not-yet-born.",
+    "festivals": ["The Reckoning (annual debt-call)", "Vault Vigil", "the Naming Auction"],
+    "funeral_or_death_customs": "The dead are inventoried and bound, not mourned; a wasted (freely passed) soul is a scandal.",
+    "public_honors": ["The Clear Title (for a secured great claim)", "A seat on the Council", "An unbroken ledger"],
+    "taboos": ["Letting a soul pass freely", "Forgiving a collectable debt", "Naming the master-claim aloud"],
+    "common_sayings": ["Nothing is free.", "The Ledger does not flatter.", "What is owed is owed."],
+    "children_common_beliefs": ["The dead still work", "An unpaid debt follows you past death", "Never sign what an oracle has read"],
+    "class_differences": ["Holders own; the bound are owned; the Unpriced are hunted"]
+  },
+
+  "religion": {
+    "domain": "Abyss",
+    "central_belief": "Existence is debt; the Vault is the only eternity, and to be owned is to be preserved.",
+    "sacred_symbols": ["The black ledger slab", "The unbroken seal", "The masked witness"],
+    "major_rituals": ["The Reckoning", "Name-harvest rites", "Soul-debt sealing", "Corpse-oracle divination"],
+    "common_prayers_or_oaths": ["What is owed is owed.", "Let nothing pass unaccounted.", "The Ledger keeps what the world wastes."],
+    "priestly_roles": ["Corpse-oracle", "Warrant-priest", "Masked witness"],
+    "heresies": ["The Jubilee (that debts could be forgiven)", "The Free Passage (that souls should pass freely)"],
+    "sacred_taboos": ["Naming the master-claim", "Releasing the bound", "Forgiving a debt"],
+    "relationship_to_death": "Death is not an end but a transfer; the dead are assets, not ancestors.",
+    "relationship_to_sacrifice": "Sacrifice is a fool's gift; only a priced exchange has value.",
+    "relationship_to_memory": "Memory is collateral; the Vault remembers so the living need not.",
+    "relationship_to_truth": "The Ledger is truth; everything outside it is sentiment and lies.",
+    "keeper_corruption_strategy": "Let Abyss worship the Vault without ever reading the master-claim at its heart.",
+    "void_false_revelation_style": "A clarifying vision that to become the debt is to become eternal and owed by all."
+  },
+
+  "faction_index": {
+    "domain": "Abyss",
+    "factions": [
+      { "name": "Ash Ledger Covenant", "short_doctrine": "Rule through soul-debt, warrants, and the totalizing Ledger.", "class_base": "Claim-holders and scriveners", "power_base": "Control of the Vault and all binding.", "main_rival": "The Quiet Default (within); rival magnate houses", "keeper_vulnerability": "The Total Ledger rolls up into the master-claim.", "player_use": "The face of Abyssian power; antagonist and contract-tempter." },
+      { "name": "Corpse-Oracle Conclave", "short_doctrine": "Read and keep the Vault's voices; truth through the bound dead.", "class_base": "Oracles and masked witnesses", "power_base": "Necromantic knowledge and information.", "main_rival": "Anyone freeing the bound", "keeper_vulnerability": "Oracles read just enough to serve the master-claim unknowingly.", "player_use": "Source of dark lore, prophecy, and a possible horrified defector." },
+      { "name": "Reclaimer Warrants", "short_doctrine": "Collect every debt; harvest every fallen; own every survivor.", "class_base": "Enforcers and harvest-crews", "power_base": "Military force and the harvest engines.", "main_rival": "The Unpriced", "keeper_vulnerability": "Reclaimers tempted into Void-conduit binding.", "player_use": "Primary military antagonist; the player's hunters." },
+      { "name": "Grave-Market Syndicates", "short_doctrine": "Trade in souls, names, corpses, and information for profit.", "class_base": "Merchants and brokers", "power_base": "Economic control of the markets.", "main_rival": "Rival syndicates; the Unpriced black market", "keeper_vulnerability": "Greed feeds Hoarding the Dead.", "player_use": "Morally bankrupt dealers; leverage, contraband, and grey bargains." },
+      { "name": "The Unpriced", "short_doctrine": "Refuse the Ledger; free the bound; survive unowned.", "class_base": "Defaulters and debt-fugitives", "power_base": "Underground resistance and anti-binding craft.", "main_rival": "Reclaimer Warrants", "keeper_vulnerability": "Hunted, scattered, and easily betrayed by debt.", "player_use": "Allies inside Abyss; guides, saboteurs, and the soul-freeing thread." },
+      { "name": "The Quiet Default", "short_doctrine": "Abyss itself is owned by a master-claim; the Ledger must be defaulted before it is called.", "class_base": "Disillusioned insiders and oracles", "power_base": "Secret knowledge of the master-claim.", "main_rival": "The Ash Ledger Covenant", "keeper_vulnerability": "Too few, too frightened, and indebted themselves.", "player_use": "Rare high-value defectors; the key to exposing the Keeper's hold on Abyss." }
+    ]
+  },
+
+  "npc_role_index": [
+    { "domain": "Abyss", "role_name": "Ruler or supreme authority", "purpose_in_world": "Embody the totalizing Ledger.", "purpose_in_gameplay": "Cold antagonist and contract-tempter.", "likely_factions": ["Ash Ledger Covenant"], "likely_conflicts": ["The Total Ledger", "Hidden collateral status"], "relationship_options": ["Adversary", "Tempter", "Unwitting collateral"], "death_impact": "Their claims scatter; a default cascade or a power grab follows." },
+    { "domain": "Abyss", "role_name": "Spiritual authority", "purpose_in_world": "Keep and read the Vault's voices.", "purpose_in_gameplay": "Dark-lore source and possible horrified defector.", "likely_factions": ["Corpse-Oracle Conclave"], "likely_conflicts": ["Reading the master-claim"], "relationship_options": ["Oracle-informant", "Mad seer", "Defector"], "death_impact": "Knowledge of the Vault is lost or freed." },
+    { "domain": "Abyss", "role_name": "Military commander", "purpose_in_world": "Reclaim and harvest without mercy.", "purpose_in_gameplay": "The player's relentless hunter (Master Reclaimer).", "likely_factions": ["Reclaimer Warrants"], "likely_conflicts": ["Void-conduit temptation", "A warrant on the player"], "relationship_options": ["Nemesis", "Tempted foe", "Rare defector"], "death_impact": "A harvest line falters; a conduit may take their place." },
+    { "domain": "Abyss", "role_name": "Spiritual/villain vessel", "purpose_in_world": "Seal and authenticate soul-debt.", "purpose_in_gameplay": "The Ash Ledger priest of Chain E; killing them does not stop the system.", "likely_factions": ["Ash Ledger Covenant"], "likely_conflicts": ["The ledger slab outlives them"], "relationship_options": ["Target", "Replaceable cog"], "death_impact": "If the slab survives, bound witnesses still identify the player's contacts." },
+    { "domain": "Abyss", "role_name": "Trader/resource broker", "purpose_in_world": "Profit from the soul-economy.", "purpose_in_gameplay": "Contraband, leverage, and grey bargains.", "likely_factions": ["Grave-Market Syndicates"], "likely_conflicts": ["Hoarding the Dead", "Rival syndicates"], "relationship_options": ["Dealer", "Blackmailer", "Reluctant source"], "death_impact": "Markets reshuffle; debts change hands." },
+    { "domain": "Abyss", "role_name": "Potential defector", "purpose_in_world": "Carry the secret that Abyss is owned.", "purpose_in_gameplay": "High-value ally exposing the master-claim (Quiet Default insider).", "likely_factions": ["The Quiet Default"], "likely_conflicts": ["Hunted as a traitor", "Indebted themselves"], "relationship_options": ["Defector ally", "Endangered source", "Tragic figure"], "death_impact": "Proof of the master-claim is lost; the Keeper's hold stays hidden." },
+    { "domain": "Abyss", "role_name": "Rival or edge-faction ally", "purpose_in_world": "Refuse to be owned and free the bound.", "purpose_in_gameplay": "Player's guide and saboteur inside Abyss (a Defaulter).", "likely_factions": ["The Unpriced"], "likely_conflicts": ["Reclaimer warrants", "Betrayal under debt pressure"], "relationship_options": ["Ally", "Guide", "Possible betrayer (Chain E)"], "death_impact": "A resistance cell collapses; freed-soul efforts stall." },
+    { "domain": "Abyss", "role_name": "Intelligence figure / envoy", "purpose_in_world": "Press the Ledger's claims abroad.", "purpose_in_gameplay": "The Ledger Envoy who arrives to collect on the player's debt.", "likely_factions": ["Ash Ledger Covenant"], "likely_conflicts": ["Calling a contract due"], "relationship_options": ["Creditor", "Negotiator", "Threat"], "death_impact": "The claim passes to another envoy; the debt does not die." }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "Abyss",
+      "target_domain": "Radiance",
+      "public_relationship": "war",
+      "hidden_relationship": "Abyss feeds on Radiance's martyrdom; their wasted heroes are its richest harvest.",
+      "primary_conflict": "Soul-harvest engines binding Radiance's honored dead at the frontier.",
+      "primary_dependency": "Abyss depends on Radiance martyr charges to fill its engines.",
+      "resource_leverage": "Abyss corrupts and counterfeits captured Sunstone relics; baits martyrdom.",
+      "magic_tension": "Clean sacrifice versus soul-harvest.",
+      "military_tension": "Active frontier war at the harvest line.",
+      "historical_wound": "Whole Radiance cohorts harvested after glorious last stands.",
+      "possible_alliance_condition": "None; only fleeting truces of convenience.",
+      "possible_break_condition": "Any truce ends the moment harvest resumes.",
+      "keeper_exploit": "Bait Radiance martyr charges that feed the Vault and crack the prison.",
+      "void_exploit": "Whisper to Radiance heroes that overcharge can outburn the harvest — deepening dependency."
+    },
+    {
+      "source_domain": "Abyss",
+      "target_domain": "Verdance",
+      "public_relationship": "war",
+      "hidden_relationship": "Abyss harvests names directly from the Heartroot Loom and studies corrupted-sap residue.",
+      "primary_conflict": "Soul-harvest tearing names from Verdance border villages and rootwells.",
+      "primary_dependency": "Verdance souls and names are prime Vault stock.",
+      "resource_leverage": "Abyss engineers counter-corruption from captured rot residue.",
+      "magic_tension": "Living memory versus name-harvest.",
+      "military_tension": "Raids on Thornveil and the border groves.",
+      "historical_wound": "Villages whose names were harvested and silenced.",
+      "possible_alliance_condition": "None.",
+      "possible_break_condition": "Truces shatter when names are harvested.",
+      "keeper_exploit": "Corner Verdance into wielding the rot, doing Abyss's corruption for it.",
+      "void_exploit": "Spread corrupted-sap dependency along the border."
+    },
+    {
+      "source_domain": "Abyss",
+      "target_domain": "Tempest",
+      "public_relationship": "war",
+      "hidden_relationship": "Abyss profits from Tempest disunity and trades forbidden bond-restraint and storm-chaining devices.",
+      "primary_conflict": "Anti-air towers and harvest of riders chained through Barrier breaches.",
+      "primary_dependency": "Tempest's broken bonds and Barrier gaps are harvest opportunities.",
+      "resource_leverage": "Abyss sells chaining devices into the black market to weaken the Barrier.",
+      "magic_tension": "Chosen bond versus chained soul-binding.",
+      "military_tension": "Siege at the Tornwatch Gap and harvest raids.",
+      "historical_wound": "Sky-holds whose chained riders were harvested through a breach.",
+      "possible_alliance_condition": "None.",
+      "possible_break_condition": "Any truce ends when a roost is seized or a bond forced.",
+      "keeper_exploit": "Push Tempest toward forced bonds, doing the Vault's binding for it.",
+      "void_exploit": "Sell conduit-chaining tools that harvest while they restrain."
+    },
+    {
+      "source_domain": "Abyss",
+      "target_domain": "Sanctuary",
+      "public_relationship": "war",
+      "hidden_relationship": "Abyss's deepest infiltration: Ash Ledger cells and collaborator magistrates turn Sanctuary's own registries into harvest lists.",
+      "primary_conflict": "Soul-debt contracts and disappearances hollowing Sanctuary from within.",
+      "primary_dependency": "Sanctuary's protected rolls are ready-made registries to harvest.",
+      "resource_leverage": "Abyss weaponizes Sanctuary's debt, trust, and bureaucracy against it.",
+      "magic_tension": "Sheltering light versus harvesting ledger.",
+      "military_tension": "Open frontier war and a secret war in the archives.",
+      "historical_wound": "Detained populations disappeared into soul-debt.",
+      "possible_alliance_condition": "None; only Sanctuary's hunt for the cells.",
+      "possible_break_condition": "Ceasefires shatter when the disappeared are found harvested.",
+      "keeper_exploit": "Use Sanctuary's fear to make it build the registries Abyss harvests.",
+      "void_exploit": "Sell perfect security in exchange for the names of the watched."
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "Abyss",
+      "title": "The Master-Claim",
+      "factions_involved": ["Ash Ledger Covenant", "The Quiet Default", "Corpse-Oracle Conclave", "Reclaimer Warrants"],
+      "issue": "Whether to keep expanding the Total Ledger or to default and sever the hidden master-claim before the Keeper calls it due.",
+      "public_argument": "The Covenant: 'Acquire everything; the Ledger is eternal.' The Quiet Default (in whispers): 'We are the collateral, and the call is coming.'",
+      "hidden_argument": "A few oracles have read the master-claim; most magnates are too leveraged or too proud to believe it.",
+      "resources_at_stake": ["The Vault of Names", "Every Abyssian claim", "The integrity of the prison lattice"],
+      "magic_systems_at_stake": ["Ledger-Binding", "Soul-Harvest Engineering", "Corpse-Oracle Necromancy"],
+      "npc_flashpoints": ["A Council magnate", "The chief Corpse-Oracle", "A Quiet Default insider"],
+      "possible_player_sides": ["Help the Quiet Default expose and default the master-claim", "Exploit the standoff to free the bound", "Let Abyss devour itself and harvest the fallout"],
+      "compromise_possible": false,
+      "keeper_best_outcome": "Expansion continues until the master-claim is called and Abyss is unmade with the world.",
+      "void_best_outcome": "Conduit-binders spread, routing the whole Ledger toward the Keeper's voice.",
+      "peaceful_resolution": "No true peace; at best a controlled default that frees many bound and exposes the Keeper's hold.",
+      "violent_resolution": "A succession war among magnates as oracles go silent and engines rupture.",
+      "third_order_effect": "Mass defaults and freed souls ripple across every domain's soul-flow.",
+      "fifth_order_effect": "If the master-claim is exposed and defaulted, the Keeper loses its greatest engine; if not, the prison crack widens toward release."
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "Abyss",
+    "common_spread_channels": ["Ledger notices", "Masked witnesses", "Grave-markets", "Spy letters", "Name registries", "Debt warrants", "Corpse-oracles"],
+    "trusted_sources": ["Bound witnesses (who cannot lie)", "Authenticated ledger slabs"],
+    "distrusted_sources": ["The Unpriced", "Anyone offering forgiveness", "Unsealed claims"],
+    "rumor_emotional_styles": ["Paranoia", "Envy", "Fear", "Cold calculation"],
+    "rumor_suppression_methods": ["Warrant silencing", "Buying the claim to a story", "Binding the witness"],
+    "rumor_weaponization_methods": ["Debt-notice campaigns", "Releasing authenticated dirt via masked witnesses", "Pricing a rival's secret"],
+    "rumor_mutation_patterns": ["A mercy becomes 'an unpaid debt to be collected'", "A kindness becomes 'leverage acquired'", "A whisper of the master-claim is bought and buried"],
+    "factions_best_at_rumor_warfare": ["Corpse-Oracle Conclave", "Grave-Market Syndicates"]
+  },
+
+  "relationship_logic": {
+    "domain": "Abyss",
+    "trust_is_built_by": ["Creating collectable debt", "Demonstrating clear title and enforcement", "Proving sentiment will not interfere"],
+    "trust_is_broken_by": ["Defaulting", "Forgiving a debt", "Freeing the bound"],
+    "enemies_become_tolerable_when": ["They become indebted", "They offer a profitable, enforceable exchange"],
+    "allies_become_suspect_when": ["They show unpriced mercy", "They cannot be indebted", "They question the Ledger"],
+    "romance_conflicts": ["Affection that lowers an asset's value", "A lover among the Unpriced or Quiet Default"],
+    "betrayal_triggers": ["A larger claim becomes collectable", "A counterparty defaults", "Debt pressure forces a hand (Chain E)"],
+    "forgiveness_conditions": ["There is no forgiveness in Abyss — only renegotiated terms or a bought-out claim"],
+    "permanent_enemy_conditions": ["Freeing many bound souls", "Exposing the master-claim", "Proving the Jubilee heresy true"],
+    "if_then_because_examples": [
+      { "if": "The player shows mercy without extracting leverage", "then": "Abyss respect falls", "because": "Abyss views unpriced mercy as wasted power." },
+      { "if": "The player binds or indebts an enemy instead of killing them", "then": "Abyss respect rises", "because": "To Abyss, an owned enemy is worth more than a dead one." },
+      { "if": "The player kills an Ash Ledger priest but leaves the ledger slab intact", "then": "the bound witnesses still identify everyone who spoke to the player", "because": "in Abyss the system, not the person, holds the claim." },
+      { "if": "The player signs even a minor-looking Abyssian contract", "then": "a soul-debt is created and an Ash Ledger claim is established", "because": "in Abyss nothing is free and every contract is, at root, soul-debt." },
+      { "if": "The player frees bound souls from a harvest engine", "then": "Abyss marks them a permanent enemy while the other domains' soul-flow heals", "because": "freeing the bound is the one act Abyss cannot forgive and the world most needs." },
+      { "if": "The player exposes the master-claim to a Quiet Default insider", "then": "a rare high-value defection becomes possible", "because": "the proof that Abyss is itself owned is the only thing that shakes a true believer." },
+      { "if": "An Abyssian magnate is shown to be collateral to a greater claim", "then": "their authority crumbles among rivals", "because": "in Abyss, to be owned is to be powerless, however much one holds." },
+      { "if": "A counterparty defaults on the Ledger", "then": "Abyss turns from partner to hunter instantly", "because": "an uncollectable debt is an intolerable affront to the only true law." },
+      { "if": "The player offers Abyss a profitable, enforceable bargain", "then": "even a sworn enemy will deal", "because": "Abyss tolerates anyone it can indebt and profit from." },
+      { "if": "A reclaimer is tempted into Void-conduit binding", "then": "Abyss loses control of them to the Keeper's voice", "because": "the conduit answers to the master-claim, not to the Ledger that made it." },
+      { "if": "The player redeems and returns harvested names to their home domains", "then": "Abyss escalates to blood-enemy but cross-domain trust in the player soars", "because": "returning the harvested directly reverses Abyss's reason for being."}
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "Abyss",
+    "starting_bonuses": ["Knowledge of ledger-binding basics", "A network of grave-market contacts", "A cold fluency in debt and leverage"],
+    "starting_burdens": ["An existing soul-debt to the Ledger", "Distrust from every other domain", "A reclaimer who may hold your warrant"],
+    "default_domain_resonance": { "Radiance": 10, "Verdance": 10, "Tempest": 15, "Sanctuary": 10, "Abyss": 65 },
+    "starting_faction_assumptions": ["Presumed an asset of some claim-holder", "Watched by the Reclaimers", "Quietly sought by the Quiet Default if you doubt"],
+    "common_npc_reactions": ["Other domains fear and distrust you", "Abyssians weigh your price", "The Unpriced test whether you can be turned"],
+    "starting_rumors": ["'Carries a debt they have not yet been told the size of'", "'An Abyssian who has not yet decided whom they truly serve'"],
+    "starting_magic_access": ["Ledger-Binding (minor)", "Grave-market divination access"],
+    "restricted_magic_access": ["Soul-harvest engineering (guild-restricted)", "Void-conduit binding (forbidden, ruinous)"],
+    "unique_origin_questions": ["Whose claim are you under, and do you know its true size?", "Have you ever freed something you were meant to keep owned?", "Do you serve the Ledger, or have you read the master-claim?"],
+    "possible_dark_secret_options": ["You are collateral to a claim you cannot see", "You harvested someone you knew", "You hold a stolen ledger slab the Reclaimers want back"]
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "The player kills an Ash Ledger priest but leaves the ledger slab intact.",
+      "domain_interpretation": "Abyss sees a person removed but the system untouched — an amateur's mistake.",
+      "faction_interpretation": "The Reclaimers note the slab survived; the Conclave reads its bound witnesses; the Unpriced groan that the cell still stands.",
+      "immediate_result": "The priest is dead; the player gains short-term safety; the ledger remains active.",
+      "first_order": "Local priest removed; ledger intact and operational.",
+      "second_order": "Bound witness spirits inside the slab identify everyone who spoke to the player; Abyss issues debt notices.",
+      "third_order": "Some contacts distance themselves; one frightened contact considers betrayal to escape their debt.",
+      "fourth_order": "The resistance network fractures; the Ash Ledger increases legal control without needing soldiers.",
+      "fifth_order": "The Keeper benefits as resistance communities collapse under fear, debt, and mistrust, and soul-flow disruption rises with every new survival contract.",
+      "keeper_gain": "More signed contracts, more bound souls, a tighter master-claim.",
+      "void_gain": "Frightened defaulters become candidates for conduit-temptation.",
+      "player_intervention_options": ["Destroy or purify the ledger slab", "Free the bound witness spirits", "Expose the debt notices as coercive fraud", "Help contacts resist the legal pressure", "Turn the ledger against Abyss by recovering true names"]
+    },
+    {
+      "root_event": "The player signs a minor-looking Abyssian favor-contract to gain quick aid.",
+      "domain_interpretation": "Abyss sees a routine, perfectly honest transaction — the favor was never free.",
+      "faction_interpretation": "The Syndicate broker smiles; the Ledger logs a new claim; the Unpriced wince at another soul caught.",
+      "immediate_result": "The player gets the aid they needed.",
+      "first_order": "A soul-debt is created; an Ash Ledger claim over the player is established.",
+      "second_order": "The debt quietly compounds; a Ledger Envoy is assigned to the claim.",
+      "third_order": "Abyss attention rises; the claim becomes leverage in later negotiations.",
+      "fourth_order": "The Envoy arrives to collect, threatening the player's allies as collateral.",
+      "fifth_order": "If unresolved, the claim is rolled toward the master-claim, making the player a thread the Keeper can pull.",
+      "keeper_gain": "Another soul bound toward the Vault.",
+      "void_gain": "The compounding debt is a foothold for conduit-temptation.",
+      "player_intervention_options": ["Pay the debt cleanly before it compounds", "Find and void the contract via the Quiet Default", "Expose the broker's terms as fraudulent", "Turn the Envoy with proof of the master-claim", "Default and join the Unpriced"]
+    },
+    {
+      "root_event": "The player destroys a soul-harvest engine at the Cinder Harvest and frees its bound souls.",
+      "domain_interpretation": "Abyss sees an intolerable theft of assets and a default on the natural order.",
+      "faction_interpretation": "The Reclaimers mark the player blood-enemy; the border domains rejoice; the Unpriced gain hope; a conduit-binder is exposed.",
+      "immediate_result": "The engine is wrecked and many souls are freed.",
+      "first_order": "Cross-domain soul-flow heals locally; Abyss harvest output drops; a permanent warrant is sworn on the player.",
+      "second_order": "Freed names begin returning toward Verdance, Radiance, and Sanctuary; reality near the engine steadies.",
+      "third_order": "The Reclaimers escalate; the Quiet Default takes quiet notice of someone who can actually hurt the Vault.",
+      "fourth_order": "Other harvest sites tighten security, but the legend spreads among the bound and indebted.",
+      "fifth_order": "The Keeper's prison-cracking slows as the Vault is denied stock; the master-claim's tightening is set back.",
+      "keeper_gain": "Reduced — a genuine setback to the harvest engine of the prison.",
+      "player_intervention_options": ["Escort the freed souls to their home domains", "Recover the engine's ledger slabs as evidence", "Turn the exposed conduit-binder or destroy them", "Use the victory to open contact with the Quiet Default"]
+    },
+    {
+      "root_event": "A frightened Unpriced ally, crushed by a debt notice, considers betraying the player to the Reclaimers to clear their claim.",
+      "domain_interpretation": "Abyss sees the Ledger working exactly as designed: debt turning ally against ally.",
+      "faction_interpretation": "The Reclaimers dangle a cleared claim; the Quiet Default fears another defector lost; the player's network wavers.",
+      "immediate_result": "The ally is cornered between loyalty and ruin.",
+      "first_order": "Betrayal risk spikes; the player's safety and network are threatened.",
+      "second_order": "If betrayed: the player is hunted and contacts are bound; if held: the ally's debt comes due on them.",
+      "third_order": "Either the network fractures further or a freed/forgiven ally becomes fiercely loyal.",
+      "fourth_order": "The outcome shapes whether the Unpriced can be organized into real resistance.",
+      "fifth_order": "Abyss's debt-as-control either deepens or is proven breakable, swinging the master-claim struggle.",
+      "keeper_gain": "Betrayal-by-debt feeds the Ledger; loyalty-through-relief denies it.",
+      "player_intervention_options": ["Pay or void the ally's debt", "Expose the Reclaimers' offer as a trap", "Help the ally disappear among the Unpriced", "Pre-empt the betrayal with proof of the master-claim", "Accept the risk and protect the network"]
+    },
+    {
+      "root_event": "The player obtains proof of the master-claim and brings it to a Quiet Default insider.",
+      "domain_interpretation": "Abyss treats this as the ultimate heresy: the claim that the owners are owned.",
+      "faction_interpretation": "The Quiet Default is galvanized; the Covenant moves to bury it; an oracle who confirms it risks madness or silence.",
+      "immediate_result": "The proof changes hands.",
+      "first_order": "A high-value defection becomes possible; the Covenant issues lethal warrants to suppress the proof.",
+      "second_order": "Whispers of the master-claim spread among indebted magnates; some begin quietly defaulting.",
+      "third_order": "A controlled-default movement forms; harvest discipline wavers as insiders hedge.",
+      "fourth_order": "Either a succession-war/default-cascade begins, or the Covenant crushes the movement and doubles harvest.",
+      "fifth_order": "If the default cascade succeeds, the Keeper loses its greatest engine and many bound are freed; if crushed, the prison crack widens toward release.",
+      "keeper_gain": "Catastrophic loss if the cascade succeeds; acceleration if it is crushed.",
+      "player_intervention_options": ["Protect the insider and the proof", "Trigger a controlled default that frees the bound", "Broker safe passage for defectors to the other domains", "Expose the Keeper's hold to the whole Council at once"]
+    }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["Can a name harvested into the Vault ever be fully returned, or only partly redeemed?", "If the master-claim is defaulted, what happens to the bound souls and to Abyss itself?"],
+    "political": ["Could a controlled default actually free Abyss, or only shatter it?", "How many magnates secretly know they are collateral?"],
+    "magic": ["Is there any binding that does not, in the end, serve the master-claim?", "Can a Void-conduit binder ever be reclaimed from the Keeper's voice?"],
+    "faction": ["Are the Unpriced and the Quiet Default natural allies, or will debt and fear keep them apart?", "How deep has conduit-Void infiltration reached among the Reclaimers?"],
+    "npc": ["Can a Master Reclaimer or a corpse-oracle ever truly defect?", "Is the player's own debt a leash the Keeper already holds?"],
+    "war_economy": ["What happens to Abyss if the harvest frontiers run dry?", "Can the soul-economy survive a wave of freed souls and voided contracts?"],
+    "implementation": ["Should the master-claim be a campaign-level pressure clock tied to keeper_prison_pressure?", "Should signing any Abyssian contract spawn a tracked soul-debt with compounding ticks?"]
+  },
+
+  "locked_decisions": [
+    "Abyss magic and power must always derive from owned debt, bound souls, or harvested names; nothing in Abyss is given freely.",
+    "Abyss evil must be coherent and self-justifying, never random darkness; it genuinely believes the Ledger is the only honest order.",
+    "Abyss internal politics must respect the Ledger / Conclave / Reclaimer / Syndicate / Unpriced / Quiet Default fracture.",
+    "Freeing bound souls, voiding contracts, and exposing the master-claim are the violations Abyss cannot forgive and the world most needs.",
+    "Abyss is the Keeper's greatest harvesting engine and its hidden debtor; the fuller the Vault, the tighter the master-claim and the wider the prison crack.",
+    "Mercy is respected by Abyss only when it creates debt, leverage, or dependency."
+  ]
+}

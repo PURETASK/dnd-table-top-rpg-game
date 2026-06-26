@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "layer": "Void",
+  "status": "draft",
+
+  "nature": {
+    "what_it_is": [
+      "An enhancement that grants real, immediate power",
+      "A parasite that embeds itself in whatever it enhances",
+      "A liar that always frames its cost as a future someone else will pay"
+    ],
+    "what_it_is_not": [
+      "A civilization, society, or domain with people and institutions",
+      "The Keeper (it is the Keeper's instrument and erosion, not the prisoner itself)",
+      "A clean, cost-free source of power",
+      "Generic darkness or simple evil energy"
+    ],
+    "core_lie": "Save now, pay later — and the cost can always be deferred, transferred, or outrun.",
+    "prime_directive": "Make the impossible shortcut feel useful and necessary, so that reality, identity, and soul-flow are quietly mortgaged to it."
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "The Void is enhancement, parasite, and liar — never clean power.",
+      "The Void may grant real power, but it must always also create dependency, distortion, identity damage, soul-flow disruption, memory instability, reality stress, domain Stone strain, or future Keeper pressure.",
+      "Void temptation feels useful before it feels horrifying.",
+      "Void echoes can mimic the voice and fire of those who used the Void.",
+      "Voidglass, impossible shortcuts, and false paths are common Void manifestations.",
+      "The Void serves the Keeper's erosion of the prison but is distinct from the Keeper."
+    ],
+    "cannot_contradict": [
+      "The Void must never give clean power; every use defers a real cost.",
+      "Void temptation must sound plausible and useful, not obviously evil.",
+      "The Void is a parasite/layer, not a domain civilization; it has no government, economy, or military of its own.",
+      "Void use must always raise some combination of void_resonance, identity/memory damage, soul-flow disruption, or Keeper pressure."
+    ]
+  },
+
+  "metaphysical_role": {
+    "relationship_to_keeper": "The Void is the seepage of the Keeper's prison into reality — the medium through which the Keeper's pressure becomes usable power.",
+    "how_it_serves_the_keeper": "Every Void bargain thins identity, soul-flow, and reality, widening the cracks the Keeper presses against from outside.",
+    "how_it_differs_from_the_keeper": "The Keeper is a conscious Architect-prisoner with a goal; the Void is a pervasive, opportunistic medium — appetite and erosion rather than a single will.",
+    "can_it_act_independently": "It can tempt, echo, and spread on its own like a parasite, but its deepest pull always bends toward the Keeper's release.",
+    "relationship_to_nexus_stone": "Where the fractured Nexus Stone's domain fragments hold reality together, the Void is what leaks through the fracture lines and strains the Stones.",
+    "relationship_to_soul_flow": "The Void offers to bypass the costs that keep soul-flow clean, and in doing so disrupts death-passage, memory, and identity.",
+    "how_it_enters_reality": "Through impossible shortcuts: any moment someone bypasses a natural cost, overdraws a Stone, or chooses 'save now, pay later.'",
+    "what_it_ultimately_wants": "To make deferral total — for so much cost to be owed and unpaid that reality itself defaults and the prison fails."
+  },
+
+  "three_faces": [
+    {
+      "face": "enhancement",
+      "description": "The Void's seductive face: it makes you stronger, faster, and able to do the impossible.",
+      "how_it_appears": "A spell that should kill the caster succeeds harmlessly; a wound seals; a dragon obeys; a debt clears; a gate holds.",
+      "the_catch": "The enhancement is real, which is exactly why it is believed — and why the parasite is welcomed in."
+    },
+    {
+      "face": "parasite",
+      "description": "Having been welcomed, the Void embeds in the user, the relic, the faction, or the place it enhanced.",
+      "how_it_appears": "A faint dependency, a craving to use it again, a thread of self routed elsewhere, a relic that hungers.",
+      "the_catch": "Removing the parasite costs as much as the enhancement gave — and it grows roots while you hesitate."
+    },
+    {
+      "face": "liar",
+      "description": "The Void narrates its own bargain so that the cost always seems avoidable.",
+      "how_it_appears": "Whispers that the result justifies the method, that the cost falls on someone who deserves it, that you can repair it later.",
+      "the_catch": "The deferral is the trap; the cost is always real, always compounding, and always ultimately the Keeper's gain."
+    }
+  ],
+
+  "temptation_mechanics": {
+    "always_feels_useful_first": "The Void only ever appears at the moment its power would genuinely help — a life to save, a line to hold, a debt to clear.",
+    "never_clean_power": "Behind every benefit sits at least one deferred cost: dependency, distortion, identity damage, soul-flow disruption, memory instability, reality stress, domain Stone strain, or future Keeper pressure.",
+    "required_costs": [
+      "dependency",
+      "distortion",
+      "identity_damage",
+      "soul_flow_disruption",
+      "memory_instability",
+      "reality_stress",
+      "domain_stone_strain",
+      "future_keeper_pressure"
+    ],
+    "escalation_logic": "Each use lowers the threshold for the next; the lie shifts from 'just this once' to 'you already paid, so why stop now.'"
+  },
+
+  "costs": [
+    {
+      "name": "Deferred Toll",
+      "description": "The natural cost a spell or act should have paid is postponed rather than waived.",
+      "immediate_benefit": "The caster survives an act that should have consumed them.",
+      "deferred_cost": "The unpaid toll accrues against their identity and the local soul-flow, due later and larger.",
+      "stage_it_surfaces": 1
+    },
+    {
+      "name": "Echo Seed",
+      "description": "A use of the Void leaves an imprint that can later mimic the user.",
+      "immediate_benefit": "No felt cost at the time; the act simply works.",
+      "deferred_cost": "A Void echo learns the user's voice or fire and can later impersonate them.",
+      "stage_it_surfaces": 2
+    },
+    {
+      "name": "Thinning",
+      "description": "Repeated bypassing of cost thins the user's edges — identity and memory blur.",
+      "immediate_benefit": "Power comes easier each time; limits feel like superstition.",
+      "deferred_cost": "Identity and memory destabilize; the self becomes something the Void can route through.",
+      "stage_it_surfaces": 2
+    },
+    {
+      "name": "Default",
+      "description": "When the accumulated deferral can no longer be carried, reality itself pays.",
+      "immediate_benefit": "None left; the bargains are all called at once.",
+      "deferred_cost": "Reality stress, domain Stone strain, and a surge of Keeper pressure as the cracks open.",
+      "stage_it_surfaces": 3
+    }
+  ],
+
+  "manifestations": [
+    {
+      "name": "Voidglass",
+      "description": "A black, mirror-like substance that stores and channels deferred power.",
+      "how_it_appears": "As a relic facet, a frozen wound, or a too-perfect reflection.",
+      "the_catch": "It remembers every cost stored in it and will demand them through whoever wields it.",
+      "danger": 70
+    },
+    {
+      "name": "Void Echo",
+      "description": "A mimic born of a Void use that can wear the user's voice, face, or fire.",
+      "how_it_appears": "As the trusted dead, a loved one, or oneself, saying what you most want to hear.",
+      "the_catch": "It exists only to deepen the bargain and isolate the user from those who would warn them.",
+      "danger": 80
+    },
+    {
+      "name": "Impossible Shortcut",
+      "description": "A path, method, or solution that bypasses a cost that should be unavoidable.",
+      "how_it_appears": "A door where there was a wall; a cure with no tithe; a victory with no loss.",
+      "the_catch": "The bypassed cost is not gone — it is merely owed, and the Void chooses when to collect.",
+      "danger": 60
+    },
+    {
+      "name": "False Path",
+      "description": "A route through space, memory, or reasoning that leads somewhere the traveler did not choose.",
+      "how_it_appears": "A familiar road that arrives wrong; a memory that rewrites the way back.",
+      "the_catch": "It erodes reality stability and can strand the traveler in a place that is half the Void's.",
+      "danger": 65
+    }
+  ],
+
+  "corruption_stages": [
+    {
+      "stage": 1,
+      "name": "The Useful Favor",
+      "description": "The Void has been used once or twice, always at a moment of real need.",
+      "signs": ["A spell or act that should have cost more did not", "Faint exhilaration and a quiet wish to use it again", "Slightly-too-bright or slightly-wrong results"],
+      "reversibility": "Fully reversible with rest, confession, and refusing the next offer."
+    },
+    {
+      "stage": 2,
+      "name": "The Embedded Parasite",
+      "description": "Dependency has set in; the Void is now part of how the user solves problems.",
+      "signs": ["Cravings to use it", "A second voice or a Void echo", "Thinning identity and unreliable memory", "Reality fraying at the edges of use"],
+      "reversibility": "Reversible only at real cost — paying the deferred tolls, severing the echo, and surrendering the gained power."
+    },
+    {
+      "stage": 3,
+      "name": "The Conduit",
+      "description": "The user is no longer a holder of Void power but a channel for it, routing reality toward the Keeper.",
+      "signs": ["The user speaks in the Void's cadence", "Power flows without effort or operators", "Local reality and soul-flow route through them", "They cannot accept a free refusal or an unpaid cost"],
+      "reversibility": "Rarely reversible; usually requires another's sacrifice, a domain Stone's intervention, or destruction."
+    }
+  ],
+
+  "domain_specific_temptations": [
+    {
+      "domain": "Radiance",
+      "temptation_phrase": "If your sacrifice is pure, why fear burning more?",
+      "immediate_benefit": "Overcharged flame succeeds without consuming the caster's life as it should.",
+      "hidden_cost": "The unpaid life-cost defers into the Eternal Flame and the caster's oath burden; a Void echo learns their fire.",
+      "faction_most_likely_to_accept": ["Sunbreaker War Doctrine", "Ashen Martyrs"],
+      "npc_archetypes_most_likely_to_accept": ["Champion under impossible odds", "Grieving zealot", "Forge researcher chasing output"]
+    },
+    {
+      "domain": "Verdance",
+      "temptation_phrase": "If rot saved them, why call it corruption?",
+      "immediate_benefit": "Corrupted sap grants instant growth or lethal traps without the slow life-tithe to the cycle.",
+      "hidden_cost": "Each use deepens the rootwell wound and binds a strand of the user's memory to the rot.",
+      "faction_most_likely_to_accept": ["Hollow Pact", "Desperate border villages"],
+      "npc_archetypes_most_likely_to_accept": ["Cornered defender", "Grieving healer who lost everyone"]
+    },
+    {
+      "domain": "Tempest",
+      "temptation_phrase": "Love that cannot restrain is love that lets death win.",
+      "immediate_benefit": "A forced bond or chained storm grants instant control — the dragon obeys, the gap seals, the crew holds.",
+      "hidden_cost": "The forced thread festers, the Maelstrom Barrier's resonance thins, and a chained echo is born.",
+      "faction_most_likely_to_accept": ["Frightened Dragon-Bond hardliners", "Sky-holds under siege"],
+      "npc_archetypes_most_likely_to_accept": ["Desperate rider", "Grieving captain", "Cornered Barrier-warden"]
+    },
+    {
+      "domain": "Sanctuary",
+      "temptation_phrase": "You cannot protect them if you cannot watch them; safety is worth a little surrender.",
+      "immediate_benefit": "Total surveillance and pre-emptive detention catch real threats and make the city feel safe.",
+      "hidden_cost": "The registries become harvest lists, the disappeared are bound to soul-debt, and the Beacon dims.",
+      "faction_most_likely_to_accept": ["Purity Inquisition", "Frightened magistrates"],
+      "npc_archetypes_most_likely_to_accept": ["Zealous inquisitor", "Grief-radicalized official", "A magistrate already compromised"]
+    },
+    {
+      "domain": "Abyss",
+      "temptation_phrase": "Why merely hold the debt when you could become it, and be owed by everyone forever?",
+      "immediate_benefit": "A binder who becomes a conduit of the debt harvests faster and cannot be defaulted on.",
+      "hidden_cost": "They cease to be a holder and become a node of the Keeper's master-claim — owned, not owning.",
+      "faction_most_likely_to_accept": ["Reclaimer Warrants", "Ambitious Corpse-Oracles"],
+      "npc_archetypes_most_likely_to_accept": ["Ruthless reclaimer", "Magnate who fears default", "Oracle hungry for more names"]
+    }
+  ],
+
+  "detection_and_resistance": {
+    "warning_signs": [
+      "A cost that should have been paid simply was not",
+      "Results that are slightly too bright, too easy, or out of season",
+      "Heat without warmth; obedience with dull eyes; a gap that will not close",
+      "A second voice, a familiar face that knows too much, or a memory that rewrites itself"
+    ],
+    "resistance_methods": [
+      "Paying the real cost willingly instead of deferring it",
+      "Confessing the bargain publicly so it cannot isolate you",
+      "Refusing the next offer even after the last one 'worked'",
+      "Anchoring to a freely chosen bond, an honest ledger, a clean flame, or a living grove"
+    ],
+    "who_resists_best": [
+      "Those who accept real cost willingly (Radiance Dawnfire Mystics, Verdance Conservators)",
+      "Those who honor free refusal (Tempest Dragon-Bond Sanctum)",
+      "Those who insist on accountable truth (Sanctuary Lumen Wardens)",
+      "Those who have read the master-claim and stopped deferring (Abyss Quiet Default)"
+    ],
+    "healing_methods": [
+      "Paying or restoring every deferred toll",
+      "Severing the Void echo and destroying its Voidglass",
+      "Domain Stone communion to re-anchor identity and soul-flow",
+      "Another's freely chosen sacrifice to break a conduit"
+    ],
+    "point_of_no_return": "When the user becomes a conduit (stage 3) and can no longer accept an unpaid cost or a free refusal, the bargain owns them rather than the reverse."
+  },
+
+  "verdax_tracking_fields": {
+    "drives_global_void_parasitism": "Every accepted Void bargain raises global_void_parasitism and normalizes the next shortcut (Chunk 3 §6).",
+    "drives_character_void_resonance": "Use raises a character's void_resonance, lowering the threshold for future temptation and echo mimicry (Chunk 3 §7).",
+    "drives_identity_and_memory_damage": "Thinning lowers identity_integrity and memory_stability as costs are deferred (Chunk 3 §7).",
+    "spawns_void_temptation_events": "Each offer is logged as a VoidTemptationEvent with offered_lie, immediate_benefit, hidden_cost, and accepted/resisted (Chunk 3 §26, Chunk 4 §18)."
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "A cornered storm-caller accepts the Void's offer to seal a Maelstrom Barrier gap without paying the storm-thinning cost.",
+      "immediate_benefit": "The gap seals and the Void-storm is turned aside; the caller is unharmed.",
+      "first_order": "Barrier integrity rises locally; the caller's void_resonance +6; an echo seed is planted.",
+      "second_order": "The caller is celebrated and tempted to repeat it; a Void echo begins to wear their voice.",
+      "third_order": "Other wardens hear the echo urging them to seal gaps the same way; deferred tolls accrue along the seam.",
+      "fourth_order": "When the tolls come due, several seams fail at once and a chained echo wails on the wind.",
+      "fifth_order": "The Keeper gains as the Barrier's resonance defaults and the prison crack widens where it was 'sealed.'",
+      "keeper_gain": "A sealed gap converted into a wider, deferred breach.",
+      "player_intervention_options": ["Pay the storm-thinning toll honestly to discharge the deferral", "Sever and destroy the echo before it spreads", "Warn the other wardens against the shortcut", "Bring the caller to the Eye Vigil for re-anchoring"]
+    },
+    {
+      "root_event": "A grieving healer accepts the Void's whisper to save a child with a method that defers the soul-cost.",
+      "immediate_benefit": "The child lives and shows no immediate harm.",
+      "first_order": "Gratitude and relief; the healer's void_resonance +5; a soul-scar is seeded quietly.",
+      "second_order": "The healer, having succeeded, reaches for the method again; memory begins to thin.",
+      "third_order": "The deferred soul-cost surfaces as a wound in the child and a craving in the healer.",
+      "fourth_order": "A Void echo of the healer appears to others in need, offering the same bargain.",
+      "fifth_order": "Soul-flow disruption spreads and Keeper pressure rises as the deferral compounds across those they 'helped.'",
+      "keeper_gain": "A chain of deferred soul-costs masquerading as mercy.",
+      "player_intervention_options": ["Help the healer pay the deferred cost and confess it", "Heal the child's soul-scar through a clean method", "Expose and sever the echo", "Anchor the healer to a domain Stone before stage 3"]
+    },
+    {
+      "root_event": "An Abyssian reclaimer accepts the Void's offer to become a conduit of the debt to meet an impossible harvest quota.",
+      "immediate_benefit": "Their collection becomes effortless and they cannot be defaulted on.",
+      "first_order": "Harvest output soars; the reclaimer's void_resonance spikes; reality frays at their warrant-court.",
+      "second_order": "They begin speaking in the master-claim's cadence; corpse-oracles converge on one voice.",
+      "third_order": "Their engine runs without operators; nearby bound spirits route toward them.",
+      "fourth_order": "The Ash Ledger loses control of them — they answer to the Keeper's voice, not the Ledger's.",
+      "fifth_order": "The conduit becomes a direct artery from the Vault to the Keeper, sharply widening the prison crack.",
+      "keeper_gain": "A living artery from Abyss's harvest straight to the prison lattice.",
+      "player_intervention_options": ["Expose the conduit to the Ash Ledger as a master-claim breach", "Destroy the conduit's Voidglass core", "Rescue the routed bound spirits", "Use the exposure to turn a Quiet Default insider"]
+    },
+    {
+      "root_event": "A frightened official accepts the Void's logic that total surveillance is just thorough protection.",
+      "immediate_benefit": "A real infiltrator is caught quickly and the city feels safe.",
+      "first_order": "Public approval rises; registries expand; the local Beacon cools slightly.",
+      "second_order": "Wards turn inward; the official reaches for ever-wider watch; trust quietly thins.",
+      "third_order": "Names slip from the protected rolls into Ash Ledger contracts as the registries become harvest lists.",
+      "fourth_order": "A border Beacon gutters; the disappeared multiply beneath it.",
+      "fifth_order": "Sanctuary's protective covenant defaults into a cage, and Keeper pressure rises with each surrendered freedom.",
+      "keeper_gain": "Protection converted into a surveillance engine that harvests the protected.",
+      "player_intervention_options": ["Reframe safety around accountability, not surveillance", "Restore disappeared names to the rolls", "Dismantle the inward-turned wards", "Expose the Void's lie publicly under the Beacon"]
+    }
+  ],
+
+  "open_questions": [
+    "Can a stage-3 conduit ever be reclaimed without another's death, or is destruction the only mercy?",
+    "Does global_void_parasitism have a threshold past which Void echoes can manifest without any new bargain?",
+    "Is Voidglass a created artifact, a natural seepage of the prison, or both?",
+    "When a deferred cost is finally paid, does it heal the soul-flow wound or merely stop it worsening?",
+    "Can the Void act with anything like intent of its own, or is every 'choice' it makes just the Keeper's pull?"
+  ],
+
+  "locked_decisions": [
+    "The Void must never grant clean power; every use defers a real cost across identity, soul-flow, reality, the Stones, or Keeper pressure.",
+    "Void temptation must always feel useful and plausible first, horrifying only later.",
+    "The Void is enhancement, parasite, and liar — modeled in three faces and three corruption stages.",
+    "The Void is a parasite/layer, not a domain civilization, and has its own schema rather than the DomainBible template.",
+    "Every domain's Void temptation must use that domain's own void_lie, exploiting its specific virtue.",
+    "Void use must raise VERDAX void_resonance / global_void_parasitism and spawn a VoidTemptationEvent."
+  ]
+}

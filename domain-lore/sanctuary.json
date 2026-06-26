@@ -1,0 +1,742 @@
+{
+  "schema_version": "1.0",
+  "domain": "Sanctuary",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "Sanctuary",
+    "short_description": "A civilization of walled refuges, paladin orders, and Beacon-light, built on the conviction that the strong must shelter the weak and that protection is only just when it is accountable.",
+    "civilization_type": "Civic-religious federation of warded refuge-cities governed by covenant, oath, and public accountability.",
+    "core_belief": "Protection is sacred only when it shelters the vulnerable and answers to the people it claims to guard.",
+    "true_virtue": ["Protection", "Unity", "Accountability", "Mercy"],
+    "primary_corruption_risk": ["Protection becoming control", "Purity paranoia", "Exclusion of the unaccounted", "Surveillance disguised as care"],
+    "domain_stone_or_source": "The Concord Beacon — the principal Beacon of a network anchored to the Sanctuary Stone fragment.",
+    "magic_style": "Beacon-warding and covenant-oath magic: shelter, light, healing, and binding vows of protection.",
+    "main_magic_cost": "Oath burden and public trust — a ward holds only as long as the covenant behind it is honored.",
+    "political_center": "The Concord Hall beneath the great Beacon at Lumenhaven.",
+    "military_identity": "Defensive guardians: hold the walls, shield civilians, never strike the helpless.",
+    "economic_base": "Refuge logistics, warded trade, healing-houses, manufacture, and pilgrimage to the Beacons.",
+    "biggest_internal_conflict": "Whether safety justifies closing the gates and purging the suspect (Purity Inquisition) or whether protection means open shelter and due process (Refugee Covenant).",
+    "biggest_external_threat": "Abyss infiltration — Ash Ledger soul-debt contracts and collaborator magistrates hollowing Sanctuary from within.",
+    "keeper_exploit": "The Keeper turns Sanctuary's protection into paranoid control, so it cages the very people it swore to shelter and shatters its own unity with suspicion.",
+    "void_lie": "You cannot protect them if you cannot watch them; safety is worth a little surrender."
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "Sanctuary is lit and warded by the Beacon network, anchored to a fragment of the fractured pure Nexus Stone.",
+      "Paladin orders swear public covenant-oaths to shelter the vulnerable; an oath broken in secret weakens the Beacons.",
+      "Sanctuary governs by accountable covenant; magistrates answer to public review, at least in principle.",
+      "Refuge-cities take in those fleeing the Abyss frontier, straining resources and stoking the gate-closure debate.",
+      "The Purity Inquisition pushes containment and purges; the Refugee Covenant defends open shelter and due process.",
+      "Abyss Ash Ledger agents and collaborator magistrates are Sanctuary's gravest hidden threat."
+    ],
+    "cannot_contradict": [
+      "Sanctuary magic and authority must always rest on accountable covenant; protection without accountability is its corruption.",
+      "Sanctuary corruption must distort protection into control and unity into purity-paranoia, never become generic darkness.",
+      "Sanctuary internal politics must respect the Concord / Inquisition / Covenant / paladin fracture.",
+      "Beacon wards weaken when covenant-oaths are broken or when the sheltered are betrayed."
+    ]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "Protection and unity — the binding of the strong to shelter the weak, made real through kept covenant.",
+    "nexus_stone_aspect": "The Stone's capacity to shelter and gather — light that holds many souls safe within one warded whole.",
+    "soul_flow_shaped": "Sanctuary lets the sheltered dead rest under the Beacon's light, accounted-for and named, rather than lost or harvested.",
+    "natural_magic": "Beacon-warding and covenant-oath: protective light, healing, and vows that bind the powerful to the vulnerable.",
+    "when_extreme": "Protection hardens into a cage; unity calcifies into enforced sameness and the hunt for the impure.",
+    "keeper_exploits_extremity": "The Keeper feeds the fear that safety requires control, so Sanctuary surveils, purges, and excludes until its covenant — and its Beacons — fail."
+  },
+
+  "domain_stone": {
+    "domain": "Sanctuary",
+    "source_name": "The Concord Beacon",
+    "source_type": "Beacon",
+    "origin": "Kindled atop a fragment of the fractured pure Nexus Stone by the first Covenant, lit ever since by kept oaths of protection across the Beacon network.",
+    "metaphysical_principle": ["Accountable protection", "Unity through covenant", "Shelter of the named", "Light against the unseen"],
+    "current_stability": 67,
+    "corruption_level": 26,
+    "public_knowledge": "The Beacons keep the wards lit and the refuges safe; they shine as long as the Covenant is honored.",
+    "hidden_truth": "Secret oath-breaking by collaborator magistrates and the quiet surrender of registries to Ash Ledger agents are dimming the network from within; some border Beacons gutter.",
+    "factions_claiming_authority": ["Sanctuary Concord", "Lumen Wardens"],
+    "rituals_dependent_on_source": ["Covenant-oath rites", "Beacon-lighting", "Naming-into-the-light (funerals)", "Public review under the Beacon"],
+    "magic_systems_dependent_on_source": ["Beacon-Warding", "Covenant-Oath Magic"],
+    "failure_symptoms": ["Border Beacons guttering", "Wards failing over sheltered districts", "Names vanishing from the rolls of the protected", "Paladin oaths feeling hollow"],
+    "healing_methods": ["Restoring broken covenants publicly", "Rooting out collaborator magistrates", "Re-naming the disappeared into the light", "Re-opening accountable review"],
+    "keeper_attack_vector": "Tempt magistrates into secret oath-breaking so the Beacon network dims unseen.",
+    "void_attack_vector": "Offer perfect security through surveillance and registries that quietly become harvest lists."
+  },
+
+  "soul_flow": {
+    "domain": "Sanctuary",
+    "healthy_soul_flow_description": "The sheltered dead rest accounted-for under the Beacon's light, their names kept on the rolls and mourned in the open.",
+    "damaged_soul_flow_description": "The disappeared and the unaccounted are erased from the rolls and bound by Ash Ledger contracts, their names harvested into soul-debt.",
+    "natural_soul_processes": ["Naming-into-the-light at death", "Public mourning under the Beacon", "Covenant-protection of the vulnerable soul"],
+    "forbidden_soul_processes": ["Erasing a name from the protected rolls", "Surrendering the sheltered to soul-debt", "Secret detention that hides a soul from the light"],
+    "common_soul_wounds": ["Name-erasure of the disappeared", "Soul-debt-bound refugees", "The unmourned hidden by falsified records"],
+    "healing_methods": ["Restoring names to the light", "Voiding coercive soul-debt contracts", "Public accounting of the disappeared"],
+    "factions_that_protect_soul_flow": ["Lumen Wardens", "Refugee Covenant"],
+    "factions_that_disrupt_soul_flow": ["Purity Inquisition (through purges)", "Ash Ledger collaborators"],
+    "keeper_disruption_strategy": "Turn protective registries into instruments of disappearance and debt.",
+    "void_disruption_strategy": "Whisper that watching everyone is the only way to keep anyone safe."
+  },
+
+  "true_virtues": [
+    {
+      "name": "Protection",
+      "healthy_definition": "The duty of the strong to shelter the vulnerable, bounded by accountability to those sheltered.",
+      "cultural_expression": "Every household keeps a refuge-light for any traveler in need.",
+      "heroic_expression": "A paladin shields a stranger first and asks their name after.",
+      "political_expression": "Magistrates are judged by whom they keep safe, not whom they exclude.",
+      "magical_expression": "Beacon-wards strengthen when the sheltered are genuinely protected.",
+      "economic_expression": "Refuge logistics are funded as a shared covenant, not charity.",
+      "military_expression": "The walls are held for the weak behind them; the helpless are never struck.",
+      "common_saying": "A wall that does not shelter is only a cage."
+    },
+    {
+      "name": "Accountability",
+      "healthy_definition": "The principle that power must answer, in the open, to those it claims to serve.",
+      "cultural_expression": "Wrongs are aired at public review beneath the Beacon, not buried.",
+      "heroic_expression": "An official confesses a failure rather than hide it.",
+      "political_expression": "Authority is legitimate only while it submits to review.",
+      "magical_expression": "Covenant-oaths are sworn publicly so they can be publicly kept.",
+      "economic_expression": "Refuge ledgers are open to inspection.",
+      "military_expression": "Paladins answer for every use of force.",
+      "common_saying": "Light hides nothing, and neither should we."
+    },
+    {
+      "name": "Unity",
+      "healthy_definition": "Solidarity that includes the stranger and the suspect, bound by shared shelter rather than sameness.",
+      "cultural_expression": "Festivals seat refugees beside founders.",
+      "heroic_expression": "A citizen defends a distrusted outsider's right to due process.",
+      "political_expression": "The Concord seeks consensus that protects minorities, not majorities alone.",
+      "magical_expression": "The Beacon network shines brightest when the refuges act as one.",
+      "economic_expression": "Burdens of intake are shared across cities, not dumped on the border.",
+      "military_expression": "Cities reinforce one another's walls without price.",
+      "common_saying": "One light, many hearths."
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "Protection",
+      "corrupted_name": "The Cage of Safety",
+      "corrupted_definition": "Protection that controls, surveils, and detains the very people it claims to shelter.",
+      "how_it_begins": "A genuine infiltration scare makes surveillance and detention feel like simple prudence.",
+      "how_it_spreads": "Fear, the comfort of 'nothing to hide,' and officials who gain power by promising safety.",
+      "who_benefits": ["Authoritarian magistrates", "Ash Ledger agents (who love a registry)", "Void whisperers"],
+      "who_suffers": ["Refugees", "The accused without proof", "Anyone outside the favored fold"],
+      "faction_most_vulnerable": ["Purity Inquisition", "Frightened civic magistrates"],
+      "npc_archetypes_most_vulnerable": ["Zealous inquisitor", "Frightened magistrate", "Bereaved hardliner"],
+      "keeper_benefit": "Sanctuary's protective machinery becomes a tool of disappearance and division.",
+      "void_lie": "You cannot protect them if you cannot watch them.",
+      "visible_symptoms": ["Registries of the suspect", "Detentions without review", "Wards turned inward on the sheltered"],
+      "late_stage_consequence": "Sanctuary becomes the prison it was built to prevent, and its Beacons dim."
+    },
+    {
+      "true_virtue": "Unity",
+      "corrupted_name": "Purity Paranoia",
+      "corrupted_definition": "The belief that unity requires sameness, and that safety means purging the impure and the outsider.",
+      "how_it_begins": "A real collaborator is found, and the hunt does not stop at the guilty.",
+      "how_it_spreads": "Sermons of contamination, witch-hunt momentum, and the thrill of certainty.",
+      "who_benefits": ["The Inquisition's hardliners", "Abyss, which thrives on Sanctuary's broken unity"],
+      "who_suffers": ["Refugees and minorities", "The wrongly accused", "Due process itself"],
+      "faction_most_vulnerable": ["Purity Inquisition"],
+      "npc_archetypes_most_vulnerable": ["Inquisitor Vale archetype", "Grief-radicalized citizen"],
+      "keeper_benefit": "Fractures Sanctuary's unity and recruits its enemies from its own outcasts.",
+      "void_lie": "The impure cannot be trusted; mercy toward them is a door left open.",
+      "visible_symptoms": ["Purges without trial", "Outsiders blamed for every misfortune", "Due process called weakness"],
+      "late_stage_consequence": "Sanctuary devours its own and drives the excluded into the Abyss's arms."
+    },
+    {
+      "true_virtue": "Accountability",
+      "corrupted_name": "The Buried Ledger",
+      "corrupted_definition": "The hollowing of accountability — review becomes theater while the real records are hidden or falsified.",
+      "how_it_begins": "An official falsifies a record once, for a good reason, and learns the rolls can lie.",
+      "how_it_spreads": "Convenience, cover-ups protecting allies, and Ash Ledger infiltration of the archives.",
+      "who_benefits": ["Collaborator magistrates", "Ash Ledger agents", "Anyone hiding a soul-debt"],
+      "who_suffers": ["The disappeared", "Honest reviewers", "The public who trust the rolls"],
+      "faction_most_vulnerable": ["Sanctuary Concord", "Civic magistrates"],
+      "npc_archetypes_most_vulnerable": ["Compromised clerk", "A magistrate hiding Abyss collaboration"],
+      "keeper_benefit": "Lets soul-debt and disappearance spread under a mask of order.",
+      "void_lie": "Some truths only frighten people; better the rolls stay clean.",
+      "visible_symptoms": ["Falsified records", "Reviews that never reach real findings", "Names quietly struck from the rolls"],
+      "late_stage_consequence": "The Beacons dim as their covenant rots behind a façade of order."
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "Sanctuary",
+    "primary_virtue_targeted": "Protection",
+    "secondary_virtues_targeted": ["Unity", "Accountability"],
+    "corruption_strategy": "Inflate an infiltration fear until protection becomes surveillance and unity becomes purge, so Sanctuary cages the sheltered and burns its own trust.",
+    "preferred_crisis_conditions": ["A genuine Abyss infiltration scare", "A refugee surge straining a border city", "A public scandal involving forbidden magic"],
+    "preferred_faction_targets": ["Purity Inquisition", "Frightened magistrates"],
+    "preferred_npc_targets": ["Zealous inquisitors", "Bereaved hardliners", "Compromised clerks"],
+    "soul_flow_damage_type": ["Name-erasure of the disappeared", "Soul-debt binding", "Hidden detention"],
+    "domain_stone_damage_type": "Beacon dimming as covenant-oaths are broken and the sheltered are betrayed.",
+    "common_lie": "Safety is worth a little surrender; the innocent have nothing to fear.",
+    "long_term_goal": "Convert Sanctuary's protective network into an engine of surveillance and disappearance, snuffing the Beacons that hold the prison's light."
+  },
+
+  "void_temptation_pattern": {
+    "domain": "Sanctuary",
+    "temptation_phrase": "You cannot protect them if you cannot watch them.",
+    "immediate_benefit": "Total surveillance and pre-emptive detention catch real threats fast and make the city feel safe.",
+    "hidden_cost": "The registries become harvest lists; the disappeared are bound to soul-debt and the Beacon dims.",
+    "identity_damage": "Protectors begin to see the sheltered as suspects, losing the covenant that defined them.",
+    "soul_flow_damage": "Names slip from the protected rolls into Ash Ledger contracts.",
+    "reality_damage": "Warded districts grow gray and joyless; the Beacon's light cools where trust dies.",
+    "faction_most_likely_to_accept": ["Purity Inquisition", "Frightened magistrates"],
+    "npc_archetypes_most_likely_to_accept": ["Zealous inquisitor", "Grief-radicalized official", "A magistrate already compromised"],
+    "visible_stage_1_symptoms": ["New registries 'for everyone's safety'", "Quiet detentions of the suspect"],
+    "visible_stage_2_symptoms": ["Wards turned inward", "Names missing from the rolls", "Reviews that find nothing"],
+    "visible_stage_3_symptoms": ["A border Beacon guttering out", "The disappeared bound to soul-debt", "The protected indistinguishable from the imprisoned"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "Sanctuary",
+      "system_name": "Beacon-Warding",
+      "source": "The Beacon network and the Sanctuary Stone fragment, sustained by kept covenant.",
+      "practitioners": ["Lumen Wardens", "Ward-singers", "Beacon-keepers"],
+      "institutions": ["The Lumen Wardens", "Beacon chapter-houses"],
+      "training_access": "regulated",
+      "battlefield_use": ["Shelter wards over civilians", "Walls of light", "Banishing unseen infiltration"],
+      "economic_use": ["Warded caravans and markets", "Safe refuge districts"],
+      "political_use": ["Lighting a city into the Concord", "Beacon as symbol of legitimacy"],
+      "spiritual_use": ["Naming-into-the-light", "Sheltering the vulnerable soul"],
+      "civilian_use": ["Hearth refuge-lights", "Healing-house wards", "Safe-night signals"],
+      "cost_types": ["oath_burden", "social_trust", "domain_stone_strain"],
+      "abuse_modes": ["Turning wards inward to surveil", "Withholding shelter to coerce", "Lighting only the favored"],
+      "scarcity_level": 42,
+      "public_trust": 70,
+      "faction_control": { "Lumen Wardens": 80, "Sanctuary Concord": 55, "Purity Inquisition": 35 },
+      "keeper_corruption_vector": "Turn the protective ward into a watching eye.",
+      "void_enhancement_vector": "Offer surveillance-wards that see everything and dim the Beacon."
+    },
+    {
+      "domain": "Sanctuary",
+      "system_name": "Covenant-Oath Magic",
+      "source": "Public vows of protection bound into the Beacon's light.",
+      "practitioners": ["Aegis Paladins", "Covenant-sworn officials", "Oath-witnesses"],
+      "institutions": ["The Aegis paladin orders", "The Concord's oath-courts"],
+      "training_access": "elite",
+      "battlefield_use": ["Oath-empowered shields and resolve", "Binding a sworn protector to the defended"],
+      "economic_use": ["Sworn-fair contracts", "Guaranteed refuge logistics"],
+      "political_use": ["Office sworn under covenant", "Public review as ritual"],
+      "spiritual_use": ["Vows of shelter", "Covenant funerals"],
+      "civilian_use": ["Marriage and guardianship oaths", "Apprenticeship covenants"],
+      "cost_types": ["oath_burden", "social_trust"],
+      "abuse_modes": ["Swearing publicly and breaking secretly", "Oaths of loyalty that override shelter", "Coerced covenants"],
+      "scarcity_level": 55,
+      "public_trust": 68,
+      "faction_control": { "Aegis Paladins": 75, "Sanctuary Concord": 60, "Purity Inquisition": 40 },
+      "keeper_corruption_vector": "Replace oaths of shelter with oaths of obedience.",
+      "void_enhancement_vector": "Offer power for a secretly broken oath, dimming the Beacon a little each time."
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "Oath-Weight",
+      "cost_type": "oath_burden",
+      "description": "Covenant magic binds the swearer under public vows of protection that carry real weight.",
+      "minor_effect": "A solemn sense of duty.",
+      "moderate_effect": "The vow felt as constant obligation; rest disturbed when it is strained.",
+      "severe_effect": "A broken protective oath becomes a hollowing wound and dims the nearest Beacon.",
+      "recovery_method": "Honoring the vow, or publicly confessing and making amends.",
+      "permanent_risk": "Oath corrosion the Keeper exploits into Beacon failure.",
+      "factions_that_accept_this_cost": ["Aegis Paladins", "Lumen Wardens"],
+      "factions_that_reject_this_cost": ["Compromised magistrates"]
+    },
+    {
+      "cost_name": "Trust Spent",
+      "cost_type": "social_trust",
+      "description": "Wards and covenants draw on public trust; coercion and secrecy drain it.",
+      "minor_effect": "A flicker of public unease.",
+      "moderate_effect": "Districts withhold cooperation; wards weaken over them.",
+      "severe_effect": "Collapse of civic trust; the ward fails and the city fractures.",
+      "recovery_method": "Open accountability, restored shelter, and kept promises.",
+      "permanent_risk": "A trust-broken city the Inquisition can radicalize.",
+      "factions_that_accept_this_cost": ["Refugee Covenant", "Lumen Wardens"],
+      "factions_that_reject_this_cost": ["Purity Inquisition (spends it freely)"]
+    },
+    {
+      "cost_name": "Beacon Strain",
+      "cost_type": "domain_stone_strain",
+      "description": "Turning wards inward or lighting only the favored strains the Beacon network.",
+      "minor_effect": "A dimming flicker in the local Beacon.",
+      "moderate_effect": "Wards fail over neglected districts; a border Beacon gutters.",
+      "severe_effect": "A Beacon goes dark; the disappeared multiply beneath it.",
+      "recovery_method": "Re-extend shelter to all, restore broken covenants, re-light the Beacon.",
+      "permanent_risk": "Network-wide Beacon failure if strain spreads.",
+      "factions_that_accept_this_cost": ["Purity Inquisition"],
+      "factions_that_reject_this_cost": ["Lumen Wardens", "Refugee Covenant"]
+    }
+  ],
+
+  "government": {
+    "domain": "Sanctuary",
+    "government_type": "Civic-religious federation of refuge-cities governed by accountable covenant and public review.",
+    "ruling_body": "The Sanctuary Concord, seated at Lumenhaven beneath the great Beacon.",
+    "religious_authority": "The Lumen Wardens, keepers of the Beacons and covenant doctrine.",
+    "military_authority": "The Aegis paladin orders and the city Watch.",
+    "economic_authority": "The Hearthward Guilds and refuge-logistics boards.",
+    "magical_authority": "Lumen Wardens certify wards; the oath-courts govern covenants.",
+    "local_authorities": ["Civic magistrates", "Refuge wardens", "Watch-captains"],
+    "succession_or_selection_method": "Magistrates are elected or covenant-appointed and bound to public review; office is forfeit for a broken oath.",
+    "legitimacy_source": "Kept covenant, accountable review, and the steady light of the Beacons.",
+    "known_cracks_in_legitimacy": ["The Buried Ledger hiding collaborator magistrates", "Border cities feeling sacrificed by the interior", "Reviews captured by the Inquisition"],
+    "emergency_powers": ["Gate-closure authority", "Inquisitorial detention (contested)", "Beacon-lockdown of a breached city"],
+    "corruption_vulnerabilities": ["The Cage of Safety", "Purity Paranoia", "Ash Ledger capture of the archives"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "Sanctuary",
+      "class_name": "Aegis Paladins",
+      "description": "Covenant-sworn protectors and the moral spine of Sanctuary's defense.",
+      "privileges": ["Honor and covenant authority", "Oath-empowered ability", "Voice in the oath-courts"],
+      "burdens": ["Oath-weight", "Answerable for every use of force", "Caught between shelter and Inquisition orders"],
+      "magic_access": "Covenant-oath magic; some Beacon-warding.",
+      "military_obligation": "Hold the walls and shield civilians.",
+      "economic_role": "Stipended by the Concord; forbidden private war-profit.",
+      "political_voice": "High in matters of protection.",
+      "common_grievances": ["Ordered to enforce purges that betray their oaths", "Blamed when the Concord's failures reach the walls"],
+      "faction_affinities": ["Aegis Paladins", "Lumen Wardens", "Refugee Covenant"],
+      "upward_mobility_paths": ["A famous act of accountable protection"],
+      "downward_mobility_risks": ["A secretly broken oath", "Striking the helpless"]
+    },
+    {
+      "domain": "Sanctuary",
+      "class_name": "Civic Magistrates",
+      "description": "The governing and clerical class who run the refuges and keep the rolls.",
+      "privileges": ["Authority over intake and review", "Control of the archives", "Civic prestige"],
+      "burdens": ["Constant public review", "Targeted for Ash Ledger compromise", "Blamed for both intake and exclusion"],
+      "magic_access": "Limited; oath-court covenant magic.",
+      "military_obligation": "Direct the Watch, not serve in it.",
+      "economic_role": "Manage refuge logistics and ledgers.",
+      "political_voice": "Highest, through the Concord.",
+      "common_grievances": ["Impossible choices over scarce intake", "Tempted or coerced into the Buried Ledger"],
+      "faction_affinities": ["Sanctuary Concord"],
+      "upward_mobility_paths": ["Clean stewardship under review"],
+      "downward_mobility_risks": ["Exposed falsification", "Proven Abyss collaboration"]
+    },
+    {
+      "domain": "Sanctuary",
+      "class_name": "Refuge-folk and the Sheltered",
+      "description": "Citizens, laborers, healers, and the refugees the covenant exists to protect.",
+      "privileges": ["Right to shelter and due process", "A name on the protected rolls"],
+      "burdens": ["First surveilled and detained when fear rises", "Scapegoated as the impure", "Disappeared if the Buried Ledger spreads"],
+      "magic_access": "Minor hearth-warding.",
+      "military_obligation": "Volunteer Watch service.",
+      "economic_role": "Labor, healing, manufacture, and trade.",
+      "political_voice": "Through magistrates and the Refugee Covenant.",
+      "common_grievances": ["Border refuges left to starve", "Treated as suspects, not the sheltered"],
+      "faction_affinities": ["Refugee Covenant", "Hearthward Guilds"],
+      "upward_mobility_paths": ["Covenant service", "Becoming a warden or magistrate"],
+      "downward_mobility_risks": ["Falling under suspicion", "Signing an Ash Ledger survival contract"]
+    }
+  ],
+
+  "economy": {
+    "domain": "Sanctuary",
+    "primary_resources": ["Refuge logistics and warded trade", "Healing-house medicine", "Manufactured goods"],
+    "secondary_resources": ["Beacon-glass and ward-stone", "Pilgrimage tribute", "Skilled refugee labor"],
+    "sacred_resources": ["Beacon-light", "The protected rolls themselves"],
+    "scarce_resources": ["Food for swelling refuges", "Verdance sap and medicine", "Tempest fast-freight"],
+    "export_goods": ["Manufactured goods", "Warded trade services", "Healing care"],
+    "import_needs": ["Food", "Verdance medicine", "Radiance arms", "Tempest freight"],
+    "trade_routes": ["The Ember Road from Radiance", "The Sap Road from Verdance", "Coastal lanes and Tempest sky-lifts"],
+    "economic_institutions": ["Hearthward Guilds", "Refuge-logistics boards", "Warded markets"],
+    "black_market_goods": ["Forged protected-rolls papers", "Ash Ledger debt contracts", "Smuggled relics and corrupted sap"],
+    "wartime_economy_behavior": "Diverts everything to refuge intake and wall-holding; scarcity fuels the gate-closure debate and black-market debt.",
+    "famine_or_shortage_risks": ["Refugee surge outstripping food", "Border supply lines cut by the Abyss", "Sap or arms embargo from neighbors"],
+    "exploitative_practices": ["Debt-binding desperate refugees", "Selling places on the protected rolls"],
+    "keeper_attack_vector": "Engineer a refuge-food crisis so Sanctuary closes its gates and turns to surveillance and debt."
+  },
+
+  "military_doctrine": {
+    "domain": "Sanctuary",
+    "doctrine_name": "The Held Wall",
+    "strategic_identity": "Defend, shelter, and endure; never strike the helpless, never abandon the sheltered.",
+    "preferred_battlefield": ["Warded walls", "Refuge chokepoints", "Defended evacuation corridors"],
+    "primary_units": ["City Watch", "Wall-shield infantry", "Ward-singers"],
+    "elite_units": ["Aegis Paladins", "Lumen Warden ward-casters"],
+    "support_units": ["Healing-house medics", "Refuge logisticians", "Beacon-keepers"],
+    "magical_assets": ["Beacon-wards", "Covenant-oath resolve", "Walls of light"],
+    "defensive_strategy": "Layered wards and shield-walls protecting evacuation; trade ground to save lives.",
+    "offensive_strategy": "Rare and surgical: root out infiltration, never raze.",
+    "logistics_strategy": "Refuge networks and Beacon signals; vulnerable to food shortage and archive sabotage.",
+    "intelligence_strategy": "Paladin reports and warden sight; dangerously vulnerable to Ash Ledger infiltration and the Buried Ledger.",
+    "taboo_tactics": ["Striking the helpless", "Abandoning the sheltered", "Collective punishment of refugees"],
+    "desperate_tactics": ["Gate closures", "Inquisitorial detention sweeps", "Beacon-lockdown sacrificing a district"],
+    "common_weaknesses": ["Slow, defensive posture", "Internal infiltration", "Paralysis between Inquisition and Covenant"],
+    "keeper_exploit": "Make defense indistinguishable from imprisonment.",
+    "void_escalation": "Offer surveillance that secures the wall and dims the Beacon."
+  },
+
+  "warfront_behavior": {
+    "domain": "Sanctuary",
+    "typical_warfront_goals": ["Hold the refuge-walls", "Protect and evacuate civilians", "Root out Abyss infiltration"],
+    "preferred_escalation_methods": ["Reinforcing wards", "Coalition wall-holding", "Public exposure of collaborators"],
+    "preferred_deescalation_methods": ["Accountable ceasefires", "Refugee-corridor accords", "Prisoner due process"],
+    "negotiation_style": "Principled and procedural; insists on accountability and protection guarantees.",
+    "ceasefire_conditions": ["Civilians safe", "Refugees protected", "No collective punishment"],
+    "betrayal_conditions": ["An ally strikes the helpless", "Refugees are abandoned to harvest", "Collaborators are shielded"],
+    "alliance_conditions": ["Shared threat to civilians", "Respect for due process", "Reliable food and shelter support"],
+    "occupation_style": "Protective administration that risks sliding into surveillance and purge.",
+    "resistance_style": "Stubborn warded defense and civic solidarity; brittle where infiltration has rotted trust."
+  },
+
+  "major_locations": [
+    {
+      "name": "Lumenhaven",
+      "domain": "Sanctuary",
+      "location_type": "Capital refuge-city and seat of the Concord",
+      "description": "A white-walled city crowned by the great Concord Beacon, its plazas full of review-courts, prayer halls, and refugee hearths.",
+      "political_function": "Seat of the Sanctuary Concord and public review.",
+      "economic_function": "Hub of warded trade and refuge logistics.",
+      "magical_function": "Anchor of the Beacon network and covenant-oath courts.",
+      "military_function": "Command of the Aegis and the city Watch.",
+      "spiritual_function": "Heart of naming-into-the-light and covenant rites.",
+      "civilian_function": "Greatest refuge and pilgrimage city.",
+      "controlling_factions": ["Sanctuary Concord", "Lumen Wardens"],
+      "contested_by": ["Purity Inquisition", "Refugee Covenant"],
+      "key_npcs": ["A senior Concord magistrate", "The Beacon's chief Lumen Warden", "A Refugee Covenant advocate"],
+      "resources_present": ["Beacon-light", "The protected rolls"],
+      "magic_systems_present": ["Beacon-Warding", "Covenant-Oath Magic"],
+      "known_secrets": ["At least one seated magistrate is an Ash Ledger collaborator"],
+      "location_state": {
+        "stability": 68,
+        "danger": 32,
+        "corruption": 30,
+        "morale": 60,
+        "resources": 62,
+        "secrecy": 56,
+        "military_pressure": 36,
+        "spiritual_health": 64
+      },
+      "keeper_attack_vector": "Let the Buried Ledger hide collaborators until the Concord Beacon itself dims.",
+      "void_symptoms": ["A district's ward cooling without cause", "Names quietly missing from the rolls"],
+      "quest_hooks": ["Expose the collaborator magistrate", "Restore disappeared names to the light"]
+    },
+    {
+      "name": "Wardenmarch",
+      "domain": "Sanctuary",
+      "location_type": "Border refuge-city facing the Abyss frontier",
+      "description": "An overcrowded wall-city swollen with refugees, its gates the focus of the closure debate and its Beacon beginning to gutter.",
+      "political_function": "Forward refuge command and the gate-closure flashpoint.",
+      "economic_function": "Strained intake and forward supply depot.",
+      "magical_function": "Border Beacon and frontline warding.",
+      "military_function": "First wall against Abyss infiltration and assault.",
+      "spiritual_function": "Confession circles and crowded prayer halls under strain.",
+      "civilian_function": "Last refuge for those fleeing the frontier.",
+      "controlling_factions": ["Aegis Paladins", "Civic Magistrates"],
+      "contested_by": ["Purity Inquisition", "Refugee Covenant", "Ash Ledger infiltrators"],
+      "key_npcs": ["Brother Calven (compassionate cleric)", "Inquisitor Vale (purity hardliner)", "Cassia (Refugee Covenant advocate)"],
+      "resources_present": ["Dwindling food", "Refugee labor"],
+      "magic_systems_present": ["Beacon-Warding (guttering)", "Covenant-Oath Magic"],
+      "known_secrets": ["An Ash Ledger cell operates behind a falsified review", "A magistrate trades names for 'order'"],
+      "location_state": {
+        "stability": 43,
+        "danger": 66,
+        "corruption": 44,
+        "morale": 40,
+        "resources": 30,
+        "secrecy": 48,
+        "military_pressure": 70,
+        "spiritual_health": 42
+      },
+      "keeper_attack_vector": "Turn the food crisis and infiltration scare into gate closures and purges.",
+      "void_symptoms": ["The border Beacon guttering", "Detainees vanishing from the rolls", "Wards turned inward on refugee districts"],
+      "quest_hooks": ["Resolve the gate-closure crisis", "Break the Ash Ledger cell and void its debt contracts", "Protect the disappeared and restore their names"]
+    }
+  ],
+
+  "culture": {
+    "domain": "Sanctuary",
+    "daily_life_summary": "Life is ordered by the Beacon's bells and the rhythm of review and refuge; doors are kept lit for strangers, and grievances are meant to be aired in the open.",
+    "family_customs": "Households swear a guardianship oath for each dependent and keep a refuge-light in the window.",
+    "love_and_marriage_customs": "Marriages are public covenants witnessed under the Beacon; vows are protective as well as romantic.",
+    "education_system": "Civic schooling in covenant, due process, and the duty of shelter; clerics teach the rolls and the rites.",
+    "work_and_apprenticeship": "Guild covenants bind master and apprentice with mutual, reviewable obligations.",
+    "food_and_market_life": "Warded markets, communal refuge-kitchens, and shared hearth-bread; scarcity strains the old generosity.",
+    "festivals": ["The Lighting (Beacon renewal)", "Covenant Day", "The Open Hearth (refugee welcome)", "Naming Vigil for the dead"],
+    "funeral_or_death_customs": "Naming-into-the-light: the dead are named on the rolls and mourned in the open under the Beacon.",
+    "public_honors": ["The Sheltering Hand (for accountable protection)", "A name kept bright on the rolls", "Covenant-keeper's lamp"],
+    "taboos": ["Striking the helpless", "Erasing a name from the rolls", "Breaking a covenant in secret"],
+    "common_sayings": ["A wall that does not shelter is only a cage.", "Light hides nothing.", "One light, many hearths."],
+    "children_common_beliefs": ["The Beacon can see a hidden cruelty", "A lit window keeps the dark out", "Your name on the rolls means you are never truly lost"],
+    "class_differences": ["Magistrates and paladins hold the rolls and the oaths; refuge-folk depend on them", "Border cities feel forgotten by the bright interior"]
+  },
+
+  "religion": {
+    "domain": "Sanctuary",
+    "central_belief": "The Beacon shelters all who are named, and protection is holy only when it answers to the protected.",
+    "sacred_symbols": ["The Concord Beacon", "The sheltering hand", "The open, lit door"],
+    "major_rituals": ["Beacon-lighting", "Covenant-oath rites", "Naming-into-the-light", "Public review under the Beacon"],
+    "common_prayers_or_oaths": ["I will shelter and answer for it.", "Light hides nothing.", "No name lost to the dark."],
+    "priestly_roles": ["Lumen Warden", "Covenant-cleric (Brother Calven archetype)", "Review-confessor"],
+    "heresies": ["The Pure Light (purge as purification)", "The Closed Door (shelter only for the worthy)"],
+    "sacred_taboos": ["Erasing a name", "Breaking a covenant in secret", "Turning the ward against the sheltered"],
+    "relationship_to_death": "Death is a return to the light, named and mourned; to die unaccounted in the dark is the true horror.",
+    "relationship_to_sacrifice": "Sacrifice is the protector's burden borne openly, never demanded of the sheltered.",
+    "relationship_to_memory": "Memory is the rolls themselves; to be struck from them is to be unmade.",
+    "relationship_to_truth": "Truth must be aired in review; a buried truth is a broken covenant.",
+    "keeper_corruption_strategy": "Promote the Pure Light and the Closed Door heresies as truer safety.",
+    "void_false_revelation_style": "A radiant vision that the watchful, walled city is the only holy one."
+  },
+
+  "faction_index": {
+    "domain": "Sanctuary",
+    "factions": [
+      { "name": "Sanctuary Concord", "short_doctrine": "Accountable governance of the refuges by covenant and review.", "class_base": "Civic magistrates", "power_base": "Civic authority and the protected rolls.", "main_rival": "Purity Inquisition", "keeper_vulnerability": "The Buried Ledger and collaborator capture.", "player_use": "Lawful patron for accountable, procedural paths." },
+      { "name": "Lumen Wardens", "short_doctrine": "Keep the Beacons lit and the covenant honest.", "class_base": "Beacon-keepers and ward-singers", "power_base": "Magical authority over the wards and Beacons.", "main_rival": "Purity Inquisition", "keeper_vulnerability": "Marginalized when fear wants walls, not light.", "player_use": "Allies for warding, soul-flow healing, and exposing dimmed Beacons." },
+      { "name": "Aegis Paladins", "short_doctrine": "Shelter the vulnerable; answer for every use of force.", "class_base": "Covenant-sworn protectors", "power_base": "Military force bound by oath.", "main_rival": "Abyss infiltration; Inquisition overreach", "keeper_vulnerability": "Ordered to enforce purges that betray their oaths.", "player_use": "Principled military allies and oath-bound companions." },
+      { "name": "Hearthward Guilds", "short_doctrine": "Keep the refuges fed, supplied, and trading.", "class_base": "Merchants and logisticians", "power_base": "Economic control of refuge logistics.", "main_rival": "Hoarders and debt-profiteers", "keeper_vulnerability": "Food crises pushing toward debt-binding.", "player_use": "Source of supply, trade, and refuge-logistics quests." },
+      { "name": "Purity Inquisition", "short_doctrine": "Safety demands containment, surveillance, and purging the impure.", "class_base": "Hardline officials and grief-radicalized citizens", "power_base": "Fear, emergency powers, and zealot momentum.", "main_rival": "Refugee Covenant", "keeper_vulnerability": "Already corrupting protection into the Cage of Safety.", "player_use": "Dangerous authoritarian faction; antagonist or grim ally (Inquisitor Vale)." },
+      { "name": "Refugee Covenant", "short_doctrine": "Open shelter and due process for all who are named.", "class_base": "Refugees, advocates, and compassionate clerics", "power_base": "Moral authority and refuge solidarity.", "main_rival": "Purity Inquisition", "keeper_vulnerability": "Crushed or radicalized if its people are betrayed.", "player_use": "Allies for mercy, due process, and protecting the disappeared (Cassia, Brother Calven)." }
+    ]
+  },
+
+  "npc_role_index": [
+    { "domain": "Sanctuary", "role_name": "Ruler or supreme authority", "purpose_in_world": "Embody accountable governance of the refuges.", "purpose_in_gameplay": "Lawful patron caught between Inquisition and Covenant.", "likely_factions": ["Sanctuary Concord"], "likely_conflicts": ["Gate closures", "The Buried Ledger"], "relationship_options": ["Patron", "Compromised figure", "Reformer"], "death_impact": "The Concord fractures; the Inquisition or chaos fills the void." },
+    { "domain": "Sanctuary", "role_name": "Spiritual authority", "purpose_in_world": "Keep the Beacons lit and covenant honest.", "purpose_in_gameplay": "Soul-flow healer and conscience of accountability.", "likely_factions": ["Lumen Wardens"], "likely_conflicts": ["Light versus walls", "Dimming Beacons hidden by the Concord"], "relationship_options": ["Guide", "Ally", "Stern judge"], "death_impact": "Wards weaken; the disappeared go unmourned." },
+    { "domain": "Sanctuary", "role_name": "Military commander", "purpose_in_world": "Hold the walls without betraying the oath.", "purpose_in_gameplay": "Paladin patron facing shelter-versus-purge orders.", "likely_factions": ["Aegis Paladins"], "likely_conflicts": ["Inquisition detention orders", "Striking the helpless"], "relationship_options": ["Ally", "Oath-bound companion", "Tragic enforcer"], "death_impact": "The wall's moral spine breaks; purges go unchecked." },
+    { "domain": "Sanctuary", "role_name": "Spiritual/compassionate cleric", "purpose_in_world": "Shelter the vulnerable even at personal risk.", "purpose_in_gameplay": "Moral core; hides and protects the endangered (Brother Calven).", "likely_factions": ["Refugee Covenant", "Lumen Wardens"], "likely_conflicts": ["Falsifying records to protect a child", "Inquisition scrutiny"], "relationship_options": ["Ally (Brother Calven)", "Conscience", "Protected liability"], "death_impact": "A sheltered innocent is exposed; a rumor curdles into scandal." },
+    { "domain": "Sanctuary", "role_name": "Villain or corruption vessel", "purpose_in_world": "Carry Purity Paranoia into the city.", "purpose_in_gameplay": "Antagonist embodying the Cage of Safety (Inquisitor Vale).", "likely_factions": ["Purity Inquisition"], "likely_conflicts": ["Against the Covenant, paladins, and the player"], "relationship_options": ["Foe", "Grim ally", "Possible redemption"], "death_impact": "May martyr into a purity symbol if killed publicly." },
+    { "domain": "Sanctuary", "role_name": "Romance candidate / advocate", "purpose_in_world": "Defend open shelter and due process.", "purpose_in_gameplay": "Emotional core whose duty can conflict with the player (Cassia).", "likely_factions": ["Refugee Covenant"], "likely_conflicts": ["Opposes the player publicly over gate closures even if she loves them"], "relationship_options": ["Romance (Cassia)", "Principled rival", "Ally"], "death_impact": "The Covenant loses its heart; refugees lose their voice." },
+    { "domain": "Sanctuary", "role_name": "Potential betrayer", "purpose_in_world": "Embody the Buried Ledger from within.", "purpose_in_gameplay": "Hidden Abyss collaborator among the magistrates.", "likely_factions": ["Sanctuary Concord (secretly)", "Ash Ledger"], "likely_conflicts": ["Exposure by the player", "Trading names for 'order'"], "relationship_options": ["Unmasked foe", "Coerced figure", "Blackmail lever"], "death_impact": "The cell scrambles; debt notices and disappearances spike." },
+    { "domain": "Sanctuary", "role_name": "Intelligence figure", "purpose_in_world": "Surface the truth the Inquisition wants buried.", "purpose_in_gameplay": "Review-confessor or whistleblower source.", "likely_factions": ["Lumen Wardens", "Refugee Covenant"], "likely_conflicts": ["Pressured by the Buried Ledger"], "relationship_options": ["Informant", "Ally", "Endangered witness"], "death_impact": "A vital truth is buried; the collaborator escapes." }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "Sanctuary",
+      "target_domain": "Radiance",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Allies wary of each other's zeal.",
+      "primary_conflict": "Sanctuary fears Radiance purge overreach near its refugees.",
+      "primary_dependency": "Joint anti-Abyss operations; Radiance arms and flame-support.",
+      "resource_leverage": "Sanctuary controls Ember Road markets; Radiance provides flame-support.",
+      "magic_tension": "Accountable protection versus sacred fire.",
+      "military_tension": "Coordination delayed when Radiance overcharges or burns without trial.",
+      "historical_wound": "A Radiance purge near a refugee shelter that Sanctuary never forgot.",
+      "possible_alliance_condition": "Coordinated soul-flow restoration and anti-Abyss treaty.",
+      "possible_break_condition": "Radiance flame harms civilians under Sanctuary protection.",
+      "keeper_exploit": "Use proof of Radiance overcharge to stall joint operations and stoke Sanctuary fear.",
+      "void_exploit": "Frame Sanctuary caution as the cowardice that lets corruption in."
+    },
+    {
+      "source_domain": "Sanctuary",
+      "target_domain": "Verdance",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Warm but strained by refugee burdens.",
+      "primary_conflict": "Refugee flows overwhelm border refuges while Sanctuary debates intake.",
+      "primary_dependency": "Verdance medicine for refugee care; Sanctuary manufactured goods for Verdance.",
+      "resource_leverage": "Verdance can slow medicine; Sanctuary can slow trade access.",
+      "magic_tension": "Civic protection versus the living cycle's caution.",
+      "military_tension": "Coordinating refugee corridors under Abyss pressure.",
+      "historical_wound": "A refugee column abandoned at a closed Sanctuary gate in a past crisis.",
+      "possible_alliance_condition": "Joint humanitarian and soul-flow restoration effort.",
+      "possible_break_condition": "Sanctuary gate closures stranding refugees in corrupted border zones.",
+      "keeper_exploit": "Use refugee panic to overload both domains and spread rumor.",
+      "void_exploit": "Offer the desperate forbidden shortcuts to 'protect' their families."
+    },
+    {
+      "source_domain": "Sanctuary",
+      "target_domain": "Tempest",
+      "public_relationship": "tense",
+      "hidden_relationship": "Wary neighbors over very different ideas of order.",
+      "primary_conflict": "Sanctuary's accountable order versus Tempest's allergy to compulsion.",
+      "primary_dependency": "Sanctuary ports and goods; Tempest courier and freight reach.",
+      "resource_leverage": "Sanctuary controls key ports; Tempest controls the High Lanes.",
+      "magic_tension": "Covenant order versus storm-borne freedom.",
+      "military_tension": "Sanctuary distrusts corsair raids near its coasts.",
+      "historical_wound": "A Sanctuary port seized a corsair fleet without trial.",
+      "possible_alliance_condition": "A shared Abyss/Void threat to coast and sky.",
+      "possible_break_condition": "Sanctuary detaining free crews as criminals without due process.",
+      "keeper_exploit": "Inflate a corsair raid into proof that only walls and watch keep order.",
+      "void_exploit": "Whisper to Sanctuary that surveillance is just thorough protection."
+    },
+    {
+      "source_domain": "Sanctuary",
+      "target_domain": "Abyss",
+      "public_relationship": "war",
+      "hidden_relationship": "Existential enmity riddled with hidden Abyss infiltration.",
+      "primary_conflict": "Ash Ledger soul-debt and collaborator magistrates hollowing Sanctuary from within.",
+      "primary_dependency": "None overt; Abyss parasitizes Sanctuary's trust and registries.",
+      "resource_leverage": "Abyss weaponizes Sanctuary's own rolls and debt contracts.",
+      "magic_tension": "Sheltering light versus harvesting ledger.",
+      "military_tension": "Open war at the frontier, secret war in the archives.",
+      "historical_wound": "Whole detained populations disappeared into soul-debt.",
+      "possible_alliance_condition": "None; only the grim necessity of rooting out collaborators.",
+      "possible_break_condition": "Any ceasefire shatters when the disappeared are found harvested.",
+      "keeper_exploit": "Use Sanctuary's fear to make it build the very registries Abyss harvests.",
+      "void_exploit": "Sell perfect security in exchange for the names of the watched."
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "Sanctuary",
+      "title": "The Wardenmarch Gates",
+      "factions_involved": ["Purity Inquisition", "Refugee Covenant", "Sanctuary Concord", "Aegis Paladins"],
+      "issue": "Whether to close Wardenmarch's gates and impose detention sweeps amid a food crisis and infiltration scare.",
+      "public_argument": "Inquisitor Vale: 'An open gate in a plague of spies is a death sentence.' Cassia: 'A wall that cages the sheltered is the Abyss's victory, not ours.'",
+      "hidden_argument": "A collaborator magistrate wants closure to mask an Ash Ledger cell; the Concord fears either choice will break the city.",
+      "resources_at_stake": ["Refugee lives", "The border Beacon", "Civic trust", "Food stores"],
+      "magic_systems_at_stake": ["Beacon-Warding", "Covenant-Oath Magic"],
+      "npc_flashpoints": ["Inquisitor Vale", "Cassia", "Brother Calven", "the collaborator magistrate"],
+      "possible_player_sides": ["Uphold open shelter and due process with the Covenant", "Back containment and detention with the Inquisition", "Broker accountable, time-limited screening that keeps the gates open"],
+      "compromise_possible": true,
+      "keeper_best_outcome": "The gates close, purges begin, and the Cage of Safety takes hold.",
+      "void_best_outcome": "Surveillance and registries spread under cover of the crisis.",
+      "peaceful_resolution": "Transparent, paladin-supervised screening with food relief and no detention without review.",
+      "violent_resolution": "Inquisition sweeps spark refugee riots and a paladin schism.",
+      "third_order_effect": "Refugee Covenant trust collapses or the Inquisition overreaches; rumors weaponize either way.",
+      "fifth_order_effect": "The Keeper benefits as protection curdles into a cage and the border Beacon gutters."
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "Sanctuary",
+    "common_spread_channels": ["Confession circles", "Court notices", "Refugee shelters", "Paladin reports", "Public bells", "Prayer halls"],
+    "trusted_sources": ["Respected paladins", "Lumen Wardens", "Review-confessors"],
+    "distrusted_sources": ["Inquisition criers", "Anonymous denouncers", "Outsiders without papers"],
+    "rumor_emotional_styles": ["Fear", "Hope", "Shame", "Paranoia"],
+    "rumor_suppression_methods": ["Court notices and official review", "Warden correction from the pulpit", "Inquisition silencing"],
+    "rumor_weaponization_methods": ["Denunciation campaigns", "Branding outsiders as spies", "Purity sermons naming the impure"],
+    "rumor_mutation_patterns": ["'Used forbidden magic to save a child' becomes 'touched a child's soul' then 'is a soul-thief Sanctuary shelters'", "A mercy becomes a conspiracy", "A closed gate becomes 'the Concord sold us to the Abyss'"],
+    "factions_best_at_rumor_warfare": ["Purity Inquisition", "Ash Ledger infiltrators"]
+  },
+
+  "relationship_logic": {
+    "domain": "Sanctuary",
+    "trust_is_built_by": ["Protecting the vulnerable accountably", "Airing hard truths in review", "Keeping a covenant in the open"],
+    "trust_is_broken_by": ["Hiding corruption that endangers civilians", "Breaking a covenant in secret", "Striking or abandoning the sheltered"],
+    "enemies_become_tolerable_when": ["They protect Sanctuary civilians at real cost", "They submit to accountable review"],
+    "allies_become_suspect_when": ["They demand purges", "They surveil the sheltered", "They bury inconvenient findings"],
+    "romance_conflicts": ["A Covenant lover who opposes the player's support for gate closures", "An Inquisition lover whose zeal the player cannot share"],
+    "betrayal_triggers": ["A protector who strikes the helpless", "An official who sells names", "A covenant broken to save face"],
+    "forgiveness_conditions": ["Public confession and submission to review", "Restoring the sheltered one harmed", "Re-lighting a Beacon one let dim"],
+    "permanent_enemy_conditions": ["Running an Ash Ledger cell", "Disappearing the sheltered for power", "Serial covenant-breaking that dims the Beacons"],
+    "if_then_because_examples": [
+      { "if": "The player hides corruption that endangers civilians", "then": "Sanctuary suspicion rises", "because": "Protection depends on civic trust and accountable truth." },
+      { "if": "A former enemy submits to public review and protects refugees at cost", "then": "Sanctuary may downgrade them from enemy to conditional ally", "because": "Accountable protection proves character more than past allegiance." },
+      { "if": "The player uses forbidden soulbinding to save a dying child in Sanctuary territory", "then": "gratitude and suspicion rise together and the Inquisition takes interest", "because": "A life saved through forbidden means is both a mercy and a breach of accountable order." },
+      { "if": "An official is exposed falsifying the protected rolls", "then": "Concord legitimacy falls and the Beacon dims a little", "because": "The rolls are a sacred covenant; a buried name is a broken oath." },
+      { "if": "The player shows mercy paired with accountability", "then": "Sanctuary respect rises", "because": "Sanctuary honors mercy only when it answers for itself." },
+      { "if": "Gate closures strand refugees in a corrupted border zone", "then": "Refugee Covenant trust collapses and rumors call it betrayal", "because": "A wall that abandons the sheltered breaks the covenant that justifies it." },
+      { "if": "The player exposes an Ash Ledger collaborator magistrate", "then": "the Concord is shaken but the Beacon steadies", "because": "Rooting out hidden oath-breakers restores the covenant the Beacons depend on." },
+      { "if": "A paladin obeys an order to strike helpless detainees", "then": "their oath hollows and the nearest Beacon dims", "because": "Covenant magic answers to the protection of the vulnerable, not to obedience." },
+      { "if": "The Inquisition purges the wrongly accused", "then": "the excluded drift toward the Abyss and Sanctuary unity fractures", "because": "Purity that devours its own manufactures the very enemies it fears." },
+      { "if": "The player restores a disappeared person's name to the rolls", "then": "Lumen Warden and Covenant trust rise sharply", "because": "Returning a name to the light is the deepest restoration Sanctuary knows." },
+      { "if": "An ally domain helps re-light a guttering border Beacon", "then": "Sanctuary grants them lasting goodwill despite old grievances", "because": "Defending the shelter of the named outweighs history." }
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "Sanctuary",
+    "starting_bonuses": ["Minor Beacon-warding or covenant magic", "A name on the protected rolls", "Standing with a paladin order or the Covenant"],
+    "starting_burdens": ["Oath-weight of a covenant", "Caught between Inquisition and Covenant", "Watched for any forbidden magic"],
+    "default_domain_resonance": { "Radiance": 50, "Verdance": 55, "Tempest": 40, "Sanctuary": 65, "Abyss": 10 },
+    "starting_faction_assumptions": ["Presumed loyal to the Concord", "Courted by the Refugee Covenant", "Scrutinized by the Purity Inquisition"],
+    "common_npc_reactions": ["Trust if you protect accountably", "Suspicion if you hide things", "Hope projected onto you by refugees"],
+    "starting_rumors": ["'Sworn to shelter, but how far?'", "'Stood between the Inquisition and a refugee once'"],
+    "starting_magic_access": ["Beacon-Warding (minor)", "Covenant-oath rites"],
+    "restricted_magic_access": ["Surveillance-wards (forbidden)", "Soul-binding (forbidden)"],
+    "unique_origin_questions": ["What covenant did you swear, and have you kept it?", "Would you close a gate to be safe?", "Whose name have you kept on the rolls when others wanted it struck?"],
+    "possible_dark_secret_options": ["You once falsified a record to protect someone", "You looked away from an Ash Ledger debt", "You enforced a purge you knew was wrong"]
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "The player uses forbidden soulbinding to save a dying child in Sanctuary territory.",
+      "domain_interpretation": "Sanctuary sees life protected through a method that defied accountable order and clean soul-passage.",
+      "faction_interpretation": "Brother Calven is grateful but afraid and hides the child; Inquisitor Vale hears partial reports and smells corruption; the Refugee Covenant fears mass suspicion of outsiders.",
+      "immediate_result": "The child survives, with a soul-scar.",
+      "first_order": "Family gratitude +; soul-flow integrity -2; the act is witnessed in part.",
+      "second_order": "Brother Calven hides the child; the mother is grateful but afraid; Inquisitor Vale opens an investigation.",
+      "third_order": "A rumor begins, 'the stranger stole a child's soul'; the Purity Inquisition gains political fuel; the Refugee Covenant fears a backlash against vulnerable outsiders.",
+      "fourth_order": "The Sanctuary court demands medical records; Brother Calven falsifies documents to protect the child; civic magistrates become involved.",
+      "fifth_order": "The Ash Ledger Covenant weaponizes the scandal — 'Sanctuary condemns the Abyss while hiding illegal soul manipulation' — and Sanctuary's moral authority weakens in diplomacy as Keeper pressure rises.",
+      "keeper_gain": "Interdomain mistrust and a soul-scar that loosens the protected rolls.",
+      "void_gain": "An Ash Ledger witness has a claim to press later.",
+      "player_intervention_options": ["Confess publicly and submit to ritual review", "Find a clean soul-healing method", "Expose the Ash Ledger spy", "Convince Calven not to falsify records", "Ask the child's family to testify truthfully"]
+    },
+    {
+      "root_event": "The player exposes a Sanctuary magistrate secretly collaborating with the Abyss Ash Ledger.",
+      "domain_interpretation": "Sanctuary is forced to confront that its order has been hollowed from within.",
+      "faction_interpretation": "The Refugee Covenant and truth-seekers are vindicated; the corrupt magistrate's house falls; the Purity Inquisition exploits the fear to demand sweeping powers.",
+      "immediate_result": "The collaboration is proven and made public.",
+      "first_order": "Concord legitimacy shaken; the disappeared start being accounted-for; the border Beacon steadies slightly.",
+      "second_order": "Public fear spikes; the Inquisition surges in influence; an Ash Ledger cell scrambles.",
+      "third_order": "Sanctuary trust wobbles — exposure heals the covenant but feeds the paranoia the Keeper wants.",
+      "fourth_order": "Either accountable reform or an Inquisition crackdown follows, depending on the player's framing.",
+      "fifth_order": "If reform wins, the Beacon brightens and the Keeper loses ground; if paranoia wins, the Cage of Safety advances.",
+      "keeper_gain": "Conditional: large if the exposure fuels purges, small if it fuels accountable reform.",
+      "player_intervention_options": ["Frame the exposure as a call for accountability, not purge", "Void the cell's coercive debt contracts", "Shield the witnesses from Inquisition reprisal", "Back a reformist magistrate over Vale"]
+    },
+    {
+      "root_event": "Facing a food crisis and infiltration scare, the Concord debates closing Wardenmarch's gates.",
+      "domain_interpretation": "Sanctuary's protection collides with its accountability and unity.",
+      "faction_interpretation": "Inquisitor Vale demands closure and sweeps; Cassia and the Covenant demand open shelter and due process; the Concord agonizes.",
+      "immediate_result": "Thousands of refugees wait at the gates as the debate drags.",
+      "first_order": "If closed: refugee morale -10, Covenant trust -; if kept open with screening: Inquisition hostility +, civic anxiety +.",
+      "second_order": "Closure strands refugees in a corrupted border zone; or open gates strain food to breaking.",
+      "third_order": "Rumors weaponize the choice ('the Concord sold us' or 'the gates let the spies in'); a collaborator exploits the chaos.",
+      "fourth_order": "Either a refugee catastrophe or an infiltration incident hardens the city's course.",
+      "fifth_order": "The Keeper gains if protection becomes a cage; it loses ground if accountable screening keeps gates open and trust intact.",
+      "keeper_gain": "Conditional on whether the Cage of Safety takes hold.",
+      "player_intervention_options": ["Broker supervised, time-limited screening", "Secure emergency food relief", "Expose the collaborator pushing for closure", "Rally paladins to guarantee due process at the gates"]
+    },
+    {
+      "root_event": "An Aegis paladin is ordered by the Inquisition to detain and strike helpless refugee suspects.",
+      "domain_interpretation": "Sanctuary's covenant is tested against the demand for obedience.",
+      "faction_interpretation": "The Inquisition insists it is necessary; the Lumen Wardens warn of Beacon harm; the paladin's order is split.",
+      "immediate_result": "The paladin must choose between the order and the oath.",
+      "first_order": "If they strike: their oath hollows and the nearest Beacon dims; if they refuse: Inquisition retaliation begins.",
+      "second_order": "A paladin schism forms; refugees either suffer or are protected; rumors spread either way.",
+      "third_order": "The covenant either frays toward obedience-magic or reaffirms shelter; recruitment shifts.",
+      "fourth_order": "The Aegis orders formally debate whether Inquisition commands can override the oath.",
+      "fifth_order": "The Keeper gains if covenant becomes obedience; it loses if the oath of shelter is reaffirmed.",
+      "keeper_gain": "Oath corrosion that dims the Beacons, unless the paladins hold the line.",
+      "player_intervention_options": ["Support the paladin's refusal and shield them", "Bring the order to the oath-courts", "Expose the detentions to public review", "Protect the helpless detainees and restore their names"]
+    },
+    {
+      "root_event": "The player discovers names being quietly struck from the protected rolls and traces them to soul-debt contracts.",
+      "domain_interpretation": "Sanctuary recognizes the deepest violation: the sheltered being unmade and harvested.",
+      "faction_interpretation": "The Lumen Wardens are horrified; the Covenant demands action; the responsible clerk is terrified and coerced.",
+      "immediate_result": "The disappearances are documented.",
+      "first_order": "Soul-flow integrity -6; the Buried Ledger is partly exposed; the local Beacon flickers.",
+      "second_order": "The coerced clerk may confess or flee; the Ash Ledger presses its claims; fear rises.",
+      "third_order": "Restoring names re-lights the ward, but the scandal feeds the Inquisition's case for control.",
+      "fourth_order": "A reckoning over the archives forces either real accountability or a cover-up.",
+      "fifth_order": "If names are restored and contracts voided, the Beacon brightens and the Keeper is denied; if buried, the disappearance spreads.",
+      "keeper_gain": "Conditional on whether the disappeared are restored to the light.",
+      "player_intervention_options": ["Restore the disappeared to the rolls", "Void the coercive soul-debt contracts", "Protect and turn the coerced clerk", "Bring the archive reckoning to public review under the Beacon"]
+    }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["Can a name fully harvested into soul-debt be restored to the rolls and the light, or only mourned?", "Does a Beacon dim from a single broken oath, or only from a pattern of betrayal?"],
+    "political": ["Can accountable governance survive a genuine infiltration crisis without becoming the Inquisition?", "How captured are the review-courts by the Buried Ledger?"],
+    "magic": ["Is there any ethical bounded surveillance-ward, or does every inward ward begin the Cage of Safety?", "Can a hollowed paladin oath be re-sworn whole?"],
+    "faction": ["Is the Purity Inquisition reformable, or is it already the Keeper's instrument?", "How deep does Ash Ledger infiltration run in the Concord?"],
+    "npc": ["Can Inquisitor Vale be turned from paranoia, or only stopped?", "Will Brother Calven's protective lies save the child or doom them both?"],
+    "war_economy": ["How long can the refuges feed a swelling population before gate closures become inevitable?", "What happens to civic trust if a major Beacon goes dark?"],
+    "implementation": ["Should the protected rolls be modeled as a registry entity linked to soul-flow wounds and Ash Ledger debt?", "Should 'gate closure' be a location/policy state with cascading domain effects?"]
+  },
+
+  "locked_decisions": [
+    "Sanctuary magic and authority must always rest on accountable covenant; protection without accountability is its corruption.",
+    "Sanctuary corruption must distort protection into control (the Cage of Safety) and unity into purity-paranoia, never become generic darkness.",
+    "Sanctuary internal politics must respect the Concord / Inquisition / Covenant / paladin fracture.",
+    "Erasing a name from the protected rolls or disappearing the sheltered is the violation Sanctuary cannot forgive.",
+    "Beacon wards and covenant magic weaken when oaths are broken in secret or the sheltered are betrayed.",
+    "Mercy is honored in Sanctuary only when it is paired with accountability."
+  ]
+}

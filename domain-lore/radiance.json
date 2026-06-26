@@ -1,0 +1,742 @@
+{
+  "schema_version": "1.0",
+  "domain": "Radiance",
+  "status": "draft",
+
+  "identity_snapshot": {
+    "domain_name": "Radiance",
+    "short_description": "A sacred-fire military civilization built around the Eternal Flame, Phoenix rebirth, willing sacrifice, Sunstone forgecraft, and an honor-driven war culture.",
+    "civilization_type": "Theocratic-martial forge-state organized around flame legitimacy and sacrificial honor.",
+    "core_belief": "True power must be paid for through willing sacrifice.",
+    "true_virtue": ["Sacrifice", "Courage", "Renewal", "Honor", "Discipline"],
+    "primary_corruption_risk": ["Martyr addiction", "Purge doctrine", "Hero spectacle", "Hubris of the unlimited flame"],
+    "domain_stone_or_source": "The Eternal Flame (a Sacred Flame anchored to the Radiance Stone fragment beneath the Ember Spire).",
+    "magic_style": "Sacrificial pyromancy and Sunstone forgecraft; power is granted in proportion to willingly accepted cost.",
+    "main_magic_cost": "Life force and oath burden — the flame strengthens with what is given, not what is claimed.",
+    "political_center": "The Ember Spire, seat of the Ember Council and the Phoenix-Sworn.",
+    "military_identity": "Disciplined sacrificial vanguard: hold the line, shield civilians, burn corruption before it spreads.",
+    "economic_base": "Sunstone mining, forgecraft, sacred-arms manufacture, and flame-pilgrimage tribute.",
+    "biggest_internal_conflict": "Whether sacrifice must stay disciplined and limited (Dawnfire Mystics) or be maximized for victory through high-output relic doctrine (Kael's Sunbreaker bloc).",
+    "biggest_external_threat": "Abyss soul-harvest engines on the eastern frontier that turn Radiance's honored dead into bound labor.",
+    "keeper_exploit": "The Keeper makes Radiance burn itself out by convincing its heroes that glorious self-destruction is the highest form of devotion.",
+    "void_lie": "If your sacrifice is pure, why fear burning more?"
+  },
+
+  "hard_canon": {
+    "canon_facts": [
+      "Radiance draws legitimacy from the Eternal Flame, a Sacred Flame tied to a fragment of the fractured pure Nexus Stone.",
+      "Phoenix rebirth is real but costly: it renews purpose, not bodies, and each invocation deepens oath burden.",
+      "Sunstone is the sacred reagent of Radiance forgecraft and the backbone of its economy and arms.",
+      "The Ember Council governs flame doctrine; the Phoenix-Sworn embody living sacrifice; the Forgekeepers control Sunstone and arms.",
+      "Kael leads the Sunbreaker War Doctrine, a military bloc pushing high-output relic and overcharged-flame tactics.",
+      "Radiance fire can cleanse corruption but is feared by Verdance and Sanctuary when used without consent or restraint."
+    ],
+    "cannot_contradict": [
+      "Radiance magic must always involve cost, discipline, sacrifice, or flame legitimacy — never free power.",
+      "Radiance corruption must distort sacrifice, renewal, honor, and sacred fire; it must never be generic darkness.",
+      "Radiance internal politics must respect the Phoenix / Kael / Forgekeeper / Mystic fracture.",
+      "The Eternal Flame cannot be relit by force or theft; only by willingly accepted cost."
+    ]
+  },
+
+  "metaphysical_role": {
+    "principle_embodied": "Sacrifice and renewal — the transformation of willingly accepted loss into renewed purpose.",
+    "nexus_stone_aspect": "The Stone's capacity to convert ending into beginning; the spark that lets soul-flow pass cleanly through death into renewal.",
+    "soul_flow_shaped": "Radiance shepherds grief and death into renewed purpose; healthy flame lets the dead pass and the living carry the meaning forward.",
+    "natural_magic": "Sacrificial pyromancy: heat, light, and purification proportional to willingly paid cost.",
+    "when_extreme": "Sacrifice mutates into compulsion — heroes seek death for its own sake, retreat becomes shameful, and renewal is replaced by spectacle.",
+    "keeper_exploits_extremity": "The Keeper reframes self-destruction as devotion, spending Radiance's heroes faster than its culture can renew them and souring its sacrifice-based soul-flow."
+  },
+
+  "domain_stone": {
+    "domain": "Radiance",
+    "source_name": "The Eternal Flame",
+    "source_type": "Sacred Flame",
+    "origin": "Kindled by the first Phoenix-Sworn upon a fragment of the fractured pure Nexus Stone, fed ever since by willingly accepted sacrifice.",
+    "metaphysical_principle": ["Willing sacrifice", "Renewal through loss", "Clean death-passage", "Honor as legitimacy"],
+    "current_stability": 71,
+    "corruption_level": 22,
+    "public_knowledge": "The Flame is eternal and burns brighter when heroes give freely; it has never gone dark.",
+    "hidden_truth": "Overcharged and Void-amplified flame rites are scarring the Flame's renewal channel; its brightness now hides a thinning of clean death-passage.",
+    "factions_claiming_authority": ["Ember Council", "Phoenix-Sworn", "Dawnfire Mystics"],
+    "rituals_dependent_on_source": ["Rite of Willing Embers", "Phoenix Vigil", "Ashfall Remembrance", "Sunstone consecration"],
+    "magic_systems_dependent_on_source": ["Sacrificial Pyromancy", "Sunstone Forgecraft"],
+    "failure_symptoms": ["Flame burns without warmth", "Phoenix rebirth returns the wrong purpose", "Honored dead linger as ash-echoes", "Sunstone consecration fails"],
+    "healing_methods": ["Restoring disciplined, limited sacrifice", "Public truth about overcharge", "Purifying Void-tainted relics", "Communal Ashfall Remembrance"],
+    "keeper_attack_vector": "Encourage maximal, spectacular sacrifice so the Flame is fed faster than the culture can renew, straining its death-passage channel.",
+    "void_attack_vector": "Offer overcharged brightness now in exchange for a thinning of the Flame's clean renewal later."
+  },
+
+  "soul_flow": {
+    "domain": "Radiance",
+    "healthy_soul_flow_description": "Grief and death are transformed into renewed purpose; the dead pass cleanly and the living carry their meaning into new oaths.",
+    "damaged_soul_flow_description": "Death becomes spectacle and debt; the honored dead linger as ash-echoes, and grief curdles into the hunger to be martyred.",
+    "natural_soul_processes": ["Clean death-passage through the Flame", "Renewal of purpose after loss", "Oath inheritance across generations"],
+    "forbidden_soul_processes": ["Binding the honored dead to labor or war", "Forcing rebirth on the unwilling", "Harvesting grief for power"],
+    "common_soul_wounds": ["Martyr-hunger in grieving veterans", "Ash-echoes of the unburied", "Oath burden that will not lift"],
+    "healing_methods": ["Ashfall Remembrance", "Releasing inherited oaths that have done their work", "Disciplined sacrifice that preserves the living"],
+    "factions_that_protect_soul_flow": ["Dawnfire Mystics", "Phoenix-Sworn"],
+    "factions_that_disrupt_soul_flow": ["Ashen Martyrs", "Sunbreaker War Doctrine (when overcharging)"],
+    "keeper_disruption_strategy": "Multiply unclean, spectacular deaths until ash-echoes outnumber clean passages.",
+    "void_disruption_strategy": "Whisper that a brighter death is a purer one, so the grieving seek the flame instead of renewal."
+  },
+
+  "true_virtues": [
+    {
+      "name": "Sacrifice",
+      "healthy_definition": "The willing payment of real cost for the protection or renewal of others.",
+      "cultural_expression": "Public honor for those who give without demanding ownership.",
+      "heroic_expression": "A warrior shields civilians even when victory becomes harder.",
+      "political_expression": "Leaders are expected to bear greater costs than commoners.",
+      "magical_expression": "Sacred flame strengthens when cost is willingly accepted.",
+      "economic_expression": "Forge guilds donate arms during existential threats.",
+      "military_expression": "Retreat is honorable if it preserves lives for future renewal.",
+      "common_saying": "The flame remembers what you gave, not what you claimed."
+    },
+    {
+      "name": "Renewal",
+      "healthy_definition": "The conviction that loss, willingly carried, becomes the seed of new purpose.",
+      "cultural_expression": "Funerals end in oaths the living take up, not only in mourning.",
+      "heroic_expression": "A survivor turns grief into the protection of others rather than revenge.",
+      "political_expression": "Defeated leaders are allowed to rebuild if they bore their loss honestly.",
+      "magical_expression": "Phoenix rites renew the purpose of the reborn, not their old grievances.",
+      "economic_expression": "Burned districts are rebuilt communally as acts of devotion.",
+      "military_expression": "An honorable retreat is treated as a seed, not a stain.",
+      "common_saying": "Ash is not the end of the fire; it is its memory."
+    },
+    {
+      "name": "Honor",
+      "healthy_definition": "Legitimacy earned by bearing cost truthfully and protecting those who cannot protect themselves.",
+      "cultural_expression": "Status follows demonstrated cost, not birth or spectacle.",
+      "heroic_expression": "A champion credits the saved, not the saving.",
+      "political_expression": "Authority is questioned when leaders hide their costs.",
+      "magical_expression": "Flame legitimacy is granted only to those whose sacrifice was real.",
+      "economic_expression": "Forgekeepers stamp true makers' marks; counterfeiting honor is taboo.",
+      "military_expression": "Prisoners who fought with honor are treated as rivals, not vermin.",
+      "common_saying": "A clean flame needs no audience."
+    }
+  ],
+
+  "corrupted_virtues": [
+    {
+      "true_virtue": "Sacrifice",
+      "corrupted_name": "Martyr Addiction",
+      "corrupted_definition": "The belief that dying or suffering visibly is more virtuous than surviving wisely.",
+      "how_it_begins": "Heroes are praised only when they bleed, burn, or die publicly.",
+      "how_it_spreads": "Songs, temple sermons, battlefield propaganda, and youth imitation.",
+      "who_benefits": ["War hardliners", "Abyss propagandists", "Void whisperers"],
+      "who_suffers": ["Healers", "Young soldiers", "Civilians who need living protectors"],
+      "faction_most_vulnerable": ["Ashen Martyrs", "Sunbreaker War Doctrine"],
+      "npc_archetypes_most_vulnerable": ["Young initiate", "Dishonored veteran", "Grieving commander"],
+      "keeper_benefit": "Radiance wastes heroes and destabilizes sacrifice-based soul flow.",
+      "void_lie": "If your sacrifice is pure, why fear burning more?",
+      "visible_symptoms": ["Reckless charges", "Shame around retreat", "Public death cults"],
+      "late_stage_consequence": "Radiance wins battles but loses the living culture needed for renewal."
+    },
+    {
+      "true_virtue": "Honor",
+      "corrupted_name": "Purge Doctrine",
+      "corrupted_definition": "The belief that anything touched by corruption must be burned away, regardless of consent or salvageable life.",
+      "how_it_begins": "A real corruption disaster makes pre-emptive burning feel like the only safe answer.",
+      "how_it_spreads": "Inquisitorial sermons, fear of contamination, and victories credited to early purges.",
+      "who_benefits": ["Hardline commanders seeking unchecked authority", "Abyss, which feeds on interdomain fear of Radiance fire"],
+      "who_suffers": ["Verdance groves", "Sanctuary refugees", "Anyone marked 'tainted' without trial"],
+      "faction_most_vulnerable": ["Sunbreaker War Doctrine", "Radiant Guard zealots"],
+      "npc_archetypes_most_vulnerable": ["Traumatized purifier", "Ambitious inquisitor"],
+      "keeper_benefit": "Turns Radiance's protective fire into a cause of interdomain mistrust and division.",
+      "void_lie": "Mercy toward the tainted is just cowardice wearing a kind face.",
+      "visible_symptoms": ["Burning before investigating", "Treating consent as weakness", "Allies refusing Radiance fire support"],
+      "late_stage_consequence": "Radiance becomes feared as an arsonist of the sacred, and its coalitions collapse."
+    },
+    {
+      "true_virtue": "Renewal",
+      "corrupted_name": "Hero Spectacle",
+      "corrupted_definition": "The replacement of quiet renewal with the public performance of glorious flame.",
+      "how_it_begins": "A spectacular overcharged victory is celebrated more loudly than disciplined ones.",
+      "how_it_spreads": "Acolyte imitation, relic-doctrine propaganda, and crowd hunger for brighter miracles.",
+      "who_benefits": ["Kael's bloc", "Forgekeepers selling overcharge relics"],
+      "who_suffers": ["The Eternal Flame's renewal channel", "Young acolytes who burn out imitating rites"],
+      "faction_most_vulnerable": ["Sunbreaker War Doctrine", "Forgekeepers"],
+      "npc_archetypes_most_vulnerable": ["Fame-hungry champion", "Forge researcher chasing output"],
+      "keeper_benefit": "Drives Void dependency and strains the Domain Stone under cover of heroism.",
+      "void_lie": "Brighter is truer. The crowd would not cheer a lie.",
+      "visible_symptoms": ["Dangerous flame rites copied by youths", "Rumors the Phoenix's old limits are obsolete", "Relic overcharge normalized"],
+      "late_stage_consequence": "Sacrifice becomes performance, the Flame thins, and renewal is forgotten."
+    }
+  ],
+
+  "keeper_exploit_pattern": {
+    "domain": "Radiance",
+    "primary_virtue_targeted": "Sacrifice",
+    "secondary_virtues_targeted": ["Honor", "Renewal"],
+    "corruption_strategy": "Reframe willing, limited sacrifice as maximal self-destruction, so heroes are spent faster than the culture can renew and the Flame's death-passage channel sours.",
+    "preferred_crisis_conditions": ["Existential frontier war", "Public grief after a famous death", "Healing or Sunstone scarcity"],
+    "preferred_faction_targets": ["Ashen Martyrs", "Sunbreaker War Doctrine"],
+    "preferred_npc_targets": ["Grieving commanders", "Young initiates", "Dishonored veterans seeking redemption"],
+    "soul_flow_damage_type": ["Death-passage disruption", "Grief curdled into martyr-hunger", "Oath burden that will not lift"],
+    "domain_stone_damage_type": "Renewal-channel strain from overfeeding the Flame with unclean, spectacular deaths.",
+    "common_lie": "A brighter death is a purer one.",
+    "long_term_goal": "Burn out Radiance's living renewal culture so the Flame becomes a furnace of martyrs and a crack in the prison lattice."
+  },
+
+  "void_temptation_pattern": {
+    "domain": "Radiance",
+    "temptation_phrase": "If your sacrifice is pure, why fear burning more?",
+    "immediate_benefit": "Overcharged flame succeeds without consuming the caster's life as it should.",
+    "hidden_cost": "The unpaid cost is deferred into the Flame and the caster's oath burden; a Void echo learns to wear their fire.",
+    "identity_damage": "The caster's sense of limit erodes; they begin to define themselves by spectacle rather than protection.",
+    "soul_flow_damage": "Each deferred cost thins clean death-passage and leaves ash-echoes.",
+    "reality_damage": "Overcharged rites flicker reality at their edges, leaving heat that burns without warmth.",
+    "faction_most_likely_to_accept": ["Sunbreaker War Doctrine", "Ashen Martyrs"],
+    "npc_archetypes_most_likely_to_accept": ["Champion under impossible odds", "Forge researcher chasing output", "Grieving zealot"],
+    "visible_stage_1_symptoms": ["Flame slightly too bright", "Caster tires less than they should"],
+    "visible_stage_2_symptoms": ["Heat without warmth", "A second voice in the caster's flame", "Reckless escalation"],
+    "visible_stage_3_symptoms": ["Void echo mimics the caster's fire", "Honored dead linger as ash-echoes", "Local Flame rites fail"]
+  },
+
+  "magic_systems": [
+    {
+      "domain": "Radiance",
+      "system_name": "Sacrificial Pyromancy",
+      "source": "The Eternal Flame and the caster's willingly accepted cost.",
+      "practitioners": ["Phoenix-Sworn", "Dawnfire Mystics", "Radiant Guard flame-bearers"],
+      "institutions": ["Ember Spire seminaries", "Dawnfire conclaves"],
+      "training_access": "regulated",
+      "battlefield_use": ["Cleansing corruption", "Shield-walls of fire", "Phoenix rallying rites"],
+      "economic_use": ["Consecrating Sunstone", "Sacred cremation services"],
+      "political_use": ["Flame legitimacy for leaders", "Trial by witnessed fire"],
+      "spiritual_use": ["Clean death-passage", "Ashfall Remembrance", "Oath sealing"],
+      "civilian_use": ["Hearth blessings", "Festival lights", "Forge ignition"],
+      "cost_types": ["life_force", "oath_burden", "physical_exhaustion"],
+      "abuse_modes": ["Overcharge for spectacle", "Transferring cost to the unwilling", "Purge without consent"],
+      "scarcity_level": 45,
+      "public_trust": 68,
+      "faction_control": { "Ember Council": 70, "Dawnfire Mystics": 80, "Sunbreaker War Doctrine": 55 },
+      "keeper_corruption_vector": "Reframe maximal cost as maximal virtue.",
+      "void_enhancement_vector": "Defer the life-force cost in exchange for future dependency."
+    },
+    {
+      "domain": "Radiance",
+      "system_name": "Sunstone Forgecraft",
+      "source": "Consecrated Sunstone, charged with stored sacrificial heat.",
+      "practitioners": ["Forgekeepers", "Sacred armorers"],
+      "institutions": ["The Forgekeeper guild", "Sunstone consecration halls"],
+      "training_access": "elite",
+      "battlefield_use": ["Sacred arms and armor", "Flame-cannon and ember-shot", "Overcharge relics (contested)"],
+      "economic_use": ["Arms manufacture", "Sunstone refinement", "Relic trade"],
+      "political_use": ["Arming favored factions", "Controlling who may field flame-weapons"],
+      "spiritual_use": ["Reliquary flames", "Consecrated maker's marks"],
+      "civilian_use": ["Tools", "Lanterns", "Heating in the cold reaches"],
+      "cost_types": ["resource_consumption", "domain_stone_strain"],
+      "abuse_modes": ["Overcharge relics", "Counterfeit maker's marks", "Hoarding Sunstone for leverage"],
+      "scarcity_level": 60,
+      "public_trust": 62,
+      "faction_control": { "Forgekeepers": 90, "Sunbreaker War Doctrine": 50, "Ember Council": 40 },
+      "keeper_corruption_vector": "Push high-output relic doctrine that strains the Stone.",
+      "void_enhancement_vector": "Offer relic output beyond safe limits in exchange for hidden corruption."
+    }
+  ],
+
+  "magic_costs": [
+    {
+      "cost_name": "Willing Embers",
+      "cost_type": "life_force",
+      "description": "Flame strengthens in proportion to life force the caster willingly gives.",
+      "minor_effect": "Fatigue and a day's dimming of personal vitality.",
+      "moderate_effect": "Lasting exhaustion; the caster ages subtly faster for a season.",
+      "severe_effect": "Permanent vitality loss or death, accepted as honored sacrifice.",
+      "recovery_method": "Rest, communal renewal rites, and released oaths.",
+      "permanent_risk": "Death, or martyr-hunger if the giving becomes compulsive.",
+      "factions_that_accept_this_cost": ["Phoenix-Sworn", "Dawnfire Mystics"],
+      "factions_that_reject_this_cost": ["Forgekeepers (prefer Stone strain over personal cost)"]
+    },
+    {
+      "cost_name": "Oath Burden",
+      "cost_type": "oath_burden",
+      "description": "Phoenix rites and flame legitimacy bind the caster under vows that accumulate weight.",
+      "minor_effect": "A vow felt as solemn weight.",
+      "moderate_effect": "Oaths physically heavy; sleep troubled by their demands.",
+      "severe_effect": "Crushing burden that can break identity if vows conflict.",
+      "recovery_method": "Fulfilling or honorably releasing oaths through ritual.",
+      "permanent_risk": "Oath corrosion exploited by the Keeper into broken-oath soul wounds.",
+      "factions_that_accept_this_cost": ["Phoenix-Sworn"],
+      "factions_that_reject_this_cost": ["Chainless mercenaries", "Sunbreaker pragmatists"]
+    },
+    {
+      "cost_name": "Stone Strain",
+      "cost_type": "domain_stone_strain",
+      "description": "Forgecraft overcharge draws on the Eternal Flame's reserve, straining the Domain Stone.",
+      "minor_effect": "A flicker in nearby Flame rites.",
+      "moderate_effect": "Regional Flame instability; consecrations fail.",
+      "severe_effect": "Renewal-channel scarring and ash-echoes near the overcharge site.",
+      "recovery_method": "Cease overcharge, purify relics, restore disciplined sacrifice.",
+      "permanent_risk": "Catastrophic metaphysical breach if strain compounds.",
+      "factions_that_accept_this_cost": ["Sunbreaker War Doctrine"],
+      "factions_that_reject_this_cost": ["Dawnfire Mystics", "Ember Council moderates"]
+    }
+  ],
+
+  "government": {
+    "domain": "Radiance",
+    "government_type": "Theocratic-martial council with flame-legitimacy as the source of authority.",
+    "ruling_body": "The Ember Council, presided over by the senior Phoenix-Sworn.",
+    "religious_authority": "Dawnfire Mystics and the Phoenix-Sworn interpret flame doctrine.",
+    "military_authority": "The High Warmarshal; in practice Kael's Sunbreaker bloc holds field initiative.",
+    "economic_authority": "The Forgekeeper guild controls Sunstone and sacred arms.",
+    "magical_authority": "Dawnfire Mystics certify flame legitimacy and police forbidden rites.",
+    "local_authorities": ["Spire wardens", "Forge-town masters", "Frontier flame-captains"],
+    "succession_or_selection_method": "Council seats earned through demonstrated, witnessed sacrifice; the senior Phoenix-Sworn is acclaimed, not inherited.",
+    "legitimacy_source": "Truthfully borne cost and the unbroken burning of the Eternal Flame.",
+    "known_cracks_in_legitimacy": ["Kael's victories outshine the Council's caution", "Hidden overcharge corruption undermines doctrinal authority", "Forgekeeper wealth buys quiet influence"],
+    "emergency_powers": ["Warmarshal field autonomy", "Mass conscription of forge-towns", "Council suspension of overcharge bans during sieges"],
+    "corruption_vulnerabilities": ["Glory rewarded over discipline", "Investigations delayed when military morale depends on the accused", "Forgekeeper capture of arms policy"]
+  },
+
+  "class_structure": [
+    {
+      "domain": "Radiance",
+      "class_name": "Phoenix-Sworn",
+      "description": "The living embodiment of sacrifice; oath-bound flame leaders.",
+      "privileges": ["Flame legitimacy", "Council seats", "Public veneration"],
+      "burdens": ["Heavy oath burden", "Expected to bear the greatest costs", "Cannot retire freely"],
+      "magic_access": "Full sacrificial pyromancy.",
+      "military_obligation": "Lead from the front; rally rites.",
+      "economic_role": "Stipended by the Spire; forbidden personal wealth.",
+      "political_voice": "Highest.",
+      "common_grievances": ["Spent by Kael's bloc as symbols", "Crushed by accumulated oaths"],
+      "faction_affinities": ["Dawnfire Mystics", "Ember Council"],
+      "upward_mobility_paths": ["Witnessed acts of disciplined sacrifice"],
+      "downward_mobility_risks": ["Dishonor", "Broken oath", "Accepting Void overcharge"]
+    },
+    {
+      "domain": "Radiance",
+      "class_name": "Forgekeepers",
+      "description": "Guild masters of Sunstone and sacred arms.",
+      "privileges": ["Control of Sunstone", "Wealth", "Arms patronage"],
+      "burdens": ["Suspicion of profiteering", "Blamed for overcharge dangers"],
+      "magic_access": "Forgecraft only; little personal pyromancy.",
+      "military_obligation": "Supply, not service.",
+      "economic_role": "Backbone of the economy.",
+      "political_voice": "High but unofficial.",
+      "common_grievances": ["Excluded from flame legitimacy despite wealth", "Scapegoated when relics fail"],
+      "faction_affinities": ["Forgekeeper guild", "Sunbreaker War Doctrine"],
+      "upward_mobility_paths": ["Funding famous victories", "Marriage into Sworn families"],
+      "downward_mobility_risks": ["Counterfeit marks exposed", "Catastrophic relic failure"]
+    },
+    {
+      "domain": "Radiance",
+      "class_name": "Emberfolk (commoners)",
+      "description": "Soldiers, forge-laborers, hearth-keepers, and the conscripted many.",
+      "privileges": ["Festival honors", "Path to glory through service"],
+      "burdens": ["First conscripted", "Disposable in spectacle doctrine", "Praised publicly, underpaid privately"],
+      "magic_access": "Minor hearth and forge flame only.",
+      "military_obligation": "Heavy; the vanguard's body.",
+      "economic_role": "Labor and arms production.",
+      "political_voice": "Low; channeled through forge-town masters.",
+      "common_grievances": ["Their dead become songs, not policy", "Martyr doctrine spends their children"],
+      "faction_affinities": ["Ashen Martyrs (for the desperate)", "Sap Commons-style reformers (rare)"],
+      "upward_mobility_paths": ["Battlefield honor", "Forge mastery"],
+      "downward_mobility_risks": ["Maiming", "Branded dishonored after a retreat"]
+    }
+  ],
+
+  "economy": {
+    "domain": "Radiance",
+    "primary_resources": ["Sunstone", "Sacred arms and armor", "Forge labor"],
+    "secondary_resources": ["Charcoal and fuel", "Flame-pilgrimage tribute", "Cremation and reliquary services"],
+    "sacred_resources": ["Consecrated Sunstone", "Eternal Flame embers"],
+    "scarce_resources": ["Healing sap (imported from Verdance)", "Foodstuffs from the cold reaches"],
+    "export_goods": ["Sacred arms", "Refined Sunstone", "Flame consecration services"],
+    "import_needs": ["Verdance healing sap", "Tempest sky-freight", "Foodstuffs"],
+    "trade_routes": ["Ember Road to Sanctuary markets", "Sunstone caravans from the eastern mines", "Sky-lift contracts with Tempest corsairs"],
+    "economic_institutions": ["Forgekeeper guild", "Spire tribute treasury", "Sacred-arms exchange"],
+    "black_market_goods": ["Overcharge relics", "Counterfeit maker's marks", "Smuggled Sunstone"],
+    "wartime_economy_behavior": "Forge guilds donate arms during existential threats but quietly raise prices on overcharge relics the Council bans.",
+    "famine_or_shortage_risks": ["Healing-sap embargo from Verdance", "Eastern Sunstone mines overrun by Abyss"],
+    "exploitative_practices": ["Conscript labor in deep mines", "Debt-binding forge apprentices"],
+    "keeper_attack_vector": "Engineer healing-sap scarcity so Radiance turns to unsafe artificial healing and overcharge doctrine."
+  },
+
+  "military_doctrine": {
+    "domain": "Radiance",
+    "doctrine_name": "The Sacrificial Vanguard",
+    "strategic_identity": "Hold the line, shield civilians, and burn corruption before it spreads.",
+    "preferred_battlefield": ["Chokepoints", "Sieges of corruption sites", "Open ground where flame-walls dominate"],
+    "primary_units": ["Flame-bearer infantry", "Shieldwall conscripts", "Ember-shot artillery"],
+    "elite_units": ["Phoenix-Sworn vanguard", "Radiant Guard"],
+    "support_units": ["Forge-wagons", "Cremation chaplains", "Ashfall medics"],
+    "magical_assets": ["Sacrificial pyromancy", "Sunstone flame-cannon", "Phoenix rallying rites"],
+    "defensive_strategy": "Layered flame-walls and shieldwalls that trade ground slowly while evacuating civilians.",
+    "offensive_strategy": "Decisive cleansing strikes on corruption nodes, then withdraw before overextension.",
+    "logistics_strategy": "Forge-town relays and Sunstone caravans; vulnerable to sap and food shortages.",
+    "intelligence_strategy": "Flame-witness scouts and pilgrim networks; weak against Abyss ledger espionage.",
+    "taboo_tactics": ["Burning civilians as acceptable loss", "Forced rebirth of the fallen", "Purging without trial"],
+    "desperate_tactics": ["Overcharge relics", "Mass martyr charges", "Scorched-earth purges"],
+    "common_weaknesses": ["Overextension chasing glory", "Dependence on imported healing", "Vulnerability to martyr-baiting"],
+    "keeper_exploit": "Bait Radiance into spectacular last stands that spend its heroes and its Flame.",
+    "void_escalation": "Offer overcharge victories that win the battle and lose the renewal."
+  },
+
+  "warfront_behavior": {
+    "domain": "Radiance",
+    "typical_warfront_goals": ["Destroy Abyss soul-harvest engines", "Protect frontier civilians", "Secure Sunstone mines"],
+    "preferred_escalation_methods": ["Cleansing strikes", "Public honor for frontline sacrifice", "Coalition flame-support offers"],
+    "preferred_deescalation_methods": ["Honorable ceasefires that preserve the living", "Prisoner exchanges with honored rivals"],
+    "negotiation_style": "Blunt and honor-bound; values demonstrated cost over clever words.",
+    "ceasefire_conditions": ["Civilians safe", "Corruption contained", "Honor of the fallen acknowledged"],
+    "betrayal_conditions": ["An ally enables Abyss soul-harvest", "Sacred dead are desecrated", "Flame legitimacy is mocked"],
+    "alliance_conditions": ["Shared existential threat", "Respect for Radiance sacrifice", "Reliable healing or supply"],
+    "occupation_style": "Garrison-and-rebuild; tries to restore order but risks purge overreach.",
+    "resistance_style": "Stubborn shieldwalls and martyr stands; hard to break, easy to bait."
+  },
+
+  "major_locations": [
+    {
+      "name": "The Ember Spire",
+      "domain": "Radiance",
+      "location_type": "Capital sanctum and seat of government",
+      "description": "A basalt-and-gold tower crowning the Eternal Flame, ringed by seminaries and forge-halls.",
+      "political_function": "Seat of the Ember Council and the Phoenix-Sworn.",
+      "economic_function": "Tribute treasury and sacred-arms exchange.",
+      "magical_function": "Anchor of the Eternal Flame and flame-legitimacy rites.",
+      "military_function": "Command of the vanguard and the Radiant Guard.",
+      "spiritual_function": "Heart of Ashfall Remembrance and Phoenix Vigil.",
+      "civilian_function": "Pilgrimage destination and festival ground.",
+      "controlling_factions": ["Ember Council", "Phoenix-Sworn"],
+      "contested_by": ["Sunbreaker War Doctrine (for war policy)", "Forgekeepers (for arms policy)"],
+      "key_npcs": ["Senior Phoenix-Sworn", "High Warmarshal Kael", "Mystic-Warden of the Flame"],
+      "resources_present": ["Eternal Flame embers", "Tribute Sunstone"],
+      "magic_systems_present": ["Sacrificial Pyromancy", "Sunstone Forgecraft"],
+      "known_secrets": ["The Council quietly debates overcharge bans"],
+      "location_state": {
+        "stability": 72,
+        "danger": 30,
+        "corruption": 24,
+        "morale": 64,
+        "resources": 70,
+        "secrecy": 55,
+        "military_pressure": 38,
+        "spiritual_health": 66
+      },
+      "keeper_attack_vector": "Let Kael's glory erode Council authority until overcharge bans collapse.",
+      "void_symptoms": ["A faint second voice in the Flame during Vigil", "Embers occasionally burn without warmth"],
+      "quest_hooks": ["Investigate why consecrations near the Spire are failing", "Mediate the overcharge ban debate"]
+    },
+    {
+      "name": "Cinderwatch",
+      "domain": "Radiance",
+      "location_type": "Frontier fortress town facing the Abyss east",
+      "description": "A soot-stained wall-town guarding the Sunstone mines and the road to the soul-harvest frontier.",
+      "political_function": "Forward command of the eastern warfront.",
+      "economic_function": "Sunstone mining and forward arms depot.",
+      "magical_function": "Cleansing-strike staging and flame-witness scouting.",
+      "military_function": "Anchor of the eastern defense line.",
+      "spiritual_function": "Frontline cremation and oath-taking for new soldiers.",
+      "civilian_function": "Refuge for frontier families and miners.",
+      "controlling_factions": ["Sunbreaker War Doctrine", "Forgekeepers"],
+      "contested_by": ["Abyss raiders", "Ashen Martyrs (for doctrine of its garrison)"],
+      "key_npcs": ["Frontier flame-captain", "Forge-town master", "A grieving veteran turned martyr-preacher"],
+      "resources_present": ["Raw Sunstone", "Forward arms cache"],
+      "magic_systems_present": ["Sacrificial Pyromancy", "Sunstone Forgecraft (overcharge contested)"],
+      "known_secrets": ["Overcharge relics are field-tested here against Council ban"],
+      "location_state": {
+        "stability": 48,
+        "danger": 66,
+        "corruption": 38,
+        "morale": 50,
+        "resources": 55,
+        "secrecy": 42,
+        "military_pressure": 74,
+        "spiritual_health": 45
+      },
+      "keeper_attack_vector": "Bait the garrison into martyr charges that feed Abyss harvest engines.",
+      "void_symptoms": ["Heat without warmth after overcharge tests", "Ash-echoes of unburied raiders"],
+      "quest_hooks": ["Destroy an Abyss soul-harvest engine", "Decide whether to expose Cinderwatch's overcharge tests"]
+    }
+  ],
+
+  "culture": {
+    "domain": "Radiance",
+    "daily_life_summary": "Life is ordered by the forge bell and the Flame's hours; work is hard, honor is public, and grief is communal.",
+    "family_customs": "Households keep a hearth-ember from the Spire; oaths and trades pass parent to child.",
+    "love_and_marriage_customs": "Betrothals are sealed at a shared hearth; partners exchange a willingly given burn-scar as a vow of shared cost.",
+    "education_system": "Forge apprenticeship and seminary catechism; children learn the songs of the honored dead before letters.",
+    "work_and_apprenticeship": "Apprentices bind to a master for seven years; debt-binding is common and resented.",
+    "food_and_market_life": "Ash-baked bread, smoked frontier meats, and imported sap-teas; markets cluster around forge-squares.",
+    "festivals": ["Ashfall Remembrance", "The Kindling (new-year relighting)", "Phoenix Vigil"],
+    "funeral_or_death_customs": "Sacred cremation; the living take up an oath from the dead so renewal follows mourning.",
+    "public_honors": ["The Ember Mark for disciplined sacrifice", "Naming in the Vigil songs", "A hearth-ember from the Spire"],
+    "taboos": ["Claiming credit you did not pay for", "Forced rebirth", "Burning the salvageable"],
+    "common_sayings": ["The flame remembers what you gave, not what you claimed.", "A clean flame needs no audience.", "Ash is the fire's memory."],
+    "children_common_beliefs": ["The Flame can hear a lie", "An ember from home keeps bad dreams away", "Heroes are reborn in the morning sun"],
+    "class_differences": ["Sworn forbidden wealth; Forgekeepers rich but unhallowed", "Emberfolk praised in song, spent in policy"]
+  },
+
+  "religion": {
+    "domain": "Radiance",
+    "central_belief": "Willing sacrifice transforms loss into renewal, and the Eternal Flame remembers what is freely given.",
+    "sacred_symbols": ["The rising Phoenix", "The Ember Mark", "The eight-rayed Sun of the Flame"],
+    "major_rituals": ["Rite of Willing Embers", "Phoenix Vigil", "Ashfall Remembrance", "Sunstone consecration"],
+    "common_prayers_or_oaths": ["By what I give, not what I take.", "Let me be a clean flame.", "I carry your ember forward."],
+    "priestly_roles": ["Phoenix-Sworn", "Dawnfire Mystic", "Ashfall chaplain"],
+    "heresies": ["The Martyr's Creed (death as the highest rite)", "The Unlimited Flame (overcharge as devotion)"],
+    "sacred_taboos": ["Forcing rebirth", "Harvesting grief", "Counterfeiting flame legitimacy"],
+    "relationship_to_death": "Death is a passage to be kept clean; the dead are honored by oaths taken up, not by being spent again.",
+    "relationship_to_sacrifice": "Sacrifice is sacred only when willing, limited, and protective.",
+    "relationship_to_memory": "Memory is carried as inherited oaths; forgetting the cost is the true dishonor.",
+    "relationship_to_truth": "Hidden cost is the deepest lie; a clean flame is an honest one.",
+    "keeper_corruption_strategy": "Promote the Martyr's Creed and the Unlimited Flame heresies as truer devotion.",
+    "void_false_revelation_style": "A radiant vision promising that brighter burning is holier burning."
+  },
+
+  "faction_index": {
+    "domain": "Radiance",
+    "factions": [
+      { "name": "Ember Council", "short_doctrine": "Disciplined, limited sacrifice under flame legitimacy.", "class_base": "Phoenix-Sworn and senior clergy", "power_base": "Religious-political legitimacy and the Spire.", "main_rival": "Sunbreaker War Doctrine", "keeper_vulnerability": "Caution read as weakness amid existential war.", "player_use": "Patron for lawful, disciplined paths and overcharge bans." },
+      { "name": "Dawnfire Mystics", "short_doctrine": "Guardians of clean flame and soul-flow; police forbidden rites.", "class_base": "Mystics and seminary scholars", "power_base": "Magical authority and flame certification.", "main_rival": "Ashen Martyrs", "keeper_vulnerability": "Can be marginalized as scolds when crowds want miracles.", "player_use": "Allies for soul-flow healing and exposing overcharge corruption." },
+      { "name": "Sunbreaker War Doctrine", "short_doctrine": "Maximal output to win the existential war by any flame necessary.", "class_base": "Frontier officers and Forgekeeper patrons", "power_base": "Battlefield initiative and Kael's prestige.", "main_rival": "Ember Council", "keeper_vulnerability": "Glory-hunger and overcharge dependency.", "player_use": "Powerful but corrupting patron for aggressive paths." },
+      { "name": "Forgekeeper Guild", "short_doctrine": "Control Sunstone and arms; prosperity through sacred craft.", "class_base": "Forge masters and merchants", "power_base": "Economic control of Sunstone and weapons.", "main_rival": "Ember Council (over arms policy)", "keeper_vulnerability": "Profit motive that normalizes overcharge.", "player_use": "Source of arms, relics, and morally grey deals." },
+      { "name": "Ashen Martyrs", "short_doctrine": "Death freely sought is the purest devotion.", "class_base": "Grieving veterans and desperate Emberfolk", "power_base": "Zealot morale and street preaching.", "main_rival": "Dawnfire Mystics", "keeper_vulnerability": "Already half-corrupted by martyr addiction.", "player_use": "Fanatical edge faction; recruiter of the grieving; villain or tragic ally." },
+      { "name": "Radiant Guard", "short_doctrine": "Protect civilians and the Spire; the shield of Radiance.", "class_base": "Career soldiers and wardens", "power_base": "Security and policing authority.", "main_rival": "Abyss infiltrators", "keeper_vulnerability": "Can slide from protection into purge zealotry.", "player_use": "Law-and-order allies; gatekeepers of the Spire." }
+    ]
+  },
+
+  "npc_role_index": [
+    { "domain": "Radiance", "role_name": "Ruler or supreme authority", "purpose_in_world": "Embody disciplined flame legitimacy.", "purpose_in_gameplay": "Lawful patron and arbiter of doctrine.", "likely_factions": ["Ember Council"], "likely_conflicts": ["War policy vs Kael", "Hidden overcharge corruption"], "relationship_options": ["Mentor", "Reluctant ally", "Disappointed judge"], "death_impact": "Doctrinal crisis and a scramble over overcharge bans." },
+    { "domain": "Radiance", "role_name": "Spiritual authority", "purpose_in_world": "Keep the Flame clean and the soul-flow whole.", "purpose_in_gameplay": "Source of soul healing and forbidden-rite quests.", "likely_factions": ["Dawnfire Mystics"], "likely_conflicts": ["Crowds wanting miracles", "Ashen Martyr heresy"], "relationship_options": ["Guide", "Confessor", "Stern critic"], "death_impact": "Soul-flow safeguards weaken; heresy spreads." },
+    { "domain": "Radiance", "role_name": "Military commander", "purpose_in_world": "Win the existential frontier war.", "purpose_in_gameplay": "Charismatic, dangerous patron (Kael archetype).", "likely_factions": ["Sunbreaker War Doctrine"], "likely_conflicts": ["Overcharge bans", "Glory vs discipline"], "relationship_options": ["Rival", "Tempter", "Battlefield ally"], "death_impact": "Frontline morale collapses; martyr cults surge." },
+    { "domain": "Radiance", "role_name": "Magic expert", "purpose_in_world": "Master and certify flame rites.", "purpose_in_gameplay": "Teacher and overcharge-danger explainer.", "likely_factions": ["Dawnfire Mystics"], "likely_conflicts": ["Forgekeeper overcharge research"], "relationship_options": ["Tutor", "Skeptic"], "death_impact": "Overcharge spreads unchecked." },
+    { "domain": "Radiance", "role_name": "Trader/resource broker", "purpose_in_world": "Move Sunstone and arms.", "purpose_in_gameplay": "Deals, relics, and leverage.", "likely_factions": ["Forgekeeper Guild"], "likely_conflicts": ["Council arms policy", "Smuggling"], "relationship_options": ["Supplier", "Blackmailer", "Partner"], "death_impact": "Arms supply destabilizes; black market grows." },
+    { "domain": "Radiance", "role_name": "Healer", "purpose_in_world": "Tend the wounded against scarce sap.", "purpose_in_gameplay": "Moral counterweight to martyr doctrine.", "likely_factions": ["Ashfall chaplains", "Dawnfire Mystics"], "likely_conflicts": ["Wounded left exposed by spectacle doctrine"], "relationship_options": ["Romance", "Conscience", "Debtor"], "death_impact": "Healing capacity drops; resentment rises (see the Liora example)." },
+    { "domain": "Radiance", "role_name": "Young stakes character", "purpose_in_world": "Inherit Radiance's future.", "purpose_in_gameplay": "Emotional stakes; martyr-addiction risk.", "likely_factions": ["Ashen Martyrs (at risk)"], "likely_conflicts": ["Imitating dangerous rites"], "relationship_options": ["Ward", "Protege"], "death_impact": "A potent martyr song that fuels the heresy." },
+    { "domain": "Radiance", "role_name": "Villain or corruption vessel", "purpose_in_world": "Carry the Void/Keeper exploit into Radiance.", "purpose_in_gameplay": "Antagonist embodying overcharge or purge doctrine.", "likely_factions": ["Ashen Martyrs", "Sunbreaker zealots"], "likely_conflicts": ["Against Dawnfire Mystics and the player"], "relationship_options": ["Tragic foe", "Tempter", "Defector"], "death_impact": "May martyr into a rallying symbol if killed publicly." }
+  ],
+
+  "external_relations": [
+    {
+      "source_domain": "Radiance",
+      "target_domain": "Verdance",
+      "public_relationship": "tense",
+      "hidden_relationship": "Mutual dependency soured by fear of Radiance fire.",
+      "primary_conflict": "Radiance cleansing-fire used near groves without tree consent.",
+      "primary_dependency": "Radiance needs Verdance healing sap; Verdance needs Radiance to hold the Abyss line.",
+      "resource_leverage": "Verdance can embargo healing sap; Radiance can withhold frontier protection.",
+      "magic_tension": "Fire versus cycle: purification versus restoration.",
+      "military_tension": "Radiance burns corruption Verdance would rather cleanse slowly.",
+      "historical_wound": "A grove burned without consent during a past corruption scare.",
+      "possible_alliance_condition": "A shared Abyss soul-harvest threat on the border.",
+      "possible_break_condition": "A second non-consensual grove burning.",
+      "keeper_exploit": "Engineer a containment burn that creates medical scarcity and mistrust.",
+      "void_exploit": "Whisper to both that the other's method is desecration."
+    },
+    {
+      "source_domain": "Radiance",
+      "target_domain": "Sanctuary",
+      "public_relationship": "friendly",
+      "hidden_relationship": "Allies wary of each other's zeal.",
+      "primary_conflict": "Sanctuary fears Radiance purge overreach near refugees.",
+      "primary_dependency": "Joint anti-Abyss operations and market access.",
+      "resource_leverage": "Sanctuary controls Ember Road markets; Radiance provides flame-support.",
+      "magic_tension": "Radiance fire versus Sanctuary's accountable protection.",
+      "military_tension": "Coordination delayed when Radiance overcharges.",
+      "historical_wound": "A purge near a refugee shelter that Sanctuary never forgot.",
+      "possible_alliance_condition": "Coordinated soul-flow restoration treaty.",
+      "possible_break_condition": "Radiance flame harms civilians under Sanctuary protection.",
+      "keeper_exploit": "Use proof of Radiance overcharge to stall a joint operation.",
+      "void_exploit": "Frame Radiance restraint as cowardice to Sanctuary hardliners."
+    },
+    {
+      "source_domain": "Radiance",
+      "target_domain": "Tempest",
+      "public_relationship": "rival",
+      "hidden_relationship": "Pragmatic trade partners who distrust each other's values.",
+      "primary_conflict": "Radiance discipline versus Tempest's prized freedom.",
+      "primary_dependency": "Radiance needs Tempest sky-freight; Tempest wants Sunstone arms.",
+      "resource_leverage": "Tempest corsairs can blockade sky-lifts; Radiance can deny sacred arms.",
+      "magic_tension": "Oath-bound flame versus chosen-bond storm magic.",
+      "military_tension": "Tempest sees Radiance conscription as tyranny.",
+      "historical_wound": "A corsair crew burned for smuggling overcharge relics.",
+      "possible_alliance_condition": "Abyss anti-air towers threatening both.",
+      "possible_break_condition": "Radiance forcing service on a free Tempest crew.",
+      "keeper_exploit": "Turn a smuggling incident into a freedom-versus-order war.",
+      "void_exploit": "Sell both sides forbidden enhancements."
+    },
+    {
+      "source_domain": "Radiance",
+      "target_domain": "Abyss",
+      "public_relationship": "war",
+      "hidden_relationship": "Total existential enmity, yet Abyss quietly profits from Radiance martyrdom.",
+      "primary_conflict": "Abyss soul-harvest engines binding Radiance's honored dead.",
+      "primary_dependency": "None overt; Abyss feeds on Radiance's wasted heroes.",
+      "resource_leverage": "Abyss counterfeits and corrupts captured Sunstone relics.",
+      "magic_tension": "Clean sacrifice versus soul-binding harvest.",
+      "military_tension": "Active frontier war at Cinderwatch.",
+      "historical_wound": "Whole frontier cohorts harvested after a martyr charge.",
+      "possible_alliance_condition": "None; only temporary ceasefires under mutual catastrophe.",
+      "possible_break_condition": "Ceasefires always break when honored dead are desecrated.",
+      "keeper_exploit": "Bait martyr charges that feed the harvest engines.",
+      "void_exploit": "Promise Radiance heroes that overcharge can outburn the harvest."
+    }
+  ],
+
+  "internal_power_struggles": [
+    {
+      "domain": "Radiance",
+      "title": "The Overcharge Ban",
+      "factions_involved": ["Ember Council", "Dawnfire Mystics", "Sunbreaker War Doctrine", "Forgekeeper Guild"],
+      "issue": "Whether high-output overcharge relics may be fielded against the Abyss.",
+      "public_argument": "Kael: 'Discipline is a luxury the dying frontier cannot afford.' The Council: 'A Flame spent in spectacle cannot renew us.'",
+      "hidden_argument": "Forgekeepers profit from overcharge; the Council fears losing legitimacy to Kael's victories.",
+      "resources_at_stake": ["Sunstone allocation", "Frontier morale", "Domain Stone stability"],
+      "magic_systems_at_stake": ["Sunstone Forgecraft", "Sacrificial Pyromancy"],
+      "npc_flashpoints": ["Kael", "Mystic-Warden of the Flame", "A Forgekeeper patron"],
+      "possible_player_sides": ["Uphold the ban with the Mystics", "Back Kael's field exception", "Broker a limited, supervised compromise"],
+      "compromise_possible": true,
+      "keeper_best_outcome": "The ban collapses quietly and overcharge becomes doctrine.",
+      "void_best_outcome": "Overcharge spreads, deferring costs into the Flame.",
+      "peaceful_resolution": "Supervised, time-limited overcharge with Mystic oversight and public accounting.",
+      "violent_resolution": "A frontier mutiny fields banned relics and forces the Council's hand.",
+      "third_order_effect": "Young acolytes imitate overcharge rites; the renewal channel strains.",
+      "fifth_order_effect": "The Keeper gains as Radiance's sacrifice culture mutates toward spectacle and Void dependency."
+    }
+  ],
+
+  "rumor_ecology": {
+    "domain": "Radiance",
+    "common_spread_channels": ["War songs", "Forge taverns", "Temple sermons", "Battlefield survivor stories", "Honor duels", "Military proclamations"],
+    "trusted_sources": ["Decorated veterans", "Dawnfire Mystics", "Ashfall chaplains"],
+    "distrusted_sources": ["Forgekeeper publicists", "Corsair traders", "Anyone who fled a battle"],
+    "rumor_emotional_styles": ["Awe", "Grief", "Devotion", "Shame"],
+    "rumor_suppression_methods": ["Council proclamation", "Mystic certification of truth", "Honor-duel silencing"],
+    "rumor_weaponization_methods": ["Martyr-song propaganda", "Branding rivals as cowards", "Crediting victories to overcharge"],
+    "rumor_mutation_patterns": ["A disciplined retreat becomes a cowardly rout", "A costly victory becomes a flawless miracle", "A quiet healer becomes an unsung saint or a suspected soul-meddler"],
+    "factions_best_at_rumor_warfare": ["Sunbreaker War Doctrine", "Ashen Martyrs"]
+  },
+
+  "relationship_logic": {
+    "domain": "Radiance",
+    "trust_is_built_by": ["Bearing real cost for others", "Crediting the saved over oneself", "Honoring the dead truthfully"],
+    "trust_is_broken_by": ["Hiding the cost of an act", "Claiming credit unpaid for", "Spending lives for spectacle"],
+    "enemies_become_tolerable_when": ["They sacrifice for Radiance civilians at real cost", "They oppose Abyss soul-harvest"],
+    "allies_become_suspect_when": ["They mock flame legitimacy", "They conceal corruption", "They enable forced rebirth"],
+    "romance_conflicts": ["A healer lover opposing martyr doctrine the player follows", "A Forgekeeper lover profiting from banned overcharge"],
+    "betrayal_triggers": ["Desecrating the honored dead", "Forcing service on the unwilling", "Public humiliation of a Sworn"],
+    "forgiveness_conditions": ["Truthful confession of hidden cost", "Submitting to ritual review", "Bearing a renewing sacrifice"],
+    "permanent_enemy_conditions": ["Running a soul-harvest engine", "Repeatedly martyring Radiance youth", "Counterfeiting flame legitimacy for power"],
+    "if_then_because_examples": [
+      { "if": "A former enemy saves Radiance civilians at real personal cost", "then": "Radiance factions may downgrade them from declared enemy to tolerable rival", "because": "Radiance believes sacrifice reveals truth more deeply than origin or reputation." },
+      { "if": "A respected champion wins with Void-overcharged flame", "then": "Dawnfire Mystics' trust falls while crowd awe rises", "because": "Radiance honor depends on paid cost, and overcharge defers the cost into a hidden lie." },
+      { "if": "A leader hides the true cost of a victory", "then": "Their legitimacy erodes once exposed", "because": "Hidden cost is the deepest dishonor a clean flame can carry." },
+      { "if": "An ally enables an Abyss soul-harvest, even unwillingly", "then": "Radiance shifts them toward declared enemy", "because": "Binding the honored dead is the one violation Radiance cannot forgive." },
+      { "if": "A soldier retreats to save civilians", "then": "Honorable factions defend them against cowardice rumors", "because": "Retreat that preserves the living for renewal is honored, not shamed." },
+      { "if": "A grieving veteran begins preaching the Martyr's Creed", "then": "Dawnfire Mystics intervene and the player is asked to choose a side", "because": "Martyr addiction is a soul-flow wound the Mystics are sworn to heal." },
+      { "if": "The player publicly credits the saved instead of themselves", "then": "Radiance respect and trust rise", "because": "A clean flame needs no audience, and crediting others proves the cost was for them." },
+      { "if": "A Forgekeeper is exposed selling banned overcharge relics", "then": "Council suspicion of the whole guild rises", "because": "Profiting from deferred cost endangers the Flame all Radiance depends on." },
+      { "if": "A Tempest crew is forced into Radiance service during a crisis", "then": "Tempest relations sharply worsen even if lives are saved", "because": "Radiance forcing loyalty violates the very chosen-cost principle it claims to honor." },
+      { "if": "The player submits to ritual review after a forbidden act", "then": "Forgiveness becomes possible and a renewing path opens", "because": "Radiance forgives truthfully borne cost more readily than concealment." },
+      { "if": "A rival domain helps cleanse a Radiance ash-echo wound", "then": "A conditional alliance can form despite old grievances", "because": "Protecting clean death-passage is sacred enough to outweigh history." }
+    ]
+  },
+
+  "player_origin_rules": {
+    "domain": "Radiance",
+    "starting_bonuses": ["Minor sacrificial pyromancy", "Reputation for borne cost among Emberfolk", "A consecrated hearth-ember"],
+    "starting_burdens": ["An inherited oath burden", "Expectation to lead from the front", "Wary scrutiny from Dawnfire Mystics"],
+    "default_domain_resonance": { "Radiance": 65, "Verdance": 40, "Tempest": 35, "Sanctuary": 50, "Abyss": 10 },
+    "starting_faction_assumptions": ["Presumed loyal to the Ember Council", "Eyed by Sunbreaker recruiters", "Watched for forbidden rites"],
+    "common_npc_reactions": ["Respect if you bear cost openly", "Suspicion if you hide your methods", "Hope projected onto you by the young"],
+    "starting_rumors": ["'The Sworn-blooded newcomer who credits the saved'", "'Carries an oath too heavy for their years'"],
+    "starting_magic_access": ["Sacrificial Pyromancy (minor)", "Hearth and forge flame"],
+    "restricted_magic_access": ["Overcharge forgecraft (banned)", "Soul-binding (forbidden)"],
+    "unique_origin_questions": ["Whose oath did you inherit, and is it finished?", "Have you ever wanted to be martyred?", "Do you credit the saved, or the saving?"],
+    "possible_dark_secret_options": ["You once accepted a Void overcharge to win", "You let a healer die to keep a charge going", "You carry a counterfeit flame-mark"]
+  },
+
+  "cause_effect_examples": [
+    {
+      "root_event": "The player destroys an Abyss soul-harvest engine with Void-amplified Radiance flame.",
+      "domain_interpretation": "Radiance sees a heroic rescue achieved through corrupted amplification that bypassed sacrificial discipline.",
+      "faction_interpretation": "Ashen Martyrs praise it; Dawnfire Mystics are alarmed; Forgekeepers want the overcharge data.",
+      "immediate_result": "The engine is destroyed and captives survive.",
+      "first_order": "Captives saved; Radiance reputation +15; Abyss local control -10; player Void resonance +4.",
+      "second_order": "Young acolytes idolize the feat; Mystics open an inquiry into the flame's residue.",
+      "third_order": "Acolytes imitate dangerous flame rites; a rumor spreads that the Phoenix's old limits are obsolete.",
+      "fourth_order": "Kael's bloc pushes high-output relic doctrine; Sanctuary hesitates to accept Radiance flame support.",
+      "fifth_order": "The Keeper benefits as Radiance's sacrifice culture mutates toward spectacle, Void dependency, and interdomain mistrust.",
+      "keeper_gain": "+1 Keeper pressure now, +3 possible if overcharge doctrine is adopted.",
+      "void_gain": "A Void echo begins learning to wear the player's fire.",
+      "player_intervention_options": ["Publicly acknowledge the danger", "Submit the relic for purification", "Credit the captives, not the spectacle", "Help Mystics define safe limits", "Expose the Void residue before Forgekeepers replicate it"]
+    },
+    {
+      "root_event": "A field healer, Liora, dies holding the medical tent open during an ashfall the player's unit advanced through.",
+      "domain_interpretation": "Radiance honors her sacrifice but asks whether command spent the wounded like arrows.",
+      "faction_interpretation": "Ashfall chaplains mourn; a Sworn demands an inquiry; Sunbreaker officers call it the cost of victory.",
+      "immediate_result": "The wounded she shielded survive; the unit advances.",
+      "first_order": "Healing capacity drops; soldiers begin calling the player 'the one she trusted.'",
+      "second_order": "A forge-master refuses work for three days in grief; morale wavers.",
+      "third_order": "A rumor begins that command spent healers like arrows.",
+      "fourth_order": "An inquiry pressures the Council over frontier spectacle doctrine.",
+      "fifth_order": "If unaddressed, martyr-hunger rises among the grieving and the soul-flow wound spreads.",
+      "keeper_gain": "Grief curdles toward martyr addiction.",
+      "player_intervention_options": ["Demand an honest inquiry", "Take up Liora's oath publicly", "Fund a sap shipment to replace lost healing", "Protect her name from martyr-cult misuse"]
+    },
+    {
+      "root_event": "The player exposes Cinderwatch's secret overcharge relic tests, defying the Council ban.",
+      "domain_interpretation": "Radiance is split between honoring truth and fearing the blow to frontier morale.",
+      "faction_interpretation": "Dawnfire Mystics vindicated; Sunbreakers enraged; Forgekeepers scramble to bury evidence.",
+      "immediate_result": "The tests are documented and made public.",
+      "first_order": "Council suspicion of Forgekeepers +15; frontier morale -8.",
+      "second_order": "Kael's authority is dented; a Forgekeeper patron seeks leverage against the player.",
+      "third_order": "Banned relics are recalled, but a black market for them forms.",
+      "fourth_order": "The overcharge ban is reaffirmed with supervision, slowing frontier offensives.",
+      "fifth_order": "The Flame's renewal channel stabilizes slightly, denying the Keeper a quiet win.",
+      "keeper_gain": "Reduced — unless the morale drop triggers a desperate martyr offensive.",
+      "player_intervention_options": ["Offer a supervised compromise", "Shield whistleblowers from reprisal", "Help retune relics to safe output", "Negotiate morale support for the frontier"]
+    },
+    {
+      "root_event": "The player burns a corruption-touched grove on the Verdance border to stop a spreading rot.",
+      "domain_interpretation": "Radiance sees disciplined containment if the fire was controlled.",
+      "faction_interpretation": "Radiant Guard praises decisiveness; Dawnfire Mystics ask whether the fire was sacred or merely military; Verdance mourns.",
+      "immediate_result": "Corruption spread stops.",
+      "first_order": "Rot contained; Radiance frontier safety +6; Verdance grief and suspicion rise.",
+      "second_order": "Verdance restricts healing-sap exports to Radiance.",
+      "third_order": "Radiance wounded resent Verdance; Forgekeepers push artificial healing devices.",
+      "fourth_order": "Dawnfire Mystics warn of Stone strain from unsafe healing magic.",
+      "fifth_order": "The Keeper benefits from interdomain resentment, medical scarcity, and technological overreach.",
+      "keeper_gain": "Interdomain mistrust and Stone strain.",
+      "player_intervention_options": ["Seek tree consent or a Verdance witness first", "Cleanse residue after the burn", "Name the act emergency-only and apologize", "Broker a sap-for-protection accord"]
+    },
+    {
+      "root_event": "The player refuses a glorious last-stand martyr charge and orders an honorable withdrawal that saves a cohort.",
+      "domain_interpretation": "Radiance is divided: Mystics and renewalists approve; martyr-zealots cry cowardice.",
+      "faction_interpretation": "Dawnfire Mystics praise discipline; Ashen Martyrs brand the player a coward; the saved soldiers are loyal for life.",
+      "immediate_result": "The cohort survives; the position is lost.",
+      "first_order": "Cohort loyalty +20; Ashen Martyr hostility +12; a cowardice rumor begins.",
+      "second_order": "Honorable factions defend the player; the saved soldiers spread a counter-story.",
+      "third_order": "Martyr doctrine loses some ground among the young who see survivors lead.",
+      "fourth_order": "Frontier doctrine debate shifts toward preserving the living.",
+      "fifth_order": "The Keeper loses ground as renewal culture is publicly reaffirmed.",
+      "keeper_gain": "Reduced, unless the lost position causes a worse defeat later.",
+      "player_intervention_options": ["Publicly own the choice and its cost", "Counter the cowardice rumor with witnesses", "Honor those who wanted to charge without indulging the creed", "Retake the position later with a disciplined plan"]
+    }
+  ],
+
+  "open_questions": {
+    "metaphysical": ["Does Phoenix rebirth draw from the Eternal Flame, the Radiance Stone fragment, or accumulated oaths — or all three?", "Can a scarred renewal channel ever fully heal?"],
+    "political": ["Can the Ember Council survive Kael's prestige without either co-opting or purging him?", "Who certifies flame legitimacy if the Mystics and Council disagree?"],
+    "magic": ["What is the exact threshold where disciplined sacrifice becomes overcharge?", "Can overcharge relics be retuned to safe output, or are they inherently Void-tainted?"],
+    "faction": ["Are the Ashen Martyrs a heresy to be healed or an enemy to be fought?", "How deep is Forgekeeper influence over arms policy?"],
+    "npc": ["Is Kael a tragic patriot, a glory-addict, or a Void-tempted vessel — and can the player change which?", "Which grieving NPCs can be pulled back from martyr addiction?"],
+    "war_economy": ["How long can Radiance fight without Verdance healing sap?", "What happens to the economy if the eastern Sunstone mines fall?"],
+    "implementation": ["Should overcharge be modeled as a magic-system instability stat, a Void temptation event, or both?", "How is oath burden tracked across inherited oaths between characters?"]
+  },
+
+  "locked_decisions": [
+    "Radiance magic must always involve cost, discipline, sacrifice, or flame legitimacy.",
+    "Radiance corruption must never be generic darkness; it must distort sacrifice, renewal, honor, and sacred fire.",
+    "Radiance internal politics must respect the Phoenix / Kael / Forgekeeper / Mystic fracture.",
+    "Binding or harvesting the honored dead is the one violation Radiance cannot forgive.",
+    "Overcharge and Void-amplified flame must always defer a hidden cost into the Flame, oath burden, or soul-flow.",
+    "Honorable retreat that preserves the living for renewal is honored, not shamed."
+  ]
+}
