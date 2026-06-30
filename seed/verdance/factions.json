@@ -1,0 +1,248 @@
+[
+  {
+    "key": "heartmoot",
+    "name": "The Heartmoot / Rootmoot Elder Councils",
+    "domain": "Verdance",
+    "doctrine": "The cycle is kept by patient, communal listening. Authority flows from depth of communion. Decide slowly; revisit when the wheel turns. Contain wounds; do not act rashly.",
+    "idealFuture": "A continent governed by listening, where the cycle turns unbroken and slow forever and no wound ever spreads because none was ever rushed.",
+    "publicGoal": "Shepherd the cycle through the Thornveil crisis without haste or harm; listen until consensus emerges on the speaking well; contain the corruption.",
+    "hiddenGoal": "Never admit the cure was feared, not weighed. Keep the sealed-wells policy buried; let Thornveil follow the same seal-and-deny path; preserve the interpretive monopoly.",
+    "powerSources": {
+      "military": 28,
+      "economy": 45,
+      "magic": 66,
+      "religion": 82,
+      "intelligence": 64,
+      "legitimacy": 88,
+      "resources": 71,
+      "fear": 30
+    },
+    "methods": {
+      "diplomacy": 78,
+      "open_war": 8,
+      "sabotage": 20,
+      "propaganda": 62,
+      "assassination": 5,
+      "trade_pressure": 40,
+      "magical_escalation": 30
+    },
+    "playerStanding": {
+      "reputation": 55,
+      "trust": 38,
+      "fear": 12,
+      "respect": 58,
+      "suspicion": 30,
+      "debt": 5,
+      "leverage": 20
+    },
+    "keeperExploitVector": "Stagnation + elder tyranny: weaponize patience into paralysis (the cure is always 'next season'); use the interpretive monopoly to hide the sealed-wells mistake and reframe corruption as heritage, so the council defends its own wound by never admitting it. THE primary Keeper foothold in Verdance.",
+    "voidTemptationPhrase": "There is no rush. The cycle will resolve it. You have listened so long; trust the season. The voices are not trapped — they are ancestors. Seal the well gently and call it heritage. You are not abandoning the dead; you are keeping them.",
+    "currentStatus": "Paralyzed at the fourth indecisive Rootmoot; legitimacy strong but eroding; sealed-wells secret intact; leaning toward seal-and-deny for Thornveil.",
+    "leaderKeys": ["maera_rootveil"]
+  },
+  {
+    "key": "rootwardens",
+    "name": "The Rootwardens (Custodial Order of the Wells and the Wall)",
+    "domain": "Verdance",
+    "doctrine": "Corruption must be contained. Guard the wells, hold the thornwall, keep the wound from spreading. Better a wound walled than a cure that fails. Discipline over experiment.",
+    "idealFuture": "A Verdance where every well runs clean and the wall — and the Order — is no longer needed.",
+    "publicGoal": "Hold the eastern thornwall, contain the Thornveil rootwell, control rootwell access, keep the frightened populace safe behind a wall that does not move.",
+    "hiddenGoal": "Be allowed to stop — force the Heartmoot or the Sap Commons to provide a trusted cure or honestly admit the wells will never heal, so the Order knows whether it guards a sickbed or a grave.",
+    "powerSources": {
+      "military": 74,
+      "economy": 38,
+      "magic": 66,
+      "religion": 49,
+      "intelligence": 71,
+      "legitimacy": 63,
+      "resources": 58,
+      "fear": 44
+    },
+    "methods": {
+      "diplomacy": 40,
+      "open_war": 35,
+      "sabotage": 45,
+      "propaganda": 38,
+      "assassination": 30,
+      "trade_pressure": 33,
+      "magical_escalation": 55
+    },
+    "playerStanding": {
+      "reputation": 60,
+      "trust": 45,
+      "fear": 12,
+      "respect": 55,
+      "suspicion": 25,
+      "debt": 10,
+      "leverage": 20
+    },
+    "keeperExploitVector": "Containment-as-permanent-stasis sliding (via Heartmoot paralysis) into stagnation; then the corrupted-sap 'mercy-shortcut' offered to despairing wardens as a way to end the un-ending line.",
+    "voidTemptationPhrase": "You have held the line so long, and no cure is coming. The rot in the well would hold the wall tonight and spend no more of your comrades. It isn't weaponizing the cycle — it's finishing the wall. The fast way is the merciful way. You have earned the right to stop bleeding for a cure that isn't coming.",
+    "currentStatus": "Holding under strain — a disciplined, exhausted Order guarding an un-curing wound with no sanctioned end; honest at the top (Thalen) and quietly sliding at the expert core (Othren); one bad season from the corrupted-sap line, and one broken paralysis from hope.",
+    "leaderKeys": ["thalen_mossguard", "othren_deepbark"]
+  },
+  {
+    "key": "sap_commons",
+    "name": "The Sap Commons",
+    "domain": "Verdance",
+    "doctrine": "The network can be HEALED, not just held; the sacred-sap commons belongs to its cost-bearers, not its interpreters; restoration over containment; the dead released the true slow way, never used and never abandoned.",
+    "idealFuture": "A truly cured Thornveil well that proves all four wounded wells can be healed, not sealed, and a Verdance where the tenders who pay the cycle's cost have a voice and restoration is a continental practice again.",
+    "publicGoal": "Force a real restoration attempt on the Thornveil well; win the cost-bearers a seat at the Rootmoot; break the sap-rationing starving the Refuge.",
+    "hiddenGoal": "Prove the cure works so undeniably the Heartmoot can no longer hide behind 'the wells cannot be healed,' cracking the sealed-wells secret and forcing a continental Vigil; privately, find someone to keep Sylune patient enough to succeed.",
+    "powerSources": {
+      "military": 22,
+      "economy": 63,
+      "magic": 58,
+      "religion": 55,
+      "intelligence": 47,
+      "legitimacy": 66,
+      "resources": 49,
+      "fear": 18
+    },
+    "methods": {
+      "diplomacy": 58,
+      "open_war": 12,
+      "sabotage": 30,
+      "propaganda": 55,
+      "assassination": 4,
+      "trade_pressure": 60,
+      "magical_escalation": 38
+    },
+    "playerStanding": {
+      "reputation": 40,
+      "trust": 30,
+      "fear": 4,
+      "respect": 22,
+      "suspicion": 8,
+      "debt": 0,
+      "leverage": 12
+    },
+    "keeperExploitVector": "Impatience and forced healing — brand the reformers reckless, choke the cure's components, pile the dying at the rationing line, and let a cornered cell force a half-ready cure that SPREADS the corruption (or forces restoration on the unwilling), discrediting restoration itself so the sealed wells stay sealed.",
+    "voidTemptationPhrase": "Only you want them WELL. So why let them suffer the slow way? You have the cure — nearly. Close enough. Heal them now, ready or not — waiting one more season is not patience, it is just letting them die politely. A cure that comes too late is no cure at all.",
+    "currentStatus": "Rising reform movement at Thornveil, coherent and popular, petitioning the Rootmoot for a cure attempt; component-starved and pressure-loaded; one bottleneck away from forcing a catastrophe or — with the player's help — achieving a real cure.",
+    "leaderKeys": ["sylune_amberroot"]
+  },
+  {
+    "key": "hollow_pact",
+    "name": "The Hollow Pact",
+    "domain": "Verdance",
+    "doctrine": "If decay is part of the cycle, the cycle can be COMMANDED. The corrupted sap is power; the trapped voices are kin to be freed by being USED; the elders are cowards and the wardens are jailers. Survival and agency now, by any rot necessary.",
+    "idealFuture": "A Verdance that no longer abandons its dead or its desperate — that COMMANDS the cycle to defend the living and 'free' the trapped, with the Hollow Reach as its model. (Reality: a green civilization that harvests souls 'for good reasons' — a quieter Abyss.)",
+    "publicGoal": "Defend the abandoned borderlands against Abyss and free the trapped dead the elders walled away.",
+    "hiddenGoal": "Normalize weaponized rot until Verdance defends its own wound — and (unknown even to most members) serve, via the covert Abyss supply, the very harvest it claims to fight.",
+    "powerSources": {
+      "military": 58,
+      "economy": 31,
+      "magic": 64,
+      "religion": 47,
+      "intelligence": 55,
+      "legitimacy": 12,
+      "resources": 49,
+      "fear": 71
+    },
+    "methods": {
+      "diplomacy": 22,
+      "open_war": 41,
+      "sabotage": 64,
+      "propaganda": 58,
+      "assassination": 47,
+      "trade_pressure": 18,
+      "magical_escalation": 73
+    },
+    "playerStanding": {
+      "reputation": 8,
+      "trust": 5,
+      "fear": 0,
+      "respect": 10,
+      "suspicion": 35,
+      "debt": 0,
+      "leverage": 0
+    },
+    "keeperExploitVector": "The Pact IS the Keeper's Verdance exploit made flesh — Verdance harvesting souls 'for good reasons.' Every victory normalizes weaponized rot via virtue_inversion + soul_flow_disruption + death_passage_disruption; the Keeper advances by the Pact's SUCCESS, not its corruption.",
+    "voidTemptationPhrase": "If decay is part of the cycle, why not command it? You already tend the rot. You already hear the dead — the elders won't, the wardens only wall them up. Free them by using them. Save the living NOW, the fast way.",
+    "currentStatus": "Fringe but active at the Hollow Reach; courting the desperate; one tolerated victory from proof-of-concept; covertly supplied by the enemy it claims to fight.",
+    "leaderKeys": ["nymara_hollowbloom"]
+  },
+  {
+    "key": "seed_guild",
+    "name": "The Seed Guild",
+    "domain": "Verdance",
+    "doctrine": "Stability and continuity through the market. Keep the sap and seed flowing, the exports moving, the prices managed; a stable wound is better than a risky cure or a reckless purge. Protect the commons by professionalizing it.",
+    "idealFuture": "A Verdance where the rootwells are stable, perpetually-managed productive assets, the sacred-sap commons is a well-run private market, every domain (including Abyss, quietly) is a paying customer, and the Guild's stewardship is indispensable to all of them.",
+    "publicGoal": "Stabilize the Thornveil supply, keep the Refuge fed and exports moving, ration responsibly through the scarcity, and protect the world's healing-sap economy from a reckless cure or a panicked purge.",
+    "hiddenGoal": "Keep the corrupted asset productive rather than healed; entrench captured commons-stewardship into permanent private control of rationing; and protect the covert, profitable healing-sap pipeline to Abyss fronts.",
+    "powerSources": {
+      "military": 18,
+      "economy": 84,
+      "magic": 44,
+      "religion": 22,
+      "intelligence": 66,
+      "legitimacy": 52,
+      "resources": 80,
+      "fear": 48
+    },
+    "methods": {
+      "diplomacy": 62,
+      "open_war": 12,
+      "sabotage": 40,
+      "propaganda": 55,
+      "assassination": 22,
+      "trade_pressure": 86,
+      "magical_escalation": 24
+    },
+    "playerStanding": {
+      "reputation": 40,
+      "trust": 38,
+      "fear": 20,
+      "respect": 45,
+      "suspicion": 52,
+      "debt": 25,
+      "leverage": 30
+    },
+    "keeperExploitVector": "Resource Hoarding: the Guild stabilizes the wound rather than healing it — rationing, pricing, and stockpiling convert restoration into a market where the wounded are abandoned, the cure is delayed into permanence, seed-stock control opens onto eugenic biological control, and the Abyss pipeline funds the enemy. The Keeper need not act; the market does it.",
+    "voidTemptationPhrase": "You are not being heartless. You are being responsible. Someone has to keep the sap flowing and decide who gets it — let it be the steady hand, not the panic. Don't heal the well; you'd lose it. Don't burn it; you'd waste it. Manage it. Sell what you must to whom you must — the sap heals their captives too. Survival first. A wound you can live with is an income.",
+    "currentStatus": "Dominant in supply and rationing, brittle in legitimacy and faith; profiting from the scarcity it has no incentive to end; sitting on the campaign's loosest thread to Abyss. A useful-but-watched contact who has asked one too many questions.",
+    "leaderKeys": ["brom_valefern"]
+  },
+  {
+    "key": "greenwake_communion",
+    "name": "The Greenwake Communion",
+    "domain": "Verdance",
+    "doctrine": "The roots and the dead speak DIRECTLY to those who truly listen, not only through the elders' interpretation. Communion is the highest art; the trapped dead must be HEARD and released; the cycle is a relationship, not a doctrine. Release is never command.",
+    "idealFuture": "A Verdance where every grove keeps its own communion, the dead are heard and released cleanly, and no well is ever sealed-and-denied again — a domain that listens instead of interprets.",
+    "publicGoal": "To restore true communion to all of Verdance and to hear, name, and RELEASE the trapped dead at the speaking wells.",
+    "hiddenGoal": "Auralis's half-unadmitted goal: to free the Thornveil trapped whatever it takes — one merciful step from the heresy that they can be 'freed by being used.'",
+    "powerSources": {
+      "military": 8,
+      "economy": 22,
+      "magic": 88,
+      "religion": 82,
+      "intelligence": 64,
+      "legitimacy": 71,
+      "resources": 30,
+      "fear": 18
+    },
+    "methods": {
+      "diplomacy": 55,
+      "open_war": 5,
+      "sabotage": 12,
+      "propaganda": 60,
+      "assassination": 2,
+      "trade_pressure": 8,
+      "magical_escalation": 70
+    },
+    "playerStanding": {
+      "reputation": 60,
+      "trust": 52,
+      "fear": 8,
+      "respect": 58,
+      "suspicion": 14,
+      "debt": 30,
+      "leverage": 22
+    },
+    "keeperExploitVector": "Corrupt the Communion through COMPASSION, not cruelty: amplify the trapped's pleading, weaponize the contrast with the elders' paralysis, then offer release-by-use through the Void — collapsing 'release is never command' into 'release by command.' The Communion arrives at the Hollow Pact's theology by a kinder road and DEFENDS the wound out of love.",
+    "voidTemptationPhrase": "You can free them now. You of all people know the dead are still here — you HEAR them. So use them. Free them by using them. Command the cycle and end their pain. Or will you make them wait, the slow true way, while they scream?",
+    "currentStatus": "Beloved and rising; the player's indispensable guide to the well; spiritual conscience of Verdance against the elders' monopoly — and quietly, dangerously, beginning to bear the trapped's pleading alone. Still clean, but the fuse is lit.",
+    "leaderKeys": ["auralis_greenwake"]
+  }
+]

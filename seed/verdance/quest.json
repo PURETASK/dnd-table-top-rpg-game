@@ -1,0 +1,51 @@
+{
+  "title": "The Sap Beneath the Ash",
+  "description": "The great rootwell at Thornveil Refuge has been corrupted and has begun speaking names, first of the dead held in its roots, then of the living. The Refuge's Rootmoot is deadlocked while four great factions disagree, violently, about whether to silence the well, heal it, feed it, or sell it. Beneath the public mystery runs a hidden truth: the corruption is an Abyss soul-harvest incision, the trapped voices are caught souls and not ancestors, and the Heartmoot has quietly sealed and abandoned three prior wells. The player must discover why the well speaks and decide the fate of the trapped dead, the Refuge, and the wounded soul-flow chokepoint.",
+  "status": "active",
+  "domain": "Verdance",
+  "locationKeys": ["thornveil_refuge", "thornveil_rootwell", "eastern_thornwall", "hollow_reach"],
+  "factionKeys": ["heartmoot", "rootwardens", "sap_commons", "hollow_pact", "seed_guild", "greenwake_communion"],
+  "npcKeys": [
+    "maera_rootveil",
+    "auralis_greenwake",
+    "thalen_mossguard",
+    "othren_deepbark",
+    "sylune_amberroot",
+    "brom_valefern",
+    "venn_briarhook",
+    "ilyra_thornsong",
+    "rook_thornlittle",
+    "nymara_hollowbloom"
+  ],
+  "knownObjectives": [
+    "Discover why the Thornveil rootwell speaks names (the central mystery)",
+    "Navigate the deadlocked Rootmoot and the four-faction fork over the well's fate",
+    "Decide the fate of the trapped dead: release, hold, or use",
+    "Stabilize the Refuge before scarcity turns it against its own refugees"
+  ],
+  "hiddenObjectives": [
+    "Trace the corruption to its Abyss soul-harvest incision at the border",
+    "Uncover the Heartmoot's sealed-and-abandoned rootwells secret",
+    "Stop Nymara's soul-sap brewing, or join it",
+    "Halt Othren Deepbark's slide into corrupted-sap containment",
+    "Discover a living name the well speaks, and what it means (possibly the PC's own)"
+  ],
+  "completedObjectives": [],
+  "failedObjectives": [],
+  "possibleResolutions": [
+    "contain",
+    "heal",
+    "weaponize",
+    "stabilize",
+    "expose-the-cause"
+  ],
+  "moralCost": "Every resolution exacts a price: containment abandons the trapped dead to a permanent trap; healing is slow while people die now; weaponizing trades the Refuge's soul for power against the Abyss; stabilizing the well as an asset normalizes the wound as heritage; exposing the cause risks shattering the Heartmoot's legitimacy and the order that holds the frontier.",
+  "factionWinners": [],
+  "factionLosers": [],
+  "futureHooks": [
+    "Whichever resolution is chosen reshapes which corrupted virtue ascends across Verdance",
+    "A continental Heartroot Vigil or Naming-Back could release trapped dead at scale, or fail catastrophically",
+    "Radiance may offer to burn the well, severing the passage as badly as the corruption did",
+    "The Abyss frontier escalates wherever Verdance's paralysis is exploited"
+  ]
+}

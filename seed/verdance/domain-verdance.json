@@ -1,0 +1,37 @@
+{
+  "domain": "Verdance",
+  "domainStoneStability": 58,
+  "soulFlowIntegrity": 44,
+  "keeperPressure": 47,
+  "voidParasitism": 38,
+  "politicalStability": 41,
+  "militaryStrength": 56,
+  "economicStrength": 52,
+  "magicalStrength": 64,
+  "civilianMorale": 39,
+  "resourceSecurity": 45,
+  "intelligenceStrength": 61,
+  "trueVirtues": {
+    "cycles": 66,
+    "restoration": 58,
+    "communion": 62,
+    "living systems": 64,
+    "patience": 71,
+    "healing": 67,
+    "ecological memory": 69
+  },
+  "corruptedVirtues": {
+    "stagnation": 52,
+    "elder tyranny": 41,
+    "forced healing": 28,
+    "biological control": 22,
+    "resource hoarding": 46,
+    "weaponized rot": 37,
+    "fatalism": 39
+  },
+  "virtueCrisis": "Patience has become stagnation around the speaking well; cycle-faith is splitting between fatalist abandonment and the Hollow Pact's weaponized-rot heresy.",
+  "keeperExploit": "If decay is natural, corrupted growth is still Verdance — wait long enough and the trapped become 'ancestors.'",
+  "currentStrategy": "Hold the thornwall and contain the Thornveil well while the Rootmoot deliberates.",
+  "immediatePriority": "Prevent the well's corruption from spreading and decide its fate before the Abyss frontier exploits the paralysis.",
+  "longTermPriority": "Restore the wounded chokepoint(s) and the Refuge's integrity without sliding into stagnation, hoarding, or weaponized rot."
+}
