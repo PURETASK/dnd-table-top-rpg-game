@@ -1,0 +1,556 @@
+// Realm of Nexus / VERDAX — MVP schema (minimum tracking set)
+// Mirrors docs/05-systems/database-schema.md. See that doc for rationale.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ───────────────────────────── Enums ─────────────────────────────
+enum CampaignMode {
+  solo_ai
+  dm_guided
+  admin_war_room
+  hybrid
+}
+
+enum CampaignPhase {
+  origin
+  local_crisis
+  regional_pressure
+  domain_war
+  cross_domain_escalation
+  keeper_revelation
+  final_convergence
+}
+
+enum Difficulty {
+  story
+  balanced
+  harsh
+  mythic
+}
+
+enum Visibility {
+  hidden
+  hinted
+  rumored
+  partial
+  confirmed
+  mythic_truth
+}
+
+enum Domain {
+  Radiance
+  Verdance
+  Tempest
+  Sanctuary
+  Abyss
+}
+
+enum NpcStatus {
+  alive
+  wounded
+  missing
+  captured
+  dead
+  undead
+  transformed
+}
+
+enum RelationshipStatus {
+  devoted_ally
+  trusted_ally
+  conditional_ally
+  uneasy_partner
+  tolerable_rival
+  neutral
+  suspicious_contact
+  active_rival
+  declared_enemy
+  blood_enemy
+  existential_enemy
+}
+
+enum QuestStatus {
+  unknown
+  available
+  active
+  completed
+  failed
+  mutated
+  locked
+  abandoned
+}
+
+enum RumorStatus {
+  emerging
+  spreading
+  weaponized
+  contested
+  suppressed
+  proven
+  mutated
+  dead
+}
+
+enum ClockType {
+  threat
+  opportunity
+  corruption
+  war_escalation
+  rumor_spread
+  npc_agenda
+  faction_agenda
+  keeper_pressure
+  void_parasitism
+  resource_shortage
+}
+
+enum ChainStatus {
+  active
+  resolved
+  mutated
+  dormant
+  failed
+}
+
+enum Permanence {
+  minor
+  moderate
+  major
+  mythic
+}
+
+// ─────────────────────────── Core container ───────────────────────────
+model Campaign {
+  id                String         @id @default(cuid())
+  title             String
+  mode              CampaignMode   @default(solo_ai)
+  startingDomain    Domain
+  currentRegionId   String?
+  phase             CampaignPhase  @default(origin)
+  difficulty        Difficulty     @default(balanced)
+  toneTags          String[]
+  activeDomainFocus String[]
+  currentMainArc    String?
+  metaphysics       Json
+  worldFlags        Json           @default("{}")
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+
+  characters    Character[]
+  domains       DomainState[]
+  factions      Faction[]
+  npcs          Npc[]
+  locations     Location[]
+  quests        Quest[]
+  rumors        Rumor[]
+  relationships Relationship[]
+  clocks        PressureClock[]
+  chains        ConsequenceChain[]
+  events        WorldEvent[]
+  turns         TurnLog[]
+
+  @@index([phase])
+}
+
+// ─────────────────────────── Player character ───────────────────────────
+model Character {
+  id                String   @id @default(cuid())
+  campaignId        String
+  campaign          Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  name              String
+  ancestry          String
+  className         String
+  originDomain      Domain
+  background        String?
+  level             Int      @default(1)
+  xp                Int      @default(0)
+  hp                Int
+  maxHp             Int
+  mana              Int
+  maxMana           Int
+  stamina           Int
+  maxStamina        Int
+  gold              Int      @default(0)
+  stats             Json
+  conditions        String[]
+  wounds            String[]
+  inventory         Json     @default("[]")
+  domainResonance   Json
+  corruption        Int      @default(0)
+  voidResonance     Int      @default(0)
+  soulIntegrity     Int      @default(100)
+  identityIntegrity Int      @default(100)
+  oathBurden        Int      @default(0)
+  memoryStability   Int      @default(100)
+  playerPatterns    Json     @default("{}")
+  publicReputation  String?
+  hiddenReputation  String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([campaignId])
+}
+
+// ─────────────────────────── Domain state ───────────────────────────
+model DomainState {
+  id                   String   @id @default(cuid())
+  campaignId           String
+  campaign             Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  domain               Domain
+  domainStoneStability Int      @default(70)
+  soulFlowIntegrity    Int      @default(70)
+  keeperPressure       Int      @default(0)
+  voidParasitism       Int      @default(0)
+  politicalStability   Int      @default(60)
+  militaryStrength     Int      @default(50)
+  economicStrength     Int      @default(50)
+  magicalStrength      Int      @default(50)
+  civilianMorale       Int      @default(60)
+  resourceSecurity     Int      @default(50)
+  intelligenceStrength Int      @default(50)
+  trueVirtues          Json
+  corruptedVirtues     Json
+  virtueCrisis         String?
+  keeperExploit        String?
+  currentStrategy      String?
+  immediatePriority    String?
+  longTermPriority     String?
+  updatedAt            DateTime @updatedAt
+
+  @@unique([campaignId, domain])
+  @@index([campaignId])
+}
+
+// ─────────────────────────── Factions ───────────────────────────
+model Faction {
+  id                   String          @id @default(cuid())
+  campaignId           String
+  campaign             Campaign        @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  name                 String
+  domain               Domain
+  doctrine             String
+  idealFuture          String?
+  publicGoal           String?
+  hiddenGoal           String?
+  classBase            Json            @default("{}")
+  powerSources         Json
+  resourcesControlled  String[]
+  locationsControlled  String[]
+  magicAccess          String[]
+  internalRivals       String[]
+  externalEnemies      String[]
+  possibleAllies       String[]
+  secretAlliances      String[]
+  methods              Json
+  playerStanding       Json
+  keeperExploitVector  String?
+  voidTemptationPhrase String?
+  currentStatus        String?
+  leaderNpcs           Npc[]           @relation("FactionLeaders")
+  members              Npc[]           @relation("FactionMembers")
+  clocks               PressureClock[]
+  updatedAt            DateTime        @updatedAt
+
+  @@index([campaignId, domain])
+}
+
+// ─────────────────────────── NPCs + memory ───────────────────────────
+model Npc {
+  id                   String             @id @default(cuid())
+  campaignId           String
+  campaign             Campaign           @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  name                 String
+  domain               Domain
+  publicRole           String
+  privateRole          String?
+  locationId           String?
+  location             Location?          @relation(fields: [locationId], references: [id])
+  beliefCore           String
+  desire               String
+  fear                 String
+  secret               String?
+  publicMask           String?
+  privateTruth         String?
+  hp                   Int                @default(10)
+  status               NpcStatus          @default(alive)
+  trust                Int                @default(0)
+  fearLevel            Int                @default(0)
+  affection            Int                @default(0)
+  suspicion            Int                @default(0)
+  respect              Int                @default(0)
+  debt                 Int                @default(0)
+  resentment           Int                @default(0)
+  loyalty              Int                @default(0)
+  relationshipToPlayer RelationshipStatus @default(neutral)
+  canRomance           Boolean            @default(false)
+  canBetray            Boolean            @default(true)
+  canDie               Boolean            @default(true)
+  canDefect            Boolean            @default(false)
+  rumorStyle           String?
+  lieStyle             String?
+  loyaltyTrigger       String?
+  betrayalTrigger      String?
+  deathConsequence     String?
+  heroArc              String?
+  villainArc           String?
+  visibility           Visibility         @default(confirmed)
+  leaderOfFactions     Faction[]          @relation("FactionLeaders")
+  factions             Faction[]          @relation("FactionMembers")
+  memories             NpcMemory[]
+  updatedAt            DateTime           @updatedAt
+
+  @@index([campaignId, domain])
+  @@index([locationId])
+}
+
+model NpcMemory {
+  id                        String     @id @default(cuid())
+  npcId                     String
+  npc                       Npc        @relation(fields: [npcId], references: [id], onDelete: Cascade)
+  sourceEventId             String?
+  factualMemory             String
+  emotionalInterpretation   String?
+  ideologicalInterpretation String?
+  trustDelta                Int        @default(0)
+  fearDelta                 Int        @default(0)
+  affectionDelta            Int        @default(0)
+  suspicionDelta            Int        @default(0)
+  respectDelta              Int        @default(0)
+  resentmentDelta           Int        @default(0)
+  debtDelta                 Int        @default(0)
+  memoryStrength            Int        @default(50)
+  accuracy                  Int        @default(100)
+  canBeDistorted            Boolean    @default(true)
+  canBeErased               Boolean    @default(false)
+  visibility                Visibility @default(hidden)
+  createdAt                 DateTime   @default(now())
+
+  @@index([npcId])
+}
+
+// ─────────────────────── Relationships + toleration ───────────────────────
+model Relationship {
+  id                  String             @id @default(cuid())
+  campaignId          String
+  campaign            Campaign           @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  sourceType          String
+  sourceId            String
+  targetType          String
+  targetId            String
+  status              RelationshipStatus @default(neutral)
+  previousStatus      RelationshipStatus?
+  trust               Int                @default(0)
+  fear                Int                @default(0)
+  respect             Int                @default(0)
+  resentment          Int                @default(0)
+  dependency          Int                @default(0)
+  ideologicalDistance Int                @default(0)
+  sharedThreat        Int                @default(0)
+  sharedInterest      Int                @default(0)
+  leverage            Int                @default(0)
+  debt                Int                @default(0)
+  affection           Int?
+  currentReason       String?
+  breakingPoint       String?
+  improvementPath     String?
+  toleration          Json?
+  updatedAt           DateTime           @updatedAt
+
+  @@unique([campaignId, sourceType, sourceId, targetType, targetId])
+  @@index([campaignId])
+}
+
+// ─────────────────────────── Locations ───────────────────────────
+model Location {
+  id                   String   @id @default(cuid())
+  campaignId           String
+  campaign             Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  name                 String
+  domain               Domain
+  locationType         String
+  controllingFactionId String?
+  contestedBy          String[]
+  stability            Int      @default(60)
+  danger               Int      @default(20)
+  corruption           Int      @default(0)
+  morale               Int      @default(60)
+  resources            Int      @default(50)
+  secrecy              Int      @default(50)
+  militaryPressure     Int      @default(20)
+  spiritualHealth      Int      @default(60)
+  economicHealth       Int      @default(50)
+  rumorActivity        Int      @default(0)
+  knownSecrets         String[]
+  hiddenSecrets        String[]
+  currentMood          String?
+  visualStateTags      String[]
+  npcs                 Npc[]
+  updatedAt            DateTime @updatedAt
+
+  @@index([campaignId, domain])
+}
+
+// ─────────────────────────── Quests ───────────────────────────
+model Quest {
+  id                  String      @id @default(cuid())
+  campaignId          String
+  campaign            Campaign    @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  title               String
+  description         String
+  status              QuestStatus @default(available)
+  domain              Domain
+  locationIds         String[]
+  factionIds          String[]
+  npcIds              String[]
+  knownObjectives     String[]
+  hiddenObjectives    String[]
+  completedObjectives String[]
+  failedObjectives    String[]
+  possibleResolutions String[]
+  chosenResolution    String?
+  moralCost           String?
+  factionWinners      String[]
+  factionLosers       String[]
+  futureHooks         String[]
+  updatedAt           DateTime    @updatedAt
+
+  @@index([campaignId, status])
+}
+
+// ─────────────────────────── Rumors ───────────────────────────
+model Rumor {
+  id                 String      @id @default(cuid())
+  campaignId         String
+  campaign           Campaign    @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  title              String
+  originalTruth      String
+  currentClaim       String
+  originEventId      String?
+  source             Json
+  accuracy           Int         @default(50)
+  distortionLevel    Int         @default(0)
+  emotionalPayload   String
+  contentLayers      Json
+  spread             Json
+  audienceReactions  Json        @default("[]")
+  beneficiaries      String[]
+  harmedParties      String[]
+  status             RumorStatus @default(emerging)
+  consequenceChainId String?
+  visibility         Visibility  @default(rumored)
+  updatedAt          DateTime    @updatedAt
+
+  @@index([campaignId, status])
+}
+
+// ─────────────────────────── Pressure clocks ───────────────────────────
+model PressureClock {
+  id                 String     @id @default(cuid())
+  campaignId         String
+  campaign           Campaign   @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  name               String
+  description        String?
+  clockType          ClockType
+  currentValue       Int        @default(0)
+  maxValue           Int
+  ownerType          String?
+  ownerId            String?
+  factionId          String?
+  faction            Faction?   @relation(fields: [factionId], references: [id])
+  triggerEvent       String?
+  partialTickEffects String[]
+  completedEffect    String?
+  reversalMethods    String[]
+  isActive           Boolean    @default(true)
+  visibility         Visibility @default(hinted)
+  updatedAt          DateTime   @updatedAt
+
+  @@index([campaignId, isActive])
+}
+
+// ─────────────────────────── Consequence chains ───────────────────────────
+model ConsequenceChain {
+  id                String      @id @default(cuid())
+  campaignId        String
+  campaign          Campaign    @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  title             String
+  rootEventId       String?
+  rootMoralQuestion String?
+  rootDomainLogic   String?
+  currentDepth      Int         @default(1)
+  maxDepth          Int         @default(3)
+  nodes             Json
+  domainsTouched    String[]
+  factionsTouched   String[]
+  npcsTouched       String[]
+  keeperGain        Int         @default(0)
+  voidGain          Int         @default(0)
+  soulFlowDamage    Int         @default(0)
+  status            ChainStatus @default(active)
+  visibility        Visibility  @default(hidden)
+  updatedAt         DateTime    @updatedAt
+
+  @@index([campaignId, status])
+}
+
+// ─────────────────────── World events (memory backbone) ───────────────────────
+model WorldEvent {
+  id                   String     @id @default(cuid())
+  campaignId           String
+  campaign             Campaign   @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  turnId               String?
+  eventType            String
+  eventTitle           String
+  factualSummary       String
+  publicInterpretation String?
+  hiddenInterpretation String?
+  actorIds             String[]
+  targetIds            String[]
+  witnessIds           String[]
+  witnessFactionIds    String[]
+  locationId           String?
+  domainContext        String?
+  virtuesInvoked       String[]
+  virtuesDistorted     String[]
+  magicUsed            String?
+  voidInvolved         Boolean    @default(false)
+  keeperAdvantageDelta Int        @default(0)
+  soulFlowDelta        Int        @default(0)
+  immediateEffects     Json       @default("{}")
+  consequenceChainIds  String[]
+  rumorIdsCreated      String[]
+  permanence           Permanence @default(minor)
+  visibility           Visibility @default(confirmed)
+  createdAt            DateTime   @default(now())
+
+  @@index([campaignId, createdAt])
+}
+
+// ─────────────────────────── Turn log ───────────────────────────
+model TurnLog {
+  id                  String   @id @default(cuid())
+  campaignId          String
+  campaign            Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  characterId         String
+  turnNumber          Int
+  playerInput         String
+  verdaxNarrative     String
+  choicesPresented    String[]
+  skillCheck          Json?
+  decisionAnalysis    Json
+  consequences        Json
+  worldEventIds       String[]
+  updatedStateSummary String?
+  memorySummary       String?
+  createdAt           DateTime @default(now())
+
+  @@unique([campaignId, turnNumber])
+  @@index([campaignId, createdAt])
+}

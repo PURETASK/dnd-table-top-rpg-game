@@ -1,0 +1,27 @@
+{
+  "title": "The Sap Beneath the Ash",
+  "mode": "solo_ai",
+  "startingDomain": "Verdance",
+  "phase": "local_crisis",
+  "difficulty": "balanced",
+  "toneTags": [
+    "slow-burn",
+    "mythic-undertone",
+    "moral-ambiguity",
+    "grief-and-memory",
+    "ecological-horror",
+    "consequence-driven",
+    "the-quiet-rot"
+  ],
+  "activeDomainFocus": ["Verdance"],
+  "currentMainArc": "The corrupted rootwell at Thornveil Refuge has begun speaking names of the dead, and then the living. Verdance's four great factions deadlock over whether to silence, heal, feed, or sell the wound while the Abyss frontier exploits the paralysis. The player must uncover why the well speaks and decide the fate of the trapped dead and the Refuge that shelters them.",
+  "metaphysics": {
+    "keeper_prison_pressure": 22,
+    "global_soul_flow_integrity": 71,
+    "global_void_parasitism": 18,
+    "global_reality_stability": 74,
+    "architect_sacrifice_integrity": 88,
+    "nexus_resonance_balance": 62
+  },
+  "worldFlags": {}
+}

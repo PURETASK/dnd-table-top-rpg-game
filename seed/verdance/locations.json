@@ -1,0 +1,140 @@
+[
+  {
+    "key": "thornveil_refuge",
+    "name": "Thornveil Refuge",
+    "domain": "Verdance",
+    "locationType": "Border refuge-town and rootwell sanctuary",
+    "controllingFactionKey": "rootwardens",
+    "contestedBy": ["sap_commons", "hollow_pact", "seed_guild", "greenwake_communion"],
+    "stability": 38,
+    "danger": 66,
+    "corruption": 40,
+    "morale": 34,
+    "resources": 41,
+    "secrecy": 58,
+    "militaryPressure": 62,
+    "spiritualHealth": 29,
+    "economicHealth": 47,
+    "rumorActivity": 64,
+    "knownSecrets": [
+      "The rootwell is corrupted (publicly known)",
+      "It speaks names (publicly known, feared)"
+    ],
+    "hiddenSecrets": [
+      "The corruption is an Abyss soul-harvest incision, not a natural blight",
+      "The Heartmoot has sealed three prior rootwells and is leaning toward sealing this one too, abandoning its trapped dead",
+      "Othren Deepbark has been quietly using mild corrupted-sap containment tricks for a season",
+      "Nymara's Hollow Pact cell is brewing soul-sap from the well's trapped voices",
+      "Some of the living names the well now speaks belong to people not yet dead, including possibly a PC"
+    ],
+    "currentMood": "Deadlocked, fearful, and scarcity-stricken; a healing town that can no longer heal its own well.",
+    "visualStateTags": [
+      "living-thornwall",
+      "grown-town",
+      "refugee-camp-swelling",
+      "creeping-soil-corruption",
+      "dwindling-sap-stores",
+      "communion-bowl-hall"
+    ]
+  },
+  {
+    "key": "thornveil_rootwell",
+    "name": "The Speaking Well of Thornveil",
+    "domain": "Verdance",
+    "locationType": "Corrupted great rootwell and soul-flow passage point (now a soul-trap)",
+    "controllingFactionKey": "rootwardens",
+    "contestedBy": ["greenwake_communion", "hollow_pact", "heartmoot", "sap_commons"],
+    "stability": 31,
+    "danger": 72,
+    "corruption": 70,
+    "morale": 22,
+    "resources": 38,
+    "secrecy": 55,
+    "militaryPressure": 40,
+    "spiritualHealth": 18,
+    "economicHealth": 30,
+    "rumorActivity": 71,
+    "knownSecrets": [
+      "The well speaks names of the dead, and lately the living",
+      "Passage Tending at the well is failing; the dead do not settle"
+    ],
+    "hiddenSecrets": [
+      "The well is an Abyss soul-harvest incision into Verdant soul flow",
+      "It traps souls and names rather than releasing them; the voices are the trapped, not ancestors",
+      "Corrupted sap drawn from the well is unusually potent and carries the trapped voices as power",
+      "Some living names spoken belong to people not yet dead"
+    ],
+    "currentMood": "A wound that talks; reverent dread shading into temptation.",
+    "visualStateTags": [
+      "corrupted-rootwell",
+      "leaking-voices",
+      "soil-corruption-spreading",
+      "potent-corrupted-sap",
+      "failing-passage-rites"
+    ]
+  },
+  {
+    "key": "eastern_thornwall",
+    "name": "The Eastern Thornwall",
+    "domain": "Verdance",
+    "locationType": "Living fortification line and contested Abyss-frontier borderland",
+    "controllingFactionKey": "rootwardens",
+    "contestedBy": ["hollow_pact", "seed_guild"],
+    "stability": 47,
+    "danger": 71,
+    "corruption": 52,
+    "morale": 43,
+    "resources": 49,
+    "secrecy": 51,
+    "militaryPressure": 78,
+    "spiritualHealth": 33,
+    "economicHealth": 46,
+    "rumorActivity": 48,
+    "knownSecrets": ["The wall holds the Abyss frontier"],
+    "hiddenSecrets": [
+      "Abyss is deliberately targeting rootwells, not territory",
+      "Some sections are already quietly defended with corrupted-sap traps",
+      "Defectors cross both ways"
+    ],
+    "currentMood": "Grinding attrition; the line holds while the soil behind it dies a little more each season.",
+    "visualStateTags": [
+      "kilometers-deep-thornwall",
+      "spore-and-snare-killzones",
+      "poisoned-no-mans-land",
+      "trap-residue-blight",
+      "graveyard-frontier"
+    ]
+  },
+  {
+    "key": "hollow_reach",
+    "name": "The Hollow Reach",
+    "domain": "Verdance",
+    "locationType": "Corrupted-grove badlands and Hollow Pact sanctuary (fringe)",
+    "controllingFactionKey": "hollow_pact",
+    "contestedBy": ["rootwardens"],
+    "stability": 44,
+    "danger": 74,
+    "corruption": 88,
+    "morale": 57,
+    "resources": 53,
+    "secrecy": 66,
+    "militaryPressure": 45,
+    "spiritualHealth": 9,
+    "economicHealth": 51,
+    "rumorActivity": 38,
+    "knownSecrets": ["The Hollow Pact weaponizes corrupted sap"],
+    "hiddenSecrets": [
+      "Abyss quietly supplies and studies them",
+      "Some Hollow Pact 'oracles' are NPCs' or PCs' trapped dead",
+      "Nymara genuinely believes she is freeing the dead by using them"
+    ],
+    "currentMood": "Lush, powerful, and dead inside; zealous communion with the trapped.",
+    "visualStateTags": [
+      "corrupted-groves",
+      "unnatural-vigor",
+      "soul-sap-stores",
+      "blight-trap-stockpiles",
+      "soil-that-screams"
+    ]
+  }
+]

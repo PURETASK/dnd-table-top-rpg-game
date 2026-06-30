@@ -1,0 +1,98 @@
+[
+  {
+    "key": "rootwell_awakening",
+    "name": "Rootwell Awakening",
+    "description": "The Thornveil rootwell's corruption deepens toward permanence: each indecisive Rootmoot and each use of its voices brings it closer to stabilizing as a permanent soul-trap, its trapped dead redefined as 'ancestors.'",
+    "clockType": "corruption",
+    "currentValue": 3,
+    "maxValue": 6,
+    "ownerType": "location",
+    "ownerKey": "thornveil_rootwell",
+    "triggerEvent": "Each Rootmoot that ends without a decision; each use of the well's voices; each season the Abyss incision is left unaddressed.",
+    "partialTickEffects": [
+      "More names spoken, including the living",
+      "Soil corruption spreads inward from the well",
+      "Passage rites fail further; the dead do not settle"
+    ],
+    "completedEffect": "The trap stabilizes as permanent infrastructure; the trapped become 'ancestors'; the soul-flow chokepoint locks and backs up passage for multiple domains; keeper_pressure jumps.",
+    "reversalMethods": [
+      "Cleansing-communion plus Passage-completion (hear via Auralis, Name-Back, release)",
+      "Heartroot cuttings replant (requires Heartmoot release)",
+      "Address the Abyss incision at the source"
+    ],
+    "isActive": true,
+    "visibility": "hinted"
+  },
+  {
+    "key": "abyss_harvest",
+    "name": "Abyss Harvest",
+    "description": "The Abyss frontier presses the Eastern Thornwall and works to convert the corrupted rootwell into a controlled soul-harvest tap, exploiting Verdance's paralysis to turn the border into a harvest field.",
+    "clockType": "void_parasitism",
+    "currentValue": 2,
+    "maxValue": 6,
+    "ownerType": "domain",
+    "ownerKey": "eastern_thornwall",
+    "triggerEvent": "Each season the Abyss incision is left unaddressed; each rootwell corrupted behind the line; each defender lost to attrition.",
+    "partialTickEffects": [
+      "Soul-harvest infrastructure probes deeper past the wall",
+      "More border rootwells show corruption",
+      "Trapped souls feed Abyss power; void_parasitism rises"
+    ],
+    "completedEffect": "Abyss secures a controlled soul-flow chokepoint; the Verdance border becomes a permanent harvest tap, backing up the dead of multiple domains and feeding the Keeper.",
+    "reversalMethods": [
+      "Disrupt the Abyss soul-harvest engine beyond the wall",
+      "Hold and heal the corrupted rootwells behind the line",
+      "Cut the Abyss supply line to the Hollow Pact"
+    ],
+    "isActive": true,
+    "visibility": "hidden"
+  },
+  {
+    "key": "heartmoot_paralysis",
+    "name": "Heartmoot Paralysis / Exposure",
+    "description": "The Heartmoot's stagnation deepens as it defers the cure season after season, while the sealed-wells secret strains toward exposure. The council edges toward seal-and-deny for Thornveil rather than admit the cure was feared, not weighed.",
+    "clockType": "faction_agenda",
+    "currentValue": 2,
+    "maxValue": 6,
+    "ownerType": "faction",
+    "ownerKey": "heartmoot",
+    "triggerEvent": "Each Rootmoot that ends without a decision; each move to bury or hide the sealed-wells policy; each reformer driven off.",
+    "partialTickEffects": [
+      "The cure (Heartroot cuttings, a Vigil) stays locked in the capital",
+      "Reformers leave in frustration; legitimacy erodes",
+      "Pressure builds toward sealing Thornveil and abandoning its dead"
+    ],
+    "completedEffect": "The Heartmoot seals and denies Thornveil like the prior three wells, calcifying stagnation into fatalism, or the sealed-wells secret breaks publicly and shatters the council's legitimacy.",
+    "reversalMethods": [
+      "Petition the Heartmoot to release Heartroot cuttings for Thornveil",
+      "Break the elders' fatalism and force a decision",
+      "Expose the sealed-rootwell secret on terms that compel a cure rather than collapse"
+    ],
+    "isActive": true,
+    "visibility": "hinted"
+  },
+  {
+    "key": "othrens_slide",
+    "name": "Othren's Slide",
+    "description": "Othren Deepbark, the Rootwarden containment officer, has quietly used mild corrupted-sap tricks 'just to hold the line' for a season. Each tolerated shortcut slides him further toward the Hollow Pact's logic and toward becoming a node of the wound he guards.",
+    "clockType": "npc_agenda",
+    "currentValue": 2,
+    "maxValue": 6,
+    "ownerType": "npc",
+    "ownerKey": "othren_deepbark",
+    "triggerEvent": "Each corrupted-sap tactic used or tolerated at the wall; each time clean containment fails and the shortcut works.",
+    "partialTickEffects": [
+      "Othren rationalizes deeper use of corrupted sap",
+      "Trap-residue blight follows his sections of the wall",
+      "He begins to defend the wound rather than contain it"
+    ],
+    "completedEffect": "Othren fully adopts weaponized rot as doctrine and defects toward the Hollow Pact, normalizing corrupted-sap defense across the frontier and becoming a walking node of the trap.",
+    "reversalMethods": [
+      "Provide a working clean containment alternative",
+      "Confront Othren and expose the cost of the shortcut",
+      "Relieve the wall's pressure so the forbidden tactic is no longer 'necessary'"
+    ],
+    "isActive": true,
+    "visibility": "hidden"
+  }
+]
