@@ -31,11 +31,12 @@ Driving toward a playable *The Sap Beneath the Ash* vertical slice.
 | Thornveil NPC dossiers ×10 (Maera, Auralis, Thalen, Othren, Sylune, Brom, Venn, Ilyra, Rook, Nymara) | LIVING-CASTWRIGHT | ✅ Draft v1.0 (`docs/04-npcs/verdance/`) |
 | MVP database schema (Prisma) | SCHEMA-FORGE | ✅ Draft v1.0 (`docs/05-systems/database-schema.md`) |
 | VERDAX turn engine (`POST /api/verdax/turn`) | TURN-ENGINEER | ✅ Draft v1.0 (`docs/05-systems/verdax-turn-engine.md`) |
-| Verdance seed data (JSON) from the bibles | SCHEMA-FORGE | ⬜ next |
-| VERDAX system prompt (assembled) + Zod response schemas | TURN-ENGINEER | ⬜ next |
+| Verdance seed data (JSON) from the bibles | SCHEMA-FORGE | ✅ Draft v1.0 (`seed/verdance/`) |
+| VERDAX system prompt (assembled) + Zod response schemas | TURN-ENGINEER | ✅ Draft v1.0 (`src/lib/verdax/systemPrompt.ts`, `src/lib/schemas/verdax.ts`) |
+| Code scaffolding (Next.js app + Prisma + turn route) | SCHEMA-FORGE | ✅ Draft v1.0 — `prisma validate`, `tsc`, `next build` all pass |
 | World Genesis prompt (region/scene generator) | TURN-ENGINEER | ⬜ next |
 | UI specs (character creation, dashboard, chat, consequence panel, War Room) | INTERFACE-SEER | ⬜ next |
-| Code scaffolding (Next.js app + Prisma + turn route) | SCHEMA-FORGE | ⬜ next |
+| Wire a real Postgres + Anthropic key; play-test the turn loop | — | ⬜ needs a DB + API key (cannot run headless) |
 
 ## Later sprints (not yet started)
 
